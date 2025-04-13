@@ -17,28 +17,33 @@ let genreAccum: IPositionGenreStruct[][] = [[],[],[],[], []]
 
 const calculatePosition = (data: IGenre): XYPosition =>{
     let indexGenre
+    let lookedGenre
 const currentStruct = data.type == 1? {
     id: data.id,
     positionX: genreAccum[data.type].length * 700,
+    positionY: (data.parent  || 0)* 70,
+    
     NChildren: 0
 } : {
     id: data.id,
     positionX: (() => { 
-      const  lookedGenre =  genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
+        lookedGenre =  genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
        indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
-   //    console.log( genreAccum[data.parent || 1])
+       
+    //console.log( genreAccum[data.parent || 1], indexGenre, data)
       genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
+      console.log(lookedGenre)
         return (lookedGenre.positionX +((lookedGenre.NChildren + 1) * (130 ))) -(450 /  data.hard.length )
 
     })(),
+    positionY: (data.parent ? (lookedGenre?.positionY || 1* data.parent) : 0 )+ 70,
     NChildren: 0,
     parent: indexGenre
 }
 genreAccum[data.type].push(currentStruct)
-
 return ({
     x: currentStruct.positionX,
-    y: (data.parent || 0) * 70,
+    y: currentStruct.positionY,
 }) 
 }
 const edgeMapper = (id: string, connections: string[], type: 'hardEdge' | 'softEdge') => connections.map((x) => ({
