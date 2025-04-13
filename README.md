@@ -1,3 +1,27 @@
+# Hello, welcome to Genre Graph
+(name pending)
+this marks the start of the pre alpha
+
+- [ ] - Add descriptions (help wanted)
+- [ ] - add relationships to description tab
+- [ ] - filtering and searching genres and tags
+- [ ] - To fill the genre list
+
+
+
+**Genre percentage: 10%**
+
+
+
+
+
+
+
+
+
+
+
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).

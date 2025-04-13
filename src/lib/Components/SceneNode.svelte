@@ -8,7 +8,7 @@
    
     const { label } = data;
   </script>
-    <Handle type="target" position={Position.Bottom}   style=" background: transparent; border: none" {isConnectable} />
+    <Handle type="target" position={Position.Top}   style=" background: transparent; border: none" {isConnectable} />
 
   <figure class="bg-green-500 shadow-lg shadow-green-500/50 rounded p-1.5 py-0.5 ">
  
