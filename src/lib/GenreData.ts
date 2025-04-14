@@ -35,6 +35,41 @@ const Electronics = [
     },
 ]
 
+const Hardcore = [
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Hardcore',
+        id: 'hardcore',
+        hard: ['punk'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Post-Hardcore',
+        id: 'post-hardcore',
+        hard: [ 'hardcore' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Emo',
+        id: 'emo',
+        hard: [ 'post-hardcore' ],
+        soft: []
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Metalcore',
+        id: 'metalcore',
+        hard: ['metal', 'hardcore' ],
+        soft: []
+    }
+]
+
 const Metal = [   {
     type: Type.Super,
     label: 'Heavy Metal',
@@ -65,14 +100,7 @@ const Metal = [   {
     hard: ['metal' ],
     soft: []
 },
-{
-    type: Type.Genre,
-    parent: Type.Super,
-    label: 'Metalcore',
-    id: 'metalcore',
-    hard: ['metal', 'hardcore' ],
-    soft: []
-},
+
 {
     type: Type.Genre,
     parent: Type.Super,
@@ -349,6 +377,7 @@ export const Genres: IGenre[] = [
         soft: []
     },
    ...Metal,
+   ...Hardcore,
    {
     type: Type.Scene,
     parent: Type.Genre,
