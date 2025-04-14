@@ -168,14 +168,7 @@ const Metal = [   {
 
 ]
 
-const Rock = [
-    {
-        type: Type.Super,
-        label: 'Rock',
-        id: 'rock',
-        hard: [ ],
-        soft: []
-    },
+const Punk = [
     {
         type: Type.Genre,
         parent: Type.Super,
@@ -192,6 +185,48 @@ const Rock = [
         hard: ['punk' ],
         soft: []
     },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'New Wave',
+        id: 'new-wave',
+        hard: ['post-punk' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Dark Wave',
+        id: 'dark-wave',
+        hard: ['post-punk', 'gothic-rock' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Ethereal Wave',
+        id: 'ethereal-wave',
+        hard: ['dark-wave' ],
+        soft: ['ambient']
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'New Age',
+        id: 'new-age',
+        hard: ['ethereal-wave', 'ambient', 'psychodelia' ],
+        soft: ['folk']
+    },
+]
+const Rock = [
+    {
+        type: Type.Super,
+        label: 'Rock',
+        id: 'rock',
+        hard: [ ],
+        soft: []
+    },
+   ...Punk,
     {
         type: Type.Genre,
         parent: Type.Super,
@@ -248,7 +283,42 @@ const Rock = [
         id: 'gothic',
         hard: ['gothic-rock' ],
         soft: []
-    }
+    },
+ {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Psychodelic-rock',
+        id: 'psychodelic-rock',
+        hard: ['rock', 'jazz' ],
+        soft: ['blues']
+    },
+    {
+        type: Type.Scene,
+        parent: Type.Sub,
+        label: 'Psychodelia',
+        id: 'psychodelia',
+        hard: ['psychodelic-rock' ],
+        soft: []
+    },
+    
+]
+
+
+const Folk = [{
+        type: Type.Super,
+        label: 'Folk',
+        id: 'folk',
+        hard: [],
+        soft: []
+},
+{
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Blues',
+    id: 'blues',
+    hard: ['folk', 'rock'],
+    soft: ['work-music']
+},
 ]
 
 export const Genres: IGenre[] = [
@@ -336,6 +406,14 @@ export const Genres: IGenre[] = [
     },
     {
         type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Black Ambient',
+        id: 'black-ambient',
+        hard: ['dark-ambient' ],
+        soft: [ ]
+    },
+    {
+        type: Type.Sub,
         parent: Type.Genre,
         label: 'Death Industrial',
         sub: 'Dark Noise',
@@ -386,7 +464,8 @@ export const Genres: IGenre[] = [
     hard: ['alternative-rock','alternative-metal'],
     soft: []
    },
-   ...Electronics
+   ...Electronics,
+   ...Folk
 ]
 
 

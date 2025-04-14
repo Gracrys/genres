@@ -30,7 +30,6 @@
 		data = node.data;
 		isAsideOpen = true;
 	};
-	console.log(Genres);
 	// We are using writables for the nodes and edges to sync them easily. When a user drags a node for example, Svelte Flow updates its position.
 	const nodes = writable([
 		/*  {

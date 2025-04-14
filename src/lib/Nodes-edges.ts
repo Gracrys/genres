@@ -30,9 +30,7 @@ const currentStruct = data.type == 1? {
         lookedGenre =  genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
        indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
        
-    //console.log( genreAccum[data.parent || 1], indexGenre, data)
       genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
-      console.log(lookedGenre)
         return (lookedGenre.positionX +((lookedGenre.NChildren + 1) * (130 ))) -(450 /  data.hard.length )
 
     })(),
