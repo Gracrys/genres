@@ -3,7 +3,8 @@ export enum Type {
     'Super' = 1,
     'Genre' = 2,
     'Sub' = 3,
-    'Scene' = 4
+    'Scene' = 4,
+    'Fusion' = 5
 }
 
 export interface IGenre {
@@ -78,9 +79,18 @@ const Metal = [   {
     soft: []
 },
 {
-    type: Type.Super,
+    type: Type.Genre,
+    parent: Type.Super,
     label: 'Speed Metal',
     id: 'speed-metal',
+    hard: ['metal'],
+    soft: []
+},
+{
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Thrash Metal',
+    id: 'thrash-metal',
     hard: ['metal'],
     soft: []
 },
@@ -117,6 +127,14 @@ const Metal = [   {
     hard: ['black-metal', 'noise', 'ambient' ],
     soft: []
 },
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'BlackGaze',
+    id: 'blackgaze',
+    hard: ['black-metal', 'shoegaze'],
+    soft: []
+   },
 {
     type: Type.Genre,
     parent: Type.Super,
@@ -164,8 +182,23 @@ const Metal = [   {
     id: 'gothic-metal',
     hard: ['metal', 'gothic' ],
     soft: []
-}
-
+},
+{
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Stoner Metal',
+    id: 'stoner-metal',
+    hard: ['metal', 'psychodelia' ],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Sludge Metal',
+    id: 'sludge-metal',
+    hard: ['stoner-metal', 'doom-metal' ],
+    soft: []
+},
 ]
 
 const Punk = [
@@ -227,14 +260,7 @@ const Rock = [
         soft: []
     },
    ...Punk,
-    {
-        type: Type.Genre,
-        parent: Type.Super,
-        label: 'Alternative Rock',
-        id: 'alternative-rock',
-        hard: ['rock' ],
-        soft: []
-    },
+ 
     {
         type: Type.Genre,
         parent: Type.Super,
@@ -303,6 +329,83 @@ const Rock = [
     
 ]
 
+const AlternativeRock = [
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Alternative Rock',
+        id: 'alternative-rock',
+        hard: ['rock' ],
+        soft: []
+    },
+   
+       {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Alternative Dance',
+        id: 'alternative-dance',
+        hard: ['alternative-rock', 'dance'],
+        soft: []
+       },
+       {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Indie Rock',
+        id: 'indie-rock',
+        hard: ['rock', 'pop', 'jingle'],
+        soft: []
+       },
+       {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Garage Rock',
+        id: 'garage-rock',
+        hard: ['rock'],
+        soft: []
+       },
+       {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Grunge',
+        id: 'grunge',
+        sub: 'Seattle rock',
+        hard: ['alternative-rock', 'garage-rock'],
+        soft: []
+       },
+       {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Post Grunge',
+        id: 'post-grunge',
+        hard: ['grunge'],
+        soft: []
+       },
+       {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Shoegaze',
+        id: 'shoegaze',
+        hard: ['alternative-rock'],
+        soft: []
+       },
+       {
+        type: Type.Scene,
+        parent: Type.Sub,
+        label: 'Grunge',
+        id: 'grunge',
+        hard: ['grunge'],
+        soft: []
+       },
+       {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'Alternative',
+        id: 'alternative',
+        hard: ['alternative-rock','alternative-metal'],
+        soft: []
+       },
+     
+]
 
 const Folk = [{
         type: Type.Super,
@@ -456,16 +559,10 @@ export const Genres: IGenre[] = [
     },
    ...Metal,
    ...Hardcore,
-   {
-    type: Type.Scene,
-    parent: Type.Genre,
-    label: 'Alternative',
-    id: 'alternative',
-    hard: ['alternative-rock','alternative-metal'],
-    soft: []
-   },
+ ...AlternativeRock,
    ...Electronics,
    ...Folk
 ]
+
 
 

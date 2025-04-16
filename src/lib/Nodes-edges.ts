@@ -10,7 +10,7 @@ interface IPositionGenreStruct {
     NChildren: number
 }
 
-const TypeDictNode = ['SuperNode', 'SuperNode', 'MidNode', 'SubNode', 'SceneNode']
+const TypeDictNode = ['SuperNode', 'SuperNode', 'MidNode', 'SubNode', 'SceneNode', 'TheorynFusion']
 
 let genreAccum: IPositionGenreStruct[][] = [[],[],[],[], []]
 

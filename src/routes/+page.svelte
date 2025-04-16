@@ -22,6 +22,7 @@
 	import Aside from '$lib/Components/Aside.svelte';
 	import { Genres } from '$lib/GenreData';
 	import SceneNode from '$lib/Components/SceneNode.svelte';
+    import TheorynFusion from '$lib/Components/TheorynFusion.svelte';
 	const [newNodes, newEdges] = GenreMapper(Genres);
 	let data = $state({});
 	let isAsideOpen = $state(false);
@@ -81,7 +82,8 @@
 		SuperNode,
 		MidNode,
 		SubNode,
-        SceneNode
+        SceneNode,
+        TheorynFusion,
 	};
 	const snapGrid: [number, number] = [25, 25];
 </script>
