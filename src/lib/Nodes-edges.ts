@@ -14,14 +14,21 @@ const TypeDictNode = ['SuperNode', 'SuperNode', 'MidNode', 'SubNode', 'SceneNode
 
 let genreAccum: IPositionGenreStruct[][] = [[],[],[],[], []]
 
+const genresYDict:{ [key:string] : number} = {
+    'rock': 400,
+    'metal': 800,
+    'electronics': -600,
+    'hiphop': -400
+}
 
 const calculatePosition = (data: IGenre): XYPosition =>{
     let indexGenre
     let lookedGenre
+    if(data.type == 1) console.log(data.parent)
 const currentStruct = data.type == 1? {
     id: data.id,
     positionX: genreAccum[data.type].length * 700,
-    positionY: (data.parent  || 0)* 70,
+    positionY: (genresYDict[data.id]  ||  70),
     
     NChildren: 0
 } : {
