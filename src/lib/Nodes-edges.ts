@@ -1,10 +1,10 @@
 import type { Edge, Node, XYPosition } from "@xyflow/svelte"
-import { Genres, type IGenre } from "./GenreData"
+import { Genres, Type, type IGenre } from "./GenreData"
 
 
 interface IPositionGenreStruct {
-    id:string
-    positionX:number
+    id: string
+    positionX: number
     parent?: number
     positionY?: number
     NChildren: number
@@ -12,9 +12,9 @@ interface IPositionGenreStruct {
 
 const TypeDictNode = ['SuperNode', 'SuperNode', 'MidNode', 'SubNode', 'SceneNode', 'TheorynFusion']
 
-let genreAccum: IPositionGenreStruct[][] = [[],[],[],[], []]
+let genreAccum: IPositionGenreStruct[][] = [[], [], [], [], []]
 
-const genresYDict:{ [key:string] : number} = {
+const genresYDict: { [key: string]: number } = {
     'rock': 400,
     'metal': 900,
     'electronics': -600,
@@ -22,7 +22,7 @@ const genresYDict:{ [key:string] : number} = {
 }
 
 
-const genresXDict:{ [key:string] : number} = {
+const genresXDict: { [key: string]: number } = {
     'metal': 900
 }
 
@@ -46,9 +46,8 @@ const calculatePosition = (data: IGenre): XYPosition => {
             positionX: (() => {
                 lookedGenre = genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
                 indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
-
                 genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
-                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (130))) - (genresXDict[lookedGenre.id] || 450 )
+                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (130))) - (genresXDict[lookedGenre.id] || 450)
 
             })(),
             positionY: (data.parent ? (lookedGenre?.positionY || 1 * data.parent) : 0) + 70,
@@ -59,7 +58,7 @@ const calculatePosition = (data: IGenre): XYPosition => {
 
     } catch (error) {
         console.warn('on data:' + JSON.stringify(data))
-        console.warn('error')
+        console.warn('error', error)
     } finally {
         return ({
             x: currentStruct.positionX,
@@ -75,16 +74,23 @@ const edgeMapper = (id: string, connections: string[], type: 'hardEdge' | 'softE
     class: type
 }))
 
-const sortNodes = (genres: IGenre[]) => genres.sort((a, b) => a.type - b.type)
+const sortNodes = (genres: IGenre[]) =>
+    genres.sort((a, b) => a.type - b.type
+    );
+
+const exceptions: { [key: string]: Type } = {
+    'industrial': 2
+}
+
 
 export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
     const sortedArr = sortNodes(arr)
     const newNodes = sortedArr.map(x => ({
         id: x.id,
-        type: TypeDictNode[x.type],
-        data: { label: x.label, under: x.sub, desc: x.desc },
+        type:TypeDictNode[exceptions[x.id] || x.type],
+        data: { label: x.label, under: x.sub, desc: x.desc, type:exceptions[x.id] || x.type   },
         position: calculatePosition(x)
-})) || []
+    })) || []
 
     const newEdges = sortedArr.map(x => [...edgeMapper(x.id, x.hard, 'hardEdge'), ...edgeMapper(x.id, x.soft, 'softEdge')]).flat()
     return [newNodes, newEdges]

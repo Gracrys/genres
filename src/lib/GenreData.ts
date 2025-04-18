@@ -96,7 +96,7 @@ const Metal = [   {
 },
 {
     type: Type.Sub,
-    parent: Type.Genre,
+    parent: Type.Super,
     label: 'Industrial Metal',
     id: 'industrial-metal',
     hard: ['industrial','metal' ],
@@ -324,7 +324,7 @@ const RocknRoll = [ {
 },
 {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Proto-Punk',
     id: 'proto-punk',
     hard: ['rocknroll'],
@@ -364,6 +364,14 @@ const Rock = [
         id: 'krautrock',
         hard: ['experimental-rock', 'electronics' ],
         soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Industrial Rock',
+        id: 'industrial-rock',
+        hard: ['industrial', 'rock' ],
+        soft: [ ]
     },
     {
         type: Type.Sub,
@@ -563,13 +571,46 @@ const Folk = [{
     soft: ['work-music']
 },
 ]
-
-export const Genres: IGenre[] = [
+const AvantGarde = [
     {
         type: Type.Super,
         label: 'Avant Garde',
         id: 'avant-garde',
         hard: [],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Electroacoustic',
+        id: 'electroacoustic',
+        hard: ['avant-garde'],
+        soft: []
+    },
+  
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Acousmatic Music',
+        id: 'acousmatic-music',
+        hard: ['electroacoustic'],
+        soft: []
+    },
+    
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'EAI',
+        id: 'eai',
+        hard: ['electroacoustic'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Musique concrète',
+        id: 'musique-concrete',
+        hard: ['electroacoustic'],
         soft: []
     },
     {
@@ -607,12 +648,12 @@ export const Genres: IGenre[] = [
    ...Rock
   
     ,{
-        type: Type.Genre,
-        parent: Type.Super,
+        type: Type.Sub,
+        parent: Type.Sub,
         label: 'Industrial',
         id: 'industrial',
-        hard: ['avant-garde', 'punk' ],
-        soft: [ 'musique-concrete', 'electronic', 'krautrock']
+        hard: ['musique-concrete', 'punk' ],
+        soft: [  'electronic', 'krautrock']
     },
     {
         type: Type.Sub,
@@ -623,14 +664,7 @@ export const Genres: IGenre[] = [
 'industrial'],
         soft: ['electronics']
     },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Industrial Rock',
-        id: 'industrial-rock',
-        hard: ['industrial', 'rock' ],
-        soft: [ ]
-    },
+ 
     {
         type: Type.Genre,
         parent: Type.Super,
@@ -666,21 +700,14 @@ export const Genres: IGenre[] = [
     },
     {
         type: Type.Sub,
-        parent: Type.Genre,
+        parent: Type.Sub,
         label: 'Post Industrial',
     //    sub: 'Dark Noise',
         id: 'post-industrial',
         hard: ['industrial'],
         soft: ['rock', 'electronics']
     },
-    {
-        type: Type.Sub,
-        parent: Type.Super,
-        label: 'Post Rock',
-        id: 'post-rock',
-        hard: ['rock'],
-        soft: []
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -697,6 +724,10 @@ export const Genres: IGenre[] = [
         hard: ['noise', 'electronics'],
         soft: []
     },
+]
+
+export const Genres: IGenre[] = [
+    ...AvantGarde,
    ...Metal,
    ...Hardcore,
  ...AlternativeRock,
