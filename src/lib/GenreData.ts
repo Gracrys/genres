@@ -110,7 +110,30 @@ const Metal = [   {
     hard: ['metal' ],
     soft: []
 },
-
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Nu Metal',
+    id: 'nu-metal',
+    hard: ['metal', 'hiphop' ],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Rap Metal',
+    id: 'rap-metal',
+    hard: ['metal', 'hiphop' ],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Avant garde Metal',
+    id: 'avant-garde-metal',
+    hard: ['metal', 'avant-garde' ],
+    soft: []
+},
 {
     type: Type.Genre,
     parent: Type.Super,
@@ -207,7 +230,23 @@ const Punk = [
         parent: Type.Super,
         label: 'Punk',
         id: 'punk',
-        hard: ['rock' ],
+        hard: ['rock', 'proto-punk' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Art Punk',
+        id: 'art-punk',
+        hard: ['punk', 'avant-garde', 'jazz', 'funk' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Egg Punk',
+        id: 'egg-punk',
+        hard: ['art-punk' ],
         soft: []
     },
     {
@@ -250,6 +289,47 @@ const Punk = [
         hard: ['ethereal-wave', 'ambient', 'psychodelia' ],
         soft: ['folk']
     },
+    {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'Punk',
+        id: 'punk-scene',
+        hard: ['punk'],
+        soft: []
+    }
+]
+const RocknRoll = [ {
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Rock & Roll',
+    id: 'rocknroll',
+    hard: ['rock', 'blues'],
+    soft: ['pop']
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Rockabilly',
+    id: 'rockabilly',
+    hard: ['rocknroll', 'country', 'blues'],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Psychobilly',
+    id: 'rockabilly',
+    hard: ['rockabilly','punk'],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Proto-Punk',
+    id: 'proto-punk',
+    hard: ['rocknroll'],
+    soft: []
+}
 ]
 const Rock = [
     {
@@ -259,8 +339,8 @@ const Rock = [
         hard: [ ],
         soft: []
     },
+    ...RocknRoll,
    ...Punk,
- 
     {
         type: Type.Genre,
         parent: Type.Super,
@@ -313,10 +393,59 @@ const Rock = [
  {
         type: Type.Sub,
         parent: Type.Super,
-        label: 'Psychodelic-rock',
+        label: 'Psychodelic Rock',
         id: 'psychodelic-rock',
         hard: ['rock', 'jazz' ],
         soft: ['blues']
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Acid Rock',
+        id: 'acid-rock',
+        hard: ['psychodelic-rock' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Heavy Psych',
+        id: 'heavy-psych',
+        hard: ['psychodelic-rock' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Space Rock',
+        id: 'space-rock',
+        hard: ['psychodelic-rock' ],
+        soft: []
+    },
+    
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Space Rock Revival',
+        id: 'space-rock-revival',
+        hard: ['space-rock' ],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Math rock',
+        id: 'math-rock',
+        hard: ['rock' ],
+        soft: ['jazz']
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Math pop',
+        id: 'math-pop',
+        hard: ['math-rock', 'pop' ],
+        soft: []
     },
     {
         type: Type.Scene,
@@ -326,6 +455,7 @@ const Rock = [
         hard: ['psychodelic-rock' ],
         soft: []
     },
+
     
 ]
 
@@ -405,6 +535,16 @@ const AlternativeRock = [
         soft: []
        },
      
+]
+
+const HipHop = [
+    {
+        type: Type.Super,
+        label: 'Hip hop',
+        id: 'hiphop',
+        hard: [],
+        soft: []
+},
 ]
 
 const Folk = [{
@@ -561,7 +701,8 @@ export const Genres: IGenre[] = [
    ...Hardcore,
  ...AlternativeRock,
    ...Electronics,
-   ...Folk
+   ...Folk,
+   ...HipHop
 ]
 
 
