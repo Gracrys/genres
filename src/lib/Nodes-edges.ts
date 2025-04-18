@@ -21,35 +21,44 @@ const genresYDict:{ [key:string] : number} = {
     'hiphop': -400
 }
 
-const calculatePosition = (data: IGenre): XYPosition =>{
+const calculatePosition = (data: IGenre): XYPosition => {
     let indexGenre
     let lookedGenre
-    if(data.type == 1) console.log(data.parent)
-const currentStruct = data.type == 1? {
-    id: data.id,
-    positionX: genreAccum[data.type].length * 700,
-    positionY: (genresYDict[data.id]  ||  70),
-    
-    NChildren: 0
-} : {
-    id: data.id,
-    positionX: (() => { 
-        lookedGenre =  genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
-       indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
-       
-      genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
-        return (lookedGenre.positionX +((lookedGenre.NChildren + 1) * (130 ))) -(450 /  data.hard.length )
+    let currentStruct = {} as any
+    try {
 
-    })(),
-    positionY: (data.parent ? (lookedGenre?.positionY || 1* data.parent) : 0 )+ 70,
-    NChildren: 0,
-    parent: indexGenre
-}
-genreAccum[data.type].push(currentStruct)
-return ({
-    x: currentStruct.positionX,
-    y: currentStruct.positionY,
-}) 
+
+        currentStruct = data.type == 1 ? {
+            id: data.id,
+            positionX: genreAccum[data.type].length * 700,
+            positionY: (genresYDict[data.id] || 70),
+
+            NChildren: 0
+        } : {
+            id: data.id,
+            positionX: (() => {
+                lookedGenre = genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
+                indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
+
+                genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
+                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (130))) - (450 / data.hard.length)
+
+            })(),
+            positionY: (data.parent ? (lookedGenre?.positionY || 1 * data.parent) : 0) + 70,
+            NChildren: 0,
+            parent: indexGenre
+        }
+        genreAccum[data.type].push(currentStruct)
+
+    } catch (error) {
+        console.warn('on data:' + JSON.stringify(data))
+        console.warn('error')
+    } finally {
+        return ({
+            x: currentStruct.positionX,
+            y: currentStruct.positionY,
+        })
+    }
 }
 const edgeMapper = (id: string, connections: string[], type: 'hardEdge' | 'softEdge') => connections.map((x) => ({
     id: x + '+' + id,
