@@ -16,10 +16,17 @@ let genreAccum: IPositionGenreStruct[][] = [[],[],[],[], []]
 
 const genresYDict:{ [key:string] : number} = {
     'rock': 400,
-    'metal': 800,
+    'metal': 900,
     'electronics': -600,
     'hiphop': -400
 }
+
+
+const genresXDict:{ [key:string] : number} = {
+    'metal': 900
+}
+
+
 
 const calculatePosition = (data: IGenre): XYPosition => {
     let indexGenre
@@ -41,7 +48,7 @@ const calculatePosition = (data: IGenre): XYPosition => {
                 indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
 
                 genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
-                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (130))) - (450 / data.hard.length)
+                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (130))) - (genresXDict[lookedGenre.id] || 450 )
 
             })(),
             positionY: (data.parent ? (lookedGenre?.positionY || 1 * data.parent) : 0) + 70,
