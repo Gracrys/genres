@@ -1,4 +1,4 @@
-# Hello, welcome to Genre Graph
+# Hello, welcome to [Genre Graph](https://genresgraph.netlify.app/)
 (name pending)
 this marks the start of the pre alpha
 
@@ -14,7 +14,10 @@ this marks the start of the pre alpha
 
 
 
+to check the visualization, click the link =3
 
+or..
+[this link](https://genresgraph.netlify.app/)
 
 
 

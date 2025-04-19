@@ -1,5 +1,5 @@
 import type { Edge, Node, XYPosition } from "@xyflow/svelte"
-import { Genres, Type, type IGenre } from "./GenreData"
+import { Genres, Type, type IGenre } from "./GenreData/GenreData"
 
 
 interface IPositionGenreStruct {
