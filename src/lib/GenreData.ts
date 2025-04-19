@@ -15,7 +15,7 @@ export interface IGenre {
     soft: string[],
     parent?: Type
     sub?: string
-    desc ?:string
+    desc?: string
 }
 
 const Electronics = [
@@ -50,7 +50,7 @@ const Hardcore = [
         parent: Type.Genre,
         label: 'Post-Hardcore',
         id: 'post-hardcore',
-        hard: [ 'hardcore' ],
+        hard: ['hardcore'],
         soft: []
     },
     {
@@ -58,7 +58,47 @@ const Hardcore = [
         parent: Type.Sub,
         label: 'Emo',
         id: 'emo',
-        hard: [ 'post-hardcore' ],
+        hard: ['post-hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Emocore',
+        id: 'emocore',
+        hard: ['emo', 'hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Emo-pop',
+        id: 'emo-pop',
+        hard: ['emo', 'pop'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Midwest Emo',
+        id: 'midwest-emo',
+        hard: ['emo', 'math-rock'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Screamo',
+        id: 'screamo',
+        hard: ['emo', 'hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Emoviolence',
+        id: 'emoviolence',
+        hard: ['screamo', 'powerviolence'],
         soft: []
     },
     {
@@ -66,12 +106,85 @@ const Hardcore = [
         parent: Type.Super,
         label: 'Metalcore',
         id: 'metalcore',
-        hard: ['metal', 'hardcore' ],
+        hard: ['metal', 'hardcore'],
         soft: []
-    }
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Melodic Hardcore',
+        id: 'melodic-hardcore',
+        hard: ['hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Thrashcore',
+        id: 'trashcore',
+        hard: ['hardcore', 'thrash-metal'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Beatdown Hardcore',
+        id: 'beatdown-hardcore',
+        hard: ['hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Grindcore',
+        id: 'grindcore',
+        hard: ['hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Deathgrind',
+        id: 'deathgrind',
+        hard: ['grindcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Goregrind',
+        id: 'goregrind',
+        hard: ['grindcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Gorenoise',
+        id: 'gorenoise',
+        hard: ['goregrind', 'noise'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Pornogrind',
+        id: 'pornogrind',
+        hard: ['goregrind'],
+        soft: []
+    },
+
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Folk punk',
+        id: 'folk-punk',
+        hard: ['punk', 'folk'],
+        soft: []
+    },
 ]
 
-const Metal = [   {
+const Metal = [{
     type: Type.Super,
     label: 'Heavy Metal',
     id: 'metal',
@@ -96,10 +209,10 @@ const Metal = [   {
 },
 {
     type: Type.Sub,
-    parent: Type.Super,
+    parent: Type.Sub,
     label: 'Industrial Metal',
     id: 'industrial-metal',
-    hard: ['industrial','metal' ],
+    hard: ['industrial', 'metal'],
     soft: []
 },
 {
@@ -107,7 +220,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Alternative Metal',
     id: 'alternative-metal',
-    hard: ['metal' ],
+    hard: ['metal'],
     soft: []
 },
 {
@@ -115,7 +228,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Nu Metal',
     id: 'nu-metal',
-    hard: ['metal', 'hiphop' ],
+    hard: ['metal', 'hiphop'],
     soft: []
 },
 {
@@ -123,7 +236,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Rap Metal',
     id: 'rap-metal',
-    hard: ['metal', 'hiphop' ],
+    hard: ['metal', 'hiphop'],
     soft: []
 },
 {
@@ -131,7 +244,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Avant garde Metal',
     id: 'avant-garde-metal',
-    hard: ['metal', 'avant-garde' ],
+    hard: ['metal', 'avant-garde'],
     soft: []
 },
 {
@@ -139,7 +252,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Black Metal',
     id: 'black-metal',
-    hard: ['metal' ],
+    hard: ['metal'],
     soft: []
 },
 {
@@ -147,7 +260,7 @@ const Metal = [   {
     parent: Type.Genre,
     label: 'Atmospheric Black Metal',
     id: 'atmospheric-black-metal',
-    hard: ['black-metal', 'noise', 'ambient' ],
+    hard: ['black-metal', 'noise', 'ambient'],
     soft: []
 },
 {
@@ -157,13 +270,13 @@ const Metal = [   {
     id: 'blackgaze',
     hard: ['black-metal', 'shoegaze'],
     soft: []
-   },
+},
 {
     type: Type.Genre,
     parent: Type.Super,
     label: 'Death Metal',
     id: 'death-metal',
-    hard: ['metal' ],
+    hard: ['metal'],
     soft: []
 },
 {
@@ -171,7 +284,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Doom Metal',
     id: 'doom-metal',
-    hard: ['metal' ],
+    hard: ['metal'],
     soft: []
 },
 {
@@ -179,7 +292,7 @@ const Metal = [   {
     parent: Type.Genre,
     label: 'Death Doom Metal',
     id: 'death-doom-metal',
-    hard: ['doom-metal', 'death-metal' ],
+    hard: ['doom-metal', 'death-metal'],
     soft: []
 },
 {
@@ -187,7 +300,7 @@ const Metal = [   {
     parent: Type.Genre,
     label: 'Funeral Doom Metal',
     id: 'funeral-doom-metal',
-    hard: ['doom-metal' ],
+    hard: ['doom-metal'],
     soft: []
 },
 {
@@ -195,7 +308,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Drone Metal',
     id: 'drone-metal',
-    hard: ['metal' ],
+    hard: ['metal'],
     soft: []
 },
 {
@@ -203,7 +316,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Gothic Metal',
     id: 'gothic-metal',
-    hard: ['metal', 'gothic' ],
+    hard: ['metal', 'gothic'],
     soft: []
 },
 {
@@ -211,7 +324,7 @@ const Metal = [   {
     parent: Type.Super,
     label: 'Stoner Metal',
     id: 'stoner-metal',
-    hard: ['metal', 'psychodelia' ],
+    hard: ['metal', 'psychodelia'],
     soft: []
 },
 {
@@ -219,7 +332,7 @@ const Metal = [   {
     parent: Type.Genre,
     label: 'Sludge Metal',
     id: 'sludge-metal',
-    hard: ['stoner-metal', 'doom-metal' ],
+    hard: ['stoner-metal', 'doom-metal'],
     soft: []
 },
 ]
@@ -230,7 +343,7 @@ const Punk = [
         parent: Type.Super,
         label: 'Punk',
         id: 'punk',
-        hard: ['rock', 'proto-punk' ],
+        hard: ['rock', 'proto-punk'],
         soft: []
     },
     {
@@ -238,7 +351,7 @@ const Punk = [
         parent: Type.Genre,
         label: 'Art Punk',
         id: 'art-punk',
-        hard: ['punk', 'avant-garde', 'jazz', 'funk' ],
+        hard: ['punk', 'avant-garde', 'jazz', 'funk'],
         soft: []
     },
     {
@@ -246,7 +359,7 @@ const Punk = [
         parent: Type.Sub,
         label: 'Egg Punk',
         id: 'egg-punk',
-        hard: ['art-punk' ],
+        hard: ['art-punk'],
         soft: []
     },
     {
@@ -254,7 +367,7 @@ const Punk = [
         parent: Type.Genre,
         label: 'Post Punk',
         id: 'post-punk',
-        hard: ['punk' ],
+        hard: ['punk'],
         soft: []
     },
     {
@@ -262,7 +375,7 @@ const Punk = [
         parent: Type.Sub,
         label: 'New Wave',
         id: 'new-wave',
-        hard: ['post-punk' ],
+        hard: ['post-punk'],
         soft: []
     },
     {
@@ -270,7 +383,7 @@ const Punk = [
         parent: Type.Sub,
         label: 'Dark Wave',
         id: 'dark-wave',
-        hard: ['post-punk', 'gothic-rock' ],
+        hard: ['post-punk', 'gothic-rock'],
         soft: []
     },
     {
@@ -278,7 +391,7 @@ const Punk = [
         parent: Type.Sub,
         label: 'Ethereal Wave',
         id: 'ethereal-wave',
-        hard: ['dark-wave' ],
+        hard: ['dark-wave'],
         soft: ['ambient']
     },
     {
@@ -286,8 +399,16 @@ const Punk = [
         parent: Type.Sub,
         label: 'New Age',
         id: 'new-age',
-        hard: ['ethereal-wave', 'ambient', 'psychodelia' ],
+        hard: ['ethereal-wave', 'ambient', 'psychodelia'],
         soft: ['folk']
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Pop punk',
+        id: 'pop-punk',
+        hard: ['punk', 'pop'],
+        soft: []
     },
     {
         type: Type.Scene,
@@ -298,7 +419,7 @@ const Punk = [
         soft: []
     }
 ]
-const RocknRoll = [ {
+const RocknRoll = [{
     type: Type.Genre,
     parent: Type.Super,
     label: 'Rock & Roll',
@@ -318,8 +439,8 @@ const RocknRoll = [ {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Psychobilly',
-    id: 'rockabilly',
-    hard: ['rockabilly','punk'],
+    id: 'psychobilly',
+    hard: ['rockabilly', 'punk'],
     soft: []
 },
 {
@@ -336,17 +457,17 @@ const Rock = [
         type: Type.Super,
         label: 'Rock',
         id: 'rock',
-        hard: [ ],
+        hard: [],
         soft: []
     },
+    ...Punk,
     ...RocknRoll,
-   ...Punk,
     {
         type: Type.Genre,
         parent: Type.Super,
         label: 'Art Rock',
         id: 'art-rock',
-        hard: ['rock', 'avant-garde' ],
+        hard: ['rock', 'avant-garde'],
         soft: []
     },
     {
@@ -354,7 +475,7 @@ const Rock = [
         parent: Type.Super,
         label: 'Experimental Rock',
         id: 'experimental-rock',
-        hard: ['rock', 'avant-garde' ],
+        hard: ['rock', 'avant-garde'],
         soft: []
     },
     {
@@ -362,7 +483,7 @@ const Rock = [
         parent: Type.Genre,
         label: 'KrautRock',
         id: 'krautrock',
-        hard: ['experimental-rock', 'electronics' ],
+        hard: ['experimental-rock', 'electronics'],
         soft: []
     },
     {
@@ -370,15 +491,15 @@ const Rock = [
         parent: Type.Sub,
         label: 'Industrial Rock',
         id: 'industrial-rock',
-        hard: ['industrial', 'rock' ],
-        soft: [ ]
+        hard: ['industrial', 'rock'],
+        soft: []
     },
     {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Avant-Prog',
         id: 'avantprog',
-        hard: ['experimental-rock', 'electronics' ],
+        hard: ['experimental-rock', 'electronics'],
         soft: []
     },
     {
@@ -387,7 +508,7 @@ const Rock = [
         label: 'Gothic Rock',
         id: 'gothic-rock',
         desc: 'Towards finals of the 70s, this genre started based on a entire subculture',
-        hard: ['post-punk' ],
+        hard: ['post-punk'],
         soft: []
     },
     {
@@ -395,15 +516,15 @@ const Rock = [
         parent: Type.Sub,
         label: 'Gothic',
         id: 'gothic',
-        hard: ['gothic-rock' ],
+        hard: ['gothic-rock'],
         soft: []
     },
- {
+    {
         type: Type.Sub,
         parent: Type.Super,
         label: 'Psychodelic Rock',
         id: 'psychodelic-rock',
-        hard: ['rock', 'jazz' ],
+        hard: ['rock', 'jazz'],
         soft: ['blues']
     },
     {
@@ -411,7 +532,7 @@ const Rock = [
         parent: Type.Sub,
         label: 'Acid Rock',
         id: 'acid-rock',
-        hard: ['psychodelic-rock' ],
+        hard: ['psychodelic-rock'],
         soft: []
     },
     {
@@ -419,7 +540,7 @@ const Rock = [
         parent: Type.Sub,
         label: 'Heavy Psych',
         id: 'heavy-psych',
-        hard: ['psychodelic-rock' ],
+        hard: ['psychodelic-rock'],
         soft: []
     },
     {
@@ -427,16 +548,16 @@ const Rock = [
         parent: Type.Sub,
         label: 'Space Rock',
         id: 'space-rock',
-        hard: ['psychodelic-rock' ],
+        hard: ['psychodelic-rock'],
         soft: []
     },
-    
+
     {
         type: Type.Sub,
         parent: Type.Sub,
         label: 'Space Rock Revival',
         id: 'space-rock-revival',
-        hard: ['space-rock' ],
+        hard: ['space-rock'],
         soft: []
     },
     {
@@ -444,7 +565,7 @@ const Rock = [
         parent: Type.Super,
         label: 'Math rock',
         id: 'math-rock',
-        hard: ['rock' ],
+        hard: ['rock'],
         soft: ['jazz']
     },
     {
@@ -452,7 +573,7 @@ const Rock = [
         parent: Type.Sub,
         label: 'Math pop',
         id: 'math-pop',
-        hard: ['math-rock', 'pop' ],
+        hard: ['math-rock', 'pop'],
         soft: []
     },
     {
@@ -460,11 +581,11 @@ const Rock = [
         parent: Type.Sub,
         label: 'Psychodelia',
         id: 'psychodelia',
-        hard: ['psychodelic-rock' ],
+        hard: ['psychodelic-rock'],
         soft: []
     },
 
-    
+
 ]
 
 const AlternativeRock = [
@@ -473,35 +594,35 @@ const AlternativeRock = [
         parent: Type.Super,
         label: 'Alternative Rock',
         id: 'alternative-rock',
-        hard: ['rock' ],
+        hard: ['rock'],
         soft: []
     },
-   
-       {
+
+    {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Alternative Dance',
         id: 'alternative-dance',
         hard: ['alternative-rock', 'dance'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Sub,
         parent: Type.Super,
         label: 'Indie Rock',
         id: 'indie-rock',
         hard: ['rock', 'pop', 'jingle'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Sub,
         parent: Type.Super,
         label: 'Garage Rock',
         id: 'garage-rock',
         hard: ['rock'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Grunge',
@@ -509,40 +630,40 @@ const AlternativeRock = [
         sub: 'Seattle rock',
         hard: ['alternative-rock', 'garage-rock'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Sub,
         parent: Type.Sub,
         label: 'Post Grunge',
         id: 'post-grunge',
         hard: ['grunge'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Shoegaze',
         id: 'shoegaze',
         hard: ['alternative-rock'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Scene,
         parent: Type.Sub,
         label: 'Grunge',
         id: 'grunge',
         hard: ['grunge'],
         soft: []
-       },
-       {
+    },
+    {
         type: Type.Scene,
         parent: Type.Genre,
         label: 'Alternative',
         id: 'alternative',
-        hard: ['alternative-rock','alternative-metal'],
+        hard: ['alternative-rock', 'alternative-metal'],
         soft: []
-       },
-     
+    },
+
 ]
 
 const HipHop = [
@@ -552,15 +673,15 @@ const HipHop = [
         id: 'hiphop',
         hard: [],
         soft: []
-},
+    },
 ]
 
 const Folk = [{
-        type: Type.Super,
-        label: 'Folk',
-        id: 'folk',
-        hard: [],
-        soft: []
+    type: Type.Super,
+    label: 'Folk',
+    id: 'folk',
+    hard: [],
+    soft: []
 },
 {
     type: Type.Genre,
@@ -587,7 +708,7 @@ const AvantGarde = [
         hard: ['avant-garde'],
         soft: []
     },
-  
+
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -596,7 +717,7 @@ const AvantGarde = [
         hard: ['electroacoustic'],
         soft: []
     },
-    
+
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -629,14 +750,7 @@ const AvantGarde = [
         hard: ['avant-garde'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'GoreNoise',
-        id: 'gorenoise',
-        hard: ['noise'],
-        soft: []
-    },
+
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -645,49 +759,49 @@ const AvantGarde = [
         hard: ['harsh-noise'],
         soft: []
     },
-   ...Rock
-  
-    ,{
+
+    {
         type: Type.Sub,
         parent: Type.Sub,
         label: 'Industrial',
         id: 'industrial',
-        hard: ['musique-concrete', 'punk' ],
-        soft: [  'electronic', 'krautrock']
+        hard: ['musique-concrete', 'punk'],
+        soft: ['electronic', 'krautrock']
     },
     {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Power Industrial',
         id: 'power-industrial',
-        hard: [ 'noise' ,
-'industrial'],
+        hard: ['noise',
+            'industrial'],
         soft: ['electronics']
     },
- 
+    ...Rock,
+
     {
         type: Type.Genre,
         parent: Type.Super,
         label: 'Ambient',
         id: 'ambient',
-        hard: ['avant-garde' ],
-        soft: [ ]
+        hard: ['avant-garde'],
+        soft: []
     },
     {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Dark Ambient',
         id: 'dark-ambient',
-        hard: ['ambient', 'industrial' ],
-        soft: [ ]
+        hard: ['ambient', 'industrial'],
+        soft: []
     },
     {
         type: Type.Sub,
         parent: Type.Sub,
         label: 'Black Ambient',
         id: 'black-ambient',
-        hard: ['dark-ambient' ],
-        soft: [ ]
+        hard: ['dark-ambient'],
+        soft: []
     },
     {
         type: Type.Sub,
@@ -702,12 +816,12 @@ const AvantGarde = [
         type: Type.Sub,
         parent: Type.Sub,
         label: 'Post Industrial',
-    //    sub: 'Dark Noise',
+        //    sub: 'Dark Noise',
         id: 'post-industrial',
         hard: ['industrial'],
         soft: ['rock', 'electronics']
     },
-   
+
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -728,12 +842,12 @@ const AvantGarde = [
 
 export const Genres: IGenre[] = [
     ...AvantGarde,
-   ...Metal,
-   ...Hardcore,
- ...AlternativeRock,
-   ...Electronics,
-   ...Folk,
-   ...HipHop
+    ...Metal,
+    ...Hardcore,
+    ...AlternativeRock,
+    ...Electronics,
+    ...Folk,
+    ...HipHop
 ]
 
 
