@@ -23,5 +23,13 @@ export const Folk = [{
     hard: ['folk', 'rock'],
     soft: ['work-music']
 },
-
+{
+    type: Type.Scene,
+    parent: Type.Super,
+    label: 'Protest Music',
+    desc: 'Scene that recollects all music connected to protest about social issues and political topics.',
+    id: 'Protest-music',
+    hard: ['folk', 'roots-regae', 'conscious-hiphop', 'punk', 'work-music'],
+    soft: []
+},
 ]

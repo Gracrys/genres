@@ -27,13 +27,82 @@ export const Jamaican = [
         soft: []
     },
     {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Digital Dancehall',
+        id: 'digital-dancehall',
+        desc: 'First, pre-Ragga style of Dancehall to popularize Electronic rhythms that arose in the mid-1980s.',
+        hard: ['dancehall', 'electronics', 'reggae'],
+        soft: []
+    },
+    {
         type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Ska',
+        id: 'ska',
+        desc: 'Originated in Jamaica in the late 1950s, characterized by a signature off-beat rhythm (referred to as the ‘skank’ rhythm), chop-style guitar work, busy bass lines and a use of horn sections.',
+        hard: ['jamaican', 'jazz', 'rnb'],
+        soft: ['calypso', 'mento']
+    },
+    {
+        type: Type.Sub,
         parent: Type.Genre,
         label: 'Jamaican Ska',
         id: 'jamaican-ska',
         desc: 'Originated in Jamaica with groups who combined Jazz and Rhythm & Blues with rhythms of traditional Caribbean Music like Mento and Calypso.',
-        hard: ['jamaican', 'jazz', 'rnb'],
-        soft: ['calypso', 'mento']
+        hard: ['ska', 'jamaican'],
+        soft: []
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Rocksteady',
+        id: 'rocksteady',
+        desc: 'Jamaican popular music that blossomed briefly between 1966 and 1968 as an evolution of Ska, being slower, more relaxed, and soulful.',
+        hard: ['ska', 'rnb', 'soul'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: '2 tone',
+        id: '2tone',
+        desc: 'Fast paced ska with punk elements',
+        hard: ['ska', 'new-wave', 'punk'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Third Wave Ska',
+        id: 'third-wave-ska',
+        desc: 'Expanded on 2 tone style and period for a more heavy sound',
+        hard: ['2tone', 'rock'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Ska Punk',
+        id: 'ska-punk',
+        hard: ['third-wave-ska', 'punk'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Skacore',
+        id: 'skacore',
+        hard: ['ska-punk', 'hardcore'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Crack Rock Steady',
+        id: 'crack-rock-steady',
+        hard: ['skacore', 'crust-punk'],
+        soft: ['metal']
     },
     {
         type: Type.Sub,
@@ -60,8 +129,106 @@ export const Jamaican = [
         label: 'Reggae',
         id: 'reggae',
         desc: 'Developed in the 1960s; shuffling "bubble" and offbeat rhythms played on an organ, and staccato guitar and piano chords known as "skank."',
-        hard: ['jamaican', 'jazz', 'rnb', 'jamaican-ska'],
+        hard: ['rocksteady', 'jazz', 'dancehall'],
         soft: ['calypso', 'mento']
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Ragga',
+        id: 'ragga',
+        sub: 'Ragga Muffin',
+        desc: 'Reggae genre with heavy hip hop elements, with a more fast paced style, it encircles from electronic hip hop danceable music to reggae rap substyles',
+        hard: ['reggae', 'hiphop', 'electronics'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Deejay',
+        id: 'deejay',
+        desc: 'Sub genre in which a dj mixes electronics beats to a jamaican sound, precursor of mixing styles on clubs',
+        hard: ['reggae', 'electronics'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Dub',
+        id: 'dub',
+        desc: 'Primarily instrumental Reggae which developed from the extensive use of studio techniques and effects like reverb and delay and use of fast paced rhytmn plus some dissonant elements.',
+        hard: ['reggae'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Lovers rock',
+        id: 'lovers-rock',
+        desc: 'Smooth, quiet Reggae beats with lyrics focusing on romance and love.',
+        hard: ['reggae', 'caribbean', 'rock'],
+        soft: []
+    },
+
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Pacific reggae',
+        id: 'pacific-reggae',
+        desc: 'Developed in Pacific island communities, incorporating elements from local Oceanian Music styles.',
+        hard: ['reggae', 'oceanian-music'],
+        soft: []
+    },
+  
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Pop reggae',
+        id: 'pop-reggae',
+        hard: ['reggae', 'pop'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Roots reggae',
+        id: 'roots-reggae',
+        hard: ['reggae'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Dub poetry',
+        id: 'dub-poetry',
+        hard: ['roots-reggae', 'dub'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Seggae',
+        id: 'seggae',
+        hard: ['reggae', 'sega'],
+        soft: []
+    },
+
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Skinhead Reggae',
+        id: 'skinhead-reggae',
+        hard: ['reggae', 'skinhead'],
+        soft: []
+    },
+
+    {
+        type: Type.Fusion,
+        parent: Type.Genre,
+        label: 'Reggae-fusion',
+        id: 'reggae-fusion',
+        hard: ['reggae'],
+        soft: []
     },
 ]
 
@@ -280,4 +447,6 @@ export const WorldMusic = [
         hard: ['haitian-vodoo-drumming', 'nyahbinghi'],
         soft: []
     },
+
+ 
 ]
