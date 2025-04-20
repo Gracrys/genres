@@ -11,16 +11,17 @@
 		type Edge,
 		type Node
 	} from '@xyflow/svelte';
-	import SuperNode from '$lib/Components/SuperNode.svelte';
-	// 👇 this is important! You need to import the styles for Svelte Flow to work
-	import '@xyflow/svelte/dist/style.css';
-	import MidNode from '$lib/Components/MidNode.svelte';
-	import SubNode from '$lib/Components/SubNode.svelte';
+		// 👇 this is important! You need to import the styles for Svelte Flow to work
+		import '@xyflow/svelte/dist/style.css';
+	import SuperNode from '$lib/Components/Nodes/SuperNode.svelte';
+	import SubNode from '$lib/Components/Nodes/SubNode.svelte';
+	import SceneNode from '$lib/Components/Nodes/SceneNode.svelte';
+    import TheorynFusion from '$lib/Components/Nodes/TheorynFusion.svelte';
+	import MidNode from '$lib/Components/Nodes/MidNode.svelte';
 	import {GenreMapper } from '$lib/Nodes-edges';
 	import Aside from '$lib/Components/Aside.svelte';
 	import { Genres } from '$lib/GenreData/GenreData';
-	import SceneNode from '$lib/Components/SceneNode.svelte';
-    import TheorynFusion from '$lib/Components/TheorynFusion.svelte';
+
 	const [newNodes, newEdges] = GenreMapper(Genres);
 	let data = $state({});
 	let isAsideOpen = $state(false);

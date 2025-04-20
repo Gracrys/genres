@@ -18,7 +18,7 @@ const genresYDict: { [key: string]: number } = {
     'rock': 400,
     'metal': 900,
     'electronics': -600,
-    'hiphop': -400
+    'hiphop': 400
 }
 
 

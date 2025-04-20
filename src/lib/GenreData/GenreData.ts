@@ -1,4 +1,8 @@
+import { Ambient, AvantGarde } from "./AvantGarde"
+import { Electronics } from "./Electronics"
+import { Folk } from "./Folk"
 import { AlternativeRock, Rock } from "./Rock"
+import { WorldMusic } from "./WorldMusic"
 
 export enum Type {
     'Super' = 1,
@@ -19,23 +23,6 @@ export interface IGenre {
     desc?: string
 }
 
-const Electronics = [
-    {
-        type: Type.Super,
-        label: 'Electronics',
-        id: 'electronics',
-        hard: [],
-        soft: []
-    },
-    {
-        type: Type.Genre,
-        parent: Type.Super,
-        label: 'Glitch',
-        id: 'glitch',
-        hard: ['electronics', 'noise', 'choppednscrewed'],
-        soft: []
-    },
-]
 
 const Hardcore = [
     {
@@ -349,169 +336,6 @@ const HipHop = [
     },
 ]
 
-const Folk = [{
-    type: Type.Super,
-    label: 'Folk',
-    id: 'folk',
-    hard: [],
-    soft: []
-},
-{
-    type: Type.Genre,
-    parent: Type.Super,
-    label: 'Blues',
-    id: 'blues',
-    hard: ['folk', 'rock'],
-    soft: ['work-music']
-},
-]
-const AvantGarde = [
-    {
-        type: Type.Super,
-        label: 'Avant Garde',
-        id: 'avant-garde',
-        hard: [],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Super,
-        label: 'Electroacoustic',
-        id: 'electroacoustic',
-        hard: ['avant-garde'],
-        soft: []
-    },
-
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Acousmatic Music',
-        id: 'acousmatic-music',
-        hard: ['electroacoustic'],
-        soft: []
-    },
-
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'EAI',
-        id: 'eai',
-        hard: ['electroacoustic'],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Musique concrète',
-        id: 'musique-concrete',
-        hard: ['electroacoustic'],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Harsh Noise',
-        id: 'harsh-noise',
-        hard: ['noise'],
-        soft: []
-    },
-    {
-        type: Type.Genre,
-        parent: Type.Super,
-        label: 'Noise',
-        id: 'noise',
-        hard: ['avant-garde'],
-        soft: []
-    },
-
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Harsh Noise Wall',
-        id: 'harsh-noise-wall',
-        hard: ['harsh-noise'],
-        soft: []
-    },
-
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Industrial',
-        id: 'industrial',
-        hard: ['musique-concrete', 'punk'],
-        soft: ['electronic', 'krautrock']
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Power Industrial',
-        id: 'power-industrial',
-        hard: ['noise',
-            'industrial'],
-        soft: ['electronics']
-    },
-    ...Rock,
-
-    {
-        type: Type.Genre,
-        parent: Type.Super,
-        label: 'Ambient',
-        id: 'ambient',
-        hard: ['avant-garde'],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Dark Ambient',
-        id: 'dark-ambient',
-        hard: ['ambient', 'industrial'],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Black Ambient',
-        id: 'black-ambient',
-        hard: ['dark-ambient'],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Death Industrial',
-        sub: 'Dark Noise',
-        id: 'death-industrial',
-        hard: ['noise', 'industrial'],
-        soft: ['drone']
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Post Industrial',
-        //    sub: 'Dark Noise',
-        id: 'post-industrial',
-        hard: ['industrial'],
-        soft: ['rock', 'electronics']
-    },
-
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Drone',
-        id: 'drone',
-        hard: ['ambient', 'industrial', 'post-rock'],
-        soft: []
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Power Noise',
-        id: 'power-noise',
-        hard: ['noise', 'electronics'],
-        soft: []
-    },
-]
 
 export const Genres: IGenre[] = [
     ...AvantGarde,
@@ -519,8 +343,9 @@ export const Genres: IGenre[] = [
     ...Hardcore,
     ...AlternativeRock,
     ...Electronics,
+    ...HipHop,
     ...Folk,
-    ...HipHop
+    ...WorldMusic,
 ]
 
 
