@@ -87,8 +87,15 @@ export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
     const sortedArr = sortNodes(arr)
     const newNodes = sortedArr.map(x => ({
         id: x.id,
-        type:TypeDictNode[exceptions[x.id] || x.type],
-        data: { label: x.label, under: x.sub, desc: x.desc, type:exceptions[x.id] || x.type   },
+        type: TypeDictNode[exceptions[x.id] || x.type],
+        data: {
+            label: x.label,
+            under: x.sub, 
+            desc: x.desc, 
+            type: exceptions[x.id] || x.type, 
+            hard: x.hard, 
+            soft: x.soft
+        },
         position: calculatePosition(x)
     })) || []
 
