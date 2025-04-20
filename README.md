@@ -9,7 +9,7 @@ this marks the start of the pre alpha
 
 
 
-**Genre percentage: 12%**
+**Genre percentage: 15%**
 
 
 
