@@ -12,6 +12,24 @@ this marks the start of the pre alpha
 
 **Genre percentage: 15%** (more or less)
 
+- **Rock** : 60%
+- **Avant-garde**: 70%
+- **Industrial**: 50%
+- **electronics**: the hardest part was the initial classification tbh
+- **world music**: i only got caribbean and is at 80%
+- **hiphop**: x.x
+- **folk**: holy macarronni that thing is big
+- **Pop**: x.x
+- **Punk**: 95%
+- **reggae**: 95%
+- **metal**: 50%?
+- **Jazz**: x.x
+- **ambient**: 60%
+- **Blues**: i dont even know where to start
+- **country**: x.x
+- **classical**: x.x
+- **spoken word and ballads**: 0
+
 
 
 

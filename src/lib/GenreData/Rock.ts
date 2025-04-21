@@ -245,6 +245,14 @@ export const Punk = [
         id: 'punk-scene',
         hard: ['punk'],
         soft: []
+    },
+    {
+        type: Type.Scene,
+        parent: Type.Sub,
+        label: 'Skinhead',
+        id: 'skinhead',
+        hard: ['oi'],
+        soft: []
     }
 ]
 
