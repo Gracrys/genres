@@ -12,7 +12,7 @@ interface IPositionGenreStruct {
 
 const TypeDictNode = ['SuperNode', 'SuperNode', 'MidNode', 'SubNode', 'SceneNode', 'TheorynFusion']
 
-let genreAccum: IPositionGenreStruct[][] = [[], [], [], [], []]
+let genreAccum: IPositionGenreStruct[][] = [[], [], [], [], [], []]
 
 const genresYDict: { [key: string]: number } = {
     'rock': 400,

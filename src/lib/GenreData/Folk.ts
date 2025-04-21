@@ -29,7 +29,7 @@ export const Folk = [{
     label: 'Protest Music',
     desc: 'Scene that recollects all music connected to protest about social issues and political topics.',
     id: 'Protest-music',
-    hard: ['folk', 'roots-regae', 'conscious-hiphop', 'punk', 'work-music'],
+    hard: ['folk', 'roots-regae', 'conscious-hiphop', 'punk', 'work-music', 'crust-punk', 'anarcho-punk'],
     soft: []
 },
 ]

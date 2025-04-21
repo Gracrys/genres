@@ -3,13 +3,14 @@
 this marks the start of the pre alpha
 
 - [ ] - Add descriptions (help wanted)
+- [ ] - Add recomended entry level bands and more important bands and or... dunno (help wanted)
 - [ ] - add relationships to description tab
 - [ ] - filtering and searching genres and tags
 - [ ] - To fill the genre list
 
 
 
-**Genre percentage: 15%**
+**Genre percentage: 15%** (more or less)
 
 
 

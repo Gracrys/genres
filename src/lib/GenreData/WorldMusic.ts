@@ -221,7 +221,6 @@ export const Jamaican = [
         hard: ['reggae', 'skinhead'],
         soft: []
     },
-
     {
         type: Type.Fusion,
         parent: Type.Genre,
