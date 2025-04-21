@@ -1,6 +1,8 @@
 import { Ambient, AvantGarde } from "./AvantGarde"
+import { Classical } from "./Classical"
 import { Electronics } from "./Electronics"
 import { Folk } from "./Folk"
+import { HipHop } from "./HipHop"
 import { AlternativeRock, Hardcore, Rock } from "./Rock"
 import { WorldMusic } from "./WorldMusic"
 
@@ -179,15 +181,6 @@ const Metal = [{
 ]
 
 
-const HipHop = [
-    {
-        type: Type.Super,
-        label: 'Hip hop',
-        id: 'hiphop',
-        hard: [],
-        soft: []
-    },
-]
 
 
 export const Genres: IGenre[] = [
@@ -199,6 +192,7 @@ export const Genres: IGenre[] = [
     ...HipHop,
     ...Folk,
     ...WorldMusic,
+    ...Classical
 ]
 
 
