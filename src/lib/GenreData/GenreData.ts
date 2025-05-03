@@ -23,6 +23,8 @@ export interface IGenre {
     parent?: Type
     sub?: string
     desc?: string
+    dates?: string,
+    artists?:string
 }
 
 
@@ -52,7 +54,7 @@ const Metal = [{
 },
 {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Industrial Metal',
     id: 'industrial-metal',
     hard: ['industrial', 'metal'],

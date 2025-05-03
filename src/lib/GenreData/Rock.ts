@@ -334,7 +334,7 @@ export const Hardcore = [
         soft: []
     },
     {
-        type: Type.Sub,
+        type: Type.Genre,
         parent: Type.Genre,
         label: 'Post-Hardcore',
         id: 'post-hardcore',
@@ -343,8 +343,8 @@ export const Hardcore = [
     },
 
     {
-        type: Type.Sub,
-        parent: Type.Sub,
+        type: Type.Genre,
+        parent: Type.Genre,
         label: 'Emo',
         id: 'emo',
         hard: ['post-hardcore'],
@@ -352,7 +352,7 @@ export const Hardcore = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Emocore',
         id: 'emocore',
         hard: ['emo', 'hardcore'],
@@ -360,7 +360,7 @@ export const Hardcore = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Emo-pop',
         id: 'emo-pop',
         hard: ['emo', 'pop'],
@@ -368,15 +368,15 @@ export const Hardcore = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Midwest Emo',
         id: 'midwest-emo',
         hard: ['emo', 'math-rock'],
         soft: []
     },
     {
-        type: Type.Sub,
-        parent: Type.Sub,
+        type: Type.Genre,
+        parent: Type.Genre,
         label: 'Screamo',
         id: 'screamo',
         hard: ['emo', 'hardcore'],
@@ -384,7 +384,7 @@ export const Hardcore = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Emoviolence',
         id: 'emoviolence',
         hard: ['screamo', 'powerviolence'],
@@ -392,7 +392,7 @@ export const Hardcore = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Swancore',
         id: 'swancore',
         hard: ['post-hardcore', 'math-rock', 'proggresive-rock'],
@@ -400,7 +400,7 @@ export const Hardcore = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Sass',
         id: 'sass',
         hard: ['post-hardcore'],
@@ -609,7 +609,7 @@ export const Rock = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Industrial Rock',
         id: 'industrial-rock',
         hard: ['industrial', 'rock'],

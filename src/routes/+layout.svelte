@@ -7,9 +7,15 @@
 	const appVersion = __APP_VERSION__;
 
 	let { children } = $props();
-</script>
+	
+  // Check if `window` is available (runs only in the browser)
+  if (typeof window !== 'undefined') {
+	console.log(window.navigator);
 
+  }
+</script>
 {@render children()}
+
 <sub class="absolute bottom-1 text-amber-50 z-50  text-xs">
 	<a href="https://github.com/Gracrys/genres" class="block w-6" target="_blank">
 		<img src="/github-mark-white.svg" alt="" class="w-full">

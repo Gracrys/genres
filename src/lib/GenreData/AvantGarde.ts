@@ -44,7 +44,7 @@ export const AvantGarde = [
         soft: []
     },
     {
-        type: Type.Sub,
+        type: Type.Genre,
         parent: Type.Super,
         label: 'Electroacoustic',
         id: 'electroacoustic',
@@ -54,7 +54,7 @@ export const AvantGarde = [
 
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Acousmatic Music',
         id: 'acousmatic-music',
         hard: ['electroacoustic'],
@@ -63,18 +63,27 @@ export const AvantGarde = [
 
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'EAI',
         id: 'eai',
         hard: ['electroacoustic'],
         soft: []
     },
     {
-        type: Type.Sub,
-        parent: Type.Sub,
+        type: Type.Genre,
+        parent: Type.Genre,
         label: 'Musique concrète',
         id: 'musique-concrete',
         hard: ['electroacoustic'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Musique concrète Instrumentale',
+        id: 'musique-concrete-instrumentale',
+        desc: 'Acoustic, through-composed Classical Music that relies heavily on unconventional instrumental techniques.',
+        hard: ['musique-concrete', 'modern-classical'],
         soft: []
     },
     {
@@ -104,8 +113,8 @@ export const AvantGarde = [
     },
 
     {
-        type: Type.Sub,
-        parent: Type.Sub,
+        type: Type.Genre,
+        parent: Type.Genre,
         label: 'Industrial',
         id: 'industrial',
         hard: ['musique-concrete', 'punk'],
@@ -133,9 +142,8 @@ export const AvantGarde = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Post Industrial',
-        //    sub: 'Dark Noise',
         id: 'post-industrial',
         hard: ['industrial'],
         soft: ['rock', 'electronics']

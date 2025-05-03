@@ -16,6 +16,11 @@
         {data.desc}
     </article>
     <span>
+<i>
+    {data.dates}
+</i>
+    </span>
+    <span>
         {data.notableBands}
     </span>
 

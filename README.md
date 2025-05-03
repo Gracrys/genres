@@ -27,7 +27,7 @@ this marks the start of the pre alpha
 - **ambient**: 60%
 - **Blues**: i dont even know where to start
 - **country**: x.x
-- **classical**: x.x
+- **classical**: 40% 
 - **spoken word and ballads**: 0
 
 
@@ -38,11 +38,18 @@ to check the visualization, click the link =3
 or..
 [this link](https://genresgraph.netlify.app/)
 
+all bands and recomendations based on personal opinions
 
+**credits to:**
+https://www.musicgenretree.org/chart.html
+1111 Essential Recordings of music
+RYM
+Wikipedia (i know its dumb but helpful)
+Music Gateway
+Musicmap
+and friends.
 
-
-
-
+follow me on rym and/or lastfm
 
 # sv
 

@@ -80,7 +80,7 @@ const sortNodes = (genres: IGenre[]) =>
     );
 
 const exceptions: { [key: string]: Type } = {
-    'industrial': 2
+    //'industrial': 2
 }
 
 
@@ -93,6 +93,7 @@ export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
             label: x.label,
             under: x.sub, 
             desc: x.desc, 
+            dates: x?.dates,
             type: exceptions[x.id] || x.type, 
             hard: x.hard, 
             soft: x.soft
