@@ -1088,16 +1088,7 @@ export const Western = [
     desc: 'Composition for unaccompanied choir, set to sacred texts of Eastern Orthodox tradition.',
     soft: []
 },
-{
-    parent: Type.Genre,
-    type: Type.Sub,
-    label: 'Choral Symphony',
-    id: 'choral-symphony',
-      dates: '1700 AC',
-    hard: ['choral'],
-    desc: 'Combines symphonic Orchestral Music forces & structure with vocal parts for choir.',
-    soft: []
-},
+
 {
     parent: Type.Genre,
     type: Type.Sub,
@@ -1644,7 +1635,7 @@ export const Western = [
     label: 'Sinfonia concertante',
     id: 'sinfonia-concertante',
     //  dates: '1700s',
-      hard: ['concerto'],
+      hard: ['concerto', 'symphony'],
     desc: 'Fuses symphonic compositional structure and instrumentation with parts written for concertante soloists.',
     soft: []
 },
@@ -1667,7 +1658,7 @@ export const Western = [
       hard: ['orchestral-music'],
     desc: 'Large-scale Western Classical Music works for orchestra, typically with four movements: 1) allegro, almost always in sonata-allegro form 2) a slow movement 3) scherzo or minuet 4) finale, typically allegro or rondo.',
     soft: []
-},/*
+},
 {
     parent: Type.Genre,
     type: Type.Sub,
@@ -1678,16 +1669,6 @@ export const Western = [
     desc: 'Combines symphonic Orchestral Music forces & structure with vocal parts for choir.',
     soft: []
 },
-{
-    parent: Type.Genre,
-    type: Type.Sub,
-    label: 'Sinfonia concertante',
-    id: 'sinfonia-concertante',
-    //  dates: '1700s',
-      hard: ['symphony'],
-    desc: 'Fuses symphonic compositional structure and instrumentation with parts written for concertante soloists.',
-    soft: []
-},*/
 {
     parent: Type.Genre,
     type: Type.Sub,
