@@ -53,6 +53,7 @@
 <section class="flex bg-indigo-950">
 <main class="w-screen h-screen">
 	<SvelteFlow
+	onlyRenderVisibleElements={true}
 		{nodes}
 		{nodeTypes}
 		{edges}

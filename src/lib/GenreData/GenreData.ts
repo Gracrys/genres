@@ -18,8 +18,8 @@ export interface IGenre {
     type: Type,
     label: string,
     id: string
-    hard: string[],
-    soft: string[],
+    hard: IGenre["id"][],
+    soft: IGenre["id"][],
     parent?: Type
     sub?: string
     desc?: string
@@ -194,7 +194,7 @@ export const Genres: IGenre[] = [
     ...HipHop,
     ...Folk,
     ...WorldMusic,
-    ...Classical
+   ...Classical
 ]
 
 
