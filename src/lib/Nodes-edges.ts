@@ -27,6 +27,44 @@ const genresXDict: { [key: string]: number } = {
     'metal': 900
 }
 
+const genresParameters: { [key: string]: {
+    Y?: number
+    X?: number
+    Bleeding?: number
+} } =
+{
+    'rock': {
+        Y: 400,
+        
+    },
+    'metal': {
+        Y: 900,
+        X: 900
+    },
+    'electronics': {
+        Y:-600
+    },
+    'hiphop': {
+        Y: 400
+    },
+    'classical': {
+        Y: -600,
+        Bleeding: 200
+    },
+    'opera': {
+        Y: -600,
+        Bleeding: 200
+    },
+    'gamelan': {
+        Y: -600,
+        Bleeding: 180
+    },
+    'balinese-gamelan': {
+        Y: -600,
+        Bleeding: 180
+    }
+}
+
 
 
 const calculatePosition = (data: IGenre): XYPosition => {
@@ -35,11 +73,10 @@ const calculatePosition = (data: IGenre): XYPosition => {
     let currentStruct = {} as any
     try {
 
-
         currentStruct = data.type == 1 ? {
             id: data.id,
             positionX: genreAccum[data.type].length * 700,
-            positionY: (genresYDict[data.id] || 70),
+            positionY: (genresParameters[data.id]?.Y || 70),
 
             NChildren: 0
         } : {
@@ -48,7 +85,7 @@ const calculatePosition = (data: IGenre): XYPosition => {
                 lookedGenre = genreAccum[data.parent || 1].find(g => g.id == data.hard[0]) as IPositionGenreStruct
                 indexGenre = genreAccum[data.parent || 1].indexOf(lookedGenre)
                 genreAccum[data.parent || 1][indexGenre].NChildren = lookedGenre?.NChildren + 1
-                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (130))) - (genresXDict[lookedGenre.id] || 450)
+                return (lookedGenre.positionX + ((lookedGenre.NChildren + 1) * (genresParameters[data.hard[0]]?.Bleeding || 130))) - (genresXDict[lookedGenre.id] || 450)
 
             })(),
             positionY: (data.parent ? (lookedGenre?.positionY || 1 * data.parent) : 0) + 70,
@@ -98,7 +135,7 @@ export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
             hard: x.hard, 
             soft: x.soft
         },
-        position: calculatePosition(x)
+        position: calculatePosition(x),
     })) || []
 
     const newEdges = sortedArr.map(x => [...edgeMapper(x.id, x.hard, 'hardEdge'), ...edgeMapper(x.id, x.soft, 'softEdge')]).flat()

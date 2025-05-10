@@ -846,7 +846,6 @@ export const Western = [
 {
     type: Type.Genre,
     parent: Type.Genre,
-
     label: 'Art Song',
     id: 'art-song',
       dates: '1500 - 1700 AC',
@@ -967,6 +966,7 @@ export const Western = [
     desc: 'Earliest form that draws from a broad range of artistic sources, including theater, operatic singing, instrumental music, dance, popular music, poetry, and comedy.',
     soft: []
 },
+
 {
     parent: Type.Genre,
     type: Type.Sub,
@@ -1119,38 +1119,6 @@ export const Western = [
     soft: []
 },
 
-{
-    parent: Type.Genre,
-    type: Type.Genre,
-    label: 'Cinematic Classical',
-    id: 'cinematic-classical',
-      dates: '1900 AC',
-    hard: ['western-classical'],
-    desc: 'Orchestral compositions generally associated with soundtracks to modern high-budget films, games, and other non-live media.',
-    soft: []
-},
-{
-    parent: Type.Genre,
-    type: Type.Genre,
-    label: 'Epic Music',
-    id: 'epic-music',
-    sub:'epicore',
-      dates: '1993',
-    hard: ['cinematic-classical', 'electronics'],
-    desc: 'Often associated with Electronic production, heavy percussion such as taiko drums, Choral vocals, and orchestral instrumentation to create a bombastic style commonly linked to movie trailers.',
-    soft: []
-},
-{
-    parent: Type.Genre,
-    type: Type.Genre,
-    label: 'Spaghetti Western',
-    sub: 'Wild west music',
-    id: 'spaghetti-western',
-      dates: '1960s',
-    hard: ['cinematic-classical', 'surf-rock'],
-    desc: 'Epic, cinematic sound evoking imagery of the Wild West, featuring a Surf Rock-inspired guitar tone while taking inspiration from the melodies and harmonies of traditional Mexican Music.',
-    soft: []
-},
 {
     parent: Type.Genre,
     type: Type.Sub,
@@ -1394,8 +1362,8 @@ export const Western = [
     desc: 'Plainchant tradition of Medieval Rome that was closely related to Gregorian Chant, though often more musically ornate.',
     soft: []
 },
-...Modern,
-{
+
+ {
     parent: Type.Genre,
     type: Type.Sub,
     label: 'Motet',
@@ -1699,7 +1667,7 @@ export const Western = [
       hard: ['orchestral-music'],
     desc: 'Large-scale Western Classical Music works for orchestra, typically with four movements: 1) allegro, almost always in sonata-allegro form 2) a slow movement 3) scherzo or minuet 4) finale, typically allegro or rondo.',
     soft: []
-},
+},/*
 {
     parent: Type.Genre,
     type: Type.Sub,
@@ -1719,7 +1687,7 @@ export const Western = [
       hard: ['symphony'],
     desc: 'Fuses symphonic compositional structure and instrumentation with parts written for concertante soloists.',
     soft: []
-},
+},*/
 {
     parent: Type.Genre,
     type: Type.Sub,
@@ -1809,7 +1777,43 @@ export const Western = [
     hard: ['western-classical'],
   desc: 'Incorporation of Spanish Music within the context of Western Classical Music, particularly characterized by the use of the classical guitar.',
   soft: []
-},{
+},
+...Modern,
+
+{
+    parent: Type.Genre,
+    type: Type.Genre,
+    label: 'Cinematic Classical',
+    id: 'cinematic-classical',
+      dates: '1900 AC',
+    hard: ['western-classical'],
+    desc: 'Orchestral compositions generally associated with soundtracks to modern high-budget films, games, and other non-live media.',
+    soft: []
+},
+
+{
+    parent: Type.Genre,
+    type: Type.Genre,
+    label: 'Epic Music',
+    id: 'epic-music',
+    sub:'epicore',
+      dates: '1993',
+    hard: ['cinematic-classical', 'electronics'],
+    desc: 'Often associated with Electronic production, heavy percussion such as taiko drums, Choral vocals, and orchestral instrumentation to create a bombastic style commonly linked to movie trailers.',
+    soft: []
+},
+{
+    parent: Type.Genre,
+    type: Type.Genre,
+    label: 'Spaghetti Western',
+    sub: 'Wild west music',
+    id: 'spaghetti-western',
+      dates: '1960s',
+    hard: ['cinematic-classical', 'surf-rock'],
+    desc: 'Epic, cinematic sound evoking imagery of the Wild West, featuring a Surf Rock-inspired guitar tone while taking inspiration from the melodies and harmonies of traditional Mexican Music.',
+    soft: []
+},
+{
   parent: Type.Sub,
   type: Type.Scene,
   label: 'Christian Music',
@@ -1818,6 +1822,7 @@ export const Western = [
   desc: 'Scene that encircles all religious christians rites around music',
   soft: []
 },
+
 ]
 
 export const Classical = [    {
