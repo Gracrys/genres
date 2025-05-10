@@ -27,7 +27,7 @@ this marks the start of the pre alpha
 - **ambient**: 60%
 - **Blues**: i dont even know where to start
 - **country**: x.x
-- **classical**: 40% 
+- **classical**: 80% 
 - **spoken word and ballads**: 0
 
 
