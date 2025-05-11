@@ -32,6 +32,15 @@ export  const Ambient =  [{
         id: 'black-ambient',
         hard: ['dark-ambient'],
         soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Space Ambient',
+        sub: 'Space Music',
+        id: 'space-ambient',
+        hard: ['ambient', 'prog-electronics'],
+        soft: []
     }
 ]
 
@@ -161,8 +170,9 @@ export const AvantGarde = [
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Power Noise',
+        sub: ' rhythm n noise',
         id: 'power-noise',
         hard: ['noise', 'electronics'],
-        soft: []
+        soft: ['industrial']
     },
 ]

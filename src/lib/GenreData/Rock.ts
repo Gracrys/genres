@@ -801,5 +801,12 @@ export const AlternativeRock = [
         hard: ['alternative-rock', 'alternative-metal'],
         soft: []
     },
-
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Electronic Rock',
+        id: 'electronic-rock',
+        hard: ['rock', 'electronics'],
+        soft: []
+    },
 ]

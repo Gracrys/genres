@@ -21,7 +21,11 @@
 </i>
     </span>
     <span>
-        {data.notableBands}
+        <b>
+            Notable Artists
+        </b>
+        <br>
+        {data.artists}
     </span>
 
     <footer class="mt-auto">

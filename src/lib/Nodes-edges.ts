@@ -62,6 +62,10 @@ const genresParameters: { [key: string]: {
     'balinese-gamelan': {
         Y: -600,
         Bleeding: 180
+    },
+    'world-music': {
+        Y: 800,
+      //  Bleeding: 180
     }
 }
 
