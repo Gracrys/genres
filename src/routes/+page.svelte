@@ -48,6 +48,7 @@
         SceneNode,
         TheorynFusion,
 	};
+	
 	const snapGrid: [number, number] = [25, 25];
 </script>
 <section class="flex bg-indigo-950">

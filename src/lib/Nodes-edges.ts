@@ -1,5 +1,6 @@
 import type { Edge, Node, XYPosition } from "@xyflow/svelte"
 import { Genres, Type, type IGenre } from "./GenreData/GenreData"
+import { findRepeatingElements } from "./Utils/CheckDuplicates"
 
 
 interface IPositionGenreStruct {
@@ -127,6 +128,8 @@ const exceptions: { [key: string]: Type } = {
 
 export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
     const sortedArr = sortNodes(arr)
+    
+console.log(findRepeatingElements(arr))
     const newNodes = sortedArr.map(x => ({
         id: x.id,
         type: TypeDictNode[exceptions[x.id] || x.type],
