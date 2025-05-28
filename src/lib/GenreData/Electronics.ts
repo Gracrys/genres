@@ -343,9 +343,9 @@ export const Breakbeat = [{
     parent: Type.Genre,
     label: 'Baltimore Club',
     id: 'baltimore-club',
-    hard: ['breakbeat'],
+    hard: ['breakbeat', 'house'],
     soft: [],
-    desc: 'Drew on the "booty bass" syncopation of Miami Bass, combined with Breakbeat rhythms around 130 BPM and chopped up vocal samples as found in Ghetto House.',    
+desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbeat rhythms around 130 BPM and chopped up vocal samples as found in Ghetto House.'
 },
 {
     type: Type.Sub,
@@ -695,13 +695,49 @@ export const EDM = [
 {
     type: Type.Genre,
     parent: Type.Genre,
-    label: 'Hardvawe',
-    id: 'hardvawe',
+    label: 'Hardwave',
+    id: 'hardwave',
     hard: ['edm', 'trance', 'hardstyle', 'wave'],
     soft: [],
     desc: 'Harder, festival-oriented offshoot of Wave, combining its &#34;reese&#34; basses and icy synths with Trap [EDM] drum patterns, build-up-drop structures, and fuller sound influenced by Trance and Hardstyle.'
 },
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Jungle-Terror',
+    id: 'jungle-terror',
+    hard: ['edm'],
+    soft: ['dutch-house', 'tribal-house'],
+    desc: 'Emerging mostly from Dutch House and Big Room House, incorporates Tribal House-influenced percussion, hard kicks, and animal sounds resulting in a wild, jungle-resembling atmosphere in a festival EDM-oriented context.'
 
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Krushclub',
+    id: 'krushclub',
+    hard: ['edm'],
+    soft: ['jersey-club'],
+    desc: 'Bitcrushed synths and occasionally bitcrushed vocals, energetic Jersey Club-derived beats, and elements of Sigilkore\'s dark production style.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Kuduro',
+    id: 'kuduro',
+    hard: ['edm', 'techno', ' house'],
+    soft: ['kilapanga', 'semba'],
+    desc: 'Angolan music combining traditional Kilapanga and Semba with Techno and House.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Batida',
+    id: 'batida',
+    hard: ['kuduro'],
+    soft: [],
+    desc: 'Initially developed in the late 80s in Luanda, Angola, as a mixture of Soca- and Zouk-based percussion samples.'
+},
     {
         type: Type.Scene,
         parent: Type.Genre,
@@ -828,8 +864,201 @@ export const House = [{
     label: 'House',
     id: 'house',
     hard: ['edm'],
-    soft: []
+    soft: [],
+    desc: 'Large, hugely popular group of related Electronic Dance Music styles, initially developing from Disco in the early 1980s.'
 
+},
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Acid House',
+    id: 'acid-house',
+    hard: ['house'],
+    soft: [],
+desc: 'Emerged in the mid-1980s, characterised by repetitive basslines created with the distinctive modulated squelching sound of the Roland TB-303 synthesiser.'
+},
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Deep House',
+    id: 'deep-house',
+    hard: ['house'],
+    soft: [],
+desc: 'Emerged in the United States during the mid-1980s, featuring a relaxed tempo and influences from Jazz, Funk, and Soul.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Lo-fi House',
+    id: 'lo-fi-house',
+    hard: ['deep-house', 'outsider-house'],
+    soft: [],
+desc: 'Primarily distinguished from earlier styles of outsider house by its stricter reliance on deep house elements, cranky, nocturnal, and nostalgic atmospheres, and a distinct dreamy, lo-fi aesthetic'
+},
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Afro House',
+    id: 'afro-house',
+    hard: ['house'],
+    soft: ['deep-house'],
+desc: 'Emerged by fusing Deep House with Southern African Music, characterized by hypnotizing drum patterns of shakers and congas, often sampled African vocals or soulful original features, and spiritual, organic, melodic atmosphere.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Amapiano',
+    id: 'amapiano',
+    hard: ['house'],
+    soft: ['deep-house'],
+desc: 'House from South Africa deriving from previous popular genres including Gqom, Kwaito, and Deep House..'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Afropiano',
+    id: 'afropiano',
+    hard: ['amapiano', 'afrobeats'],
+    soft: [],
+desc: 'Blends the easy-going, poppy, and melodic Afrobeats sound and rhythms with major Amapiano elements, like lush, jazzy, and laid-back atmospheres often featuring light piano chords.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ambient House',
+    id: 'ambient-house',
+    hard: ['house', 'ambient'],
+    soft: [],
+desc: 'Primarily British genre developed in the 1990s with beats, synthesizers, and vocals in styles similar to House, treated with effects that are often described as dream-like or chilled'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ballroom',
+    id: 'ballroom',
+    hard: ['house'],
+    soft: [],
+desc: 'Emerging from the predominantly Black and LGBT Harlem ballroom culture, it is characterized by hard-hitting rhythms, generally improvised chanting by MCs known as commentators, and a distinctive crash sample.'
+},
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Bass House',
+    id: 'bass-house',
+    hard: ['house'],
+    soft: ['tech house', 'brostep'],
+desc: 'Busy, punchy percussion, prominent basslines and dirty, distorted synths resembling other bass music genres, with influences including Brostep, Fidget House, Bassline, Speed Garage, and Tech House.'
+},
+
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Bassline',
+    id: 'bassline',
+    hard: ['house'],
+    soft: [],
+desc: 'Strong emphasis on intricate basslines as well as four-on-the-floor beat patterns.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Big Room House',
+    id: 'big-room-house',
+    hard: ['house'],
+    soft: [],
+desc: 'Energetic, festival-oriented style characterized by heavy reverb, intense build-ups, strong kicks, minimalistic drop melodies, and sparse, raw breakdowns.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Brazilian Bass',
+    id: 'brazilian-bass',
+    hard: ['house'],
+    soft: ['deep-house','tech-house'],
+desc: 'Originated in the 2010s in Brazil, taking influences from Deep House and Tech House, characterized by deep, punchy basslines making use of detuning and filtering effects.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Slap House',
+    id: 'slap-house',
+    hard: ['brazilian-bass', 'future-house'],
+    soft: [],
+desc: 'Taking influences from Brazilian Bass and Future House, characterized by prominent, bouncy bassline and simple, upbeat melodies.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Mega Funk',
+    id: 'mega-funk',
+    hard: ['brazilian-bass', 'slap-house'],
+    soft: [],
+desc: 'Blends funk vocal performances with production derived from mainstage 2010s House genres like Brazilian Bass and Slap House.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Bubbling House',
+    id: 'bubbling-house',
+    hard: ['house'],
+    soft: ['dutch-house'],
+desc: 'Developed in the Netherlands in the 2000s, combining the older style of Bubbling with more modern House, especially Dutch House.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Changa Tuki',
+    id: 'changa-tuki',
+    hard: ['house'],
+    soft: ['techno', 'tribal-house'],
+desc: 'Emerged in Caracas; highly influenced by 1990s Techno and Tribal House, featuring fast tempos, strident synthesizers, hard-thumping percussion lines, and plenty of breakbeats.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Chicago hard house',
+    id: 'chicago-hard-house',
+    hard: ['house'],
+    soft: ['ghetto-house'],
+desc: 'Originated from Chicago around the mid-1990s as a development of Ghetto House, emphasizing hard-hitting, off-beat drum patterns, fast tempos, and lack of melodies.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'La Hard House',
+    id: 'la-hard-house',
+    hard: ['chicago-hard-house'],
+    soft: [],
+desc: 'Distorted, minimalistic TR-909 derived rhythms, basic climaxing structures and heavy reliance on high-pitched synthesizer / hoover sounds.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Chicago house',
+    id: 'chicago-house',
+    hard: ['house'],
+    soft: [],
+desc: 'Umbrella term for a broad variety of House that originated from Chicago in the (mostly mid-to-late) 1980s and early 90s.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Diva house',
+    id: 'diva-house',
+    hard: ['house'],
+    soft: [],
+desc: 'Dominant, anthemic female vocals, common use of piano stabs, and energetic, driving four-on-the-floor rhythms.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Hardbag',
+    id: 'hardbage',
+    hard: ['diva-house', 'euro-house'],
+    soft: ['hard-dance'],
+desc: 'Development of handbag / Diva House characterized by heavier, hard hitting percussion, more pronounced rave and early Hard Dance elements, and fewer vocals.'
 },
 {
     type: Type.Sub,
@@ -896,14 +1125,39 @@ export const Garage = [{
 
 
 export const Techno = [{
+    
+    
     type: Type.Genre,
-    parent: Type.Super,
+    parent: Type.Genre,
     label: 'Techno',
     id: 'techno',
-    hard: ['electronics'],
+    hard: ['edm'],
     soft: []
 
-}]
+},
+{
+    
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Hypertechno',
+    id: 'hypertechno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Emerged in the 2020s by mixing fast tempos, prominent basslines, and hard-hitting drums derived from popular Techno with simplistic, catchy melodies and vocals, often influenced by 2000s Hard Dance, Eurodance and Electropop.'
+
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Hyper-Techno',
+    id: 'hyper-techno',
+    hard: ['techno'],
+    soft: ['belgian-techno'],
+    desc: 'Exaggerated fast form of Belgian Techno for the Japanese market, focusing mainly on synth sounds and samples typical of 1990s dance music.'
+
+},
+
+]
 
 export const Trance = [{
     type: Type.Genre,
@@ -1536,9 +1790,403 @@ export const Electronics = [
 }, 
 
    ...House,
+   {
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Electro House',
+    id: 'electro-house',
+    hard: ['electro', 'house'],
+    desc: 'Typically instrumental, leftfield Grime style characterized by sparse, weightless percussion and spectral, atmospheric production.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Fidget House',
+    id: 'fidget-house',
+    hard: ['electro-house','breakbeat-hardcore'],
+    desc: 'Makes heavy use of Breakbeat hardcore-esque synth stabs, pitch bending of basslines, and cut-up vocal samples, as well as glitchy, or \"choppy\", 4/4 rhythms.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Complextro',
+    id: 'complextro',
+    hard: ['electro-house', 'brostep', 'fidget-house'],
+    desc: 'Features densely-layered sound design, fast-paced cut-up sections, aggressive stabs, and common crossover with Brostep and Fidget House.',
+    soft: []
+}, 
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Dutch House',
+    id: 'dutch-house',
+    hard: ['electro-house', 'fidget-house'],
+    desc: 'High-pitched wonky synth melodies and heavy influence from Fidget House which developed in the Netherlands around 2007-08.',
+    soft: []
+}, 
+
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Noiadance',
+    id: 'noiadance',
+    hard: ['dutch-house', 'moombahton'],
+    desc: 'Blends Dutch House production with Funk brasileiro vocals and drumming on top of Moombahton rhythms.',
+    soft: []
+}, 
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'French electro',
+    id: 'french-electro',
+    hard: ['electro-house'],
+    desc: 'Mixes Electro House with major elements of genres such as Electroclash, Nu-Disco, Synth Funk, and even Electro-Industrial, resulting in a harsh, punchy, and funky midtempo sound.',
+    soft: [ 'electroclash', 'electro-industrial', 'nu-disco', 'synth-funk']
+}, 
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Melbourne Bounce',
+    id: 'melbourne-bounce',
+    hard: ['electro-house'],
+    desc: 'Offbeat basslines giving it a \"bouncy\" groove, and minimalistic, side-chained melodies often making use of [Genre29430]-influenced synths, horns or vocal chops, resulting in a flippant, party-oriented atmosphere',
+    soft: [ 'dutch-house']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Electrofunk',
+    id: 'electrofunk',
+    hard: ['house'],
+    desc: 'Blends Funk brasileiro vocals with production from popular late 2000s and early 2010s House.',
+    soft: [ 'funk-brasileiro']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Euro House',
+    id: 'euro-house',
+    hard: ['house'],
+    desc: 'Vocal-focused style emerging in the late 1980s in Europe, developing in parallel with Eurodance.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Festival Progressive House',
+    id: 'festival-progressive-house',
+    hard: ['house', 'electro-house'],
+    desc: 'Uplifting, melodic, energetic but clean drops, featuring modern supersaws and pianos, taking influences from Progressive House, Uplifting Trance, but applying them to a form structurally closer to Big Room House and Electro House.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Funky House',
+    id: 'funky-house',
+    hard: ['house'],
+    desc: 'Funky, warm, catchy basslines on top of looped Funk or Disco samples, resulting in an upbeat, bouncy, and pacy groove.',
+    soft: ['funk', 'disco']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Future Funk',
+    id: 'future-funk',
+    hard: ['house', 'vaporwave'],
+    desc: 'Sample-based form of House which formed out of Vaporwave in the early 2010s.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Future House',
+    id: 'future-house',
+    hard: ['house', 'electro-house'],
+    desc: 'Features distinctive metallic-sounding drops and frequency-modulated basslines at around 120-130 BPM.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Future Bounce',
+    id: 'future-bounce',
+    hard: ['future-house', 'melbourne-dance'],
+    desc: 'Fusion of Melbourne Dance and [Genre37063] that combines the former\'s basslines and bouncy, upbeat drops with the latter\'s metallic, pronounced synth leads.',
+    soft: []
+}, 
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Garage House',
+    id: 'garage-house',
+    hard: ['house', 'disco'],
+    desc: 'Disco-influenced style of House that developed in the 1980s, incorporating elements of Gospel, Soul, and Dub, before evolving into a more upbeat style that prominently features crisp syncopated hi-hats and synth stabs.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Gospel House',
+    id: 'gospel-house',
+    hard: ['garage-house', 'gospel'],
+    desc: 'Incorporates heavy Gospel elements and singing borrowed from classic and contemporary gospel, usually in the form of choir vocals and call-and-response chants.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Jersey Sound',
+    id: 'jersey-sound',
+    hard: ['garage-house', 'gospel'],
+    desc: 'Soulful, melodic, Gospel-infused House music developed in Newark, NJ in the late 1980s and early 1990s with an emphasis on songcraft.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ghetto House',
+    id: 'ghetto-house',
+    hard: ['house'],
+    desc: 'Rough sound based around minimal drum machine-driven tracks and heavy usage of vocal samples.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Juke',
+    id: 'juke',
+    hard: ['ghetto-house'],
+    desc: 'Faster than Ghetto House, playing at 160bpm, and makes striking use of unconventional drum patterns which differ wildly from other House styles.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Kwaito',
+    id: 'kwaito',
+    hard: ['house'],
+    desc: 'Emerged from South Africa in the early 1990s, taking influence from Disco and Hip Hop.',
+    soft: ['disco', 'hip-hop']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'G-House',
+    id: 'g-house',
+    hard: ['house'],
+    desc: 'Deep, dark form of House music that primarily incorporates rap samples or original rapping on top of minimal, bassy beats.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Gqom',
+    id: 'gqom',
+    hard: ['house', 'kwaito'],
+    desc: 'Evolved from South African House, specifically Kwaito; often described as a more minimal and raw version.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Hip House',
+    id: 'hip-house',
+    hard: ['house', 'hip-hop'],
+    desc: 'Incorporates production elements of early Hip Hop and usually rapping into 1980s House.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Italo House',
+    id: 'italo-house',
+    hard: ['house'],
+    desc: 'Originated in Italy during the late 1980s, making use of anthemic pianos, diva vocals, and Dance-Pop song structures.',
+    soft: ['dance-pop']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Jackin House',
+    id: 'jackin-house',
+    hard: ['house'],
+    desc: 'Punchy, \'shuffly\' percussion, strong grooves, funky basslines, and chopped-up samples.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Latin House',
+    id: 'latin-house',
+    hard: ['house'],
+    desc: 'Emerged in the second half of the 1980s, blending four-on-the-floor beats with Hispanic American Music influences from Puerto Rico, Mexico, Cuba, Dominica, and Colombia.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Melodic House',
+    id: 'melodic-house',
+    hard: ['house'],
+    desc: 'Arpeggiated synth lines, focus on a chilled and laid-back atmosphere, and influence from genres such as Progressive House and Deep House.',
+    soft: ['progressive-house', 'deep-house']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'MicroHouse',
+    id: 'microhouse',
+    hard: ['house'],
+    desc: 'Stripped-down, minimal form of House, originating in the late 90s, which takes influence from Minimal Techno, Glitch and IDM.',
+    soft: ['minimal-techno', 'glitch', 'idm']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Organic House',
+    id: 'organic-house',
+    hard: ['house'],
+    desc: 'Subtle drums and grooves, slow tempos, and acoustic, traditional instrumentation, resulting in an organic, warm sound and spiritual atmosphere.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Outsider House',
+    id: 'outsider-house',
+    hard: ['house'],
+    desc: 'Mostly derived from Deep House; intentional use of rough, lo-fi production, often utilizing a mix of analog/analog-like and digital instrumentation.',
+    soft: ['deep-house']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Phonk House',
+    id: 'phonk-house',
+    hard: ['house', 'drift-phonk'],
+    desc: 'Merges Drift phonk\'s nocturnal atmospheres, cowbell melodies, vocal samples, and energetic production, with [genre463] rhythms and tempos, characterized by a banging and upbeat sound.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Progressive House',
+    id: 'progressive-house',
+    hard: ['house', 'trance'],
+    desc: 'Trance-influenced strain of House that grew to prominence in the early 1990s, using polished production and gradual progressions..',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Romanian Popcorn',
+    id: 'romanian-popcorn',
+    hard: ['house'],
+    desc: 'Emerged in the second half of the 2000s in Romania, often featuring brass melodies and \"staccato\" pluck grooves.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Speed Garage',
+    id: 'speed-garage',
+    hard: ['house'],
+    desc: 'Primarily British style that paved the way for UK Garage, combining cut-up vocal samples and sped up four-on-the-floor Garage House rhythms with Jungle-esque basslines.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Stutter House',
+    id: 'stutter-house',
+    hard: ['house'],
+    desc: 'Emerged in the 2020s taking influences from Melodic House, Trance, and Future Garage; features distinctive chopping of vocal samples and pads.',
+    soft: ['melodic-house', 'trance', 'future-garage',]
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Tech House',
+    id: 'tech-house',
+    hard: ['house'],
+    desc: 'Emerged in the mid-1990s taking influences from Techno, broadly characterized by minimalistic and repetitive melodies, focus on the bassline, and constant groove recognizable by prominent off-beat hi-hats.',
+    soft: ['techno',]
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Deep Tech',
+    id: 'deep-tech',
+    hard: ['tech-house', 'uk-garage'],
+    desc: 'Incorporates UK Garage rhythms and synths stabs, influences from British rave music, UK Bass and UK Deep House, resulting in an urban, subdued, but danceable sound with deep, muted basslines.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Rominimal',
+    id: 'rominimal',
+    hard: ['tech-house'],
+    desc: 'Hypnotic, minimal, and \"dubby\" loops, featuring subtle and intricate synth pads, cranky, clicky percussion, and bouncy, pulsing basslines.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Tribal House',
+    id: 'tribal-house',
+    hard: ['house'],
+    desc: 'Prominent, syncopated rhythms of tribal drums such as toms and bongos on top of a House beat, usually resulting in a percussive, energetic sound, while ranging in mood.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Guaracha [EDM]',
+    id: 'guaracha-edm',
+    hard: ['tribal-house'],
+    desc: 'Originated in Colombia, featuring &#34;fluttering&#34; trumpets, accordion, and tambora drums.',
+    soft: []
+}, 
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Tropical House',
+    id: 'tropical-house',
+    hard: ['house'],
+    desc: 'Offshoot of Deep House featuring slow tempos around 100-115 BPM, light percussion and acoustic instrumentation, setting out to create a relaxed, summery, beach-like atmosphere.',
+    soft: ['deep-house']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'UK Jackin',
+    id: 'uk-jackin',
+    hard: ['house'],
+    desc: 'Successor to British Bassline, characterized by strong basslines, dark atmospheres, and dominant grooves.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Vinahouse',
+    id: 'vinahouse',
+    hard: ['house'],
+    desc: 'Fast-paced House popular in Vietnam, remixing Vietnamese melodies.',
+    soft: []
+}, 
+
    ...Techno,
    ...Trance,
-   ...Bit,
+   //...Bit,
    ...ChillOut,
    ...Disco,
     ...Glitch,

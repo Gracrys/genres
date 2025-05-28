@@ -15,7 +15,10 @@ this marks the start of the pre alpha
 - **Rock** : 60%
 - **Avant-garde**: 70%
 - **Industrial**: 50%
-- **electronics**: the hardest part was the initial classification tbh
+- **electronics**: the hardest part was the initial classification tbh 30%
+- **House**: 70%
+- **Techno**: 10%
+- **hardcore, step, hardtek, breakbeat**: 80% (lacking some recs and better descs tho)
 - **world music**: i only got caribbean and is at 80%
 - **hiphop**: x.x
 - **folk**: holy macarronni that thing is big

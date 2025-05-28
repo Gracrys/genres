@@ -49,7 +49,7 @@ const genresParameters: { [key: string]: {
         Y: 400
     },
     'classical': {
-        Y: -600,
+        Y: -1200,
         Bleeding: 200
     },
     'opera': {
@@ -67,6 +67,10 @@ const genresParameters: { [key: string]: {
     'world-music': {
         Y: 800,
       //  Bleeding: 180
+    },
+    'dance' :{
+        Y:400,
+        X: 400
     }
 }
 
