@@ -6,23 +6,24 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 
 
 - [ ] - Add descriptions (help wanted)
-- [ ] - Add recomended entry level bands and more important bands and or... dunno (help wanted)
-- [ ] - add relationships to description tab
+- [ ] - Add recomended level bands and more important bands and or... dunno (help wanted)
+- [x] - add relationships to description tab
 - [ ] - filtering and searching genres and tags
 - [ ] - To fill the genre list
 
 
 
-**Genre percentage: 15%** (more or less)
+**Genre percentage: 45%** (more or less)
 
 - **Rock** : 60%
 - **Avant-garde**: 70%
-- **Industrial**: 50%
-- **electronics**: the hardest part was the initial classification tbh 30%
+- **Industrial**: 60%
+- **electronics**: the hardest part was the initial classification tbh 70%
 - **House**: 70%
 - **Techno**: 10%
 - **hardcore, step, hardtek, breakbeat**: 80% (lacking some recs and better descs tho)
 - **world music**: i only got caribbean and is at 80%
+- **Caribbean**: 80%
 - **hiphop**: x.x
 - **folk**: holy macarronni that thing is big
 - **Pop**: x.x

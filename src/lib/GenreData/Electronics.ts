@@ -578,15 +578,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     soft: [],
     desc: 'Emerged in the 2010s as the hybridization of diverse Electronic Dance Music genres with an abrasive Post-Industrial sound',    
 },
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Digital Cumbia',
-    id: 'digital-cumbia',
-    hard: ['edm', 'cumbia'],
-    soft: [],
-    desc: 'Mixes an Electronic sound into traditional Cumbia through influences from House, Dancehall, Hyphy, and Dubstep.',    
-},
+
 {
     type: Type.Genre,
     parent: Type.Genre,
@@ -658,7 +650,36 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
 },
 
 ]
-
+export const Bass = [
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'UK Bass',
+        id: 'uk-bass',
+        hard: ['edm'],
+        soft: [],
+        desc: 'Influenced by UK Garage-related styles and the regional styles of British immigrants, including Soca and West African-inspired Tribal House.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Wave',
+        id: 'wave',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Melancholic, atmospheric, melodic beats, defined by its Trap and Cloud Rap influence, ethereal and cold production style, and abundant use of sub bass..'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Hardwave',
+        id: 'hardwave',
+        hard: ['wave', 'edm'],
+        soft: ['trance', 'hardstyle', 'trap'],
+        desc: 'Harder, festival-oriented offshoot of Wave, combining its &#34;reese&#34; basses and icy synths with Trap [EDM] drum patterns, build-up-drop structures, and fuller sound influenced by Trance and Hardstyle..'
+    },
+   
+]
 export const EDM = [
     {
         type: Type.Genre,
@@ -677,7 +698,19 @@ export const EDM = [
         sub: 'Intelligent dance Music',
         id: 'idm',
         hard: ['edm'],
-        soft: []
+        soft: [],
+        dates: '1991',
+        bands: 'Aphex twin, Bjork, Flying lotus',
+        desc: 'Emerged through the development of Electronic Dance Music idioms into a less club-oriented and more experimental direction, often incorporating unconventional sound design and complex rhythms.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Drill & Bass',
+        id: 'drill-n-bass',
+        hard: ['idm', 'dnb'],
+        soft: [],
+        desc: 'Frenzied, intricate beat programming inspired by Drum and Bass'
     },
     {
         type: Type.Genre,
@@ -752,24 +785,8 @@ export const EDM = [
         soft: [],
         desc: 'Highly percussive, syncopated rhythms, influences from global contemporary genres, and lack of melodic elements, with a tempo lingering around 130 BPM'
     },
-  {
-    type: Type.Genre,
-    parent: Type.Genre,
-    label: 'Hardvapour',
-    id: 'hardvapour',
-    hard: ['edm', 'techno'],
-    soft: [],
-    desc: 'Influenced by Hardcore [EDM] and Techno and made in response to the Vaporwave movement.'
-},
-{
-    type: Type.Genre,
-    parent: Type.Genre,
-    label: 'Hardwave',
-    id: 'hardwave',
-    hard: ['edm', 'trance', 'hardstyle', 'wave'],
-    soft: ['trap'],
-    desc: 'Harder, festival-oriented offshoot of Wave, combining its &#34;reese&#34; basses and icy synths with Trap [EDM] drum patterns, build-up-drop structures, and fuller sound influenced by Trance and Hardstyle.'
-},
+
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -780,15 +797,7 @@ export const EDM = [
     desc: 'Emerging mostly from Dutch House and Big Room House, incorporates Tribal House-influenced percussion, hard kicks, and animal sounds resulting in a wild, jungle-resembling atmosphere in a festival EDM-oriented context.'
 
 },
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Krushclub',
-    id: 'krushclub',
-    hard: ['edm'],
-    soft: ['jersey-club'],
-    desc: 'Bitcrushed synths and occasionally bitcrushed vocals, energetic Jersey Club-derived beats, and elements of Sigilkore\'s dark production style.'
-},
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -924,14 +933,348 @@ export const EDM = [
     soft: ['dubstep', 'trap'],
     desc: 'Loud synth leads with a distorted, gritty, and &#34;slimy&#34; sound design, usually laid on top of production inspired by or taken directly from genres such as Halftime, Trap [EDM], Brostep, and other forms of 2010s EDM'
 },
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Tribal Guaranchero',
+    id: 'tribal-guaranchero',
+    hard: ['edm'],
+    soft: ['electro-house', 'mexican-folk-music', 'cumbia'],
+    desc: 'Features percussion from Cumbia and Mexican Folk Music with upbeat Electro House-derived production and fast, triplet-oriented rhythmic patterns.'
+},
+...Bass,
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Wonky',
+    id: 'wonky',
+    hard: ['edm', 'dubstep', 'hiphop'],
+    soft: [],
+    desc: 'Off-kilter fusion of Dubstep and Hip Hop which first developed in the mid-to-late 2000s.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Aquacrunk',
+    id: 'aquacrunk',
+    hard: ['wonky'],
+    soft: [],
+    desc: 'Syncopated, half-time rhythms inspired by Dubstep and Grime, funky, sludgy, aquatic-sounding synths and sound design.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Electro-Disco',
+    id: 'electro-disco',
+    hard: ['edm', 'disco'],
+    desc: 'Disco instrumentation is largely - if not entirely - replaced by synthesizers and augmented with futuristic elements such as the vocoder.',
+    soft: ['electro']
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Hi-NRG',
+    id: 'hi-nrg',
+    hard: ['electro-disco', 'nrg'],
+    desc: 'Emerged in the late 1970s and quickly became the most popular form of Electronic Dance Music in the LGBT club scenes of San Francisco and New York, characterized by its uptempo, high-energy sound.',
+    soft: [],
+    dates: 'late 1970s',
+    bands: 'Dead or alive'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Italo-Disco',
+    id: 'italo-disco',
+    hard: ['electro-disco'],
+    desc: 'Produced primarily in Italy and is characterized by the use of synthesizers, drum machines, and sometimes vocoders to create a mechanical, Electronic version of Disco with futuristic atmosphere.',
+    soft: [],
+    dates: 'late 1970s'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Spacesynth',
+    id: 'spacesynth',
+    hard: ['italo-disco'],
+    desc: 'Highly melodic, often instrumental futuristic strain, formed under the heavy influence of Space Disco, Progressive Electronic and, later, early Eurobeat.',
+    soft: []
+},
 
-    {
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Red Disco',
+    id: 'red-disco',
+    hard: ['electro-disco'],
+    desc: 'Continuum of various eclectic forms, derived mainly from late Euro-Disco, but also Italo-Disco, Hi-NRG and Eurobeat, and developed in the Soviet Union in the mid-to-late 1980s.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Space Disco',
+    id: 'space-disco',
+    hard: ['electro-disco'],
+    desc: 'Emerged in Europe in the mid-to-late 1970s, characterized by layers of oscillating synth, space-oriented sound effects, and a futuristic sound inspired by contemporary sci-fi media.',
+    soft: []
+},{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Electro Swing',
+    id: 'electro-swing',
+    hard: ['edm', 'swing'],
+    desc: 'Upbeat, energetic style that splices Swing with Electronic Dance Music, looking to recapture the atmosphere of late 1920s to mid-1940s Jazz within a more updated club-friendly medium.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Eurobeat',
+    id: 'eurobeat',
+    hard: ['edm'],
+    desc: 'Fast-paced with roots in Hi-NRG and Italo-Disco; became mainly popular in Japan in the 1990s.',
+    soft: ['hi-nrg', 'italo-disco'],
+    dates: 'mid 1980s',
+    bands: 'Dave Rodgers'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'J-Euro',
+    id: 'j-euro',
+    hard: ['eurobeat'],
+    desc: 'Italian-oriented Japanese scene of Eurobeat, which emerged with Japanese-language covers of Italian songs in the early-to-mid-1990s.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Eurodance',
+    id: 'eurodance',
+    dates: 'late 1980s',
+    bands: 'Gigi d\' angostino, cher, scatman, culture beat, alice deejay',
+    hard: ['edm'],
+    desc: 'Takes elements of Euro-Disco, House, Techno, and Hi-NRG while featuring on-beat kick, hi-hat and snare sounds at around 110 to 150 bpm.',
+    soft: ['hi-nrg', 'house', 'euro-disco', 'techno']
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Electroclash',
+    id: 'electroclash',
+    hard: ['edm'],
+    desc: 'Draws from 1980s styles such as Electro, New Wave, and Electro-Disco combined with Techno, resulting in minimal, throbbing beats and basslines, buzzing synthesizer parts, vocoders and often monotone, half-spoken, half-sung vocals.',
+    soft: ['electro', 'new-wave', 'electro-disco']
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Bubblegum-dance',
+    id: 'bubblegum-dance',
+    hard: ['eurodance'],
+    desc: 'Playful, childlike style with a Bubblegum-like atmosphere that often incorporates high-pitched, light-hearted, and usually female-fronted vocals.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Italo-dance',
+    id: 'italo-dance',
+    hard: ['eurodance'],
+    desc: 'Appeared in the 1990s after the decline of Italo-Disco, featuring rhythmic influence from that genre.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Flex Dance Music',
+    id: 'flex-dance',
+    hard: ['edm'],
+    desc: 'Largely instrumental; infused with Electronic Dance Music elements.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Footwork',
+    id: 'footwork',
+    hard: ['edm'],
+    desc: 'Extensive use of drum fills, tom drums, handclaps, and snares within fast-paced, highly syncopated beats not bound to a 4/4 kick rhythm.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Freestyle',
+    id: 'freestyle',
+    hard: ['edm'],
+    desc: 'Electro-influenced; developed in Latino communities in New York and Miami in the 1980s, especially dominated by Latin Freestyle and its Latin influences',
+    soft: ['electro']
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Latin Freestyle',
+    id: 'latin-freestyle',
+    hard: ['freestyle'],
+    desc: 'Displays a heavy influence of Hispanic American Music alongside the Disco, Hip Hop, and Electro influences of Freestyle.',
+    soft: ['disco', 'hiphop','electro']
+},
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Funk mandelão',
+    id: 'funk-mandelao',
+    hard: ['edm'],
+    desc: '"Simple lyricism, raw and minimalistic production, and distinct drops with bursting bass.',
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Beat Bruxaria',
+    id: 'beat-bruxaria',
+    hard: ['funk-mandelao'],
+    desc: 'São Paulo-originated Funk brasileiro with aggressive, distorted and high-pitched beats featuring minimalistic percussion and diversified sampling.',
+    soft: []
+},
+
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Brazilian Phonk',
+    id: 'brazilian-phonk',
+    hard: ['funk-mandelao', 'funk', 'phonk'],
+    desc: 'Merges Funk automotivo\'s rhythms, vocals, and energy, with the energetic and nocturnal production typical of the Drift Phonk scene, and Phonk House.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Funk Automotivo',
+    id: 'funk-automotivo',
+    hard: ['funk-mandelao'],
+    desc: 'Catchy, repetitive synths accompanied by a strong four-on-the-floor kick and loud, reverberated vocals.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Ritmada',
+    id: 'ritmada',
+    hard: ['funk-mandelao'],
+    desc: 'Short, repetitive and resonant beats with more danceable, immersive grooves drawn out of Afro-Brazilian instrumentation, a cleaner, more radio-friendly sound and greater focus on lyrics.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Funkot',
+    id: 'funkot',
+    hard: ['edm'],
+    desc: 'Fast-paced Indonesian form of Electronic Dance Music that combines Eurodance and Trance synths with the syncopated rhythm from Dangdut koplo.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Breakbeat Kota',
+    id: 'breakbeat-kota',
+    hard: ['funkot', 'breakbeat'],
+    desc: 'Indonesian style that slows down the syncopated rhythms of Funkot to moderate tempos around 130 BPM.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Jungle Dutch',
+    id: 'jungle-dutch',
+    hard: ['breakbeat-kota'],
+    desc: 'Combines the high-pitched synth leads of Dutch House with the frantic &#34;tribal&#34; rhythms of Jungle Terror.',
+    soft: []
+}, 
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Future Bass',
+    id: 'future-bass ',
+    hard: ['edm'],
+    desc: 'Woozy, detuned synthesizers, 7th chords, harsh basslines, syncopated percussion with fast-paced hi-hats and a melodic, carefree atmosphere.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Kawaii Future Bass',
+    id: 'kawaii-future-bass',
+    hard: ['edm'],
+    desc: 'Woozy, detuned synthesizers, 7th chords, harsh basslines, syncopated percussion with fast-paced hi-hats and a melodic, carefree atmosphere.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Future Core',
+    id: 'future-core',
+    hard: ['kawaii-future-bass', 'uk-hardcore'],
+    desc: 'Blends the speed, basslines, and rhythms of UK Hardcore (mostly coming from the J-core sphere) with euphoric, woozy synths, 7th chords and arpeggios, and vocal chops of Future Bass, particularly Kawaii Future Bass',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Future Rave',
+    id: 'future-rave',
+    hard: ['edm'],
+    desc: 'Emerged in the late 2010s by combining the mainstage EDM approach with influences from then-popular forms of Techno and old-school Trance/rave-inspired grooves and atmospheres.',
+    soft: ['techno']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ghettotech',
+    id: 'ghettotech',
+    hard: ['edm'],
+    desc: 'Fuses the syncopation and synthesized sounds of Electro and Detroit Techno with the cut-up samples of Ghetto House and fast rhythms of Miami Bass.',
+    soft: ['techno']
+}, 
+
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Grime',
+    id: 'grime',
+    hard: ['edm', 'neurofunk'],
+    desc: 'UK Garage-derived production style characterized by dark, fast-paced, often aggressive beats that commonly features fast-paced MCing.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Neo-Grime',
+    id: 'neo-grime',
+    hard: ['grime', 'wave'],
+    desc: 'Mixes Wave with Grime and other forms of UK Electronic music..',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Weightless',
+    id: 'weightless',
+    hard: ['grime'],
+    desc: 'Typically instrumental, leftfield Grime style characterized by sparse, weightless percussion and spectral, atmospheric production.',
+    soft: []
+}, 
+{
         type: Type.Scene,
         parent: Type.Genre,
         label: 'Anime music',
         id: 'dojin',
         sub: 'Dōjin',
-        hard: ['artcore', 'lolicore', 'kawaii-future-bass'],
+        hard: ['artcore', 'lolicore', 'kawaii-future-bass', 'nightcore'],
         desc: 'Refers to a scene of people with alike tastes in literature, anime and media, in this context refers to japanese western culture movement which captures mostly anime and manga.',
         soft: []
     },
@@ -1031,18 +1374,7 @@ export const Hardstyle = [
 
 ]
 
-export const Bass = [
-    {
-        parent: Type.Genre,
-        type: Type.Genre,
-        label: 'Bass',
-        sub: 'Bass EDM',
-        id: 'bass',
-        hard: ['edm'],
-        soft: []
-    },
 
-]
 
 
 export const House = [{
@@ -1112,16 +1444,7 @@ desc: 'House from South Africa deriving from previous popular genres including G
     soft: [],
 desc: 'Blends the easy-going, poppy, and melodic Afrobeats sound and rhythms with major Amapiano elements, like lush, jazzy, and laid-back atmospheres often featuring light piano chords.'
 },
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Ambient House',
-    id: 'ambient-house',
-    dates: 'late 1980s',
-    hard: ['house', 'ambient'],
-    soft: [],
-desc: 'Primarily British genre developed in the 1990s with beats, synthesizers, and vocals in styles similar to House, treated with effects that are often described as dream-like or chilled'
-},
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -1143,15 +1466,7 @@ desc: 'Busy, punchy percussion, prominent basslines and dirty, distorted synths 
 },
 
 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Bassline',
-    id: 'bassline',
-    hard: ['house'],
-    soft: [],
-desc: 'Strong emphasis on intricate basslines as well as four-on-the-floor beat patterns.'
-},
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -1197,15 +1512,7 @@ desc: 'Blends funk vocal performances with production derived from mainstage 201
     soft: ['dutch-house'],
 desc: 'Developed in the Netherlands in the 2000s, combining the older style of Bubbling with more modern House, especially Dutch House.'
 },
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Changa Tuki',
-    id: 'changa-tuki',
-    hard: ['house'],
-    soft: ['techno', 'tribal-house'],
-desc: 'Emerged in Caracas; highly influenced by 1990s Techno and Tribal House, featuring fast tempos, strident synthesizers, hard-thumping percussion lines, and plenty of breakbeats.'
-},
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -1295,20 +1602,65 @@ desc: 'Development of handbag / Diva House characterized by heavier, hard hittin
 
 export const Garage = [{
     type: Type.Genre,
-    parent: Type.Super,
+    parent: Type.Genre,
     label: 'UK Garage',
-    id: 'garage',
-    hard: ['garage-house'],
+    id: 'uk-garage',
+    hard: ['garage-house', 'edm'],
     soft: [],
-
-
+    desc: 'Shuffling rhythms and influences from sources including Contemporary R&B and Hip Hop, as well as many forms of Electronic.'
+},
+ 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: '2-step',
+    id: '2-step',
+    hard: ['uk-garage'],
+    soft: [],
+    desc: 'Originating in London and popular in the late 1990s; jittery, shuffling rhythms rarely following a four-on-the-floor pattern.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Bassline',
+    id: 'bassline',
+    hard: ['uk-garage', 'house'],
+    soft: [],
+    desc: 'Strong emphasis on intricate basslines as well as four-on-the-floor beat patterns.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Breakstep',
+    id: 'breakstep',
+    hard: ['uk-garage'],
+    soft: [],
+    desc: 'Strong emphasis on intricate basslines as well as four-on-the-floor beat patterns.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Future Garage',
+    id: 'future-garage',
+    hard: ['uk-garage'],
+    soft: ['2-step'],
+    desc: 'Combines the rhythms of late 1990s and early 2000s 2-Step with novel moods and production approaches, commonly featuring jittery, broken rhythms, vocal chops, and warm synth pads and plucks.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Speed Garage',
+    id: 'speed-garage',
+    hard: ['uk-garage', 'house'],
+    soft: ['jungle'],
+    desc: 'Primarily British style that paved the way for UK Garage, combining cut-up vocal samples and sped up four-on-the-floor Garage House rhythms with Jungle-esque basslinesPrimarily British style that paved the way for UK Garage, combining cut-up vocal samples and sped up four-on-the-floor Garage House rhythms with Jungle-esque basslines.'
 },
 {
     type: Type.Scene,
     parent: Type.Genre,
     label: 'UK rave',
     id: 'ukrave',
-    hard: ['garage'],
+    hard: ['uk-garage'],
     soft: [],
 
 
@@ -1533,7 +1885,7 @@ export const Techno = [{
     parent: Type.Genre,
     label: 'Rave',
     id: 'rave',
-    hard: ['techno', 'hard-techno', 'industrial-techno', 'hardtek'],
+    hard: ['techno', 'hard-techno', 'industrial-techno', 'hardtek', 'uk-garage'],
     soft: [],
     desc: 'Type of clubs where fast electronic music is played'
 },
@@ -1669,15 +2021,7 @@ export const Trance = [{
     soft: [],
     desc: 'Mimicks the ambience of a forest by using swarming and teeming effects as well as natural samples; features straightforward song structures..',
 },
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Forest PsyTrance',
-    id: 'forest-psytrance',
-    hard: ['psytrance'],
-    soft: [],
-    desc: 'Mimicks the ambience of a forest by using swarming and teeming effects as well as natural samples; features straightforward song structures..',
-},
+
 {
     type: Type.Sub,
     parent: Type.Sub,
@@ -1764,11 +2108,13 @@ export const Trance = [{
 
 export const Bit = [
     {
+        parent: Type.Super,
         type: Type.Genre,
         label: 'Bit Music',
         id: 'bit',
         hard: ['electronics'],
-        soft: []
+        soft: [],
+        desc: 'Created by sound chips, cards, and sequencers found in video game consoles, personal computers, and arcade machines, as well as synthesizers emulating these sounds.'
     },
     {
         parent: Type.Genre,
@@ -1777,8 +2123,100 @@ export const Bit = [
         id: 'chiptune',
         hard: ['bit'],
         soft: [],
-        dates: 'late 1970s'
-
+        dates: 'late 1970s',
+        bands: 'unicorn kid, koji kondo',
+        desc: 'Used primarily in the 1980s within the context of 8-bit Video Game Music, combining simple synthesized waveforms and noise in a compositionally limited but overtly melodic style.'
+    },
+    {
+        parent: Type.Genre,
+        type: Type.Sub,
+        label: 'FM Synthesis',
+        id: 'fm-synthesis',
+        hard: ['bit'],
+        soft: [],
+        desc: 'Sound synthesis that combines the simple waveforms of Chiptune with modulating oscillators to create a bouncier synthesizer sound that would be used in arcade cabinets and home video game consoles like the Sega Mega Drive/Genesis in the late 1980s.'
+    },
+   
+    {
+        parent: Type.Genre,
+        type: Type.Sub,
+        label: 'MIDI Music',
+        id: 'midi',
+        hard: ['bit'],
+        soft: [],
+        desc: 'Intended for real-time sequenced playback via MIDI protocol on MIDI devices and used primarily in 1990s PC Video Game Music, arranger keyboards and karaoke.'
+    },
+    {
+        parent: Type.Sub,
+        type: Type.Sub,
+        label: 'Black MIDI',
+        id: 'black-midi',
+        hard: ['midi'],
+        soft: [],
+        desc: 'Consists of extremely dense MIDI piano compositions, impossible to play on physical instruments.'
+    },
+    {
+        parent: Type.Genre,
+        type: Type.Sub,
+        label: 'Sequencer & Tracker',
+        id: 'sequencer-tracker',
+        hard: ['bit'],
+        soft: [],
+        desc: 'Composed for early home computer and game consoles from the late 1980s to the late 1990s, primarily for video game soundtracks.'
+    },
+    {
+        parent: Type.Sub,
+        type: Type.Sub,
+        label: '16 Bit',
+        id: '16-bit',
+        hard: ['sequencer-tracker'],
+        soft: [],
+        desc: 'Created using video game consoles with audio hardware using 16-bit audio samples, most notably the Super Nintendo Entertainment System.'
+    },
+    {
+        parent: Type.Sub,
+        type: Type.Sub,
+        label: 'Tracker Music',
+        id: 'tracker',
+        hard: ['sequencer-tracker'],
+        soft: [],
+        desc: 'Vertical text-based step-sequencer software sampler music in the first and second gen module formats like .MOD, .MED, .S3M, .XM and .IT.'
+    },
+    {
+        parent: Type.Sub,
+        type: Type.Sub,
+        label: 'Amigacore',
+        id: 'amigacore',
+        hard: ['tracker'],
+        soft: ['Gabber'],
+        desc: 'Gabber-like forms of Hardcore [EDM] written in first-gen trackers for the Amiga like ProTracker and OctaMED, resulting in a minimalistic raw lo-fi sound.'
+    },
+    {
+        parent: Type.Sub,
+        type: Type.Sub,
+        label: 'Demostyle',
+        id: 'demostyle',
+        hard: ['amigacore'],
+        soft: [],
+        desc: 'Traditional eclectic style of the Demoscene with a special emphasis on tracker techniques and samples, and combining numerous elements of completely different genres - from Italo-Disco, Progressive Electronic and Funk to Belgian Techno, Ambient and Drum and Bass.'
+    },
+    {
+        parent: Type.Sub,
+        type: Type.Sub,
+        label: 'Doskpop',
+        id: 'doskpop',
+        hard: ['demostyle', 'spacesynth'],
+        soft: [],
+        desc: 'Grew out of the Amiga Demoscene in the late 1980s with the imitation of Spacesynth in the context of the restrictions and aesthetics of Demostyle.'
+    },
+    {
+        parent: Type.Genre,
+        type: Type.Sub,
+        label: 'Bitpop',
+        id: 'bitpop',
+        hard: ['bit'],
+        soft: [],
+        desc: 'Fuses Bit Music with additional synths, beats, guitars and modern production values, emphasizing highly catchy melodies and relatively fast tempos'
     },
 ]
 
@@ -1789,18 +2227,228 @@ export const Glitch = [{
     id: 'glitch',
     hard: ['electronics', 'noise', 'choppednscrewed'],
     soft: []
-}]
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Glitch Hop',
+    id: 'glitch-hop',
+    hard: ['glitch', 'edm'],
+    desc: 'Tempos around 100-110 BPM, swung, bouncy drum patterns, and a focus on upbeat, danceable drops and buildups.',
+    soft: []
 
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Neurohop',
+    id: 'neurohop',
+    hard: ['glitch-hop', 'neurofunk'],
+    desc: 'Features the complex bass of Neurofunk and a frantic and mechanical sound design.',
+    soft: []
+}, 
 
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Ghetto Funk',
+    id: 'ghetto-funk',
+    hard: ['glitch-hop'],
+    desc: 'Rich sampling, drawing from classic Hip Hop as well as from Funk and Soul, and strong midtempo break grooves.',
+    soft: ['funk', 'soul']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Glitch Pop',
+    id: 'glitch-pop',
+    hard: ['glitch', 'indietronica', 'idm'],
+    desc: 'Incorporates elements of more experimental Electronic styles like IDM and Glitch..',
+    soft: [],
+    bands: 'fka twigs, jane remover, jockstrap, siinamota'
+}, 
+]
+
+export const Vapor = [
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Vapor',
+        id: 'vapor',
+        hard: ['electronics', 'wave'],
+        soft: [],
+        desc: 'Meta-genre beginning with the rise of Vaporwave and the aesthetics that it spawned.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Dreampunk',
+        id: 'dreampunk',
+        hard: ['vapor'],
+        soft: [],
+        desc: 'Accentuates ambiance and a dreamy, futuristic atmosphere, taking influence from Progressive Electronic, as well as Cyberpunk and Dystopian movies.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Hardvapour',
+        id: 'hardvapour',
+        hard: ['vapor', 'hardcore-electronics', 'edm', 'techno'],
+        soft: [],
+        desc: 'Influenced by Hardcore [EDM] and Techno and made in response to the Vaporwave movement.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Utopian Virtual',
+        id: 'utopian-virtual',
+        hard: ['vapor'],
+        soft: [],
+        desc: 'Emulates late 20th century futuristic and corporate aesthetics, often using &#34;tacky&#34;-sounding instruments likened to MIDI Music, in contrast to Vaporwav\'s sample-based approach.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Vapornoise',
+        id: 'vapornoise',
+        hard: ['vapor', 'noise'],
+        soft: [],
+        desc: 'Uses Noise and other avant-garde techniques not typically found in Vaporwave.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Vaportrap',
+        id: 'vaportrap',
+        hard: ['vapor', 'trap'],
+        soft: [],
+        desc: 'Incorporates a blend of Trap percussion set to the re-utilization of old samples, such as 1990s pop culture or old computer library sounds.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Vaporwave',
+        id: 'vaporwave',
+        hard: ['vapor'],
+        soft: ['glitch'],
+        desc: 'Sample-based, involves heavily synthesized and processed manipulation of corporate mood and background (elevator) music; though source material can also include genres such as Pop, Contemporary R&B, and Synth Funk.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Broken transmission',
+        id: 'broken-transmission',
+        hard: ['vaporwave'],
+        soft: ['glitch'],
+        desc: 'Manipulates samples from TV broadcasts, advertisements, film, radio, and other sources.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Ecojams',
+        id: 'ecojams',
+        hard: ['vaporwave'],
+        soft: ['glitch', 'choppednscrewed'],
+        desc: 'Simple, prototypical Vaporwave style, heavily influenced by Chopped and Screwed and Glitch, that features short, slowed-down, lyric focused, sampled loops smothered in reverb and continuously repeated, usually taken from late 20th century music.'
+    },
+     {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Mallsoft',
+        id: 'mallsoft',
+        hard: ['vaporwave'],
+        soft: [],
+        desc: 'Blends the main characteristics of Vaporwave with what can be described as background/elevator music.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Slushwave',
+        id: 'slushwave',
+        hard: ['vaporwave'],
+        soft: ['ambient'],
+        desc: 'Utilizes a distinct form of sample manipulation to create a “slushy” sound, usually sequenced in soft Ambient-based soundscapes.'
+    },
+]
 
 export const ChillOut = [{
     type: Type.Genre,
     parent: Type.Super,
-    label: 'Chill-Out',
+    label: 'ChillOut',
     id: 'chillout',
     hard: ['electronics', 'ambient'],
-    soft: []
-}]
+    soft: [],
+    desc: 'Broad category of many relaxed styles of Electronic music which predominantly draw influence from Electronic Dance Music subgenres and Ambient.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ambient Dub',
+    id: 'ambient-dub',
+    hard: ['chillout', 'ambient', 'dub'],
+    soft: [],
+    desc: 'Takes cues from Ambient and Dub reggae, featuring the atmosphere of the former and the Jamaican-style basslines, percussion, and psychedelic production techniques of the latter.'
+},
+
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ambient House',
+    id: 'ambient-house',
+    dates: '1989',
+    hard: ['chillout','house', 'ambient'],
+    soft: [],
+desc: 'Primarily British genre developed in the 1990s with beats, synthesizers, and vocals in styles similar to House, treated with effects that are often described as dream-like or chilled'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ambient Trance',
+    id: 'ambient-trance',
+    hard: ['chillout','trance', 'ambient'],
+    soft: ['downtempo'],
+desc: 'Emerged in the mid-1990s mainly in the form of Chillout remixes of Trance tracks; incorporates its arpeggiated synthesizer sound into Downtempo and Ambient contexts.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Barber beats',
+    id: 'barber-beats',
+    hard: ['chillout', 'vapor'],
+    soft: ['downtempo', 'trip-hop', 'hiphop'],
+desc: 'Borrows elements from Downtempo, Trip Hop, and Instrumental Hip Hop; emulates 1990s and 2000s Chillout music.'
+},
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Downtempo',
+    id: 'downtempo',
+    hard: ['chillout'],
+    soft: [],
+    bands: 'Four tet, Sade, Portishead, primal scream, boards of canada, massive attack',
+desc: 'Atmospheric and groove-based with relaxed tempos and mellow beats.'
+},
+{
+    type: Type.Genre,
+    parent: Type.Genre,
+    label: 'Trip hop',
+    id: 'trip-hop',
+    hard: ['downtempo', 'hiphop'],
+    soft: [],
+    dates: '1988',
+    bands: 'Tricky, Faithless, Portishead, primal scream, Gustavo Cerati, massive attack',
+desc: 'Evokes a surreal, trippy, dreamy, and sometimes dark atmosphere with offbeat turntable scratches, light vocal melodies, and Hip Hop-influenced beats, From Brixton.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Psybient',
+    id: 'psybient',
+    hard: ['chillout'],
+    soft: [],
+desc: 'Atmospheric and groove-based with relaxed tempos and mellow beats.'
+},
+]
 
 export const Disco = [{
     type: Type.Genre,
@@ -2006,6 +2654,72 @@ export const HardcoreElectronics = [{
 },
 
 ]
+const LatinElectronics = [
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Latin Electronic',
+        id: 'latin-electronic',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Combines Electronic with Latin American influences; started at the end of the 1990s.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Changa Tuki',
+        id: 'changa-tuki',
+        hard: ['latin-electronic','house'],
+        soft: ['techno', 'tribal-house'],
+    desc: 'Emerged in Caracas; highly influenced by 1990s Techno and Tribal House, featuring fast tempos, strident synthesizers, hard-thumping percussion lines, and plenty of breakbeats.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Digital Cumbia',
+        id: 'digital-cumbia',
+        hard: ['latin-electronic','edm', 'cumbia'],
+        soft: [],
+        desc: 'Mixes an Electronic sound into traditional Cumbia through influences from House, Dancehall, Hyphy, and Dubstep.',    
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Electro Latino',
+        id: 'electro-latino',
+        hard: ['latin-electronic','edm', 'pop-latino'],
+        desc: 'Mixes elements of Merengue and Reggaetón with polished production from mainstream House subgenres; often shares traits with Latin Pop, having anthemic melodies and verse-chorus structures.',
+        soft: []
+    },
+
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Electrotango',
+        id: 'electrotango',
+        hard: ['latin-electronic','tango'],
+        desc: 'Combines Tango rhythms and melodies with Electronic music.',
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Nortec',
+        id: 'nortec',
+        hard: ['latin-electronic'],
+        desc: 'Samples and synthesizes Mexican styles like Banda sinaloense and Norteño into a sound related to IDM and House.',
+        soft: ['banda', 'house']
+    },
+      {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Tribal Guarachero',
+        id: 'tribal-guarachero',
+        hard: ['latin-electronic'],
+        desc: 'Features percussion from Cumbia and Mexican Folk Music with upbeat Electro House-derived production and fast, triplet-oriented rhythmic patterns.',
+        soft: ['cumbia', 'mexican-folk', 'house']
+    },
+]
 
 export const Electronics = [
     {
@@ -2030,7 +2744,9 @@ export const Electronics = [
         label: 'Electro Industrial',
         id: 'electro-industrial',
         hard: ['electro', 'industrial'],
-        soft: []
+        desc: 'Formed in the late 1980s and early 1990s; grew out of a combination of EBM and Industrial.',
+        soft: [],
+        dates: 'late 1980s'
     },
     {
         type: Type.Genre,
@@ -2051,359 +2767,6 @@ export const Electronics = [
         soft: ['hardcore']
     },
 ...EDM,
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Electro-Disco',
-    id: 'electro-disco',
-    hard: ['edm', 'disco'],
-    desc: 'Disco instrumentation is largely - if not entirely - replaced by synthesizers and augmented with futuristic elements such as the vocoder.',
-    soft: ['electro']
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Hi-NRG',
-    id: 'hi-nrg',
-    hard: ['electro-disco', 'nrg'],
-    desc: 'Emerged in the late 1970s and quickly became the most popular form of Electronic Dance Music in the LGBT club scenes of San Francisco and New York, characterized by its uptempo, high-energy sound.',
-    soft: [],
-    dates: 'late 1970s',
-    bands: 'Dead or alive'
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Italo-Disco',
-    id: 'italo-disco',
-    hard: ['electro-disco'],
-    desc: 'Produced primarily in Italy and is characterized by the use of synthesizers, drum machines, and sometimes vocoders to create a mechanical, Electronic version of Disco with futuristic atmosphere.',
-    soft: [],
-    dates: 'late 1970s'
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Spacesynth',
-    id: 'spacesynth',
-    hard: ['italo-disco'],
-    desc: 'Highly melodic, often instrumental futuristic strain, formed under the heavy influence of Space Disco, Progressive Electronic and, later, early Eurobeat.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Doskpop',
-    id: 'doskpop',
-    hard: ['spacesynth'],
-    desc: 'Grew out of the Amiga Demoscene in the late 1980s with the imitation of Spacesynth in the context of the restrictions and aesthetics of Demostyle.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Red Disco',
-    id: 'red-disco',
-    hard: ['electro-disco'],
-    desc: 'Continuum of various eclectic forms, derived mainly from late Euro-Disco, but also Italo-Disco, Hi-NRG and Eurobeat, and developed in the Soviet Union in the mid-to-late 1980s.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Space Disco',
-    id: 'space-disco',
-    hard: ['electro-disco'],
-    desc: 'Emerged in Europe in the mid-to-late 1970s, characterized by layers of oscillating synth, space-oriented sound effects, and a futuristic sound inspired by contemporary sci-fi media.',
-    soft: []
-},{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Electro Latino',
-    id: 'electro-latino',
-    hard: ['edm', 'pop-latino'],
-    desc: 'Mixes elements of Merengue and Reggaetón with polished production from mainstream House subgenres; often shares traits with Latin Pop, having anthemic melodies and verse-chorus structures.',
-    soft: []
-},{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Electro Swing',
-    id: 'electro-swing',
-    hard: ['edm', 'swing'],
-    desc: 'Upbeat, energetic style that splices Swing with Electronic Dance Music, looking to recapture the atmosphere of late 1920s to mid-1940s Jazz within a more updated club-friendly medium.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Eurobeat',
-    id: 'eurobeat',
-    hard: ['edm'],
-    desc: 'Fast-paced with roots in Hi-NRG and Italo-Disco; became mainly popular in Japan in the 1990s.',
-    soft: ['hi-nrg', 'italo-disco'],
-    dates: 'mid 1980s',
-    bands: 'Dave Rodgers'
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'J-Euro',
-    id: 'j-euro',
-    hard: ['eurobeat'],
-    desc: 'Italian-oriented Japanese scene of Eurobeat, which emerged with Japanese-language covers of Italian songs in the early-to-mid-1990s.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Eurodance',
-    id: 'eurodance',
-    dates: 'late 1980s',
-    bands: 'Gigi d\' angostino, cher, scatman, culture beat, alice deejay',
-    hard: ['edm'],
-    desc: 'Takes elements of Euro-Disco, House, Techno, and Hi-NRG while featuring on-beat kick, hi-hat and snare sounds at around 110 to 150 bpm.',
-    soft: ['hi-nrg', 'house', 'euro-disco', 'techno']
-},
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Electroclash',
-    id: 'electroclash',
-    hard: ['edm'],
-    desc: 'Draws from 1980s styles such as Electro, New Wave, and Electro-Disco combined with Techno, resulting in minimal, throbbing beats and basslines, buzzing synthesizer parts, vocoders and often monotone, half-spoken, half-sung vocals.',
-    soft: ['electro', 'new-wave', 'electro-disco']
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Bubblegum-dance',
-    id: 'bubblegum-dance',
-    hard: ['eurodance'],
-    desc: 'Playful, childlike style with a Bubblegum-like atmosphere that often incorporates high-pitched, light-hearted, and usually female-fronted vocals.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Italo-dance',
-    id: 'italo-dance',
-    hard: ['eurodance'],
-    desc: 'Appeared in the 1990s after the decline of Italo-Disco, featuring rhythmic influence from that genre.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Flex Dance Music',
-    id: 'flex-dance',
-    hard: ['edm'],
-    desc: 'Largely instrumental; infused with Electronic Dance Music elements.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Footwork',
-    id: 'footwork',
-    hard: ['edm'],
-    desc: 'Extensive use of drum fills, tom drums, handclaps, and snares within fast-paced, highly syncopated beats not bound to a 4/4 kick rhythm.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Freestyle',
-    id: 'freestyle',
-    hard: ['edm'],
-    desc: 'Electro-influenced; developed in Latino communities in New York and Miami in the 1980s, especially dominated by Latin Freestyle and its Latin influences',
-    soft: ['electro']
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Latin Freestyle',
-    id: 'latin-freestyle',
-    hard: ['freestyle'],
-    desc: 'Displays a heavy influence of Hispanic American Music alongside the Disco, Hip Hop, and Electro influences of Freestyle.',
-    soft: ['disco', 'hiphop','electro']
-},
-
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Funk mandelão',
-    id: 'funk-mandelao',
-    hard: ['edm'],
-    desc: '"Simple lyricism, raw and minimalistic production, and distinct drops with bursting bass.',
-    soft: []
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Beat Bruxaria',
-    id: 'beat-bruxaria',
-    hard: ['funk-mandelao'],
-    desc: 'São Paulo-originated Funk brasileiro with aggressive, distorted and high-pitched beats featuring minimalistic percussion and diversified sampling.',
-    soft: []
-},
-
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Brazilian Phonk',
-    id: 'brazilian-phonk',
-    hard: ['funk-mandelao', 'funk', 'phonk'],
-    desc: 'Merges Funk automotivo\'s rhythms, vocals, and energy, with the energetic and nocturnal production typical of the Drift Phonk scene, and Phonk House.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Funk Automotivo',
-    id: 'funk-automotivo',
-    hard: ['funk-mandelao'],
-    desc: 'Catchy, repetitive synths accompanied by a strong four-on-the-floor kick and loud, reverberated vocals.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Ritmada',
-    id: 'ritmada',
-    hard: ['funk-mandelao'],
-    desc: 'Short, repetitive and resonant beats with more danceable, immersive grooves drawn out of Afro-Brazilian instrumentation, a cleaner, more radio-friendly sound and greater focus on lyrics.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Funkot',
-    id: 'funkot',
-    hard: ['edm'],
-    desc: 'Fast-paced Indonesian form of Electronic Dance Music that combines Eurodance and Trance synths with the syncopated rhythm from Dangdut koplo.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Breakbeat Kota',
-    id: 'breakbeat-kota',
-    hard: ['funkot', 'breakbeat'],
-    desc: 'Indonesian style that slows down the syncopated rhythms of Funkot to moderate tempos around 130 BPM.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Jungle Dutch',
-    id: 'jungle-dutch',
-    hard: ['breakbeat-kota'],
-    desc: 'Combines the high-pitched synth leads of Dutch House with the frantic &#34;tribal&#34; rhythms of Jungle Terror.',
-    soft: []
-}, 
-{
-    type: Type.Genre,
-    parent: Type.Genre,
-    label: 'Future Bass',
-    id: 'future-bass ',
-    hard: ['edm'],
-    desc: 'Woozy, detuned synthesizers, 7th chords, harsh basslines, syncopated percussion with fast-paced hi-hats and a melodic, carefree atmosphere.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Kawaii Future Bass',
-    id: 'kawaii-future-bass',
-    hard: ['edm'],
-    desc: 'Woozy, detuned synthesizers, 7th chords, harsh basslines, syncopated percussion with fast-paced hi-hats and a melodic, carefree atmosphere.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Future Core',
-    id: 'future-core',
-    hard: ['kawaii-future-bass', 'uk-hardcore'],
-    desc: 'Blends the speed, basslines, and rhythms of UK Hardcore (mostly coming from the J-core sphere) with euphoric, woozy synths, 7th chords and arpeggios, and vocal chops of Future Bass, particularly Kawaii Future Bass',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Future Rave',
-    id: 'future-rave',
-    hard: ['edm'],
-    desc: 'Emerged in the late 2010s by combining the mainstage EDM approach with influences from then-popular forms of Techno and old-school Trance/rave-inspired grooves and atmospheres.',
-    soft: ['techno']
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Ghettotech',
-    id: 'ghettotech',
-    hard: ['edm'],
-    desc: 'Fuses the syncopation and synthesized sounds of Electro and Detroit Techno with the cut-up samples of Ghetto House and fast rhythms of Miami Bass.',
-    soft: ['techno']
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Glitch Hop',
-    id: 'glitch-hop',
-    hard: ['edm', 'glitch'],
-    desc: 'Tempos around 100-110 BPM, swung, bouncy drum patterns, and a focus on upbeat, danceable drops and buildups.',
-    soft: []
-
-}, 
-
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Ghetto Funk',
-    id: 'ghetto-funk',
-    hard: ['glitch-hop'],
-    desc: 'Rich sampling, drawing from classic Hip Hop as well as from Funk and Soul, and strong midtempo break grooves.',
-    soft: ['funk', 'soul']
-}, 
-
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Neurohop',
-    id: 'neurohop',
-    hard: ['glitch-hop', 'neurofunk'],
-    desc: 'Features the complex bass of Neurofunk and a frantic and mechanical sound design.',
-    soft: []
-}, 
-{
-    type: Type.Genre,
-    parent: Type.Genre,
-    label: 'Grime',
-    id: 'grime',
-    hard: ['edm', 'neurofunk'],
-    desc: 'UK Garage-derived production style characterized by dark, fast-paced, often aggressive beats that commonly features fast-paced MCing.',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Neo-Grime',
-    id: 'neo-grime',
-    hard: ['grime'],
-    desc: 'Mixes Wave with Grime and other forms of UK Electronic music..',
-    soft: []
-}, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Weightless',
-    id: 'weightless',
-    hard: ['grime'],
-    desc: 'Typically instrumental, leftfield Grime style characterized by sparse, weightless percussion and spectral, atmospheric production.',
-    soft: []
-}, 
-
    ...House,
    {
     type: Type.Genre,
@@ -2538,7 +2901,7 @@ export const Electronics = [
 }, 
 
 {
-    type: Type.Sub,
+    type: Type.Genre,
     parent: Type.Genre,
     label: 'Garage House',
     id: 'garage-house',
@@ -2549,7 +2912,7 @@ export const Electronics = [
 }, 
 {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Gospel House',
     id: 'gospel-house',
     hard: ['garage-house', 'gospel'],
@@ -2558,13 +2921,15 @@ export const Electronics = [
 }, 
 {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Jersey Sound',
     id: 'jersey-sound',
     hard: ['garage-house', 'gospel'],
     desc: 'Soulful, melodic, Gospel-infused House music developed in Newark, NJ in the late 1980s and early 1990s with an emphasis on songcraft.',
     soft: []
 }, 
+
+...Garage,
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -2718,15 +3083,7 @@ export const Electronics = [
     desc: 'Emerged in the second half of the 2000s in Romania, often featuring brass melodies and \"staccato\" pluck grooves.',
     soft: []
 }, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Speed Garage',
-    id: 'speed-garage',
-    hard: ['house'],
-    desc: 'Primarily British style that paved the way for UK Garage, combining cut-up vocal samples and sped up four-on-the-floor Garage House rhythms with Jungle-esque basslines.',
-    soft: []
-}, 
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -2811,16 +3168,300 @@ export const Electronics = [
     desc: 'Fast-paced House popular in Vietnam, remixing Vietnamese melodies.',
     soft: []
 }, 
-
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Archolitronix',
+    id: 'archolitronix',
+    hard: ['electronics'],
+    desc: 'Fusion of traditional Acholi rhythms and melodies with Electronic production, originating in the city of Gulu.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Algorave',
+    id: 'algorave',
+    hard: ['electronics'],
+    desc: 'Generative dancefloor-oriented music produced live via algorithms.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Binaural Beats',
+    id: 'binaural-beats',
+    hard: ['electronics'],
+    desc: 'Created by sound chips, cards, and sequencers found in video game consoles, personal computers, and arcade machines, as well as synthesizers emulating these sounds..',
+    soft: []
+}, 
+{
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Electropop',
+    id: 'electropop',
+    hard: ['electronics'],
+    desc: 'Dense, layered, and compressed production, usually coupled with a distinct fuzzy and &#34;warm&#34; low-frequency synthesizer style.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Epic Collage',
+    id: 'epic-collage',
+    hard: ['electronics'],
+    desc: 'Cinematic, dense digital collage; frequently utilizes a Deconstructed Club sonic palette and decontextualized novel samples.',
+    soft: ['deconstructed-club']
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Flashcore',
+    id: 'flashcore',
+    hard: ['electronics'],
+    desc: 'Fast-paced short sounds, complex structures with erratic progression, and often dense and atmospheric abstract sound design, featuring recontextualized elements from IDM, Speedcore, Industrial Hardcore, and Breakcore.',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Folktronica',
+    id: 'folktronica',
+    hard: ['electronics', 'idm', 'glitch','folk'],
+    desc: 'Combines sound design techniques from IDM and Glitch with acoustic instrumentation inspired by Contemporary Folk',
+    soft: []
+}, 
+{
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Funktronica',
+    id: 'funktronica',
+    hard: ['electronics', 'synth-funk', 'italo-disco'],
+    desc: 'Originated in eastern North America around the turn of the 21st century, combining trends of Synth Funk and Italo-Disco',
+    soft: []
+}, 
    ...Techno,
    ...Trance,
-   //...Bit,
+   ...Bit,
+   {
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Celtic Electronica',
+    id: 'celtic-electronica',
+    hard: ['electronics', 'edm', 'celtic-folk'],
+    desc: 'Fusion of Celtic Folk Music with various types of Electronic Dance Music.',
+    soft: []
+}, 
    ...Trap,
    ...ChillOut,
    ...Disco,
     ...Glitch,
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Graphical Sound',
+        id: 'graphical-sound',
+        hard: ['electronics'],
+        desc: 'Compositional technique in which markings are manually applied to a medium, then processed by a machine to produce synthetic sound from the markings in real time.',
+        soft: []
+    }, 
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'HexD',
+        id: 'hexd',
+        hard: ['electronics'],
+        desc: 'Heavily bit-crushed vocals, sometimes sped-up and pitched-up, and highly compressed and distorted production, typically made from existing material of other genres.',
+        soft: []
+    }, 
+
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Krushclub',
+        id: 'krushclub',
+        hard: ['hexd','edm'],
+        soft: [],
+        desc: 'Bitcrushed synths and occasionally bitcrushed vocals, energetic Jersey Club-derived beats, and elements of Sigilkore\'s dark production style.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Horror Synth',
+        id: 'horror-synth',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Combines eerie and haunting synth pads and sharp, abrasive sounds to create atmospheres that accentuated the dark, unnerving, violent, or ghostly themes of horror films.'
+    },
     ...HardcoreElectronics,
     ...Hardstyle,
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'HyperPop',
+        id: 'hyperpop',
+        hard: ['electronics'],
+        soft: ['bubblegum-pop', 'electropop', 'nightcore'],
+        desc: 'Developed and took inspiration from Bubblegum Bass and popular 2000s-2010s Electropop, characterized by eclectic, unconventional, mechanical-sounding and dense production; and by manipulated, usually auto-tuned vocals.'
+        ,bands: 'Arca, Charlie XCX, Forest Children, 100 gecs'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Illbient',
+        id: 'illbient',
+        hard: ['electronics'],
+        soft: ['ambient', 'hiphop', 'dub'],
+        desc: 'Combines Ambient soundscapes with Hip Hop drum patterns, breaks, and samples through the busy effect layering of Dub.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Indietronica',
+        id: 'indietronica',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Leftfield or DIY approach characterised by simpler Pop-informed melodies, often incorporating vocals or live instrumentation alongside Electronic production.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Chillwave',
+        id: 'chillwave',
+        hard: ['indietronica'],
+        dates:'2007',
+        soft: [],
+        desc: 'Emulates vintage aesthetics and popular musical styles of the 1980s/1990s altered by modern recording technology to create a hazy dreamlike atmosphere.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Chillsynth',
+        id: 'chillsynth',
+        hard: ['indietronica', 'synthwave'],
+        soft: [],
+        desc: 'Mixes Synthwave with major Chillwave elements, characterized by a dreamy and relaxed sound.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Picopop',
+        id: 'picopop',
+        hard: ['indietronica', 'shibuya-kei'],
+        soft: [],
+        desc: 'Originated in the early 2000s as an offshoot of the Japanese Shibuya-kei movement when artists introduced more prominent "bleepy" electronic elements and faster tempos.'
+    },
+    ...LatinElectronics,
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Livetronica',
+        id: 'livetronica',
+        hard: ['electronics'],
+        soft: ['edm', 'downtempo'],
+        desc: 'Incorporates Electronic instrumentation into live Rock jamming, drawing on a wide variety of Electronic Dance Music and Downtempo styles.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Maloya électronique',
+        id: 'maloya-electronique',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Combines the 6/8 ternary rhythm with Electronic production, using computer music, synthesizers and drum machines.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Micromontage',
+        id: 'micromontage',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Arrangement of microsounds on an incredibly small time scale.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Minimal Wave',
+        id: 'minimal-wave',
+        hard: ['electronics'],
+        soft: ['new-wave', 'post-punk'],
+        desc: 'Retrospective term for more Electronic and minimal forms of New Wave, Post-Punk, Synthpop, and related styles, tending towards a more sparse and lo-fi sound.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Minimal Synth',
+        id: 'minimal-synth',
+        hard: ['minimal-wave'],
+        soft: ['synthpop'],
+        desc: 'Minimal and distinctly DIY take on Synthpop with a bleak and naive aesthetic.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Moogsploitation',
+        id: 'moogsploitation',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Moog synthesizer-led music often associated with a wave of Novelty records in the 1960s and 1970s.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Nightcore',
+        id: 'nightcore',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Based around the technique of speeding and pitching up already existing songs.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Progressive Electronic',
+        id: 'prog-electronics',
+        hard: ['electronics'],
+        soft: ['progressive-rock', 'ambient'],
+        desc: 'Synthesizer-driven genre focusing on developing, often longform compositions and drawing inspiration from various sources such as Progressive Rock, Western Classical Music, and Ambient.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Berlin School',
+        id: 'berlin-school',
+        hard: ['prog-electronics'],
+        soft: ['progressive-rock', 'ambient'],
+        desc: 'Atmospheric, multi-layered synthesizer textures; pioneered in Berlin in the 1970s as an offshoot to the Krautrock movement.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Tecnobrega',
+        id: 'tecnobrega',
+        hard: ['electronics'],
+        soft: [],
+        desc: 'Fast and electronic-based style that evolved from Brega calypso, particularly associated with peripheral areas of the city of Belém.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Tecnofunk',
+        id: 'tecnofunk',
+        hard: ['tecnobrega'],
+        soft: [],
+        desc: 'Raw and vulgar Tecnobrega and Funk brasileiro fusion developed in the late 2010s by DJs in Belém do Pará.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Witch house',
+        id: 'witch-house',
+        hard: ['electronics'],
+        soft: ['choppednscrewed'],
+        desc: '(sometimes referred to as drag,[1] screwgaze or haunted house)[2] is a microgenre of electronic music that is musically characterized by high-pitched keyboard effects, heavily layered basslines and trap-style drum loops. Aesthetically, it employs occult- and gothic-inspired themes.'
+        ,bands: 'Salem, crystal castles, sidewalks and skeletons, ic3peak'
+    },
+    ...Vapor,
 
 ]
 

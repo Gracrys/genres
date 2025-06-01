@@ -136,21 +136,32 @@ export const AvantGarde = [
     {
         type: Type.Sub,
         parent: Type.Genre,
+        label: 'Power Electronics',
+        id: 'power-electronics',
+        hard: [
+            'industrial','electronics','noise'],
+        soft: [],
+        desc: 'Waves of feedback, screeching analog synthesizers, and harsh, screamed vocals.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
         label: 'Power Industrial',
         id: 'power-industrial',
         hard: ['noise',
             'industrial'],
         soft: ['electronics']
     },
+  
     ...Rock,
  ...Ambient, 
     {
         type: Type.Sub,
-        parent: Type.Genre,
+        parent: Type.Sub,
         label: 'Death Industrial',
         sub: 'Dark Noise',
         id: 'death-industrial',
-        hard: ['noise', 'industrial'],
+        hard: ['power-electronics','noise', 'industrial'],
         soft: ['drone']
     },
     {
