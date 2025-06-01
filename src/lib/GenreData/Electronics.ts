@@ -601,6 +601,7 @@ export const EDM = [
         label: 'EDM',
         sub: 'Electronic dance Music',
         id: 'edm',
+        dates: 'mid 1970s',
         hard: ['electronics'],
         soft: []
     },
@@ -655,6 +656,7 @@ export const EDM = [
         hard: ['edm'],
         soft: ['post-industrial'],
         desc: 'Melodic and dancefloor-friendly take on Post-Industrial music that developed in the early 1980s.'
+        , dates: '1980'
     },
     {
         type: Type.Genre,
@@ -738,6 +740,124 @@ export const EDM = [
     soft: [],
     desc: 'Initially developed in the late 80s in Luanda, Angola, as a mixture of Soca- and Zouk-based percussion samples.'
 },
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Makina',
+    id: 'makina',
+    hard: ['edm', 'new-beat'],
+    soft: [],
+    desc: 'Spanish Techno developed in the early 1990s; strongly influenced by New Beat and EBM, but aiming for a lighter sound.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Manyao',
+    id: 'manyao',
+    hard: ['edm'],
+    soft: [],
+    desc: 'Asian Electronic Dance Music that mixes vocals and melodies from Mandopop with fairly hard, melodic EDM.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Midtempo Bass',
+    id: 'midtempo-bass',
+    hard: ['edm'],
+    soft: [],
+    desc: 'Harsh synth leads and a usual tempo of around 90-110 BPM.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Moombahcore',
+    id: 'moomnbahcore',
+    hard: ['edm'],
+    soft: [],
+    desc: 'High-pitched synth leads, gritty percussion, a kick-snare pattern, aggressive bass drops, and around 110 BPM while often paralleling Complextro or Brostep.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Moombahton',
+    id: 'moomnbahton',
+    hard: ['edm'],
+    soft: [],
+    desc: 'Offshoot of Dutch House characterized by tempos in the 100-110 BPM range, Reggaetón-influenced rhythms, bass-heavy kicks and high-pitched synths.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Nerdcore Techno',
+    id: 'nerdcore-techno',
+    hard: ['edm'],
+    soft: [],
+    desc: 'Stylistically diverse form of underground Japanese Electronic Dance Music utilizing energetic beats built around samples from pop and/or nerd culture.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Nu Disco',
+    id: 'nu-disco',
+    hard: ['edm'],
+    soft: [],
+    desc: 'Stylistically diverse form of underground Japanese Electronic Dance Music utilizing energetic beats built around samples from pop and/or nerd culture.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ori Deck',
+    id: 'ori-deck',
+    hard: ['edm'],
+    soft: ['moombahton', 'dubstep'],
+    desc: 'Incorporates elements of Moombahton and Dubstep to create a style characterized by sluggish, kick-heavy dembow rhythms.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Post-Dubstep',
+    id: 'post-dubstep',
+    hard: ['edm'],
+    soft: ['dubstep'],
+    desc: 'Minimalistic, atmospheric sound design and eclectic drum patterns, derived from but not fitting Dubstep.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Skwee',
+    id: 'skwee',
+    hard: ['edm'],
+    soft: ['dubstep'],
+    desc: 'Mid-2000s offshoot of the Nordic Electro scene which uses simple, analogue or Chiptune-inspired synthesizer leads and basslines to create stripped-down, midtempo grooves drawing on Synth Funk and Hip Hop.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Shangaan Electro',
+    id: 'shangaan-electro',
+    hard: ['edm'],
+    soft: [],
+    desc: 'South African genre with very fast BPM (around 180) featuring MIDI keyboard sounds and marimba.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Singeli',
+    id: 'singeli',
+    hard: ['edm'],
+    soft: ['dubstep'],
+    desc: 'Developed in Tanzania in the mid-2000s; fuses incredibly rapid beats, usually between 180-300BPM, with MCing and musical influences from older Tanzanian genres.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Slimepunk',
+    id: 'slimepunk',
+    hard: ['edm'],
+    soft: ['dubstep'],
+    desc: 'Loud synth leads with a distorted, gritty, and &#34;slimy&#34; sound design, usually laid on top of production inspired by or taken directly from genres such as Halftime, Trap [EDM], Brostep, and other forms of 2010s EDM'
+},
+
     {
         type: Type.Scene,
         parent: Type.Genre,
@@ -866,7 +986,8 @@ export const House = [{
     hard: ['edm'],
     soft: [],
     desc: 'Large, hugely popular group of related Electronic Dance Music styles, initially developing from Disco in the early 1980s.'
-
+    ,dates: '1983',
+    bands: 'Daft Punk, David guetta'
 },
 {
     type: Type.Genre,
@@ -875,6 +996,7 @@ export const House = [{
     id: 'acid-house',
     hard: ['house'],
     soft: [],
+    dates: 'mid 1980s',
 desc: 'Emerged in the mid-1980s, characterised by repetitive basslines created with the distinctive modulated squelching sound of the Roland TB-303 synthesiser.'
 },
 {
@@ -884,6 +1006,7 @@ desc: 'Emerged in the mid-1980s, characterised by repetitive basslines created w
     id: 'deep-house',
     hard: ['house'],
     soft: [],
+    dates: '1985',
 desc: 'Emerged in the United States during the mid-1980s, featuring a relaxed tempo and influences from Jazz, Funk, and Soul.'
 },
 {
@@ -1040,7 +1163,8 @@ desc: 'Distorted, minimalistic TR-909 derived rhythms, basic climaxing structure
     id: 'chicago-house',
     hard: ['house'],
     soft: [],
-desc: 'Umbrella term for a broad variety of House that originated from Chicago in the (mostly mid-to-late) 1980s and early 90s.'
+desc: 'Umbrella term for a broad variety of House that originated from Chicago in the (mostly mid-to-late) 1980s and early 90s.',
+dates: '1983'
 },
 {
     type: Type.Sub,
@@ -1132,7 +1256,9 @@ export const Techno = [{
     label: 'Techno',
     id: 'techno',
     hard: ['edm'],
-    soft: []
+    bands: 'Aphex Twin, Underworld',
+    soft: [],
+
 
 },
 {
@@ -1144,7 +1270,7 @@ export const Techno = [{
     hard: ['techno'],
     soft: [],
     desc: 'Emerged in the 2020s by mixing fast tempos, prominent basslines, and hard-hitting drums derived from popular Techno with simplistic, catchy melodies and vocals, often influenced by 2000s Hard Dance, Eurodance and Electropop.'
-
+    ,dates: 'mid 1980s'
 },
 {
     type: Type.Sub,
@@ -1156,7 +1282,197 @@ export const Techno = [{
     desc: 'Exaggerated fast form of Belgian Techno for the Japanese market, focusing mainly on synth sounds and samples typical of 1990s dance music.'
 
 },
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Acid Techno',
+    id: 'acid-techno',
+    hard: ['techno'],
+    soft: [],
+    bands: 'Autechre',
+    desc: 'Incorporates \"squelching\" synths from [Genre464] into a mechanical and usually more energetic Acid house context.'
 
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Ambient Techno',
+    id: 'ambient-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Blends the mechanical, repetitive beats of Techno with atmospheres and textures inspired by Ambient music, resulting in slower tempos and more understated rhythms.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Belgian Techno',
+    id: 'belgian-techno',
+    hard: ['techno', 'ebm'],
+    soft: ['hardcore-electronics'],
+    desc: 'Early form of Hardcore [EDM], resulting from the further evolution of New Beat due to the strong influence of Techno and EBM.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Bleep Techno',
+    id: 'bleep-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Established in the late 1980s in the breakdancing and early rave scene of Yorkshire in the North of England, notable for its "bleepy" synth lines and heavy sub-bass.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Detroit Techno',
+    id: 'detroit-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Established in the late 1980s in the breakdancing and early rave scene of Yorkshire in the North of England, notable for its "bleepy" synth lines and heavy sub-bass.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'FreeTechno',
+    id: 'freetechno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Originated in the early 1990s, commonly played at free parties in Europe, and features a repetitive pounding kick drum at tempos of 170 BPM or above..'
+    ,dates: '1990s'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Hardgroove Techno',
+    id: 'hardgroove-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Features shuffling grooves with heavy emphasis on layered percussive elements; often includes a mix of samples and drum machines played at a range of 135-140 BPM.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Hard Techno',
+    id: 'hard-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Typically rave-oriented form characterized by hard, prominent kick drums, pounding rhythms, fast tempos around 140-160 BPM, and aggressive, often distorted sounds.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Schranz',
+    id: 'schranz',
+    hard: ['hard-techno'],
+    soft: [],
+    desc: 'Characterised by fast tempos, aggressive &#34;whooshing&#34; beat patterns, heavy compression and straightforward song structures.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Industrial Techno',
+    id: 'industrial-techno',
+    hard: ['techno', 'industrial'],
+    soft: [],
+    desc: 'Cold, mechanical, and hypnotic tracks, typically lacking the harsher and noisier elements of later Industrial Techno.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Birmingham Sound',
+    id: 'birmingham-sound',
+    hard: ['industrial-techno'],
+    soft: [],
+    desc: 'Cold, mechanical, and hypnotic tracks, typically lacking the harsher and noisier elements of later Industrial Techno..'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Melodic Techno',
+    id: 'melodic-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Trance-influenced subgenre that was established in the mid-to-late 2010s, characterized by gradually progressing structure, and hypnotizing, atmospheric sound with arpeggiated, minor melodies, playing at around 120-125 BPM..'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Melodic Techno',
+    id: 'melodic-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Trance-influenced subgenre that was established in the mid-to-late 2010s, characterized by gradually progressing structure, and hypnotizing, atmospheric sound with arpeggiated, minor melodies, playing at around 120-125 BPM..'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Minimal Techno',
+    id: 'minimal-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Stripped-down and sparse, often featuring a dark sound and a slow, steady development through the track.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Dub Techno',
+    id: 'dub-techno',
+    hard: ['minimal-techno', 'dub'],
+    soft: [],
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Peak Time Techno',
+    id: 'peak-time-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Hard, dynamic, energetic and accessible subgenre featuring strong kicks, massive dirty synths, tempos around 130 BPM, more suspenseful structures with breaks and build-ups, and big, modern, festival-oriented sound; rose to high popularity in the late 2010s.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Wonky Techno',
+    id: 'wonky-techno',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Strays from the standard beat of Techno, opting for a more fractured sound',
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Techno Bass',
+    id: 'techno-bass',
+    hard: ['techno'],
+    soft: [],
+    desc: 'Minimal, stripped-down with an emphasis on low-frequency bass partitions.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Car Audio Bass',
+    id: 'car-audio-bass',
+    hard: ['techno-bass'],
+    soft: [],
+    desc: 'Slow and minimalistic extreme form, focused on ultra-low frequency sine wave notes and mainly intended for stress testing subwoofer sound systems.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Tecnorumba',
+    id: 'tecnorumba',
+    hard: ['techno'],
+    soft: ['makina', 'house'],
+    desc: 'Blend of the themes and singing style of Rumba flamenca with the most commercial forms of House, Techno, and Makina.'
+},
+{
+    type: Type.Scene,
+    parent: Type.Genre,
+    label: 'Rave',
+    id: 'rave',
+    hard: ['techno', 'hard-techno', 'industrial-techno', 'hardtek'],
+    soft: [],
+    desc: 'Type of clubs where fast electronic music is played'
+},
 ]
 
 export const Trance = [{
@@ -1178,7 +1494,16 @@ export const Bit = [
         hard: ['electronics'],
         soft: []
     },
+    {
+        parent: Type.Genre,
+        type: Type.Genre,
+        label: 'Chiptune',
+        id: 'chiptune',
+        hard: ['bit'],
+        soft: [],
+        dates: 'late 1970s'
 
+    },
 ]
 
 export const Glitch = [{
@@ -1416,7 +1741,8 @@ export const Electronics = [
         label: 'Electro',
         id: 'electro',
         hard: ['electronics'],
-        soft: []
+        soft: [],
+        dates: '1980s'
     },
     {
         type: Type.Genre,
@@ -1459,7 +1785,9 @@ export const Electronics = [
     id: 'hi-nrg',
     hard: ['electro-disco', 'nrg'],
     desc: 'Emerged in the late 1970s and quickly became the most popular form of Electronic Dance Music in the LGBT club scenes of San Francisco and New York, characterized by its uptempo, high-energy sound.',
-    soft: []
+    soft: [],
+    dates: 'late 1970s',
+    bands: 'Dead or alive'
 },
 {
     type: Type.Sub,
@@ -1468,7 +1796,8 @@ export const Electronics = [
     id: 'italo-disco',
     hard: ['electro-disco'],
     desc: 'Produced primarily in Italy and is characterized by the use of synthesizers, drum machines, and sometimes vocoders to create a mechanical, Electronic version of Disco with futuristic atmosphere.',
-    soft: []
+    soft: [],
+    dates: 'late 1970s'
 },
 {
     type: Type.Sub,
@@ -1928,7 +2257,8 @@ export const Electronics = [
     id: 'garage-house',
     hard: ['house', 'disco'],
     desc: 'Disco-influenced style of House that developed in the 1980s, incorporating elements of Gospel, Soul, and Dub, before evolving into a more upbeat style that prominently features crisp syncopated hi-hats and synth stabs.',
-    soft: []
+    soft: [],
+    dates: '1983'
 }, 
 {
     type: Type.Sub,

@@ -2,6 +2,9 @@
 (name pending)
 this marks the start of the pre alpha
 
+I got questioned something in a programmers chat-group that i didnt expect, "whats the purpose of this project" so, i will elaborate, i have had this hobby of music for a long time, some people call it "melomaniac" i call this just being a high music obsessed dork, i love my beep boops. I used to participate on /mu/, on /mu/ facebook groups and even on telegram and discord, and have met incredible people and gave me courage to start a blog, and now, back to track; What is this? Having a hobby and digging deep into it you find gems the more you dig (thats why it is called digging duh, because is a minecraft reference) you fall in love with the first thing that welcomed you to this world but also with those obscure things you find along the way, making more sweet the way, the road, but there was no way to know the relationships between artists, songs, how x artist came with the idea of mixing two different genres and creating such masterpiece, but thats a harder task than you think, excavating down into those inspirations, but also, how is a genre created, how did dubstep come from reggae? the relationships of industrial and its influence, is there a difference between european and american classical music? i wanna answer those questions, expand on the info, give recomendations, and overall, overwhelm the viewer with all those lines and points on the canvas and show the complexity of an ever growing art as music is.
+
+
 - [ ] - Add descriptions (help wanted)
 - [ ] - Add recomended entry level bands and more important bands and or... dunno (help wanted)
 - [ ] - add relationships to description tab
@@ -52,7 +55,7 @@ Music Gateway
 Musicmap
 and friends.
 
-follow me on rym and/or lastfm
+follow me on rym and/or lastfm, search for gracrys on both
 
 # sv
 

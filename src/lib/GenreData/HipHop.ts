@@ -14,7 +14,9 @@ export const HipHop = [
         desc: 'also known as rap, summarizes the genre of rhytmical poetry singing known as rapping as the movement and the melody and use of electronics which gave foot to their specific sound.',
         id: 'hiphop',
         hard: [],
-        soft: ['poetry']
+        soft: ['poetry'],
+        dates: '1970s',
+        bands:'Kendrick Lamar, Tupac, Mos Def, Nas'
     },
     {
         type: Type.Sub,

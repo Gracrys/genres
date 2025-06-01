@@ -158,7 +158,8 @@ export const Jamaican = [
         id: 'dub',
         desc: 'Primarily instrumental Reggae which developed from the extensive use of studio techniques and effects like reverb and delay and use of fast paced rhytmn plus some dissonant elements.',
         hard: ['reggae'],
-        soft: []
+        soft: [],
+        dates: '1960s'
     },
     {
         type: Type.Sub,

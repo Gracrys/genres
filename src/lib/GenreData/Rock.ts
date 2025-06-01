@@ -111,7 +111,9 @@ export const Punk = [
         label: 'New Wave',
         id: 'new-wave',
         hard: ['post-punk'],
-        soft: []
+        soft: [],
+        bands: 'New Order, Depeche Mode',
+        dates: 'mid 1970s'
     },
     {
         type: Type.Genre,
@@ -605,7 +607,10 @@ export const Rock = [
         label: 'KrautRock',
         id: 'krautrock',
         hard: ['experimental-rock', 'electronics'],
-        soft: []
+        soft: [],
+        bands: 'Kraftwerk, wire',
+        dates: 'late 1960s'
+
     },
     {
         type: Type.Sub,
@@ -613,7 +618,9 @@ export const Rock = [
         label: 'Industrial Rock',
         id: 'industrial-rock',
         hard: ['industrial', 'rock'],
-        soft: []
+        soft: [],
+        dates: 'late 1970s',
+        bands: 'Stabbing Westward, God lives underwater, Marylin manson'
     },
     {
         type: Type.Sub,
@@ -807,6 +814,8 @@ export const AlternativeRock = [
         label: 'Electronic Rock',
         id: 'electronic-rock',
         hard: ['rock', 'electronics'],
-        soft: []
+        soft: [],
+        bands: '',
+        dates: 'late 1960s'
     },
 ]

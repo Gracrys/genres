@@ -15,7 +15,9 @@ export  const Ambient =  [{
         label: 'Ambient',
         id: 'ambient',
         hard: ['avant-garde'],
-        soft: []
+        soft: [],
+        bands: 'Aphex Twin, Brian Eno',
+        dates: 'late 1960s'
     },
     {
         type: Type.Sub,
@@ -127,7 +129,9 @@ export const AvantGarde = [
         label: 'Industrial',
         id: 'industrial',
         hard: ['musique-concrete', 'punk'],
-        soft: ['electronic', 'krautrock']
+        soft: ['electronic', 'krautrock'],
+        bands: 'coil, nine inch nails, nurse with wound',
+        dates: '3 September 1975'
     },
     {
         type: Type.Sub,
@@ -163,8 +167,10 @@ export const AvantGarde = [
         parent: Type.Genre,
         label: 'Drone',
         id: 'drone',
-        hard: ['ambient', 'industrial', 'post-rock'],
-        soft: []
+        hard: ['ambient', 'industrial', 'post-rock', 'electronics'],
+        soft: [],
+        bands: '',
+        dates: '1960s'
     },
     {
         type: Type.Sub,
