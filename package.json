@@ -1,7 +1,7 @@
 {
 	"name": "music-graph",
 	"private": true,
-	"version": "0.0.2e",
+	"version": "0.0.3a",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",

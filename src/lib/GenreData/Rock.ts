@@ -424,7 +424,11 @@ export const Hardcore = [
         label: 'Metalcore',
         id: 'metalcore',
         hard: ['metal', 'hardcore'],
-        soft: []
+        soft: [],
+
+        dates: '1990s',
+        bands: 'Converge, Knocked loose, poison the well',
+        desc: 'Drop-tuned guitar riffs, constant double kick drumming with varying tempos and techniques, breakdown sections, and screaming or shouting vocals.'
     },
     {
         type: Type.Genre,
@@ -448,15 +452,28 @@ export const Hardcore = [
         label: 'Mathcore',
         id: 'mathcore',
         hard: ['metalcore', 'math-rock'],
-        soft: []
+        soft: [],
+        bands: 'Poison the well',
+        desc: 'Rhythmically complex, features unconventional time signatures, syncopated and dissonant riffs and erratic metric shifts.'
     },
     {
-        type: Type.Genre,
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Melodic Metalcore',
+        id: 'melodic-metalcore',
+        hard: ['metalcore'],
+        soft: [],
+        desc: 'Originated in the late 1990s when some metalcore bands infused elements of Melodic Death Metal into their sound to create a more metallic and melodic style.'
+    },
+    {
+        type: Type.Sub,
         parent: Type.Genre,
         label: 'Thall',
         id: 'thall',
-        hard: ['metalcore', 'math-rock'],
-        soft: []
+        hard: ['metalcore', 'math-rock', 'djent'],
+        soft: [],
+            desc: 'Utilizes rapid release bends and a precise playstyle while contrasting pitch-shifted high and low notes, with ambient sections for atmosphere and buildup'
+        
     },
     {
         type: Type.Sub,

@@ -13,7 +13,7 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 
 
 
-**Genre percentage: 45%** (more or less)
+**Genre percentage: 50%** (more or less)
 
 - **Rock** : 60%
 - **Avant-garde**: 70%
@@ -29,7 +29,7 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 - **Pop**: x.x
 - **Punk**: 95%
 - **reggae**: 95%
-- **metal**: 50%?
+- **metal**: 90%
 - **Jazz**: x.x
 - **ambient**: 60%
 - **Blues**: i dont even know where to start
