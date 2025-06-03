@@ -255,6 +255,16 @@ export const Punk = [
         id: 'skinhead',
         hard: ['oi'],
         soft: []
+    },
+    {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'Riot grrl',
+        id: 'riot',
+        desc:'Underground feminist Punk movement originating in the United States in the early 1990s.',
+        hard: ['punk', 'post-hardcore', 'hardcore'],
+        soft: [],
+        bands: 'Le tigre, Petrol girls, Skating polly, grlwood'
     }
 ]
 
@@ -536,7 +546,24 @@ export const Hardcore = [
         parent: Type.Sub,
         label: 'Japanese Hardcore',
         id: 'japanese-hardcore',
-        hard: ['burning-spirits'],
+        hard: ['burning-spirits', 'crust-punk'],
+        soft: []
+    },
+    {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'Queercore',
+        id: 'queercore',
+        desc: 'Movement mainly distinguished by its lyrical content expressing the viewpoints of the LGBTQ+ community, as well as promoting queer pride and unity.',
+        hard: ['hardcore', 'post-harcore', 'punk'],
+        soft: []
+    },
+    {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'Emo',
+        id: 'emo-scene',
+        hard: ['emo', 'screamo', 'emo-pop', 'skate-rock', 'pop-punk'],
         soft: []
     },
 ]
@@ -800,6 +827,17 @@ export const AlternativeRock = [
         hard: ['grunge'],
         soft: []
     },
+
+    {
+        type: Type.Scene,
+        parent: Type.Genre,
+        desc: 'Movement of the brit bands for a soft rock sound',
+        bands: 'pulp, coldplay, the verve, oasis',
+        label: 'Britpop',
+        id: 'britpop-scene',
+        hard: ['alternative-rock', 'britpop', 'indie-rock', 'grunge'],
+        soft: []
+    },
     {
         type: Type.Scene,
         parent: Type.Genre,
@@ -808,6 +846,7 @@ export const AlternativeRock = [
         hard: ['alternative-rock', 'alternative-metal'],
         soft: []
     },
+  
     {
         type: Type.Genre,
         parent: Type.Super,

@@ -181,6 +181,22 @@ const Metal = [{
     hard: ['stoner-metal', 'doom-metal'],
     soft: []
 },
+{
+    type: Type.Scene,
+    parent: Type.Super,
+    label: 'NWOBHM',
+    id: 'nwobhm',
+    hard: ['heavy-metal', 'thrash-metal'],
+    soft: []
+},
+{
+    type: Type.Scene,
+    parent: Type.Genre,
+    label: 'Kawaii Metal',
+    id: 'kawaii-metal',
+    hard: ['alternative-metal', 'metalcore', 'j-pop'],
+    soft: []
+},
 ]
 
 

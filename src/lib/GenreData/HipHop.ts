@@ -271,7 +271,7 @@ export const HipHop = [
     },
     {
         type: Type.Sub,
-        parent: Type.Genre,
+        parent: Type.Sub,
         label: 'Scam rap',
         id: 'scam-rap',
         desc: 'Lyrics from a gangster\'s perspective.',
@@ -299,7 +299,7 @@ export const HipHop = [
     },
     {
         type: Type.Sub,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Dungeon Rap',
         id: 'dungeon-rap',
         desc: 'Combines the dark production of Memphis Rap with the fantasy aesthetics and sound design of Dungeon Synth.',
@@ -308,22 +308,13 @@ export const HipHop = [
     },
     {
         type: Type.Genre,
-        parent: Type.Sub,
+        parent: Type.Genre,
         label: 'Phonk',
         id: 'phonk',
         desc: 'Modernized, eclectic take on classic Memphis Rap production, featuring various influences from other Hip Hop genres, especially drum programming inspired by other Southern Hip Hop as well as frequent jazzy, funky elements somewhat akin to West Coast Hip Hop and from Electronic music.',
         hard: ['memphis-rap', 'electronics' ],
         soft: [],
     },
-{
-    type: Type.Genre,
-    parent: Type.Sub,
-    label: 'Phonk',
-    id: 'phonk',
-    desc: 'Modernized, eclectic take on classic Memphis Rap production, featuring various influences from other Hip Hop genres, especially drum programming inspired by other Southern Hip Hop as well as frequent jazzy, funky elements somewhat akin to West Coast Hip Hop and from Electronic music.',
-    hard: ['memphis-rap', 'electronics' ],
-    soft: [],
-},
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -574,7 +565,7 @@ export const HipHop = [
         label: 'Bop',
         id: 'bop',
         desc: 'Grew out of the Chicago Drill scene in the early 2010s, characterized by autotuned vocals and upbeat synth melodies.',
-        hard: ['chicago-dril', 'pop-rap'],
+        hard: ['chicago-drill', 'pop-rap'],
         soft: [],
     },
     {

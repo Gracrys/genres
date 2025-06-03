@@ -217,4 +217,13 @@ export const AvantGarde = [
         hard: ['noise', 'electronics'],
         soft: ['industrial']
     },
+    {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'No wave',
+        id: 'no-wave',
+        hard: ['noise'],
+        soft: [],
+        desc: 'Underground, avant-garde, anti-art movement and music scene based in New York City around 1976-1980; commonly incorporates elements like dissonance, atonality, and stream-of-consciousness lyrics into various genres.'
+    },
 ]

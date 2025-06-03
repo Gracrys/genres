@@ -24,7 +24,7 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 - **hardcore, step, hardtek, breakbeat**: 80% (lacking some recs and better descs tho)
 - **world music**: i only got caribbean and is at 80%
 - **Caribbean**: 80%
-- **hiphop**: x.x
+- **hiphop**: 90%
 - **folk**: holy macarronni that thing is big
 - **Pop**: x.x
 - **Punk**: 95%
