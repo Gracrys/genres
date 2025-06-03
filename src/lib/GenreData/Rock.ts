@@ -237,7 +237,7 @@ export const Punk = [
         label: 'Synth punk',
         sub: 'Electronic punk',
         id: 'synth-punk',
-        hard: ['punk'],
+        hard: ['punk', 'electronics'],
         soft: []
     },
     {

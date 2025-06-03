@@ -17,7 +17,8 @@ export const Trap = [
         id: 'trap-edm',
     desc: 'Trap-influenced syncopated percussion with 808 samples and fast-paced hi-hats',
         hard: ['edm'],
-        soft: []
+        soft: [],
+        dates: '2010',
     },
     {
         type: Type.Sub,
@@ -75,6 +76,7 @@ export const Step = [
         parent: Type.Genre,
         label: 'Techstep',
         id: 'techstep',
+        dates: 'mid 1990s',
     desc: 'Futuristic, dark, and gritty sound; quantized and compressed drum breaks, distorted bass lines, and a focus on a sci-fi atmosphere and sampling sources.',
         hard: ['dnb'],
         soft: []
@@ -93,6 +95,7 @@ export const Step = [
         parent: Type.Genre,
         label: 'Darkstep',
         id: 'darkstep',
+        dates: 'mid 1990s',
     desc: 'Hard, uptempo and uses heavy breakbeats, Post-Industrial-influenced sound design, and horror movie samples to create a sinister, claustrophobic atmosphere.',
         hard: ['dnb'],
         soft: ['post-industrial']
@@ -130,6 +133,7 @@ export const Step = [
         parent: Type.Genre,
         label: 'Drumstep',
         id: 'drumstep',
+        dates: '2008',
     desc: 'Dancefloor-friendly, loud, and heavy combination of the drum programming of Jump-Up with the half-time tempo and midrange LFO wobble of Brostep.',
         hard: ['dnb', 'brostep'],
         artists: 'Excision, Bassnectar, modestep',
@@ -140,6 +144,7 @@ export const Step = [
         parent: Type.Genre,
         label: 'Harstep',
         id: 'hardstep',
+        dates: 'mid 1990s',
     desc: 'Very compressed and sparse drumming, extensive use of kick drums and gritty, minimalistic production style with emphasis on simple, deep, modulated bass patterns.',
         hard: ['dnb'],
         soft: []
@@ -282,6 +287,7 @@ export const DnB = [{
     label: 'Drum and Bass',
     id: 'dnb',
     sub: 'DnB',
+    dates: '1993',
     desc: 'Fast, syncopated breakbeat patterns (often sampled or programmed) with prominent basslines, commonly within the 160-180 BPM range.',
     hard: ['breakbeat', 'techno'],
     artists: 'noisia, squarepusher, pendulum',
@@ -338,6 +344,7 @@ desc: 'Offshoot of Drum and Bass (mainly Neurofunk) characterized by off-kilter 
     parent: Type.Genre,
     label: 'Jump-up',
     id: 'jump-up',
+    dates: 'mid 1990s',
 desc: 'Emerged in the mid-1990s, characterized by loud "wobbling" basslines, simpler drum loops, and a light-hearted and warm sound.',
     hard: ['dnb', 'jazz'],
     soft: []
@@ -416,6 +423,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     label: 'Big Beat',
     id: 'big-beat',
     hard: ['breakbeat'],
+    dates: '1992',
     artists: 'The prodigy',
     soft: [],
     desc: 'Popular in Britain during the late 1990s, driven by edited breakbeats and prominent basslines.',    
@@ -482,6 +490,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     parent: Type.Genre,
     label: 'Progressive Breaks',
     id: 'prog-breaks',
+    dates: '1992',
     hard: ['breakbeat'],
     soft: [],
     desc: 'Derivative of Progressive House that incorporates its lush, melodic synth leads and atmospheres into Breakbeat\'s syncopated and broken rhythms.',    
@@ -584,6 +593,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     parent: Type.Genre,
     label: 'Jungle',
     id: 'jungle',
+    dates:'1992',
     hard: ['breakbeat-hardcore'],
     soft: [],
     desc: 'Developed in the early 1990s from Breakbeat Hardcore, featuring rapid, chaotic-sounding breakbeats and strong basslines; known as the forerunner of most Drum and Bass styles.'
@@ -593,6 +603,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     parent: Type.Genre,
     label: 'Ragga Jungle',
     id: 'ragga-jungle',
+    dates: '1992',
     hard: ['breakbeat-hardcore', 'ragga'],
     soft: [],
     desc: 'Developed in the early 1990s in London, combining Jungle breakbeats with heavy influence from Ragga.'
@@ -607,6 +618,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     id: 'breakcore',
     hard: ['breakbeat', 'hardcore-electronics', 'dnb', 'industrial', 'glitch'],
     soft: [],
+    dates: 'mid 1990s',
     artists: 'Igorr, shoebill, sewerslvt, venetian Snares',
     desc: 'Mixes Hardcore [EDM] with cut-up, complex, and frequently noisy breakbeats at very high tempos inspired by Jungle and Drum and Bass, often with heavy use of sampling.',    
 },
@@ -710,6 +722,7 @@ export const EDM = [
         id: 'drill-n-bass',
         hard: ['idm', 'dnb'],
         soft: [],
+        dates: 'mid 1990s',
         desc: 'Frenzied, intricate beat programming inspired by Drum and Bass'
     },
     {
@@ -734,7 +747,7 @@ export const EDM = [
         label: 'Balearic Beat',
         id: 'balearic-beat',
         hard: ['edm'],
-        dates: 'late 1980s',
+        dates: '1992',
         soft: []
     },
     {
@@ -762,6 +775,7 @@ export const EDM = [
         parent: Type.Genre,
         label: 'Futurepop',
         id: 'futurepop',
+        dates: 'mid 1990s',
         hard: ['edm', 'synthpop'],
         soft: [],
         desc: 'Derivative of EBM, retaining its apocalyptic worldview but incorporating heavy influence from the melodic style of Synthpop.'
@@ -792,6 +806,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Jungle-Terror',
     id: 'jungle-terror',
+        dates: '2010',
     hard: ['edm'],
     soft: ['dutch-house', 'tribal-house'],
     desc: 'Emerging mostly from Dutch House and Big Room House, incorporates Tribal House-influenced percussion, hard kicks, and animal sounds resulting in a wild, jungle-resembling atmosphere in a festival EDM-oriented context.'
@@ -848,6 +863,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Moombahcore',
     id: 'moomnbahcore',
+        dates: '2010',
     hard: ['edm'],
     soft: [],
     desc: 'High-pitched synth leads, gritty percussion, a kick-snare pattern, aggressive bass drops, and around 110 BPM while often paralleling Complextro or Brostep.'
@@ -857,6 +873,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Moombahton',
     id: 'moomnbahton',
+        dates: '2009',
     hard: ['edm'],
     soft: [],
     desc: 'Offshoot of Dutch House characterized by tempos in the 100-110 BPM range, Reggaetón-influenced rhythms, bass-heavy kicks and high-pitched synths.'
@@ -875,6 +892,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Nu Disco',
     id: 'nu-disco',
+        dates: 'mid 1990s',
     hard: ['edm'],
     soft: [],
     desc: 'Stylistically diverse form of underground Japanese Electronic Dance Music utilizing energetic beats built around samples from pop and/or nerd culture.'
@@ -893,6 +911,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Post-Dubstep',
     id: 'post-dubstep',
+        dates: '2009',
     hard: ['edm'],
     soft: ['dubstep'],
     desc: 'Minimalistic, atmospheric sound design and eclectic drum patterns, derived from but not fitting Dubstep.'
@@ -949,6 +968,7 @@ export const EDM = [
     label: 'Wonky',
     id: 'wonky',
     hard: ['edm', 'dubstep', 'hiphop'],
+    dates: '2006',
     soft: [],
     desc: 'Off-kilter fusion of Dubstep and Hip Hop which first developed in the mid-to-late 2000s.'
 },
@@ -1063,6 +1083,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Electroclash',
     id: 'electroclash',
+    dates: 'late 1990s',
     hard: ['edm'],
     desc: 'Draws from 1980s styles such as Electro, New Wave, and Electro-Disco combined with Techno, resulting in minimal, throbbing beats and basslines, buzzing synthesizer parts, vocoders and often monotone, half-spoken, half-sung vocals.',
     soft: ['electro', 'new-wave', 'electro-disco']
@@ -1099,6 +1120,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Footwork',
     id: 'footwork',
+    dates: 'late 1990s',
     hard: ['edm'],
     desc: 'Extensive use of drum fills, tom drums, handclaps, and snares within fast-paced, highly syncopated beats not bound to a 4/4 kick rhythm.',
     soft: []
@@ -1200,6 +1222,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Future Bass',
     id: 'future-bass ',
+        dates: '2009',
     hard: ['edm'],
     desc: 'Woozy, detuned synthesizers, 7th chords, harsh basslines, syncopated percussion with fast-paced hi-hats and a melodic, carefree atmosphere.',
     soft: []
@@ -1227,6 +1250,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Future Rave',
     id: 'future-rave',
+    dates: 'early 2020s',
     hard: ['edm'],
     desc: 'Emerged in the late 2010s by combining the mainstage EDM approach with influences from then-popular forms of Techno and old-school Trance/rave-inspired grooves and atmospheres.',
     soft: ['techno']
@@ -1236,6 +1260,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Ghettotech',
     id: 'ghettotech',
+    dates: '1995',
     hard: ['edm'],
     desc: 'Fuses the syncopation and synthesized sounds of Electro and Detroit Techno with the cut-up samples of Ghetto House and fast rhythms of Miami Bass.',
     soft: ['techno']
@@ -1247,6 +1272,7 @@ export const EDM = [
     label: 'Grime',
     id: 'grime',
     hard: ['edm', 'neurofunk'],
+    dates: '2000',
     desc: 'UK Garage-derived production style characterized by dark, fast-paced, often aggressive beats that commonly features fast-paced MCing.',
     soft: []
 }, 
@@ -1295,6 +1321,7 @@ export const Hardstyle = [
         parent: Type.Genre,
         label: 'Hardstyle',
         id: 'hardstyle',
+    dates: 'late 1990s',
         hard: ['hard-dance'],
         soft: [],
         desc: 'Hard, four-on-the-floor kick drums, fast tempo around 150 BPM, reverse bass and harsh, distorted synths.',    
@@ -1304,6 +1331,7 @@ export const Hardstyle = [
         parent: Type.Genre,
         label: 'Dubstyle',
         id: 'dubstyle',
+        dates: '2009',
         hard: ['hardstyle', 'dubstep'],
         soft: [],
         desc: 'Characterized by the incorporation of the half-time rhythms and wobbly basslines of Dubstep.',    
@@ -1340,6 +1368,7 @@ export const Hardstyle = [
         parent: Type.Genre,
         label: 'Hard Trance',
         id: 'hard-trance',
+        dates: '1992',
         hard: ['hard-dance', 'trance'],
         soft: [],
         desc: 'Rave-oriented form of Trance infusing its atmospheres with faster, thumping rhythms and strong melodic / bassline sections, initially spawning out of the first wave in early-1990s Western Europe.',    
@@ -1349,6 +1378,7 @@ export const Hardstyle = [
         parent: Type.Genre,
         label: 'Jumpstyle',
         id: 'jumpstyle',
+    dates: '2000s',
         hard: ['hard-dance'],
         soft: [],
         desc: 'Features a heavy 909 kick drum, four-on-the-floor beat, and a tempo between 140 and 150 BPM.',    
@@ -1360,7 +1390,7 @@ export const Hardstyle = [
         id: 'lento-violento',
         hard: ['hard-dance', 'hardcore-electronics', 'hardstyle'],
         soft: [],
-        desc: 'Features a &#34;slow and violent&#34; sound between 70-120 BPM with hard kicks inspired by Hardcore [EDM] and Hardstyle.',    
+        desc: 'Features a "slow and violent" sound between 70-120 BPM with hard kicks inspired by Hardcore [EDM] and Hardstyle.',    
     },
     {
         type: Type.Sub,
@@ -1472,6 +1502,7 @@ desc: 'Busy, punchy percussion, prominent basslines and dirty, distorted synths 
     parent: Type.Genre,
     label: 'Big Room House',
     id: 'big-room-house',
+    dates: '2008',
     hard: ['house'],
     soft: [],
 desc: 'Energetic, festival-oriented style characterized by heavy reverb, intense build-ups, strong kicks, minimalistic drop melodies, and sparse, raw breakdowns.'
@@ -1490,6 +1521,7 @@ desc: 'Originated in the 2010s in Brazil, taking influences from Deep House and 
     parent: Type.Sub,
     label: 'Slap House',
     id: 'slap-house',
+    dates: 'late 2010s',
     hard: ['brazilian-bass', 'future-house'],
     soft: [],
 desc: 'Taking influences from Brazilian Bass and Future House, characterized by prominent, bouncy bassline and simple, upbeat melodies.'
@@ -1565,6 +1597,7 @@ desc: 'Development of handbag / Diva House characterized by heavier, hard hittin
     label: 'UK Hard House',
     id: 'uk-hard-house',
     hard: ['house', 'hard-dance'],
+    dates: '1991',
     soft: [],
     desc: "Defined by offbeat bass patterns, compressed 909-style drums, buildup-drop structures, hoover sounds, and tempos between 120 and 155 BPM.",
 },
@@ -1583,6 +1616,7 @@ desc: 'Development of handbag / Diva House characterized by heavier, hard hittin
     parent: Type.Sub,
     label: 'Hardbass',
     id: 'hardbass',
+    dates: '2000',
     desc: 'Bouncy hard bass beats, fast tempo, usually 150-175 BPM, and occasional lyrics or rapping.',
     hard: ['scouse-house'],
     soft: []
@@ -1607,6 +1641,7 @@ export const Garage = [{
     id: 'uk-garage',
     hard: ['garage-house', 'edm'],
     soft: [],
+    dates: '1994',
     desc: 'Shuffling rhythms and influences from sources including Contemporary R&B and Hip Hop, as well as many forms of Electronic.'
 },
  
@@ -1615,6 +1650,7 @@ export const Garage = [{
     parent: Type.Genre,
     label: '2-step',
     id: '2-step',
+    dates: 'late 1990s',
     hard: ['uk-garage'],
     soft: [],
     desc: 'Originating in London and popular in the late 1990s; jittery, shuffling rhythms rarely following a four-on-the-floor pattern.'
@@ -1633,6 +1669,7 @@ export const Garage = [{
     parent: Type.Genre,
     label: 'Breakstep',
     id: 'breakstep',
+    dates: 'late 1990s',
     hard: ['uk-garage'],
     soft: [],
     desc: 'Strong emphasis on intricate basslines as well as four-on-the-floor beat patterns.'
@@ -1643,6 +1680,7 @@ export const Garage = [{
     label: 'Future Garage',
     id: 'future-garage',
     hard: ['uk-garage'],
+    dates: '2005',
     soft: ['2-step'],
     desc: 'Combines the rhythms of late 1990s and early 2000s 2-Step with novel moods and production approaches, commonly featuring jittery, broken rhythms, vocal chops, and warm synth pads and plucks.'
 },
@@ -1651,6 +1689,7 @@ export const Garage = [{
     parent: Type.Genre,
     label: 'Speed Garage',
     id: 'speed-garage',
+    dates: '1994',
     hard: ['uk-garage', 'house'],
     soft: ['jungle'],
     desc: 'Primarily British style that paved the way for UK Garage, combining cut-up vocal samples and sped up four-on-the-floor Garage House rhythms with Jungle-esque basslinesPrimarily British style that paved the way for UK Garage, combining cut-up vocal samples and sped up four-on-the-floor Garage House rhythms with Jungle-esque basslines.'
@@ -1776,6 +1815,7 @@ export const Techno = [{
     parent: Type.Genre,
     label: 'Hard Techno',
     id: 'hard-techno',
+        dates: 'mid 1990s',
     hard: ['techno'],
     soft: [],
     desc: 'Typically rave-oriented form characterized by hard, prominent kick drums, pounding rhythms, fast tempos around 140-160 BPM, and aggressive, often distorted sounds.'
@@ -1823,6 +1863,7 @@ export const Techno = [{
     parent: Type.Genre,
     label: 'Minimal Techno',
     id: 'minimal-techno',
+    dates: '1993',
     hard: ['techno'],
     soft: [],
     desc: 'Stripped-down and sparse, often featuring a dark sound and a slow, steady development through the track.'
@@ -1832,6 +1873,7 @@ export const Techno = [{
     parent: Type.Sub,
     label: 'Dub Techno',
     id: 'dub-techno',
+    dates: '1993',
     hard: ['minimal-techno', 'dub'],
     soft: [],
 },
@@ -1858,7 +1900,7 @@ export const Techno = [{
     parent: Type.Genre,
     label: 'Techno Bass',
     id: 'techno-bass',
-    hard: ['techno'],
+    hard: ['techno', 'miami-bass'],
     soft: [],
     desc: 'Minimal, stripped-down with an emphasis on low-frequency bass partitions.'
 },
@@ -1927,6 +1969,7 @@ export const Trance = [{
     parent: Type.Genre,
     label: 'Dream Trance',
     id: 'dream-trance',
+    dates: '1992',
     hard: ['trance'],
     soft: ['progressive-house', 'eurodance'],
     desc: 'Slow tempo (about 130 BPM) with strong roots in Progressive House, using beats typical of Eurodance and Dance-Pop; emphasizes a laid-back, carefree, and dreamlike sound.',
@@ -1945,6 +1988,7 @@ export const Trance = [{
     parent: Type.Sub,
     label: 'Hands up',
     id: 'hands-up',
+    dates: '2000',
     hard: ['euro-trance'],
     soft: [ 'dance-pop'],
     desc: 'Prominent, melodic supersaw leads, Dance-Pop derived hooks, and a strong reliance on sidechained basslines and hard, powerful drums.',
@@ -1971,6 +2015,7 @@ export const Trance = [{
     type: Type.Sub,
     parent: Type.Genre,
     label: 'Progressive Trance',
+    dates: '1992',
     id: 'progressive-trance',
     hard: ['trance', 'progressive-house'],
     soft: [],
@@ -2036,6 +2081,7 @@ export const Trance = [{
     parent: Type.Sub,
     label: 'Goa Trance',
     id: 'goa-trance',
+    dates: '1991',
     hard: ['psytrance'],
     soft: [],
     desc: 'Forerunner of Psytrance styles that emerged in the early 1990s, distinguished by old-school, organic sound with rapid, oriental-inspired melodies',
@@ -2045,6 +2091,7 @@ export const Trance = [{
     parent: Type.Sub,
     label: 'Nitzhonot',
     id: 'nitzhonot',
+        dates: 'mid 1990s',
     hard: ['goa-trance'],
     soft: [],
     desc: 'Fast-paced, featuring rapid melodic lines and usually hard and high-pitched kicks',
@@ -2055,6 +2102,7 @@ export const Trance = [{
     label: 'Progressive Psyrance',
     id: 'progressive-psytrance',
     hard: ['psytrance'],
+    dates: 'late 1990s',
     soft: [],
     desc: 'Emerged in the early 2000s, featuring a slow tempo range and clean production.',
 },
@@ -2072,6 +2120,7 @@ export const Trance = [{
     parent: Type.Sub,
     label: 'Suomisaundi',
     id: 'suomisaundi',
+        dates: 'mid 1990s',
     hard: [ 'psytrance'],
     soft: [],
     desc: 'Finnish-based deviation of Psytrance with an emphasis on free-form experimentation and humor.',
@@ -2090,6 +2139,7 @@ export const Trance = [{
     parent: Type.Genre,
     label: 'Uplifting Trance',
     id: 'uplifting-psytrance',
+    dates: 'late 1990s',
     hard: [ 'trance'],
     soft: [],
     desc: 'Euphoric melodies, buildup-breakdown-anthem structures, common usage of supersaws, and a BPM range of usually around 135-142.',
@@ -2099,6 +2149,7 @@ export const Trance = [{
     parent: Type.Genre,
     label: 'Vocal Trance',
     id: 'vocal-psytrance',
+        dates: 'mid 1990s',
     hard: [ 'trance'],
     soft: ['progressive-trance', 'uplifting-trance', 'euro-trance'],
     desc: 'Melodic, polished, Pop-like, and vocal-focused with around 120-145 BPM and frequent overlap with Progressive Trance, Uplifting Trance, and Euro Trance',
@@ -2214,6 +2265,7 @@ export const Bit = [
         type: Type.Sub,
         label: 'Bitpop',
         id: 'bitpop',
+        dates: '1993',
         hard: ['bit'],
         soft: [],
         desc: 'Fuses Bit Music with additional synths, beats, guitars and modern production values, emphasizing highly catchy melodies and relatively fast tempos'
@@ -2226,7 +2278,9 @@ export const Glitch = [{
     label: 'Glitch',
     id: 'glitch',
     hard: ['electronics', 'noise', 'choppednscrewed'],
-    soft: []
+    soft: [],
+    dates: '1991',
+    bands: 'Nero\'s Day at Disneyland, matmos'
 },
 {
     type: Type.Sub,
@@ -2235,7 +2289,8 @@ export const Glitch = [{
     id: 'glitch-hop',
     hard: ['glitch', 'edm'],
     desc: 'Tempos around 100-110 BPM, swung, bouncy drum patterns, and a focus on upbeat, danceable drops and buildups.',
-    soft: []
+    soft: [],
+    bands: 'the glitch mob, arca, koan sound'
 
 }, 
 {
@@ -2293,6 +2348,7 @@ export const Vapor = [
         parent: Type.Genre,
         label: 'Hardvapour',
         id: 'hardvapour',
+        dates: '2015',
         hard: ['vapor', 'hardcore-electronics', 'edm', 'techno'],
         soft: [],
         desc: 'Influenced by Hardcore [EDM] and Techno and made in response to the Vaporwave movement.'
@@ -2532,6 +2588,7 @@ export const HardcoreElectronics = [{
     id: 'gabber',
     hard: ['hardcore-electronics'],
     soft: [],
+    dates:'1992',
     bands:'Coakira',
     desc: 'Fast-paced and energetic, often in the 160-220 BPM range, with a hallmark of a distinctive distorted kick sound.',    
 },
@@ -2558,6 +2615,7 @@ export const HardcoreElectronics = [{
     parent: Type.Sub,
     label: 'Bouncy Techno',
     id: 'bouncy-techno',
+    dates: '1993',
     hard: ['happy-hardcore'],
     soft: [],
     desc: 'Average tempo of 160 to 180 BPM, four-on-the-floor beats, melodic and repetitive synth melodies, drums with hard kicks, short breaks, progressive stomping rhythms, and offbeat notes.',    
@@ -2706,6 +2764,7 @@ const LatinElectronics = [
         parent: Type.Genre,
         label: 'Nortec',
         id: 'nortec',
+        dates: '2000',
         hard: ['latin-electronic'],
         desc: 'Samples and synthesizes Mexican styles like Banda sinaloense and Norteño into a sound related to IDM and House.',
         soft: ['banda', 'house']
@@ -2773,6 +2832,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Electro House',
     id: 'electro-house',
+    dates: 'late 1990s',
     hard: ['electro', 'house'],
     desc: 'Typically instrumental, leftfield Grime style characterized by sparse, weightless percussion and spectral, atmospheric production.',
     soft: []
@@ -2782,6 +2842,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Fidget House',
     id: 'fidget-house',
+    dates: '2005',
     hard: ['electro-house','breakbeat-hardcore'],
     desc: 'Makes heavy use of Breakbeat hardcore-esque synth stabs, pitch bending of basslines, and cut-up vocal samples, as well as glitchy, or \"choppy\", 4/4 rhythms.',
     soft: []
@@ -2791,6 +2852,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Complextro',
     id: 'complextro',
+    dates: '2008',
     hard: ['electro-house', 'brostep', 'fidget-house'],
     desc: 'Features densely-layered sound design, fast-paced cut-up sections, aggressive stabs, and common crossover with Brostep and Fidget House.',
     soft: []
@@ -2802,6 +2864,7 @@ export const Electronics = [
     label: 'Dutch House',
     id: 'dutch-house',
     hard: ['electro-house', 'fidget-house'],
+    dates: '2007',
     desc: 'High-pitched wonky synth melodies and heavy influence from Fidget House which developed in the Netherlands around 2007-08.',
     soft: []
 }, 
@@ -2831,6 +2894,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Melbourne Bounce',
     id: 'melbourne-bounce',
+        dates: '2010',
     hard: ['electro-house'],
     desc: 'Offbeat basslines giving it a \"bouncy\" groove, and minimalistic, side-chained melodies often making use of [Genre29430]-influenced synths, horns or vocal chops, resulting in a flippant, party-oriented atmosphere',
     soft: [ 'dutch-house']
@@ -2877,6 +2941,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Future Funk',
     id: 'future-funk',
+        dates: '2010',
     hard: ['house', 'vaporwave'],
     desc: 'Sample-based form of House which formed out of Vaporwave in the early 2010s.',
     soft: []
@@ -2886,6 +2951,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Future House',
     id: 'future-house',
+    dates: '2013',
     hard: ['house', 'electro-house'],
     desc: 'Features distinctive metallic-sounding drops and frequency-modulated basslines at around 120-130 BPM.',
     soft: []
@@ -2924,6 +2990,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Jersey Sound',
     id: 'jersey-sound',
+    dates: 'late 1990s',
     hard: ['garage-house', 'gospel'],
     desc: 'Soulful, melodic, Gospel-infused House music developed in Newark, NJ in the late 1980s and early 1990s with an emphasis on songcraft.',
     soft: []
@@ -2946,6 +3013,7 @@ export const Electronics = [
     parent: Type.Sub,
     label: 'Juke',
     id: 'juke',
+    dates: 'late 1990s',
     hard: ['ghetto-house'],
     desc: 'Faster than Ghetto House, playing at 160bpm, and makes striking use of unconventional drum patterns which differ wildly from other House styles.',
     soft: []
@@ -2974,6 +3042,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Gqom',
     id: 'gqom',
+    dates: '2013',
     hard: ['house', 'kwaito'],
     desc: 'Evolved from South African House, specifically Kwaito; often described as a more minimal and raw version.',
     soft: []
@@ -3033,6 +3102,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'MicroHouse',
     id: 'microhouse',
+        dates: 'mid 1990s',
     hard: ['house'],
     desc: 'Stripped-down, minimal form of House, originating in the late 90s, which takes influence from Minimal Techno, Glitch and IDM.',
     soft: ['minimal-techno', 'glitch', 'idm']
@@ -3051,6 +3121,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Outsider House',
     id: 'outsider-house',
+        dates: '2010',
     hard: ['house'],
     desc: 'Mostly derived from Deep House; intentional use of rough, lo-fi production, often utilizing a mix of analog/analog-like and digital instrumentation.',
     soft: ['deep-house']
@@ -3146,6 +3217,7 @@ export const Electronics = [
     parent: Type.Genre,
     label: 'Tropical House',
     id: 'tropical-house',
+        dates: '2012',
     hard: ['house'],
     desc: 'Offshoot of Deep House featuring slow tempos around 100-115 BPM, light percussion and acoustic instrumentation, setting out to create a relaxed, summery, beach-like atmosphere.',
     soft: ['deep-house']
@@ -3236,6 +3308,7 @@ export const Electronics = [
     parent: Type.Super,
     label: 'Funktronica',
     id: 'funktronica',
+    dates: '2000',
     hard: ['electronics', 'synth-funk', 'italo-disco'],
     desc: 'Originated in eastern North America around the turn of the 21st century, combining trends of Synth Funk and Italo-Disco',
     soft: []
@@ -3296,20 +3369,32 @@ export const Electronics = [
     ...HardcoreElectronics,
     ...Hardstyle,
     {
-        type: Type.Sub,
+        type: Type.Genre,
         parent: Type.Super,
         label: 'HyperPop',
         id: 'hyperpop',
+        dates: '2016',
         hard: ['electronics'],
         soft: ['bubblegum-pop', 'electropop', 'nightcore'],
         desc: 'Developed and took inspiration from Bubblegum Bass and popular 2000s-2010s Electropop, characterized by eclectic, unconventional, mechanical-sounding and dense production; and by manipulated, usually auto-tuned vocals.'
         ,bands: 'Arca, Charlie XCX, Forest Children, 100 gecs'
     },
+        {
+            type: Type.Sub,
+            parent: Type.Genre,
+            label: 'Digicore',
+            id: 'digicore',
+            desc: 'Developed in the late 2010s and characterized by frantic, bombastic, and glamourous production, usually derived from Trap, that serves to accompany highly melodious, auto-tuned, and hi-pitched vocal performances, often done with breathy voice singing and sing-rapping.',
+            hard: ['hyperpop'],
+            soft: ['hiphop'],
+            bands: 'jane Remover'
+        },
     {
         type: Type.Sub,
         parent: Type.Super,
         label: 'Illbient',
         id: 'illbient',
+        dates: '1992',
         hard: ['electronics'],
         soft: ['ambient', 'hiphop', 'dub'],
         desc: 'Combines Ambient soundscapes with Hip Hop drum patterns, breaks, and samples through the busy effect layering of Dub.'
@@ -3318,6 +3403,7 @@ export const Electronics = [
         type: Type.Genre,
         parent: Type.Super,
         label: 'Indietronica',
+        dates: '1994',
         id: 'indietronica',
         hard: ['electronics'],
         soft: [],
@@ -3438,6 +3524,7 @@ export const Electronics = [
         parent: Type.Super,
         label: 'Tecnobrega',
         id: 'tecnobrega',
+        dates: '2000',
         hard: ['electronics'],
         soft: [],
         desc: 'Fast and electronic-based style that evolved from Brega calypso, particularly associated with peripheral areas of the city of Belém.'
@@ -3460,6 +3547,7 @@ export const Electronics = [
         soft: ['choppednscrewed'],
         desc: '(sometimes referred to as drag,[1] screwgaze or haunted house)[2] is a microgenre of electronic music that is musically characterized by high-pitched keyboard effects, heavily layered basslines and trap-style drum loops. Aesthetically, it employs occult- and gothic-inspired themes.'
         ,bands: 'Salem, crystal castles, sidewalks and skeletons, ic3peak'
+        ,dates: '2007',
     },
     ...Vapor,
 

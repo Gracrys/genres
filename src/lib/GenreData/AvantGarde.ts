@@ -25,6 +25,15 @@ export  const Ambient =  [{
         label: 'Dark Ambient',
         id: 'dark-ambient',
         hard: ['ambient', 'industrial'],
+        soft: [],
+        bands: 'nine inch nails, uboa, the caretaker'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Dungeon Synth',
+        id: 'dungeon-synth',
+        hard: ['dark-ambient'],
         soft: []
     },
     {
@@ -33,7 +42,8 @@ export  const Ambient =  [{
         label: 'Black Ambient',
         id: 'black-ambient',
         hard: ['dark-ambient'],
-        soft: []
+        soft: [],
+        bands: 'blut aus nord'
     },
     {
         type: Type.Sub,
@@ -97,23 +107,25 @@ export const AvantGarde = [
         hard: ['musique-concrete', 'modern-classical'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Harsh Noise',
-        id: 'harsh-noise',
-        hard: ['noise'],
-        soft: []
-    },
+    
     {
         type: Type.Genre,
         parent: Type.Super,
         label: 'Noise',
         id: 'noise',
         hard: ['avant-garde'],
-        soft: []
+        soft: [],
+        bands: 'Merzbow, gerogiregegege'
     },
-
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Harsh Noise',
+        id: 'harsh-noise',
+        hard: ['noise'],
+        soft: [],
+        bands: 'merzbow, gerogigegege, hanatarash'
+    },
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -131,7 +143,17 @@ export const AvantGarde = [
         hard: ['musique-concrete', 'punk'],
         soft: ['electronic', 'krautrock'],
         bands: 'coil, nine inch nails, nurse with wound',
-        dates: '3 September 1975'
+        dates: '3 September 1975',
+        desc: 'Emerged out of Punk and avant-garde art movements in the mid-1970s, often characterized by a bleak, mechanical atmosphere, the use of metallic percussion as well as other unconventional instruments, and extensive use of sampling influenced by Musique concrète.'
+    },  {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Martial Industrial',
+        id: 'martial-industrial',
+        hard: ['industrial'],
+        soft: [],
+        bands: 'Laibach',
+        desc: 'Incorporates elements of traditional European military marches with Neoclassical Darkwave, Dark Ambient, Industrial, and Neofolk.'
     },
     {
         type: Type.Sub,
@@ -170,7 +192,9 @@ export const AvantGarde = [
         label: 'Post Industrial',
         id: 'post-industrial',
         hard: ['industrial'],
-        soft: ['rock', 'electronics']
+        soft: ['rock', 'electronics'],
+        desc: 'Umbrella group of genres that combine the dark, mechanical aesthetic of early Industrial music with more accessible genres, such as Rock and Electronic Dance Music.',
+        bands: 'nine inch nails, puscifer'
     },
 
     {
@@ -180,8 +204,9 @@ export const AvantGarde = [
         id: 'drone',
         hard: ['ambient', 'industrial', 'post-rock', 'electronics'],
         soft: [],
-        bands: '',
+        bands: 'Boris, stars of the lid',
         dates: '1960s'
+
     },
     {
         type: Type.Sub,
