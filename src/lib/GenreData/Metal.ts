@@ -12,7 +12,7 @@ export const Metal = [{
     type: Type.Super,
     label: 'Heavy Metal',
     id: 'metal',
-    hard: ['rock'],
+    hard: ['hard-rock'],
     soft: ['blues-rock']
     ,desc: 'Heavier outgrowth of Hard Rock featuring greater distortion and intensity along with lesser Blues influences.'
 },
@@ -27,7 +27,7 @@ export const Metal = [{
 },
 {
     type: Type.Genre,
-    parent: Type.Super,
+    parent: Type.Genre,
     label: 'Power Metal',
     id: 'power-metal',
     hard: ['speed-metal'],
@@ -327,7 +327,7 @@ export const Metal = [{
 },
 {
     type: Type.Sub,
-    parent: Type.Genre,
+    parent: Type.Sub,
     label: 'Dissonant Death Metal',
     id: 'dissonant-death-metal',
     hard: ['technical-death-metal'],
@@ -385,7 +385,7 @@ export const Metal = [{
 },
 {
     type: Type.Sub,
-    parent: Type.Genre,
+    parent: Type.Sub,
     label: 'Epic Doom Metal',
     id: 'epic-doom-metal',
     hard: ['traditional-doom-metal'],
@@ -491,7 +491,7 @@ export const Metal = [{
 },
 {
     type: Type.Sub,
-    parent: Type.Genre,
+    parent: Type.Super,
     label: 'Trance Metal',
     id: 'trance-metal',
     hard: ['metal', 'trance'],
@@ -500,7 +500,7 @@ export const Metal = [{
 },
 {
     type: Type.Sub,
-    parent: Type.Genre,
+    parent: Type.Super,
     label: 'Viking Metal',
     id: 'viking-metal',
     hard: ['metal'],
@@ -508,8 +508,17 @@ export const Metal = [{
     desc: 'Developed out of Black Metal and embodies an epic, Viking-like aesthetic.' ,
 },
 {
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Funk Metal',
+    id: 'funk-metal',
+    hard: ['metal', 'funk-rock'],
+    soft: [],
+    bands: 'Faith no more, Primus, Mr Bungle'
+},
+{
     type: Type.Genre,
-    parent: Type.Genre,
+    parent: Type.Super,
     label: 'Symphonic Metal',
     id: 'symphonic-metal',
     hard: ['metal'],
@@ -521,7 +530,7 @@ export const Metal = [{
     parent: Type.Super,
     label: 'NWOBHM',
     id: 'nwobhm',
-    hard: ['heavy-metal', 'thrash-metal'],
+    hard: ['metal', 'thrash-metal'],
     soft: []
 },
 {

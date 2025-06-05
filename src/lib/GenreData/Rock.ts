@@ -79,8 +79,10 @@ export const Punk = [
     label: 'Post Punk Revival',
     id: 'post-punk-revival',
     hard: ['post-punk'],
-    soft: []
+    soft: [],
+    desc: 'Incorporating the sounds and aesthetics of Post-Punk into Indie Rock, with jagged guitarwork, a dominant and danceable rhythm section, clean production, and poppy song structures.'
 },
+
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -101,8 +103,8 @@ export const Punk = [
         type: Type.Sub,
         parent: Type.Sub,
         label: 'Dance-punk Revival',
-        id: 'dance-punk',
-        hard: ['dance-punk', 'post-punk-revovañ', 'electronic', 'alternative-dance'],
+        id: 'dance-punk-revival',
+        hard: ['dance-punk', 'post-punk-revival', 'electronic', 'alternative-dance'],
         soft: []
     },
     {
@@ -142,6 +144,15 @@ export const Punk = [
     {
         type: Type.Sub,
         parent: Type.Genre,
+        label: '2-Tone',
+        id: '2-tone',
+        desc: 'Combines 1960s Jamaican Ska with Punk Rock and New Wave to create tracks played at faster tempos and with a harder edge than the original Jamaican records.',
+        hard: ['new-wave'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
         label: 'Pop punk',
         id: 'pop-punk',
         hard: ['punk', 'pop'],
@@ -155,14 +166,7 @@ export const Punk = [
         hard: ['pop-punk'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Surf punk',
-        id: 'surf-punk',
-        hard: ['punk'],
-        soft: []
-    },
+    
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -227,7 +231,7 @@ export const Punk = [
         parent: Type.Genre,
         label: 'Könsrock',
         desc: 'Inspired by Post-Punk but with a more bizarre atmosphere with unusual or comic vocal techniques and a lyrical focus on the offensive and scatological.',
-        id: 'horror-punk',
+        id: 'konsrock',
         hard: ['post-punk'],
         soft: []
     },
@@ -360,7 +364,10 @@ export const Hardcore = [
         label: 'Emo',
         id: 'emo',
         hard: ['post-hardcore'],
-        soft: []
+        soft: [],
+        desc: 'Focuses on emotional lyrics, expressive vocals, melodic songwriting, and dynamic song structures.',
+        bands: 'My chemical Romance'
+
     },
     {
         type: Type.Sub,
@@ -368,7 +375,8 @@ export const Hardcore = [
         label: 'Emocore',
         id: 'emocore',
         hard: ['emo', 'hardcore'],
-        soft: []
+        soft: [],
+        desc: 'Emerged primarily in Washington D.C. in 1985 as a reaction to the stagnant Hardcore Punk scene, with a less aggressive style that was more melodic and often featured emotional, introspective lyrics.'
     },
     {
         type: Type.Sub,
@@ -376,15 +384,28 @@ export const Hardcore = [
         label: 'Emo-pop',
         id: 'emo-pop',
         hard: ['emo', 'pop'],
-        soft: []
+        soft: ['alternative-rock', 'pop-punk'],
+        desc: 'Mainstream derivative of Emo, puts more emphasis on the poppy sensibilities of Alternative Rock and Pop Punk.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Mall Screamo',
+        id: 'mall-screamo',
+        hard: ['emo'],
+        soft: [],
+        desc: 'Heavy instrumentation, melodic verse-chorus songwriting, and expressive singing contrasted with screaming vocals.'
+
     },
     {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Midwest Emo',
         id: 'midwest-emo',
-        hard: ['emo', 'math-rock'],
-        soft: []
+        hard: ['emo', 'math-rock', 'indie-rock'],
+        soft: [],
+        desc: 'Characterized by shifts between loud and soft dynamics, off-key, strained and emotional vocals, sometimes with intricate instrumental arrangements and layered arpeggiated guitar parts.',
+        bands: 'Brand new, Modest Mouse, Jimmy eat world'
     },
     {
         type: Type.Genre,
@@ -392,7 +413,9 @@ export const Hardcore = [
         label: 'Screamo',
         id: 'screamo',
         hard: ['emo', 'hardcore'],
-        soft: []
+        soft: [],
+        desc: 'Intense, aggressive and complex approach to Emo featuring higher levels of abrasiveness and dissonance, accompanied by guitar-focused melodicism and harsh vocals.'
+        ,bands: 'Touche Amore, Orchid, Saetia'
     },
     {
         type: Type.Sub,
@@ -400,7 +423,9 @@ export const Hardcore = [
         label: 'Emoviolence',
         id: 'emoviolence',
         hard: ['screamo', 'powerviolence'],
-        soft: []
+        soft: [],
+        bands: 'orchid',desc: 'Shorter length and volatile song structures, while borrowing techniques from Powerviolence such as blast beats, unconventional screaming and noisier sounds.'
+
     },
     {
         type: Type.Sub,
@@ -525,14 +550,7 @@ export const Hardcore = [
         hard: ['hardcore'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Deathgrind',
-        id: 'deathgrind',
-        hard: ['grindcore'],
-        soft: []
-    },
+
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -592,7 +610,10 @@ export const RocknRoll = [{
     label: 'Rock & Roll',
     id: 'rocknroll',
     hard: ['rock', 'blues'],
-    soft: ['pop']
+    soft: ['pop'],
+    dates: '1950',
+    desc: 'Developed in the United States and popularized in the 1950s, featuring prominent Blues scales, poppy structures, and strong rhythms.'
+    ,bands: 'Little Richard, Buddy Holly, Johnny cash'
 },
 {
     type: Type.Sub,
@@ -613,11 +634,68 @@ export const RocknRoll = [{
 {
     type: Type.Sub,
     parent: Type.Genre,
+    label: 'Twist',
+    id: 'twist',
+    hard: ['rocknroll'],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
     label: 'Proto-Punk',
     id: 'proto-punk',
     hard: ['rocknroll'],
     soft: []
-}
+},
+{
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Surf Music',
+    id: 'surf',
+    hard: ['rock'],
+    soft: ['rocknroll'],
+    dates: '1950',
+    desc: 'Evolved from late 1950s instrumental Rock & Roll in the USA, particularly associated with the surfing culture in Southern California.'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Indie Surf',
+    id: 'indie-surf',
+    hard: ['surf'],
+    soft: ['indie-rock'],
+    desc: 'Reverb-drenched, nostalgic, and often lo-fi, with influences from Surf Rock and Vocal Surf; rose to popularity around 2009.',
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Surf Rock',
+    id: 'surf-rock',
+    hard: ['surf'],
+    soft: ['rock'],
+    dates: '1950',
+    desc: 'Short instrumental songs with Rock & Roll rhythms overlaid with cheerful melodies played on reverb-drenched tremolo guitar.',
+    bands: 'beach boys'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Surf Punk',
+    id: 'surf-punk',
+    hard: ['surf'],
+    soft: ['punk'],
+    desc: 'Punk Rock that incorporates elements of Surf Rock.',
+    bands: 'beach boys'
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Vocal Surf',
+    id: 'vocal-punk',
+    hard: ['surf'],
+    soft: [],
+    desc: 'Appropriates the sounds of instrumental Surf Rock, combining surfing- and car-themed lyrics with a style that draws primarily from Doo-Wop and Rock & Roll.',
+},
 ]
 export const Rock = [
     {
@@ -625,7 +703,93 @@ export const Rock = [
         label: 'Rock',
         id: 'rock',
         hard: [],
-        soft: []
+        soft: [],
+        desc: 'Typically uses a verse-chorus structure with a backbeat rhythm and the electric guitar at the forefront; generally heavier and/or faster than its predecessors.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Symphonic Rock',
+        id: 'symphonic-rock',
+        hard: ['rock'],
+        soft: [],
+        desc: 'Incorporates elements resembling Orchestral Music.',
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Hard Rock',
+        id: 'hard-rock',
+        hard: ['rock'],
+        soft: [],
+        dates: '1960',
+        desc: 'Originated in the mid-to-late 1960s from Psychedelic Rock and Blues Rock with a heavy sound characterized by distorted guitars and power chords.'
+        ,bands: 'Black Sabbath, Led Zepellin, The who, Deep purple'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Glam Metal',
+        id: 'glam-metal',
+        hard: ['hard-rock', 'glam-rock', 'metal'],
+        soft: [],
+        desc: 'Very catchy hooks and guitar riffs, sing-along choruses, and lyrics often glamorizing the sex, drugs and rock and roll lifestyle.'
+        ,bands: 'Guns and roses, W.A.S.P.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Sleaze Rock',
+        id: 'sleaze-rock',
+        hard: ['glam-metal'],
+        soft: [],
+        desc: 'Raw and lurid form of Glam Metal with influences from Glam Punk and Blues Rock and back-to-basics songwriting; emerged to counter Pop influences in Hard Rock in the mid-to-late 1980s.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Heavy Psych',
+        id: 'heavy-psych',
+        hard: ['hard-rock', 'glam-rock', 'metal', 'psychodelic-rock'],
+        soft: [],
+        desc: 'Developed in the late 1960s with influence from Blues Rock, such as heavy dependence on riffs and willingness to improvise, adding crushing levels of heaviness with thick fuzzy guitars to create a doomy and morose atmosphere.',
+        bands: 'Guns and roses, W.A.S.P.'
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Occult Rock',
+        id: 'occult-rock',
+        hard: ['hard-rock'],
+        soft: ['metal'],
+        desc: 'Dark and psychedelic atmosphere with lyrical references to esoteric subjects such as occultism, Satanism, fantasy, and horror; closely associated sonically and culturally with Heavy Metal and its offshoots.',
+    },
+    {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Stoner rock',
+        id: 'stoner-rock',
+        hard: ['hard-rock', 'doom-metal', 'psychodelia','heavy-psych'],
+        soft: [],
+        desc: 'Psychedelic timbres, raw production, and stylistic influence from Doom Metal and Heavy Psych.',
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Heartland rock',
+        id: 'haertland-rock',
+        hard: ['rock', 'doom-metal', 'psychodelia','heavy-psych'],
+        soft: [],
+        desc: 'Psychedelic timbres, raw production, and stylistic influence from Doom Metal and Heavy Psych.',
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Latin rock',
+        id: 'latin-rock',
+        hard: ['rock'],
+        soft: [],
+        desc: 'Fusion of Rock, often Psychedelic Rock, with Latin American rhythms, especially Afro-Latin genres.',
     },
     ...Punk,
     ...RocknRoll,
@@ -638,12 +802,59 @@ export const Rock = [
         soft: []
     },
     {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Acoustic Rock',
+        id: 'acoustic-rock',
+        hard: ['rock'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Afro Rock',
+        id: 'afro-rock',
+        hard: ['rock'],
+        soft: [],
+        desc: 'Incorporates West African influences; initially emerged in the early 1970s.'
+    },
+    {
         type: Type.Genre,
         parent: Type.Super,
         label: 'Experimental Rock',
         id: 'experimental-rock',
         hard: ['rock', 'avant-garde'],
         soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Avant Prog',
+        id: 'avant-prog',
+        hard: ['experimental-rock', 'avant-garde'],
+        soft: [],
+        desc: 'Focuses on highly complex, dense arrangements often featuring high amounts of dissonance and uncommon time signatures, sometimes extending towards atonality, free time, improvisation, and other avant-garde techniques.'
+
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Brutal Prog',
+        id: 'brutal-prog',
+        hard: ['avant-prog'],
+        soft: [],
+        desc: 'Highly intense and visceral songwriting, usually featuring substantial reliance on dissonance, odd time signatures, blistering tempos, angular and mercurial rhythms, and Punk\'s DIY attitude.'
+
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Zeuhl',
+        id: 'zeuhl',
+        hard: ['avant-prog', 'jazz', 'modern-classical'],
+        soft: [],
+        desc: 'Epic, operatic sound fusing Jazz, Progressive Rock and Modern Classical music.'
+
     },
     {
         type: Type.Sub,
@@ -664,7 +875,8 @@ export const Rock = [
         hard: ['industrial', 'rock'],
         soft: [],
         dates: 'late 1970s',
-        bands: 'Stabbing Westward, God lives underwater, Marylin manson'
+        bands: 'Stabbing Westward, God lives underwater, Marylin manson',
+        desc: 'Incorporates abrasive guitars and synthesizers inspired by Industrial and various Post-Industrial styles.'
     },
     {
         type: Type.Sub,
@@ -724,14 +936,7 @@ export const Rock = [
         hard: ['psychodelic-rock'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Heavy Psych',
-        id: 'heavy-psych',
-        hard: ['psychodelic-rock'],
-        soft: []
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -755,7 +960,8 @@ export const Rock = [
         label: 'Math rock',
         id: 'math-rock',
         hard: ['rock'],
-        soft: ['jazz']
+        soft: ['jazz'],
+        desc: 'Typified by complex rhythmic patterns, angular chords and melodic structures, often featuring odd time signatures, resulting in a  mathematical sound.'
     },
     {
         type: Type.Sub,
@@ -784,7 +990,9 @@ export const AlternativeRock = [
         label: 'Alternative Rock',
         id: 'alternative-rock',
         hard: ['rock'],
-        soft: []
+        soft: [],
+        desc: '"Performed with a less commercial sensibility, utilizing more eccentric, Punk-influenced sounds, moodier or quirkier lyricism, and sometimes ample amounts of distortion, often paired with Pop-influenced songwriting.',
+        bands: 'Radiohead, Nirvana, Sonic youth'
     },
 
     {
@@ -793,23 +1001,89 @@ export const AlternativeRock = [
         label: 'Alternative Dance',
         id: 'alternative-dance',
         hard: ['alternative-rock', 'dance'],
+        soft: [],
+        desc: 'Incorporates rhythms and synthesizers from Electronic Dance Music within the context of Alternative Rock and related styles; predominantly popular in the 1990s.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Grebo',
+        id: 'grebo',
+        hard: ['alternative-dance'],
         soft: []
     },
     {
         type: Type.Sub,
+        parent: Type.Sub,
+        label: 'New Rave',
+        id: 'new-rave',
+        hard: ['alternative-dance', 'indie-pop'],
+        soft: ['electroclash', 'electro-house'],
+        desc: 'High energy mid-2000s style combining the tight and punchy grooves of Dance-Punk Revival with synths and four-on-the-floor rhythms from genres like Electroclash and Electro House.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Baggy',
+        id: 'baggy',
+        hard: ['alternative-rock'],
+        soft: [],
+        desc: 'Blends Dance and Funk-based grooves with a laid-back, psychedelic atmosphere; frequently features jangly guitars, looping basslines, four-bar drum patterns, and a hypnotic, carefree feel that originated in the Madchester scene of the late 1980s'
+    },
+    {
+        type: Type.Genre,
         parent: Type.Super,
         label: 'Indie Rock',
         id: 'indie-rock',
         hard: ['rock', 'pop', 'jingle'],
-        soft: []
+        soft: [],
+        desc: 'Associated with a less mainstream-oriented and a DIY approach while often dabbling in Pop-informed melodic songwriting, eclecticism, and adopting an &#34;authentic&#34; or raw style.',
+        bands: 'Arctic monkeys, The strokes'
     },
     {
         type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Slacker Rock',
+        id: 'slacker-rock',
+        hard: ['indie-rock'],
+        soft: [],
+        desc: 'Raw, noisy, and melodic, with a loose, blasé approach to performances and typically low-fidelity production'
+    },
+    {
+        type: Type.Genre,
         parent: Type.Super,
         label: 'Garage Rock',
         id: 'garage-rock',
         hard: ['rock'],
-        soft: []
+        soft: [],
+        desc: 'Raw and energetic, generally employing simple, sloppy, and fuzzbox-distorted guitar melodies in addition to frequent shouting or screaming.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Frat Rock',
+        id: 'frat-rock',
+        hard: [ 'garage-rock'],
+        soft: [],
+        desc: 'Early form of Garage Rock with hard Rhythm & Blues grooves, catchy melodies, and a fratty focus on partying and girls.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Freakbeat',
+        id: 'freakbeat',
+        hard: [ 'garage-rock'],
+        soft: [],
+        desc: 'Outgrowth of the Mod movement which combines elements of British Rhythm & Blues and Beat with studio effects common in Psychedelia such as fuzztones, flanging and chorus; often seen as a British relative of the American garage-psych scene.'
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Super,
+        label: 'Garage Rock Revival',
+        id: 'garage-rock-revival',
+        hard: ['rock'],
+        soft: [],
+        desc: 'Incorporated the raucous spirit of &#39;60s Garage Rock into the sensibilities of Alternative Rock and Indie Rock; predominant in the 2000s.'
     },
     {
         type: Type.Sub,
@@ -818,7 +1092,9 @@ export const AlternativeRock = [
         id: 'grunge',
         sub: 'Seattle rock',
         hard: ['alternative-rock', 'garage-rock'],
-        soft: []
+        soft: [],
+        desc: 'Mixes Punk and Metal sensibilities into a mid-tempo approach featuring a heavy,sludgy guitar sound, raspy vocals and angsty lyricism.'
+        , bands: 'Alice in chains, Nirvana, Pearl jam, soundgarden, Stone temple pilots'
     },
     {
         type: Type.Sub,
@@ -837,14 +1113,74 @@ export const AlternativeRock = [
         soft: []
     },
     {
-        type: Type.Scene,
-        parent: Type.Sub,
-        label: 'Grunge',
-        id: 'grunge',
-        hard: ['grunge'],
-        soft: []
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Glam Rock',
+        id: 'glam-rock',
+        hard: ['rock'],
+        soft: ['pop-rock'],
+        bands: 'T. Rex, David Bowie, Lou Reed, ',
+        desc: 'Incorporates elements of Rock & Roll and Blues Rock into catchy Pop Rock melodies, usually accompanied with a strong sense of theatricality.'
+    }, 
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Glam Punk',
+        id: 'glam-punk',
+        hard: ['glam-rock', 'punk'],
+        soft: [],
+        bands: '',
+        desc: 'Contrasts a snotty, nihilistic, and combative attitude of punk with theatrics and flamboyance.'
+    }, 
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Electronic Rock',
+        id: 'electronic-rock',
+        hard: ['rock', 'electronics'],
+        soft: [],
+        bands: '',
+        dates: 'late 1960s'
+    }, 
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Funk Rock',
+        id: 'funk-rock',
+        hard: ['rock', 'funk'],
+        soft: [],
+        bands: 'Funkadelic, Primus, Talking heads',
     },
-
+    {
+        type: Type.Genre,
+        parent: Type.Super,
+        label: 'Noise Rock',
+        id: 'noise-rock',
+        hard: ['rock', 'noise'],
+        soft: [],
+        desc: 'Incorporates high amounts of distortion and varying levels of dissonance, lo-fi production, and feedback.',
+        bands: 'Sonic Youth, Blur',
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Pigfuck',
+        id: 'pigfuck',
+        hard: ['noise-rock'],
+        soft: ['post-hardcore', 'post-punk'],
+        desc: 'Sloppy, abrasive and feedback-laden riffing with vulgar and edgy lyricism, informed by Post-Hardcore&#39;s aggression and Post-Punks rhythm section.',
+        bands: 'Chat pile',
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Shitgaze',
+        id: 'shitgaze',
+        hard: ['noise-rock'],
+        soft: ['shoegaze', 'garage-rock'],
+        desc: 'Blends extremely raw and lo-fi aesthetics, abrasive guitar tones, and typically, the ethos of raucous Garage Rock, to create a sonic wall of deafening distortion evocative of Shoegaze.',
+        bands: 'Chat pile',
+    },
     {
         type: Type.Scene,
         parent: Type.Genre,
@@ -864,14 +1200,5 @@ export const AlternativeRock = [
         soft: []
     },
   
-    {
-        type: Type.Genre,
-        parent: Type.Super,
-        label: 'Electronic Rock',
-        id: 'electronic-rock',
-        hard: ['rock', 'electronics'],
-        soft: [],
-        bands: '',
-        dates: 'late 1960s'
-    },
+
 ]
