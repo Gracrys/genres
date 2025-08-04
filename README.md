@@ -15,12 +15,12 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 
 **Genre percentage: 50%** (more or less)
 
-- **Rock** : 60%
+- **Rock** : 80%
 - **Avant-garde**: 70%
 - **Industrial**: 60%
-- **electronics**: the hardest part was the initial classification tbh 70%
+- **electronics**: 90%
 - **House**: 70%
-- **Techno**: 10%
+- **Techno**: 95%
 - **hardcore, step, hardtek, breakbeat**: 80% (lacking some recs and better descs tho)
 - **world music**: i only got caribbean and is at 80%
 - **Caribbean**: 80%

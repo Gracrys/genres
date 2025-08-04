@@ -2266,7 +2266,7 @@ export const Bit = [
         label: 'Bitpop',
         id: 'bitpop',
         dates: '1993',
-        hard: ['bit'],
+        hard: ['bit','pop'],
         soft: [],
         desc: 'Fuses Bit Music with additional synths, beats, guitars and modern production values, emphasizing highly catchy melodies and relatively fast tempos'
     },
