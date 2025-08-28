@@ -2290,7 +2290,7 @@ export const Glitch = [{
     hard: ['glitch', 'edm'],
     desc: 'Tempos around 100-110 BPM, swung, bouncy drum patterns, and a focus on upbeat, danceable drops and buildups.',
     soft: [],
-    bands: 'the glitch mob, arca, koan sound'
+    bands: 'the glitch mob, arca, koan sound, phantogram'
 
 }, 
 {
