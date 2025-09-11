@@ -768,7 +768,8 @@ export const EDM = [
         hard: ['edm'],
         soft: ['post-industrial'],
         desc: 'Melodic and dancefloor-friendly take on Post-Industrial music that developed in the early 1980s.'
-        , dates: '1980'
+        , dates: '1980',
+        bands: 'Front 242, Nitzer Ebb, pharmakon,  front line assembly'
     },
     {
         type: Type.Genre,
