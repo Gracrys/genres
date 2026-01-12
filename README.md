@@ -8,7 +8,7 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 - [ ] - Add descriptions (help wanted)
 - [ ] - Add recomended level bands and more important bands and or... dunno (help wanted)
 - [x] - add relationships to description tab
-- [ ] - filtering and searching genres and tags
+- [x] - filtering and searching genres and tags
 - [ ] - To fill the genre list
 
 
@@ -30,12 +30,12 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 - **Punk**: 95%
 - **reggae**: 95%
 - **metal**: 90%
-- **Jazz**: x.x
+- **Jazz**: 90%
 - **ambient**: 60%
 - **Blues**:  60%
 - **country**: x.x
 - **classical**: 80% 
-- **spoken word and ballads**: 0
+- **spoken word and ballads**: 10%
 
 
 

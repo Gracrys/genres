@@ -284,6 +284,7 @@ export const Jazz = [
     label: 'Latin Jazz',
     id: 'latin-jazz',
     desc: 'Fusion with Latin American rhythms, especially those of African origin.',
+    bands: 'Ruben Blades, Tito Puente, Willie Colon',
     hard: ['jazz', 'latin-american-music'],
     soft: []
   },
