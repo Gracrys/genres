@@ -1214,7 +1214,7 @@ export const AlternativeRock = [
     parent: Type.Genre,
     label: 'Maidcore',
     id: 'maidcore',
-    hard: ['post-rock', 'alternative-rock', 'post-hardcore','heavy-metal'],
+    hard: ['alternative-rock','post-rock',  'post-hardcore','heavy-metal'],
     desc: 'Maidcore Music - a variety of genres of electronic music, characterized by hard guitar riffs and solos washed down, 8-16 bit parts from ancient tape recorders and old-time segovod toys, screaming women (both in the base and on the backs), depressive-aggressive melody, which is achieved with the help of synth voices and ONIMEE bullshit for beauty, also characteristic breakbeat parts with growling 808 basses in 3 roads :) and of course vicious hats in a pile with lo-fi effects of idm styles.',
     bands: 'Yakui, futaba, chikoi, iotai,m ozoi',
     soft: []

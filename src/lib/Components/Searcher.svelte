@@ -17,6 +17,7 @@
 	);
 
 	const focus = (node: Node) => {
+		console.log(node.position);
 		svelteFlowTest.setCenter(node.position.x, node.position.y);
 		search = '';
 		data = node.data;

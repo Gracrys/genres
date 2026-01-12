@@ -583,8 +583,9 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     parent: Type.Genre,
     label: 'Deconstructed Club',
     id: 'deconstructed-club',
-    hard: ['edm', 'post-industrial'],
-    soft: [],
+    hard: ['edm', 'post-industrial', 'glitch'],
+        bands: 'Sophie, arca,   black dresses',
+    soft: ['idm'],
     desc: 'Emerged in the 2010s as the hybridization of diverse Electronic Dance Music genres with an abrasive Post-Industrial sound',    
 },
 

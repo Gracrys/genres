@@ -36,12 +36,15 @@ const genresParameters: {
   }
 } =
 {
+  'jazz': {
+    Y: 700,
+  },
   'rock': {
     Y: 400,
 
   },
   'metal': {
-    Y: 900,
+    Y: 1200,
     X: 900
   },
   'electronics': {
@@ -70,10 +73,10 @@ const genresParameters: {
     Y: 800,
     //  Bleeding: 180
   },
-  'dance': {
+/*   'dance': {
     Y: 400,
     X: 400
-  }
+  } */
 }
 
 
@@ -83,10 +86,11 @@ const calculatePosition = (data: IGenre): XYPosition => {
   let lookedGenre
   let currentStruct = {} as any
   try {
-
+    if (data.type == 1 )
+      console.log('data', data)
     currentStruct = data.type == 1 ? {
       id: data.id,
-      positionX: genreAccum[data.type].length * 700,
+      positionX: genresParameters[data.id]?.X || genreAccum[data.type].length * 700,
       positionY: (genresParameters[data.id]?.Y || 70),
 
       NChildren: 0

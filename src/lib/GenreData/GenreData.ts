@@ -4,6 +4,7 @@ import { Dance } from "./Dance"
 import { Electronics } from "./Electronics"
 import { Folk } from "./Folk"
 import { HipHop } from "./HipHop"
+import { Jazz } from "./Jazz"
 import { Metal } from "./Metal"
 import { AlternativeRock, Hardcore, Rock } from "./Rock"
 import { WorldMusic } from "./WorldMusic"
@@ -43,6 +44,7 @@ export const Genres: IGenre[] = [
     ...Folk,
     ...WorldMusic,
    ...Classical,
+   ...Jazz,
    ...Dance
 ]
 
