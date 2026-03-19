@@ -529,7 +529,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     parent: Type.Genre,
     label: 'Bubblegum Bass',
     id: 'bubblegum-bass',
-    hard: ['edm'],
+    hard: ['edm', 'bubblegum'],
     soft: ['pop'],
     desc: 'Originated in the early 2010s, exaggerating the cutest and most feminine parts of 2000s Pop and combining them with bouncy, plastic synths over rhythms and sounds derived from a variety of contemporary club styles.',    
 },
@@ -772,16 +772,7 @@ export const EDM = [
         , dates: '1980',
         bands: 'Front 242, Nitzer Ebb, pharmakon,  front line assembly'
     },
-    {
-        type: Type.Genre,
-        parent: Type.Genre,
-        label: 'Futurepop',
-        id: 'futurepop',
-        dates: 'mid 1990s',
-        hard: ['edm', 'synthpop'],
-        soft: [],
-        desc: 'Derivative of EBM, retaining its apocalyptic worldview but incorporating heavy influence from the melodic style of Synthpop.'
-    },
+
     {
         type: Type.Genre,
         parent: Type.Genre,
@@ -1127,24 +1118,6 @@ export const EDM = [
     desc: 'Extensive use of drum fills, tom drums, handclaps, and snares within fast-paced, highly syncopated beats not bound to a 4/4 kick rhythm.',
     soft: []
 },
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Freestyle',
-    id: 'freestyle',
-    hard: ['edm'],
-    desc: 'Electro-influenced; developed in Latino communities in New York and Miami in the 1980s, especially dominated by Latin Freestyle and its Latin influences',
-    soft: ['electro']
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Latin Freestyle',
-    id: 'latin-freestyle',
-    hard: ['freestyle'],
-    desc: 'Displays a heavy influence of Hispanic American Music alongside the Disco, Hip Hop, and Electro influences of Freestyle.',
-    soft: ['disco', 'hiphop','electro']
-},
 
 {
     type: Type.Sub,
@@ -1466,15 +1439,6 @@ desc: 'Emerged by fusing Deep House with Southern African Music, characterized b
     hard: ['house'],
     soft: ['deep-house'],
 desc: 'House from South Africa deriving from previous popular genres including Gqom, Kwaito, and Deep House..'
-},
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Afropiano',
-    id: 'afropiano',
-    hard: ['amapiano', 'afrobeats'],
-    soft: [],
-desc: 'Blends the easy-going, poppy, and melodic Afrobeats sound and rhythms with major Amapiano elements, like lush, jazzy, and laid-back atmospheres often featuring light piano chords.'
 },
 
 {
@@ -3376,7 +3340,7 @@ export const Electronics = [
         label: 'HyperPop',
         id: 'hyperpop',
         dates: '2016',
-        hard: ['electronics'],
+        hard: ['electronics', 'bubblegum-bass'],
         soft: ['bubblegum-pop', 'electropop', 'nightcore'],
         desc: 'Developed and took inspiration from Bubblegum Bass and popular 2000s-2010s Electropop, characterized by eclectic, unconventional, mechanical-sounding and dense production; and by manipulated, usually auto-tuned vocals.'
         ,bands: 'Arca, Charlie XCX, Forest Children, 100 gecs'

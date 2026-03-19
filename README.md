@@ -26,7 +26,7 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 - **Caribbean**: 80%
 - **hiphop**: 90%
 - **folk**: holy macarronni that thing is big
-- **Pop**: x.x
+- **Pop**: 80%
 - **Punk**: 95%
 - **reggae**: 95%
 - **metal**: 90%

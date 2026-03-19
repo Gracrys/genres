@@ -6,6 +6,7 @@ import { Folk } from "./Folk"
 import { HipHop } from "./HipHop"
 import { Jazz } from "./Jazz"
 import { Metal } from "./Metal"
+import { Pop } from "./Pop"
 import { AlternativeRock, Hardcore, Rock } from "./Rock"
 import { WorldMusic } from "./WorldMusic"
 
@@ -33,7 +34,6 @@ export interface IGenre {
 
 
 
-
 export const Genres: IGenre[] = [
     ...AvantGarde,
     ...Metal,
@@ -45,7 +45,8 @@ export const Genres: IGenre[] = [
     ...WorldMusic,
    ...Classical,
    ...Jazz,
-   ...Dance
+   ...Dance,
+   ...Pop
 ]
 
 

@@ -441,7 +441,7 @@ export const Jazz = [
     id: 'vocal-jazz',
     desc: 'Focused on vocals, generally using a more traditional, poppy strong structure and reducing the role of improvisation.',
     hard: ['jazz', 'pop'],
-    soft: ['pop']
+    soft: []
   },
   {
     type: Type.Sub,

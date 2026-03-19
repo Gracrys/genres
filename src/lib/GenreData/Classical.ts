@@ -1950,15 +1950,7 @@ export const Classical = [    {
   hard: ['classical', 'chinese-folk'],
   soft: ['western-classical']
 },
-{
-  parent: Type.Super,
-  type: Type.Genre,
-  label: 'Pìobaireachd',
-  id: 'piobaireachd',
-  desc: 'Art tradition which originated in the Scottish Highlands, usually associated with the Great Highland bagpipes.',
-  hard: ['classical', 'scottish-folk'],
-  soft: []
-},
+
 ...Western,
 {
   parent: Type.Super,
