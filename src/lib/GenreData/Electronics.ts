@@ -1248,8 +1248,9 @@ export const EDM = [
     id: 'grime',
     hard: ['edm', 'neurofunk'],
     dates: '2000',
-    desc: 'UK Garage-derived production style characterized by dark, fast-paced, often aggressive beats that commonly features fast-paced MCing.',
-    soft: []
+    desc: 'UK Garage-derived production style characterized by dark, fast-paced, often aggressive beats that commonly features fast-paced MCing. The genre is characterized by fast-paced, syncopated, choppy, and highly rhythmic beats usually centered around 140 BPM, which are often aggressive, jagged, and raw, though a significant variation has always existed in grime production. Grime sound was always coupled and intertwined with the vocal style that grime MCs would use to lay down lyrics, with producers providing dark, rapid, and manic beats for MCs to perform on. Regardless, much of the genre remains instrumental-focused, particularly later 2010s developments. Grime lyrics commonly focus on matters of urban life, crime, social injustice, braggadocio, and beefs between MCs.',
+    bands: 'skepta, jme',
+    soft: ['2-step']
 }, 
 {
     type: Type.Sub,
@@ -2692,10 +2693,11 @@ const LatinElectronics = [
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Changa Tuki',
+        sub: 'Raptor House',
         id: 'changa-tuki',
         hard: ['latin-electronic','house'],
-        soft: ['techno', 'tribal-house'],
-    desc: 'Emerged in Caracas; highly influenced by 1990s Techno and Tribal House, featuring fast tempos, strident synthesizers, hard-thumping percussion lines, and plenty of breakbeats.'
+        soft: ['techno', 'tribal-house', 'reggaeton'],
+    desc: 'Emerged in Caracas; highly influenced by 1990s Techno and Tribal House, featuring fast tempos, strident synthesizers, hard-thumping percussion lines, and plenty of breakbeats. Inspired by genres like reggaeton, salsa, merengue, and even emo, and was highly followed by this scene of "tukis" influenced heavily by house music with a more heavy sincompatico and aggressive sound with heavier drumbeats and more aggressive synths, as well as a strong influence from reggaeton and other Latin genres.',
     },
     {
         type: Type.Sub,
