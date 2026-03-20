@@ -6,7 +6,6 @@
 	let { data = $bindable(), isAsideOpen = $bindable() } = $props();
 	let search = $state('');
 
-	const svelteFlowTest = useSvelteFlow();
 
 	let result = $derived(
 		search
@@ -15,9 +14,10 @@
 				)
 			: []
 	);
+	const svelteFlowTest = useSvelteFlow();
+
 
 	const focus = (node: Node) => {
-		console.log(node.position);
 		svelteFlowTest.setCenter(node.position.x, node.position.y);
 		search = '';
 		data = node.data;
@@ -25,10 +25,8 @@
 	};
 </script>
 
-<header
-	class="absolute top-0 left-[calc(50%-200px)] z-50 m-auto mt-2 flex max-w-[400px] min-w-[400px] flex-col overflow-auto rounded-2xl text-white"
->
-	<input type="text" bind:value={search} class="bg-indigo-500 px-2 font-bold" />
+
+	<input type="text" bind:value={search} class="bg-indigo-500 px-2 font-bold rounded-md w-full" />
 	<div>
 		<ul class="no-scrollbar max-h-40 overflow-y-auto bg-indigo-400" style="scrollbar-width: 0;">
 			{#each result as res}
@@ -39,4 +37,3 @@
 			{/each}
 		</ul>
 	</div>
-</header>

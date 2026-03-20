@@ -215,8 +215,10 @@ export const AvantGarde = [
         label: 'Power Noise',
         sub: ' rhythm n noise',
         id: 'power-noise',
-        hard: ['noise', 'electronics'],
-        soft: ['industrial']
+        hard: ['noise', 'post-industrial'],
+        soft: ['electronic', 'electro-industrial'],
+        bands: 'Alberich, noise/girl, dreamcrusher',
+        desc: 'Rhythmic, danceable style of Noise that incorporates elements of Techno and Electro-Industrial. Known by its abbrasive sound and its use of distorted kick drums as the main rhythmic element.'
     },
     {
         type: Type.Scene,
