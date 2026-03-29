@@ -220,7 +220,7 @@ export const Pop = [
         id: 'bubblegum',
         hard: ['pop'],
         soft: [],
-        bands: 'The Archies',
+        artists: 'The Archies',
         dates: '1970s',
         desc: 'Upbeat, catchy, simple, and targeted at children and young teens; especially popular in the 1960s and 1970s.'
     },
@@ -1314,7 +1314,7 @@ export const Pop = [
         label: 'Sunshine Pop',
         id: 'sunshine-pop',
         dates: '1960s',
-        bands: 'The Mamas & the Papas, The Beach Boys',
+        artists: 'The Mamas & the Papas, The Beach Boys',
         hard: ['pop'],
         soft: [],
         desc: 'Emerged in the mid-1960s, characterized by a cheerful or wistful sound, light, lush production, and prominent vocal harmonies.'

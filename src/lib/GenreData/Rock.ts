@@ -114,7 +114,7 @@ export const Punk = [
     id: 'new-wave',
     hard: ['post-punk'],
     soft: [],
-    bands: 'New Order, Depeche Mode',
+    artists: 'New Order, Depeche Mode',
     dates: 'mid 1970s'
   },
   {
@@ -268,7 +268,7 @@ export const Punk = [
     desc: 'Underground feminist Punk movement originating in the United States in the early 1990s.',
     hard: ['punk', 'post-hardcore', 'hardcore'],
     soft: [],
-    bands: 'Le tigre, Petrol girls, Skating polly, grlwood'
+    artists: 'Le tigre, Petrol girls, Skating polly, grlwood'
   }
 ]
 
@@ -366,7 +366,7 @@ export const Hardcore = [
     hard: ['post-hardcore'],
     soft: [],
     desc: 'Focuses on emotional lyrics, expressive vocals, melodic songwriting, and dynamic song structures.',
-    bands: 'My chemical Romance'
+    artists: 'My chemical Romance'
 
   },
   {
@@ -405,7 +405,7 @@ export const Hardcore = [
     hard: ['emo', 'math-rock', 'indie-rock'],
     soft: [],
     desc: 'Characterized by shifts between loud and soft dynamics, off-key, strained and emotional vocals, sometimes with intricate instrumental arrangements and layered arpeggiated guitar parts.',
-    bands: 'Brand new, Modest Mouse, Jimmy eat world'
+    artists: 'Brand new, Modest Mouse, Jimmy eat world'
   },
   {
     type: Type.Genre,
@@ -415,7 +415,7 @@ export const Hardcore = [
     hard: ['emo', 'hardcore'],
     soft: [],
     desc: 'Intense, aggressive and complex approach to Emo featuring higher levels of abrasiveness and dissonance, accompanied by guitar-focused melodicism and harsh vocals.'
-    , bands: 'Touche Amore, Orchid, Saetia'
+    , artists: 'Touche Amore, Orchid, Saetia'
   },
   {
     type: Type.Sub,
@@ -424,7 +424,7 @@ export const Hardcore = [
     id: 'emoviolence',
     hard: ['screamo', 'powerviolence'],
     soft: [],
-    bands: 'orchid', desc: 'Shorter length and volatile song structures, while borrowing techniques from Powerviolence such as blast beats, unconventional screaming and noisier sounds.'
+    artists: 'orchid', desc: 'Shorter length and volatile song structures, while borrowing techniques from Powerviolence such as blast beats, unconventional screaming and noisier sounds.'
 
   },
   {
@@ -452,7 +452,7 @@ export const Hardcore = [
     soft: [],
 
     dates: '1990s',
-    bands: 'Converge, Knocked loose, poison the well',
+    artists: 'Converge, Knocked loose, poison the well',
     desc: 'Drop-tuned guitar riffs, constant double kick drumming with varying tempos and techniques, breakdown sections, and screaming or shouting vocals.'
   },
   {
@@ -478,7 +478,7 @@ export const Hardcore = [
     id: 'mathcore',
     hard: ['metalcore', 'math-rock'],
     soft: [],
-    bands: 'Poison the well',
+    artists: 'Poison the well',
     desc: 'Rhythmically complex, features unconventional time signatures, syncopated and dissonant riffs and erratic metric shifts.'
   },
   {
@@ -613,7 +613,7 @@ export const RocknRoll = [{
   soft: ['pop'],
   dates: '1950',
   desc: 'Developed in the United States and popularized in the 1950s, featuring prominent Blues scales, poppy structures, and strong rhythms.'
-  , bands: 'Little Richard, Buddy Holly, Johnny cash'
+  , artists: 'Little Richard, Buddy Holly, Johnny cash'
 },
 {
   type: Type.Sub,
@@ -675,7 +675,7 @@ export const RocknRoll = [{
   soft: ['rock'],
   dates: '1950',
   desc: 'Short instrumental songs with Rock & Roll rhythms overlaid with cheerful melodies played on reverb-drenched tremolo guitar.',
-  bands: 'beach boys'
+  artists: 'beach boys'
 },
 {
   type: Type.Sub,
@@ -685,7 +685,7 @@ export const RocknRoll = [{
   hard: ['surf'],
   soft: ['punk'],
   desc: 'Punk Rock that incorporates elements of Surf Rock.',
-  bands: 'beach boys'
+  artists: 'beach boys'
 },
 {
   type: Type.Sub,
@@ -724,17 +724,18 @@ export const Rock = [
     soft: [],
     dates: '1960',
     desc: 'Originated in the mid-to-late 1960s from Psychedelic Rock and Blues Rock with a heavy sound characterized by distorted guitars and power chords.'
-    , bands: 'Black Sabbath, Led Zepellin, The who, Deep purple'
+    , artists: 'Black Sabbath, Led Zepellin, The who, Deep purple'
   },
   {
     type: Type.Genre,
     parent: Type.Genre,
     label: 'Glam Metal',
     id: 'glam-metal',
+    sub: 'hair metal',
     hard: ['hard-rock', 'glam-rock', 'metal'],
     soft: [],
-    desc: 'Very catchy hooks and guitar riffs, sing-along choruses, and lyrics often glamorizing the sex, drugs and rock and roll lifestyle.'
-    , bands: 'Guns and roses, W.A.S.P.'
+    desc: 'Very catchy hooks and guitar riffs, sing-along choruses, and lyrics often glamorizing the sex, drugs and rock and roll lifestyle. was also a scenenic genre with long hair styles, and queer like outfits, also named hair metal for that reason'
+    , artists: 'Guns and roses, W.A.S.P.'
   },
   {
     type: Type.Sub,
@@ -753,7 +754,7 @@ export const Rock = [
     hard: ['hard-rock', 'glam-rock', 'metal', 'psychodelic-rock'],
     soft: [],
     desc: 'Developed in the late 1960s with influence from Blues Rock, such as heavy dependence on riffs and willingness to improvise, adding crushing levels of heaviness with thick fuzzy guitars to create a doomy and morose atmosphere.',
-    bands: 'Guns and roses, W.A.S.P.'
+    artists: 'Guns and roses, W.A.S.P.'
   },
   {
     type: Type.Genre,
@@ -863,7 +864,7 @@ export const Rock = [
     id: 'krautrock',
     hard: ['experimental-rock', 'electronics'],
     soft: [],
-    bands: 'Kraftwerk, wire',
+    artists: 'Kraftwerk, wire',
     dates: 'late 1960s'
 
   },
@@ -875,7 +876,7 @@ export const Rock = [
     hard: ['industrial', 'rock'],
     soft: [],
     dates: 'late 1970s',
-    bands: 'Stabbing Westward, God lives underwater, Marylin manson',
+    artists: 'Stabbing Westward, God lives underwater, Marylin manson',
     desc: 'Incorporates abrasive guitars and synthesizers inspired by Industrial and various Post-Industrial styles.'
   },
   {
@@ -992,7 +993,7 @@ export const AlternativeRock = [
     hard: ['rock'],
     soft: [],
     desc: '"Performed with a less commercial sensibility, utilizing more eccentric, Punk-influenced sounds, moodier or quirkier lyricism, and sometimes ample amounts of distortion, often paired with Pop-influenced songwriting.',
-    bands: 'Radiohead, Nirvana, Sonic youth'
+    artists: 'Radiohead, Nirvana, Sonic youth'
   },
 
   {
@@ -1038,7 +1039,7 @@ export const AlternativeRock = [
     hard: ['rock', 'pop', 'jingle'],
     soft: [],
     desc: 'Associated with a less mainstream-oriented and a DIY approach while often dabbling in Pop-informed melodic songwriting, eclecticism, and adopting an &#34;authentic&#34; or raw style.',
-    bands: 'Arctic monkeys, The strokes'
+    artists: 'Arctic monkeys, The strokes'
   },
   {
     type: Type.Sub,
@@ -1094,7 +1095,7 @@ export const AlternativeRock = [
     hard: ['alternative-rock', 'garage-rock'],
     soft: [],
     desc: 'Mixes Punk and Metal sensibilities into a mid-tempo approach featuring a heavy,sludgy guitar sound, raspy vocals and angsty lyricism.'
-    , bands: 'Alice in chains, Nirvana, Pearl jam, soundgarden, Stone temple pilots'
+    , artists: 'Alice in chains, Nirvana, Pearl jam, soundgarden, Stone temple pilots'
   },
   {
     type: Type.Sub,
@@ -1119,7 +1120,7 @@ export const AlternativeRock = [
     id: 'glam-rock',
     hard: ['rock'],
     soft: ['pop-rock'],
-    bands: 'T. Rex, David Bowie, Lou Reed, ',
+    artists: 'T. Rex, David Bowie, Lou Reed, ',
     desc: 'Incorporates elements of Rock & Roll and Blues Rock into catchy Pop Rock melodies, usually accompanied with a strong sense of theatricality.'
   },
   {
@@ -1129,7 +1130,7 @@ export const AlternativeRock = [
     id: 'glam-punk',
     hard: ['glam-rock', 'punk'],
     soft: [],
-    bands: '',
+    artists: '',
     desc: 'Contrasts a snotty, nihilistic, and combative attitude of punk with theatrics and flamboyance.'
   },
   {
@@ -1139,7 +1140,7 @@ export const AlternativeRock = [
     id: 'electronic-rock',
     hard: ['rock', 'electronics'],
     soft: [],
-    bands: '',
+    artists: '',
     dates: 'late 1960s'
   },
   {
@@ -1149,7 +1150,7 @@ export const AlternativeRock = [
     id: 'funk-rock',
     hard: ['rock', 'funk'],
     soft: [],
-    bands: 'Funkadelic, Primus, Talking heads',
+    artists: 'Funkadelic, Primus, Talking heads',
   },
   {
     type: Type.Genre,
@@ -1159,7 +1160,7 @@ export const AlternativeRock = [
     hard: ['rock', 'noise'],
     soft: [],
     desc: 'Incorporates high amounts of distortion and varying levels of dissonance, lo-fi production, and feedback.',
-    bands: 'Sonic Youth, Blur',
+    artists: 'Sonic Youth, Blur',
   },
   {
     type: Type.Sub,
@@ -1169,7 +1170,7 @@ export const AlternativeRock = [
     hard: ['noise-rock', 'post-punk'],
     soft: ['post-hardcore', 'industrial' ],
     desc: 'Sloppy, abrasive and feedback-laden riffing with vulgar and edgy lyricism, informed by Post-Hardcore&#39;s aggression and Post-Punks rhythm section.',
-    bands: 'Chat pile, Big black',
+    artists: 'Chat pile, Big black',
   },
   {
     type: Type.Sub,
@@ -1179,13 +1180,13 @@ export const AlternativeRock = [
     hard: ['noise-rock'],
     soft: ['shoegaze', 'garage-rock'],
     desc: 'Blends extremely raw and lo-fi aesthetics, abrasive guitar tones, and typically, the ethos of raucous Garage Rock, to create a sonic wall of deafening distortion evocative of Shoegaze.',
-    bands: 'Chat pile',
+    artists: 'Chat pile',
   },
   {
     type: Type.Scene,
     parent: Type.Genre,
     desc: 'Movement of the brit bands for a soft rock sound',
-    bands: 'pulp, coldplay, the verve, oasis',
+    artists: 'pulp, coldplay, the verve, oasis',
     label: 'Britpop',
     id: 'britpop-scene',
     hard: ['alternative-rock', 'britpop', 'indie-rock', 'grunge'],
@@ -1206,7 +1207,7 @@ export const AlternativeRock = [
     id: 'rock-sonico',
     hard: ['alternative-rock', 'indie-rock', 'shoegaze'],
     desc: 'Movement located in argentina based around the local style of alternative rock bands',
-    bands: 'Soda stereo, fito paez, Sumo, la renga',
+    artists: 'Soda stereo, fito paez, Sumo, la renga',
     soft: []
   },
  {
@@ -1216,7 +1217,7 @@ export const AlternativeRock = [
     id: 'maidcore',
     hard: ['alternative-rock','post-rock',  'post-hardcore','heavy-metal'],
     desc: 'Maidcore Music - a variety of genres of electronic music, characterized by hard guitar riffs and solos washed down, 8-16 bit parts from ancient tape recorders and old-time segovod toys, screaming women (both in the base and on the backs), depressive-aggressive melody, which is achieved with the help of synth voices and ONIMEE bullshit for beauty, also characteristic breakbeat parts with growling 808 basses in 3 roads :) and of course vicious hats in a pile with lo-fi effects of idm styles.',
-    bands: 'Yakui, futaba, chikoi, iotai,m ozoi',
+    artists: 'Yakui, futaba, chikoi, iotai,m ozoi',
     soft: []
   },
 

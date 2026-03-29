@@ -32,7 +32,7 @@ export const Metal = [{
     id: 'power-metal',
     hard: ['speed-metal'],
     soft: [],
-    bands: 'Helloween, Galneryus, Kamelot',
+    artists: 'Helloween, Galneryus, Kamelot',
     desc: 'Developed from Heavy Metal and Speed Metal; characterized by its emphasis on speed, vocal melody and harmonized lead guitars.'
 },
 {
@@ -43,7 +43,7 @@ export const Metal = [{
     hard: ['metal'],
     soft: [],
     desc: 'Fuses amplified, guitar-driven sound with technical proficiency, virtuosity, complex compositions, innovative arrangements, eclecticism, and additional instrumentation.',
-    bands: 'Dream theather, Tool, maudlin of the well, mastodon, opeth'
+    artists: 'Dream theather, Tool, maudlin of the well, mastodon, opeth'
 },
 {
     type: Type.Genre,
@@ -52,7 +52,7 @@ export const Metal = [{
     id: 'thrash-metal',
     hard: ['metal'],
     soft: [],
-    bands: 'Metallica, megadeth, Pantera, Slayer, Sepultura'
+    artists: 'Metallica, megadeth, Pantera, Slayer, Sepultura'
 },
 {
     type: Type.Sub,
@@ -80,7 +80,7 @@ export const Metal = [{
     hard: [ 'metal', 'industrial'],
     soft: [],
     desc: 'Incorporates the abrasive and heavy sound of Industrial into Metal, using elements like synthesizers and drum machines.'
-    ,bands: 'Rammstein, Fear Factory, Ministry, Godflesh, Killing Joke, White Zombie'
+    ,artists: 'Rammstein, Fear Factory, Ministry, Godflesh, Killing Joke, White Zombie'
 
 },
 {
@@ -91,7 +91,7 @@ export const Metal = [{
     hard: [ 'industrial-metal'],
     soft: [],
     desc: 'Originated around 1999, influenced by EBM and Aggrotech with more melodic and less repetitive riffs as well as harsh vocals',
-    bands: 'Celldweller, Sybreed, Master boot record'
+    artists: 'Celldweller, Sybreed, Master boot record'
 
 },
 {
@@ -102,7 +102,7 @@ export const Metal = [{
     hard: [ 'industrial-metal', 'alternative-metal'],
     soft: ['edm'],
     desc: 'Alternative Mtal and Industrial Metal that incorporates various aspects of electronic music, specifically Electronic Dance Music.',
-    bands: 'Rammstein, Oomph, Megaherz, Hanzel und Gretyl, Eisbrecher'
+    artists: 'Rammstein, Oomph, Megaherz, Hanzel und Gretyl, Eisbrecher'
 
 },
 {
@@ -145,7 +145,7 @@ export const Metal = [{
     hard: ['metal'],
     desc:'Highly distorted, treble-heavy guitars, tremolo-picked riffs, blast beats and double bass drumming, shrieked vocals, and raw, lo-fi production; often focuses on occult, dark imagery and atmosphere.',
     soft: [],
-    bands: 'Agallock, Ulver, Burzum',
+    artists: 'Agallock, Ulver, Burzum',
     dates: '1980s'
 
 },
@@ -157,7 +157,7 @@ export const Metal = [{
     hard: ['black-metal', 'noise', 'ambient'],
     soft: [],
     desc: 'Repetitive riffs and melodies, slower tempos, synthesized ambient textures, and guitar effects creating atmospheric soundscapes.',
-    bands: 'Burzum, Gris'
+    artists: 'Burzum, Gris'
 },
 {
     type: Type.Sub,
@@ -167,7 +167,7 @@ export const Metal = [{
     hard: ['black-metal', 'shoegaze'],
     soft: [],
     dsc: 'Fuses tremolo-picked riffing, intnse drumming and harsh vocal techniques with mellow, dreamy textures, major-key melodies and extended build-ups.'
-    ,bands: 'Deafheaven, Solstafir'
+    ,artists: 'Deafheaven, Solstafir'
 },
 {
     type: Type.Sub,
@@ -206,7 +206,7 @@ export const Metal = [{
     hard: ['black-metal', 'doom-metal'],
     desc:'Lethargic atmospheres; usually repetitive song structures and slow-mid tempos; high-pitched wailing and gruff vocals; and usage of non-distorted instruments like keyboards and acoustic guitars.',
     soft: [],
-    bands: 'psychonaut 4, lifelover, forgotten tomb, gris'
+    artists: 'psychonaut 4, lifelover, forgotten tomb, gris'
 
 },
 {
@@ -217,7 +217,7 @@ export const Metal = [{
     hard: ['black-metal'],
     desc:'Cleaner production, more diverse arrangements, and a stronger emphasis on melody than is typical for Black Metal',
     soft: [],
-    bands: 'Hollenthon, Solstafir, diabolical masquerade'
+    artists: 'Hollenthon, Solstafir, diabolical masquerade'
 
 },
 {
@@ -228,7 +228,7 @@ export const Metal = [{
     hard: ['black-metal'],
     desc:'Black metal scene in Greece with more mid-tempo songwriting and pronounced Heavy Metal influence',
     soft: [],
-    bands:'Rotting christ'
+    artists:'Rotting christ'
 
 },
 {
@@ -239,7 +239,7 @@ export const Metal = [{
     hard: ['black-metal'],
     desc:'Incorporates acoustic guitar and traditional instrument passages, cleanly sung vocals, folk songs&#39; melodies, and paganistic themes.',
     soft: ['celtic-folk'],
-    bands: 'Negura Bunget'
+    artists: 'Negura Bunget'
 
 },
 {
@@ -250,7 +250,7 @@ export const Metal = [{
     hard: ['black-metal', 'symphonic-metal'],
     desc:'Symphonic soundscapes, typically but not always synthesized.',
     soft: [''],
-    bands: 'Cradle of filth, sigh, covenant'
+    artists: 'Cradle of filth, sigh, covenant'
 
 },
 {
@@ -272,7 +272,7 @@ export const Metal = [{
     soft: [],
     desc: 'Heavily distorted, down-tuned guitars, palm-muted, tremolo-picked riffs, double-kick and blast beat percussion, chromatic chord progressions, minor keys, abrupt changes in tempo, and guttural vocals',
     dates: '1980s',
-    bands: 'death, carcass'
+    artists: 'death, carcass'
 },
 {
     type: Type.Sub,
@@ -282,7 +282,7 @@ export const Metal = [{
     hard: ['death-metal'],
     desc:'Emphasizes abrasiveness, chunky rhythmic atonal riffs, and low guttural vocals.',
     soft: [''],
-    bands: 'nile, Dying fetus'
+    artists: 'nile, Dying fetus'
 
 },
 {
@@ -293,7 +293,7 @@ export const Metal = [{
     hard: ['brutal-death-metal'],
     desc:'Focuses on slow or midtempo (as well as breakdown-style) sections built on chromatic, palm-muted riffs - so-called "slams"',
     soft: [''],
-    bands: 'nile, Dying fetus'
+    artists: 'nile, Dying fetus'
 
 },
 {
@@ -343,7 +343,7 @@ export const Metal = [{
     hard: ['metal'],
     soft: [],
     desc: 'Groovy polymeters, syncopated power chord chugs, palm-muted, distorted guitars, and significant focus on production and tone.'
-    , bands: 'Meshuggah, periphery, tesseract'
+    , artists: 'Meshuggah, periphery, tesseract'
 },
 {
     type: Type.Genre,
@@ -353,7 +353,7 @@ export const Metal = [{
     hard: ['metal'],
     soft: [],
     desc: 'Plodding tempos, repeated chords, and thick, distorted, down-tuned guitars in a style focused on foreboding, atmosphere, and tension.',
-    bands: 'Black Sabbath, Sleep, Katatonia'
+    artists: 'Black Sabbath, Sleep, Katatonia'
 },
 {
     type: Type.Sub,
@@ -381,7 +381,7 @@ export const Metal = [{
     hard: ['doom-metal'],
     soft: ['psychodelic-rock','blues-rock'],
     desc: 'Monotonous and heavy playing style; repetitive, rough, and sometimes atonal guitar riffs; a "rocking to sleep bass; and influences from both Blues Rock and Psychedelic Rock..',
-    bands: 'Pentagram'
+    artists: 'Pentagram'
 },
 {
     type: Type.Sub,
@@ -409,7 +409,7 @@ export const Metal = [{
     hard: ['metal', 'drone'],
     soft: [],
     desc: 'Extremely slow tempos, highly sustained, repetitive guitar notes, and minimalist song structures often omitting a traditional rhythm section and vocals.',
-    bands: 'Boris, Sunn o))'
+    artists: 'Boris, Sunn o))'
 },
 {
     type: Type.Genre,
@@ -419,7 +419,7 @@ export const Metal = [{
     hard: ['metal', 'folk'],
     soft: [],
     desc: 'Features influences from various types of Traditional Folk Music expressed through melodies and/or traditional instrumentation, notably having a large scene in Europe.',
-    bands: 'Agalloch, Thy Catafalque, moonsorrow'
+    artists: 'Agalloch, Thy Catafalque, moonsorrow'
 },
 {
     type: Type.Sub,
@@ -429,7 +429,7 @@ export const Metal = [{
     hard: ['folk-metal', 'celtic-folk'],
     soft: [],
     desc: 'Features Celtic Folk Music elements.',
-    bands: 'Eluveitie, Elvenking, Mago de Oz, Alestorm'
+    artists: 'Eluveitie, Elvenking, Mago de Oz, Alestorm'
 },
 {
     type: Type.Sub,
@@ -457,7 +457,7 @@ export const Metal = [{
     hard: ['metal', 'western-classical'],
     soft: [],
     desc: 'Greatly influenced by Western Classical Music in its style of playing and composing',
-    bands: 'Haggard'
+    artists: 'Haggard'
 },
 {
     type: Type.Genre,
@@ -467,7 +467,7 @@ export const Metal = [{
     hard: ['metal', 'psychodelia'],
     soft: ['doom-metal'],
     desc: 'Combines elements of Doom Metal with elements of Psychedelic Rock and Blues Rock to create a melodic yet heavy sound.',
-    bands: 'Electric Wizard, sleep, down, high on fire, kyuss, kylesa'
+    artists: 'Electric Wizard, sleep, down, high on fire, kyuss, kylesa'
 },
 {
     type: Type.Genre,
@@ -477,7 +477,7 @@ export const Metal = [{
     hard: ['stoner-metal', 'doom-metal'],
     soft: ['hardcore'],
     desc: 'Mixes Doom Metal\'s slow pacing, down-tuned riffing style and dark atmosphere with Hardcore Punk&#39;s aggression, abrasiveness and harsh vocals.' ,
-    bands: 'Kylesa, Sigh, Neurosis, cult of luna '
+    artists: 'Kylesa, Sigh, Neurosis, cult of luna '
 },
 {
     type: Type.Sub,
@@ -486,7 +486,7 @@ export const Metal = [{
     id: 'atmospheric-sludge-metal',
     hard: ['sludge-metal'],
     soft: [],
-    bands: 'Isis, cult of luna, rosetta, amenra',
+    artists: 'Isis, cult of luna, rosetta, amenra',
     desc: 'Combines slow, churning guitar riffs and thunderous percussion with dark, extensive otherworldly sonic landscapes.'
 },
 {
@@ -514,7 +514,7 @@ export const Metal = [{
     id: 'funk-metal',
     hard: ['metal', 'funk-rock'],
     soft: [],
-    bands: 'Faith no more, Primus, Mr Bungle'
+    artists: 'Faith no more, Primus, Mr Bungle'
 },
 {
     type: Type.Genre,

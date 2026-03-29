@@ -397,7 +397,7 @@ export const Breakbeat = [{
     hard: ['edm', 'hiphop'],
     soft: ['funk'],
         dates: 'late 1980s',
-        bands: 'The prodigy, my chemical brothers, iglooghost, turquoisedeath',
+        artists: 'The prodigy, my chemical brothers, iglooghost, turquoisedeath',
     desc: 'Umbrella of affiliated Electronic Dance Music styles broadly featuring prominent syncopated drum patterns (called breakbeats) that emerged from Breakbeat Hardcore\'s initial influence, not including styles directly related to Drum and Bass and Jungle.',   
 },
 {
@@ -435,7 +435,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     id: 'breakbeat-hardcore',
     dates: 'late 1980s',
     hard: ['breakbeat'],
-    bands: 'Machine girl, the prodigy, psychoangel',
+    artists: 'Machine girl, the prodigy, psychoangel',
     soft: [],
     desc: 'Originated from the combination of sampled breakbeats and energetic rhythms with the "rave" influences set by early-1990s Techno and Acid House, including upbeat "stab" riffing and sample-based production.',    
 },
@@ -584,7 +584,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     label: 'Deconstructed Club',
     id: 'deconstructed-club',
     hard: ['edm', 'post-industrial', 'glitch'],
-        bands: 'Sophie, arca,   black dresses',
+        artists: 'Sophie, arca,   black dresses',
     soft: ['idm'],
     desc: 'Emerged in the 2010s as the hybridization of diverse Electronic Dance Music genres with an abrasive Post-Industrial sound',    
 },
@@ -713,7 +713,7 @@ export const EDM = [
         hard: ['edm'],
         soft: [],
         dates: '1991',
-        bands: 'Aphex twin, Bjork, Flying lotus',
+        artists: 'Aphex twin, Bjork, Flying lotus',
         desc: 'Emerged through the development of Electronic Dance Music idioms into a less club-oriented and more experimental direction, often incorporating unconventional sound design and complex rhythms.'
     },
     {
@@ -770,7 +770,7 @@ export const EDM = [
         soft: ['post-industrial'],
         desc: 'Melodic and dancefloor-friendly take on Post-Industrial music that developed in the early 1980s.'
         , dates: '1980',
-        bands: 'Front 242, Nitzer Ebb, pharmakon,  front line assembly'
+        artists: 'Front 242, Nitzer Ebb, pharmakon,  front line assembly'
     },
 
     {
@@ -992,7 +992,7 @@ export const EDM = [
     desc: 'Emerged in the late 1970s and quickly became the most popular form of Electronic Dance Music in the LGBT club scenes of San Francisco and New York, characterized by its uptempo, high-energy sound.',
     soft: [],
     dates: 'late 1970s',
-    bands: 'Dead or alive'
+    artists: 'Dead or alive'
 },
 {
     type: Type.Sub,
@@ -1049,7 +1049,7 @@ export const EDM = [
     desc: 'Fast-paced with roots in Hi-NRG and Italo-Disco; became mainly popular in Japan in the 1990s.',
     soft: ['hi-nrg', 'italo-disco'],
     dates: 'mid 1980s',
-    bands: 'Dave Rodgers'
+    artists: 'Dave Rodgers'
 },
 {
     type: Type.Sub,
@@ -1066,7 +1066,7 @@ export const EDM = [
     label: 'Eurodance',
     id: 'eurodance',
     dates: 'late 1980s',
-    bands: 'Gigi d\' angostino, cher, scatman, culture beat, alice deejay',
+    artists: 'Gigi d\' angostino, cher, scatman, culture beat, alice deejay',
     hard: ['edm'],
     desc: 'Takes elements of Euro-Disco, House, Techno, and Hi-NRG while featuring on-beat kick, hi-hat and snare sounds at around 110 to 150 bpm.',
     soft: ['hi-nrg', 'house', 'euro-disco', 'techno']
@@ -1249,7 +1249,7 @@ export const EDM = [
     hard: ['edm', 'neurofunk'],
     dates: '2000',
     desc: 'UK Garage-derived production style characterized by dark, fast-paced, often aggressive beats that commonly features fast-paced MCing. The genre is characterized by fast-paced, syncopated, choppy, and highly rhythmic beats usually centered around 140 BPM, which are often aggressive, jagged, and raw, though a significant variation has always existed in grime production. Grime sound was always coupled and intertwined with the vocal style that grime MCs would use to lay down lyrics, with producers providing dark, rapid, and manic beats for MCs to perform on. Regardless, much of the genre remains instrumental-focused, particularly later 2010s developments. Grime lyrics commonly focus on matters of urban life, crime, social injustice, braggadocio, and beefs between MCs.',
-    bands: 'skepta, jme',
+    artists: 'skepta, jme',
     soft: ['2-step']
 }, 
 {
@@ -1392,7 +1392,7 @@ export const House = [{
     soft: [],
     desc: 'Large, hugely popular group of related Electronic Dance Music styles, initially developing from Disco in the early 1980s.'
     ,dates: '1983',
-    bands: 'Daft Punk, David guetta'
+    artists: 'Daft Punk, David guetta'
 },
 {
     type: Type.Genre,
@@ -1682,7 +1682,7 @@ export const Techno = [{
     label: 'Techno',
     id: 'techno',
     hard: ['edm'],
-    bands: 'Aphex Twin, Underworld',
+    artists: 'Aphex Twin, Underworld',
     soft: [],
 
 
@@ -1715,7 +1715,7 @@ export const Techno = [{
     id: 'acid-techno',
     hard: ['techno'],
     soft: [],
-    bands: 'Autechre',
+    artists: 'Autechre',
     dates: 'late 1980s',
     desc: 'Incorporates \"squelching\" synths from [Genre464] into a mechanical and usually more energetic Acid house context.'
 
@@ -1908,7 +1908,7 @@ export const Trance = [{
     hard: ['edm'],
     soft: [],
     desc: 'Evolving, tension-building structures with rapid, minor arpeggios on top of a hypnotic, four-on-the-floor drum patterns at fast tempo around 130-150 BPM.'
-    ,bands: 'Tiesto',
+    ,artists: 'Tiesto',
     dates: 'late 1980s'
 
 },
@@ -2142,7 +2142,7 @@ export const Bit = [
         hard: ['bit'],
         soft: [],
         dates: 'late 1970s',
-        bands: 'unicorn kid, koji kondo',
+        artists: 'unicorn kid, koji kondo',
         desc: 'Used primarily in the 1980s within the context of 8-bit Video Game Music, combining simple synthesized waveforms and noise in a compositionally limited but overtly melodic style.'
     },
     {
@@ -2247,7 +2247,7 @@ export const Glitch = [{
     hard: ['electronics', 'noise', 'choppednscrewed'],
     soft: [],
     dates: '1991',
-    bands: 'Nero\'s Day at Disneyland, matmos'
+    artists: 'Nero\'s Day at Disneyland, matmos'
 },
 {
     type: Type.Sub,
@@ -2257,7 +2257,7 @@ export const Glitch = [{
     hard: ['glitch', 'edm'],
     desc: 'Tempos around 100-110 BPM, swung, bouncy drum patterns, and a focus on upbeat, danceable drops and buildups.',
     soft: [],
-    bands: 'the glitch mob, arca, koan sound, phantogram'
+    artists: 'the glitch mob, arca, koan sound, phantogram'
 
 }, 
 {
@@ -2287,7 +2287,7 @@ export const Glitch = [{
     hard: ['glitch', 'indietronica', 'idm'],
     desc: 'Incorporates elements of more experimental Electronic styles like IDM and Glitch..',
     soft: [],
-    bands: 'fka twigs, jane remover, jockstrap, siinamota'
+    artists: 'fka twigs, jane remover, jockstrap, siinamota'
 }, 
 ]
 
@@ -2448,7 +2448,7 @@ desc: 'Borrows elements from Downtempo, Trip Hop, and Instrumental Hip Hop; emul
     id: 'downtempo',
     hard: ['chillout'],
     soft: [],
-    bands: 'Four tet, Sade, Portishead, primal scream, boards of canada, massive attack',
+    artists: 'Four tet, Sade, Portishead, primal scream, boards of canada, massive attack',
 desc: 'Atmospheric and groove-based with relaxed tempos and mellow beats.'
 },
 {
@@ -2459,7 +2459,7 @@ desc: 'Atmospheric and groove-based with relaxed tempos and mellow beats.'
     hard: ['downtempo', 'hiphop'],
     soft: [],
     dates: '1988',
-    bands: 'Tricky, Faithless, Portishead, primal scream, Gustavo Cerati, massive attack',
+    artists: 'Tricky, Faithless, Portishead, primal scream, Gustavo Cerati, massive attack',
 desc: 'Evokes a surreal, trippy, dreamy, and sometimes dark atmosphere with offbeat turntable scratches, light vocal melodies, and Hip Hop-influenced beats, From Brixton.'
 },
 {
@@ -2496,7 +2496,7 @@ export const HardcoreElectronics = [{
             hard: ['breakbeat'],
             soft: ['hardcore']
             ,dates: 'late 1980s',
-            bands: 'Venetian Snares, machine girl, goreshit'
+            artists: 'Venetian Snares, machine girl, goreshit'
 
         
 },
@@ -2526,7 +2526,7 @@ export const HardcoreElectronics = [{
     label: 'Digital Hardcore',
     id: 'digital-hardcore',
     hard: ['hardcore-electronics','hardcore'],
-    bands: 'Rabbit junk, atari teenage riot',
+    artists: 'Rabbit junk, atari teenage riot',
     soft: [],
     desc: 'High-tempo fusion of Hardcore Punk and Electronic, combining harsh vocals and electric guitars of the former with electronic instruments.',    
 },
@@ -2556,7 +2556,7 @@ export const HardcoreElectronics = [{
     hard: ['hardcore-electronics'],
     soft: [],
     dates:'1992',
-    bands:'Coakira',
+    artists:'Coakira',
     desc: 'Fast-paced and energetic, often in the 160-220 BPM range, with a hallmark of a distinctive distorted kick sound.',    
 },
 {
@@ -2782,7 +2782,7 @@ export const Electronics = [
         id: 'dark-electro',
         hard: ['electro-industrial', 'ebm'],
         dates: '1990',
-        bands: 'ada rook, psyclon nine, velvet acid christ, combichrist',
+        artists: 'ada rook, psyclon nine, velvet acid christ, combichrist',
         soft: []
     },
     {
@@ -3024,7 +3024,7 @@ export const Electronics = [
     desc: 'Incorporates production elements of early Hip Hop and usually rapping into 1980s House.',
     soft: [],
     dates: 'mid 1980s',
-    bands: 'Proyecto uno, technotronic, azaelia banks'
+    artists: 'Proyecto uno, technotronic, azaelia banks'
 }, 
 {
     type: Type.Sub,
@@ -3054,7 +3054,7 @@ export const Electronics = [
     desc: 'Emerged in the second half of the 1980s, blending four-on-the-floor beats with Hispanic American Music influences from Puerto Rico, Mexico, Cuba, Dominica, and Colombia.',
     soft: [],
     dates: 'mid 1980s',
-    bands: 'Proyecto uno'
+    artists: 'Proyecto uno'
 }, 
 {
     type: Type.Sub,
@@ -3345,7 +3345,7 @@ export const Electronics = [
         hard: ['electronics', 'bubblegum-bass'],
         soft: ['bubblegum-pop', 'electropop', 'nightcore'],
         desc: 'Developed and took inspiration from Bubblegum Bass and popular 2000s-2010s Electropop, characterized by eclectic, unconventional, mechanical-sounding and dense production; and by manipulated, usually auto-tuned vocals.'
-        ,bands: 'Arca, Charlie XCX, Forest Children, 100 gecs'
+        ,artists: 'Arca, Charlie XCX, Forest Children, 100 gecs'
     },
         {
             type: Type.Sub,
@@ -3355,7 +3355,7 @@ export const Electronics = [
             desc: 'Developed in the late 2010s and characterized by frantic, bombastic, and glamourous production, usually derived from Trap, that serves to accompany highly melodious, auto-tuned, and hi-pitched vocal performances, often done with breathy voice singing and sing-rapping.',
             hard: ['hyperpop'],
             soft: ['hiphop'],
-            bands: 'jane Remover'
+            artists: 'jane Remover'
         },
     {
         type: Type.Sub,
@@ -3514,7 +3514,7 @@ export const Electronics = [
         hard: ['electronics'],
         soft: ['choppednscrewed'],
         desc: '(sometimes referred to as drag,[1] screwgaze or haunted house)[2] is a microgenre of electronic music that is musically characterized by high-pitched keyboard effects, heavily layered basslines and trap-style drum loops. Aesthetically, it employs occult- and gothic-inspired themes.'
-        ,bands: 'Salem, crystal castles, sidewalks and skeletons, ic3peak'
+        ,artists: 'Salem, crystal castles, sidewalks and skeletons, ic3peak'
         ,dates: '2007',
     },
     ...Vapor,

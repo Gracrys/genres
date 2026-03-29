@@ -16,7 +16,7 @@ export const HipHop = [
         hard: [],
         soft: ['poetry'],
         dates: '1970s',
-        bands:'Kendrick Lamar, Tupac, Mos Def, Nas'
+        artists:'Kendrick Lamar, Tupac, Mos Def, Nas'
     },
     {
         type: Type.Sub,
@@ -26,7 +26,7 @@ export const HipHop = [
         id: 'abstract-hiphop',
         hard: ['hiphop'],
         soft: [],
-        bands: 'Madvillain, Deltron 3030'
+        artists: 'Madvillain, Deltron 3030'
     },
     {
         type: Type.Sub,
@@ -147,7 +147,7 @@ export const HipHop = [
         desc: 'Artists whose lyrics deal with social issues.',
         hard: ['hiphop' ],
         soft: [],
-        bands: 'mos def, little simz'
+        artists: 'mos def, little simz'
     },
     {
         type: Type.Sub,
@@ -157,7 +157,7 @@ export const HipHop = [
         desc: 'Originating from the southern United States and reliant on drum machines and synthesizer stabs to create an energetic, often dance-oriented sound.',
         hard: ['hiphop' ],
         soft: [],
-        bands: 'Three 6 mafia'
+        artists: 'Three 6 mafia'
     },
     {
         type: Type.Sub,
@@ -249,7 +249,7 @@ export const HipHop = [
         desc: 'Confrontation and aggression, whether in the lyricism, vocal delivery, hard beats, heavy production, or any combination thereof.',
         hard: ['hiphop' ],
         soft: [],
-        bands: 'Nas, Danny Brown, Public Enemy, Tech n9ne, Canserbero, Run the Jewels'
+        artists: 'Nas, Danny Brown, Public Enemy, Tech n9ne, Canserbero, Run the Jewels'
     },
     {
         type: Type.Sub,
@@ -286,7 +286,7 @@ export const HipHop = [
         desc: 'Lyrical and aesthetic focus on the macabre and morbid, with production generally of a darker nature than is typically found in other Hip Hop.',
         hard: ['hardcore-hiphop' ],
         soft: [],
-        bands: 'eminem, clipping, tech n9ne'
+        artists: 'eminem, clipping, tech n9ne'
     },
     {
         type: Type.Genre,
@@ -503,7 +503,7 @@ export const HipHop = [
         desc: 'Features explicitly political lyrics and themes.',
         hard: ['hiphop'],
         soft: [],
-        bands: 'Zack de la rocha, run the jewels, 2pac'
+        artists: 'Zack de la rocha, run the jewels, 2pac'
     },
     {
         type: Type.Sub,

@@ -2792,7 +2792,7 @@ export const Folk = [{
   desc: 'Emerged in the mid-1980s from the Post-Industrial scene, with a dark, often martial atmosphere.',
   hard: ['contemporary-folk', 'post-industrial'],
   soft: ['martial-industrial'],
-  bands: 'swans, sol invictus'
+  artists: 'swans, sol invictus'
 },
 {
   type: Type.Sub,
