@@ -1183,6 +1183,16 @@ export const AlternativeRock = [
     artists: 'Chat pile',
   },
   {
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Shimokita kei',
+    id: 'shimokita-kei',
+    hard: ['alternative-rock', 'noise-rock', 'indie-rock'],
+    soft: ['post-hardcore'],
+    desc: 'Movement of the japanese indie rock scene based in the shimokita area of tokyo, characterized by a noisy and lo-fi sound with a strong emphasis on melody and catchy songwriting. in a more hard style, even using influecne from punk and post hardcore',
+    artists: 'mass of the fermenting dregs, the pillows, ling tosite sigure',
+  },
+  {
     type: Type.Scene,
     parent: Type.Genre,
     desc: 'Movement of the brit bands for a soft rock sound',
@@ -1218,6 +1228,26 @@ export const AlternativeRock = [
     hard: ['alternative-rock','post-rock',  'post-hardcore','heavy-metal'],
     desc: 'Maidcore Music - a variety of genres of electronic music, characterized by hard guitar riffs and solos washed down, 8-16 bit parts from ancient tape recorders and old-time segovod toys, screaming women (both in the base and on the backs), depressive-aggressive melody, which is achieved with the help of synth voices and ONIMEE bullshit for beauty, also characteristic breakbeat parts with growling 808 basses in 3 roads :) and of course vicious hats in a pile with lo-fi effects of idm styles.',
     artists: 'Yakui, futaba, chikoi, iotai,m ozoi',
+    soft: []
+  },
+ {
+    type: Type.Scene,
+    parent: Type.Genre,
+    label: 'J rock',
+    id: 'j-rock',
+    hard: ['alternative-rock',  'post-hardcore','indie-rock', 'shimokita-kei'],
+    desc: 'Movement of the japanese rock scene, with a wide variety of styles but with a general emphasis on catchy melodies and a more polished sound than the typical indie rock style. in a more hard style, even using influecne from punk and post hardcore',
+    artists: 'ling tosite sigure, the pillows,  one ok rock',
+    soft: ['j-pop', 'visual-kei']
+  },
+ {
+    type: Type.Scene,
+    parent: Type.Genre,
+    label: 'visual kei',
+    id: 'visual-kei',
+    hard: ['alternative-rock',  'alternative-metal', 'symphonic-rock',  'shimokita-kei', 'gothic-rock', 'dark-cabaret',],
+    desc: 'Movement of the japanese rock scene, with a wide variety of styles with a strong emphasis on theatrics and visual presentation, often incorporating elaborate costumes, makeup, and hairstyles, influenced by gothic styles and giving place to a more dark cabaret dressing, the music and sound is using heavy melodic and symphonic voices, heavy metal influences.',
+    artists: 'X Japan, Dir en grey, Versailles, malice mizer, buck-tick',
     soft: []
   },
 

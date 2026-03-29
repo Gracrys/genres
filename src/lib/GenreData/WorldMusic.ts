@@ -222,6 +222,17 @@ export const Jamaican = [
         hard: ['reggae', 'skinhead'],
         soft: []
     },
+     {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Reggaeton',
+        sub:'Regueton',
+        id: 'reggaeton',
+        hard: ['reggae', 'dancehall', 'hiphop', 'latin-music'],
+        soft: [],
+        desc: 'Genre that emerged in Puerto Rico during the late 1990s, influenced by Reggae and Dancehall from Jamaica, as well as hip hop and Latin American music, characterized by its use of dembow rhythm, rapped or sung vocals, and often explicit lyrics.  ',
+        artists: 'Daddy Yankee, Don Omar, Nicky Jam, Bad Bunny'
+    },
     {
         type: Type.Fusion,
         parent: Type.Genre,

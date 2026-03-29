@@ -1445,4 +1445,15 @@ export const Pop = [
         soft: [],
         desc: 'Upbeat, trendy Pop that emerged in Southern Europe in the early 1960s, focusing on image and risqué lyrics.'
     },
+     {
+        type: Type.Scene,
+        parent: Type.Genre,
+        label: 'Vocaloid',
+        id: 'vocaloid',
+        hard: ['electropop', 'j-pop', 'shimokita-kei', 'yakousei'],
+        soft: [],
+        artists: 'Siinamota, DECO*27, Mitchie M, PinocchioP, Utsu-P, Project diva',
+        desc: 'Scene revolving around the use of Vocaloid singing synthesizer software, characterized by high pitched vocals, which has produced a wide variety of styles but is often associated with a particular style of J-Pop and Otaku culture.'
+    },
+    
 ]

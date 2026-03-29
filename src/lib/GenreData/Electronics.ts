@@ -55,7 +55,7 @@ export const Trap = [
         parent: Type.Genre,
         label: 'Hybrid Trap',
         id: 'hybrid-trap',
-    desc: 'Blends Trap [EDM]’s signature percussion and sub-basses with euphoric, uplifting, melodious drops prominently derived from Festival Progressive House, contrary to the gritty,dirty nature of other EDM trap styles.',
+    desc: 'Blends Trap EDM signature percussion and sub-basses with euphoric, uplifting, melodious drops prominently derived from Festival Progressive House, contrary to the gritty,dirty nature of other EDM trap styles.',
         hard: ['trap-edm'],
         soft: ['brostep']
     },
@@ -67,7 +67,17 @@ export const Trap = [
     desc: 'Fast-paced; draws influence from Bounce and Miami Bass.',
         hard: ['trap-edm'],
         soft: ['brostep']
-    }
+    },
+    {
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Neo Perreo',
+    id: 'neo-perreo',
+    hard: ['trap-edm', 'reggaeton','dancehall'],
+        artists: 'mercabae, rosalia,  arca',
+    soft: [],
+    desc: 'Heavy emphasis on rhytm, using a dembow base it was a movement that grew as a broad subgenre recyling reggaeton style towards a more general style, using styles from digital cumbia, kuduro, grime, trap, uk bass and deconstructed club.',    
+},
 ]
 
 export const Step = [
@@ -702,7 +712,9 @@ export const EDM = [
         id: 'edm',
         dates: 'mid 1970s',
         hard: ['electronics'],
-        soft: []
+        soft: [],
+        desc: 'Broad category of electronic music primarily designed for dancing, encompassing a wide range of styles and subgenres that emerged from the disco and electronic music scenes of the 1970s and 1980s, characterized by its use of synthesizers, drum machines, and digital production techniques to create rhythmic and melodic compositions intended for club and festival settings.'
+        ,artists: 'giorgio moroder, donna summer, tiesto, black eyed peas'
     },
     {
         type: Type.Genre,
@@ -1276,7 +1288,7 @@ export const EDM = [
         label: 'Anime music',
         id: 'dojin',
         sub: 'Dōjin',
-        hard: ['artcore', 'lolicore', 'kawaii-future-bass', 'nightcore'],
+        hard: ['artcore', 'lolicore', 'kawaii-future-bass', 'nightcore', 'yakousei', 'vocaloid'],
         desc: 'Refers to a scene of people with alike tastes in literature, anime and media, in this context refers to japanese western culture movement which captures mostly anime and manga.',
         soft: []
     },
