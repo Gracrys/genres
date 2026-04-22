@@ -521,6 +521,7 @@ export const Metal = [{
     parent: Type.Super,
     label: 'Symphonic Metal',
     id: 'symphonic-metal',
+    artists: 'Rhapsody, Angra, Arcturus, Therion',
     hard: ['metal'],
     soft: [],
     desc: 'Incorporates elements of symphonic and Orchestral Music.' ,

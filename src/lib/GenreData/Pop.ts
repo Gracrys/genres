@@ -493,6 +493,7 @@ export const Pop = [
         id: 'flamenco-pop',
         hard: ['pop'],
         soft: [],
+        artists: 'Rosalia, Gypsy kings, Estopa',
         desc: 'Incorporates Flamenco sub-styles into a more commercial Pop form; particularly through the vocal style and rhythms.'
     },
  
@@ -503,6 +504,7 @@ export const Pop = [
         id: 'french-pop',
         hard: ['pop'],
         soft: [],
+        artists: 'Françoise Hardy, paradis, stromae',
         desc: 'Pop originating from France.'
     },
     {

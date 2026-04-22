@@ -149,7 +149,8 @@ export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
       dates: x?.dates,
       type: exceptions[x.id] || x.type,
       hard: x.hard,
-      soft: x.soft
+      soft: x.soft,
+      artists: x.artists
     },
     position: calculatePosition(x),
   })) || []

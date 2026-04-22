@@ -1696,6 +1696,7 @@ export const Techno = [{
     hard: ['edm'],
     artists: 'Aphex Twin, Underworld',
     soft: [],
+    desc: 'Techno is a broad form of Electronic Dance Music that emerged in the late 1980s. It is beat-driven and repetitive, featuring minimal chord variation and lead melodies, instead focusing on four-on-the-floor rhythms and timbral variety. Techno is typically produced for sets and raves, with tracks often exceeding five minutes. In contrast with other main EDM branches like House and Trance, which are usually emotional and/or melodic (often featuring vocals), techno is mechanical and "cold" in sound, embracing synthetic sound design and hypnotic, non-human rhythmicity.'
 
 
 },

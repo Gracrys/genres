@@ -115,7 +115,8 @@ export const AvantGarde = [
         id: 'noise',
         hard: ['avant-garde'],
         soft: [],
-        artists: 'Merzbow, gerogiregegege'
+        desc: 'Noise is an Experimental genre that rejects conventional structure and tonality, relying predominantly on noise. It can be created using various instruments, non-musical objects, extreme vocals, or electronic equipment, and is often cacophonous, improvised, dissonant, loud, and abrasive, using techniques like feedback, distortion, and manipulation.'
+        ,artists: 'Merzbow, gerogiregegege'
     },
     {
         type: Type.Sub,

@@ -283,10 +283,10 @@ export const HipHop = [
         parent: Type.Genre,
         label: 'Horrorcore',
         id: 'horrorcore',
-        desc: 'Lyrical and aesthetic focus on the macabre and morbid, with production generally of a darker nature than is typically found in other Hip Hop.',
+        desc: 'Lyrical and aesthetic focus on the macabre and morbid, with production generally of a darker nature than is typically found in other Hip Hop. Often using occult and psychological horror themes, with violent imagery and more exaggerated vocal tones.',
         hard: ['hardcore-hiphop' ],
         soft: [],
-        artists: 'eminem, clipping, tech n9ne'
+        artists: 'eminem, clipping, tech n9ne, backxwash'
     },
     {
         type: Type.Genre,

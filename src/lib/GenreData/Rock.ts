@@ -772,7 +772,8 @@ export const Rock = [
     id: 'stoner-rock',
     hard: ['hard-rock', 'doom-metal', 'psychodelia', 'heavy-psych'],
     soft: [],
-    desc: 'Psychedelic timbres, raw production, and stylistic influence from Doom Metal and Heavy Psych.',
+    artists: 'Queens of the stone age, kyuss, boris, ',
+    desc: 'Stoner rock is a subgenre of Hard Rock that is characterized by its psychedelic timbres and songwriting as influence from Psychedelic Rock, as well as a bass-heavy sound and slow riffing, typically attributed as influence from Doom Metal and early Heavy Metal like Black Sabbath, and melodic influence from Blues Rock. The production is often raw and loud, and the songwriting often takes significant influence from rougher styles of Alternative Rock whilst combining it with the aforementioned Metal influences. ',
   },
   {
     type: Type.Sub,
