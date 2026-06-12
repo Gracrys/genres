@@ -1,8 +1,15 @@
 <script lang="ts">
 	import { fly, fade } from "svelte/transition";
+	import { type Node, useSvelteFlow } from '@xyflow/svelte';
+	import { type INodeData } from '$lib/Nodes-edges';
+
+    	import { nodes } from '$lib/stores/stores.svelte';
 
     let {data, closeAside} = $props()
-   
+
+   let childrens = $derived($nodes.filter((n: Node) =>
+					(n.data as unknown as INodeData).hard.includes(data.id)
+			)) 
 </script>
 <aside in:fly={{ x: 200 }} out:fly={{ x: 200 }} class="absolute w-[25vw] right-0 top-0 h-screen bg-indigo-950 min-w-[300px]">
 <span class=" flex justify-end">
@@ -39,6 +46,12 @@
         <span class="flex">
             <b class="mr-2">Other influences: </b>
             <p> {data?.soft.join(', ')}</p>
+        </span>
+        {/if}
+         {#if childrens?.length}
+        <span class="flex">
+            <b class="mr-2">Children: </b>
+            <p> {childrens.map(x => x.data.label).join(', ' )} </p>
         </span>
         {/if}
     </footer>

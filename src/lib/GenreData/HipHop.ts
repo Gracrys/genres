@@ -324,6 +324,15 @@ export const HipHop = [
         hard: ['phonk','memphis-rap' ],
         soft: [],
     },
+        {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Drift Phonk',
+        id: 'drift-phonk',
+        desc: 'Busy, noisy production inspired by lo-fi Memphis Rap; frequently features 808 cowbell melodies and chopped, compressed samples.',
+        hard: ['phonk','memphis-rap' ],
+        soft: [],
+    },
     {
         type: Type.Sub,
         parent: Type.Genre,

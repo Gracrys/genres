@@ -119,7 +119,9 @@ export const Metal = [{
     label: 'Nu Metal',
     id: 'nu-metal',
     hard: ['metal', 'hiphop'],
-    soft: []
+    soft: [],
+    desc: 'Combines elements of Heavy Metal with elements of Hip Hop, Grunge, Alternative Rock and other genres, often featuring rapped vocals, turntables, and DJing. Using heavy distortion and more funky sound',
+    artists: 'Korn, Limp Bizkit, Linkin Park, Slipknot'
 },
 {
     type: Type.Sub,

@@ -143,6 +143,7 @@ export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
     id: x.id,
     type: TypeDictNode[exceptions[x.id] || x.type],
     data: {
+      id: x.id,
       label: x.label,
       under: x.sub,
       desc: x.desc,

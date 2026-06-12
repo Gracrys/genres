@@ -15,15 +15,18 @@ export const Punk = [
     label: 'Punk',
     id: 'punk',
     hard: ['rock', 'proto-punk'],
-    soft: []
+    soft: [],
+    desc: 'Originated in the mid-1970s as a reaction against the perceived excesses of mainstream 1970s rock music, with a DIY ethic and a raw, aggressive sound characterized by short songs, fast tempos, and simple chord progressions.'
   },
   {
     type: Type.Sub,
     parent: Type.Genre,
     label: 'Art Punk',
+    sub: 'Avant-garde Punk',
     id: 'art-punk',
     hard: ['punk', 'avant-garde', 'jazz', 'funk'],
-    soft: []
+    soft: [],
+    desc: 'Experimental and unconventional approach to Punk Rock, incorporating elements from various genres such as art rock, avant-garde, jazz, and funk, often with a more intellectual or artistic sensibility.'
   },
   {
     type: Type.Sub,
@@ -31,7 +34,8 @@ export const Punk = [
     label: 'Egg Punk',
     id: 'egg-punk',
     hard: ['art-punk'],
-    soft: []
+    soft: [],
+    desc: 'Originated in the early 2010s; features lo-fi production, eccentric lyrics, quick tempos, nasally vocals, and cheap keyboard sounds.'
   },
   {
     type: Type.Sub,
@@ -39,7 +43,9 @@ export const Punk = [
     label: 'Cowpunk',
     id: 'cowpunk',
     hard: ['punk', 'country', 'rockabilly', 'contemporary-folk'],
-    soft: []
+    soft: [],
+    desc: 'Combines the raw energy and attitude of Punk Rock with the twangy guitars, storytelling lyrics, and themes of country music; emerged in the 1980s as a reaction against the polished sound of mainstream country music.',
+    bands: 'The meat puppets, Jason and the scorchers, The beat farmers'
   },
   {
     type: Type.Sub,
@@ -47,7 +53,9 @@ export const Punk = [
     label: 'Folk Punk',
     id: 'folk-punk',
     hard: ['punk', 'folk'],
-    soft: []
+    soft: [],
+    artists: '',
+    desc: 'Combines the raw energy and attitude of Punk Rock with the acoustic instrumentation, storytelling lyrics, and themes of folk music; emerged in the 1980s as a reaction against the polished sound of mainstream folk music.'
   },
   {
     type: Type.Sub,
@@ -55,7 +63,8 @@ export const Punk = [
     label: 'Celtic Punk',
     id: 'celtic-punk',
     hard: ['punk', 'celtic'],
-    soft: []
+    soft: [],
+    desc: 'Combines the raw energy and attitude of Punk Rock with the traditional instrumentation, melodies, and themes of Celtic music; emerged in the 1980s as a reaction against the polished sound of mainstream Celtic music.',
   },
   {
     type: Type.Sub,
@@ -63,7 +72,8 @@ export const Punk = [
     label: 'Gypsy Punk',
     id: 'gypsy-punk',
     hard: ['punk', 'gypsy'],
-    soft: []
+    soft: [],
+    desc: 'Gypsy punk is a style of Punk Rock music with strong Eastern European music influences, especially various kinds of Romani Folk Music and Balkan Folk Music as well as Klezmer. The name was coined by Eugene Hütz, the leader of New York based Gogol Bordello, founded in 1998 by immigrants from several countries from different parts of the world. At about the same time Balkan film director Emir Kusturica (and his band, The No Smoking Orchestra) made a smooth transition from Balkan music (popularized by Goran Bregović, who had been writing music for Kusturicas films since the late 1980s) to a more punkier and less traditional sound, giving a strong impact on the development of the genre as well. Other notable and influential Gypsy punk artists include Kultur Shock, Norwegian Kaizers Orchestra and Moldavian Zdob și Zdub, but aside from a few bands the genre remains an underground phenomenon. '
   },
   {
     type: Type.Genre,
@@ -71,8 +81,9 @@ export const Punk = [
     label: 'Post Punk',
     id: 'post-punk',
     hard: ['punk'],
-    soft: []
-  },
+    soft: [],
+    artists: 'Joy division, The cure, Siouxsie and the banshees, Gang of four, Public image ltd',
+    desc: 'Emerged in the late 1970s as a reaction against the perceived limitations of Punk Rock, with a more experimental and artistic approach that incorporated elements from various genres such as art rock, funk, dub, and electronic music.'},
   {
     type: Type.Sub,
     parent: Type.Genre,
@@ -80,6 +91,7 @@ export const Punk = [
     id: 'post-punk-revival',
     hard: ['post-punk'],
     soft: [],
+    artists: 'Interpol, Editors, The Strokes, Franz Ferdinand',
     desc: 'Incorporating the sounds and aesthetics of Post-Punk into Indie Rock, with jagged guitarwork, a dominant and danceable rhythm section, clean production, and poppy song structures.'
   },
 
@@ -89,7 +101,9 @@ export const Punk = [
     label: 'Coldwave',
     id: 'coldwave',
     hard: ['post-punk', 'synth'],
-    soft: []
+    soft: [],
+    artists: 'The Chameleons',
+    desc: 'A subgenre of Post-Punk that incorporates synthesizers and electronic elements, often with a dark, atmospheric sound.'
   },
   {
     type: Type.Sub,
@@ -97,7 +111,9 @@ export const Punk = [
     label: 'Dance-punk',
     id: 'dance-punk',
     hard: ['post-punk', 'disco', 'dance', 'funk'],
-    soft: []
+    soft: [],
+    artists: 'Talking heads, The Rapture, !!!',
+    desc: 'Combines the raw energy and attitude of Punk Rock with the rhythms and grooves of dance music, often featuring prominent basslines, danceable beats, and a more polished production style.'
   },
   {
     type: Type.Sub,
@@ -105,7 +121,9 @@ export const Punk = [
     label: 'Dance-punk Revival',
     id: 'dance-punk-revival',
     hard: ['dance-punk', 'post-punk-revival', 'electronic', 'alternative-dance'],
-    soft: []
+    soft: [],
+    artists: 'LCD Soundsystem',
+    desc: 'A revival of the Dance-punk genre, incorporating modern electronic elements and production techniques.'
   },
   {
     type: Type.Genre,
@@ -115,7 +133,8 @@ export const Punk = [
     hard: ['post-punk'],
     soft: [],
     artists: 'New Order, Depeche Mode',
-    dates: 'mid 1970s'
+    dates: 'mid 1970s',
+    desc: 'Originated in the late 1970s as a reaction against the perceived limitations of Punk Rock, with a more polished and pop-oriented sound that incorporated elements from various genres such as pop, electronic music, and disco.' 
   },
   {
     type: Type.Genre,
@@ -123,7 +142,9 @@ export const Punk = [
     label: 'Dark Wave',
     id: 'dark-wave',
     hard: ['post-punk', 'gothic-rock'],
-    soft: []
+    soft: ['new-wave'],
+    artists: 'Bauhaus, Sisters of mercy, Clan of Xymox',
+    desc: 'Originated in the late 1970s as a reaction against the perceived limitations of Punk Rock, with a darker and more atmospheric sound that incorporated elements from various genres such as post-punk, gothic rock, and synth-pop.'
   },
   {
     type: Type.Sub,
@@ -131,7 +152,9 @@ export const Punk = [
     label: 'Ethereal Wave',
     id: 'ethereal-wave',
     hard: ['dark-wave'],
-    soft: ['ambient']
+    soft: ['ambient'],
+    artists: 'Cocteau Twins, This mortal coil',
+    desc: 'A subgenre of Dark Wave that incorporates ambient and ethereal elements, often with a dreamy and atmospheric sound and ethereal like vocals.'
   },
   {
     type: Type.Sub,
@@ -139,7 +162,9 @@ export const Punk = [
     label: 'New Age',
     id: 'new-age',
     hard: ['ethereal-wave', 'ambient', 'psychodelia'],
-    soft: ['folk']
+    soft: ['folk'],
+    artists: 'Enya, Vangelis',
+    desc: 'Incorporates elements from various genres such as ambient, folk, and psychodelia, often with a focus on creating a relaxing and meditative atmosphere.'
   },
   {
     type: Type.Sub,
@@ -156,15 +181,19 @@ export const Punk = [
     label: 'Pop punk',
     id: 'pop-punk',
     hard: ['punk', 'pop'],
-    soft: []
+    soft: [],
+    artists: 'Green day, Blink 182, Sum 41',
+    desc: 'Uses the fast tempos and power chords of Punk Rock with the catchy melodies and lyrical themes of pop music, often with a more polished production style and more catchy, yopung sound.'
   },
   {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Skate punk',
     id: 'skate-punk',
-    hard: ['pop-punk'],
-    soft: []
+    hard: ['pop-punk', 'post-hardcore'],
+    soft: [],
+    artists: 'descendents',
+    desc: 'A subgenre of Pop Punk that incorporates elements from Skateboarding culture and features faster, more aggressive tempos. Combines the speed of Melodic Hardcore with the catchiness of Pop Punk, finding a middle ground between the two.'
   },
 
   {
@@ -173,7 +202,8 @@ export const Punk = [
     label: 'Vikingarock',
     id: 'vikingarock',
     hard: ['punk'],
-    soft: []
+    soft: [],
+    desc: 'Incorporates influences from Nordic Folk Music and the imagery of Viking romanticism and Norse mythology.'
   },
   {
     type: Type.Sub,
@@ -181,7 +211,9 @@ export const Punk = [
     label: 'Easycore',
     id: 'easycore',
     hard: ['pop-punk', 'post-hardcore', 'metalcore'],
-    soft: []
+    soft: [],
+    artists: 'A day to remember, Four year strong',
+    desc: 'Combines the radio-friendly stylings of second-wave Pop Punk with Metalcore-inspired breakdowns, lower guitar tunings, and occasional unclean vocals.'
   },
   {
     type: Type.Sub,
@@ -189,7 +221,9 @@ export const Punk = [
     label: 'Punk Blues',
     id: 'punk-blues',
     hard: ['punk', 'blues'],
-    soft: []
+    soft: [],
+    desc: 'Punk blues fuses the instrumentation and scales of Blues Rock with the rawness and attitude of Punk Rock, while not necessarily adhering to its traditional sound. The merge of Punk’s rowdy energy with Blues can be traced back to the Proto-Punk and Garage Rock bands of the 1960s and 1970s, with artists such as Captain Beefheart, The Velvet Underground, The Stooges and The Modern Lovers all having experimented with pushing the kinetic boundaries of blues rock',
+    artists: 'Nick Cave'
   },
   {
     type: Type.Sub,
@@ -197,7 +231,8 @@ export const Punk = [
     label: 'Anarcho-punk',
     id: 'anarcho-punk',
     hard: ['punk'],
-    soft: []
+    soft: [],
+    desc: 'A subgenre of Punk Rock that promotes anarchism and other anti-authoritarian ideologies, often with politically charged lyrics and a DIY ethic.'
   },
   {
     type: Type.Sub,
@@ -205,7 +240,8 @@ export const Punk = [
     label: 'Garage Punk',
     id: 'garage-punk',
     hard: ['punk', 'garage-rock'],
-    soft: []
+    soft: [],
+    desc: 'combination of the garage rock fuzziness and diy vibe with punk rock’s raw energy and attitude, often with a lo-fi production style and a focus on catchy melodies and simple song structures.'
   },
   {
     type: Type.Sub,
@@ -214,7 +250,8 @@ export const Punk = [
     desc: 'Thematically and lyrically derived from Horror movies, typically with a nostalgic and campy attitude.',
     id: 'horror-punk',
     hard: ['punk'],
-    soft: []
+    soft: [],
+    artists: 'Misfits, Murderdolls'
   },
   {
     type: Type.Sub,
@@ -233,7 +270,8 @@ export const Punk = [
     desc: 'Inspired by Post-Punk but with a more bizarre atmosphere with unusual or comic vocal techniques and a lyrical focus on the offensive and scatological.',
     id: 'konsrock',
     hard: ['post-punk'],
-    soft: []
+    soft: [],
+    artists: 'Onkel Kånkel'
   },
   {
     type: Type.Sub,
@@ -242,7 +280,9 @@ export const Punk = [
     sub: 'Electronic punk',
     id: 'synth-punk',
     hard: ['punk', 'electronics'],
-    soft: []
+    soft: [],
+    desc: 'Combines the raw energy and attitude of Punk Rock with the use of synthesizers and electronic instruments, often with a more futuristic and experimental sound.',
+    artists: 'Suicide'
   },
   {
     type: Type.Scene,
@@ -279,7 +319,9 @@ export const Hardcore = [
     label: 'Hardcore',
     id: 'hardcore',
     hard: ['punk'],
-    soft: []
+    soft: [],
+    artists: 'Black flag, Minor threat, Bad Brains, Gorilla biscuits',
+    desc: 'Originated in the late 1970s  with a faster, heavier, and more aggressive sound that often featured shouted vocals, political or socially conscious lyrics, and a DIY ethic.'
   },
   {
     type: Type.Sub,
@@ -441,7 +483,9 @@ export const Hardcore = [
     label: 'Sass',
     id: 'sass',
     hard: ['post-hardcore'],
-    soft: []
+    soft: [],
+    desc:'Sub style of post-hardcore that incorporates a dissonant style with more chaotic styles',
+    artists: 'The blood brothers, the plot in you'
   },
   {
     type: Type.Genre,
@@ -557,7 +601,8 @@ export const Hardcore = [
     label: 'Goregrind',
     id: 'goregrind',
     hard: ['grindcore'],
-    soft: []
+    soft: [],
+    desc: 'Goregrind deviates from typical Grindcore in three aspects: the persistent use of very low pitch-shifted vocals; the willingness to employ more mid-tempo rhythms rather than rampant full-throttle speed; and an almost exclusive lyrical obsession with medical terminology, pathological conditions, and violence upon the human body. These themes are chosen largely for shock value, and are often conveyed in a purposely over-the-top fashion. Due to Death Metals influence on the genre, some see this as the predecessor to Deathgrind.'
   },
   {
     type: Type.Sub,
@@ -928,7 +973,9 @@ export const Rock = [
     label: 'Psychodelic Rock',
     id: 'psychodelic-rock',
     hard: ['rock', 'jazz'],
-    soft: ['blues']
+    soft: ['blues'],
+    desc: 'Originated in the mid-1960s, characterized by the use of new recording techniques and effects, extended instrumental solos, and a general attempt to evoke or enhance the experience of altered states of consciousness.',
+    artists: 'Pink Floyd, The doors, Jimi Hendrix'
   },
   {
     type: Type.Sub,
@@ -1112,7 +1159,9 @@ export const AlternativeRock = [
     label: 'Shoegaze',
     id: 'shoegaze',
     hard: ['alternative-rock'],
-    soft: []
+    soft: [],
+    desc: 'Characterized by a dense, layered sound with heavy use of guitar effects, indistinct vocals, and an overall ethereal atmosphere. The name shoegaze was coined by the British music press to describe the genre musicians tendency to stare at their effects pedals during live performances whch added a tone of melancholy.',
+    artists: 'My bloody valentine, slowdive'
   },
   {
     type: Type.Genre,

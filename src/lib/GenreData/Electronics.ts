@@ -1,4 +1,3 @@
-import { findRepeatingElements } from "$lib/Utils/CheckDuplicates"
 
 export enum Type {
     'Super' = 1,
@@ -2260,6 +2259,7 @@ export const Glitch = [{
     hard: ['electronics', 'noise', 'choppednscrewed'],
     soft: [],
     dates: '1991',
+    desc: 'Style of experimental electronic music that emerged in the early 1990s, characterized by the use of sonic artifacts and errors such as clicks, skips, distortion, bitcrushing, and other digital or analog malfunctions as primary musical elements. Based around the idea of analogic errors.',
     artists: 'Nero\'s Day at Disneyland, matmos'
 },
 {
@@ -3526,7 +3526,7 @@ export const Electronics = [
         id: 'witch-house',
         hard: ['electronics'],
         soft: ['choppednscrewed'],
-        desc: '(sometimes referred to as drag,[1] screwgaze or haunted house)[2] is a microgenre of electronic music that is musically characterized by high-pitched keyboard effects, heavily layered basslines and trap-style drum loops. Aesthetically, it employs occult- and gothic-inspired themes.'
+        desc: 'sometimes referred to as screwgaze or haunted house is a microgenre of electronic music that is musically characterized by high-pitched keyboard effects, heavily layered basslines and trap-style drum loops. Aesthetically, it employs occult- and gothic-inspired themes.'
         ,artists: 'Salem, crystal castles, sidewalks and skeletons, ic3peak'
         ,dates: '2007',
     },
