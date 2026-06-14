@@ -16,7 +16,7 @@ const AfricanFolk = [
     label: 'African Folk Music',
     id: 'african-folk',
     desc: 'Indigenous music of Africa that is passed down orally from generation to generation, the authors of the songs are usually unknown.',
-    hard: ['contemporary-folk'],
+    hard: ['contemporary-folk', 'african'],
     soft: [],
   },
   {
@@ -25,34 +25,26 @@ const AfricanFolk = [
     label: 'Ambasse bey',
     id: 'ambasse-bey',
     desc: 'Indigenous music of Africa that is passed down orally from generation to generation, the authors of the songs are usually unknown.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'central-african'],
     soft: [],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Apala',
-    id: 'apala',
-    desc: 'Yoruba Music developed by Muslims during the late 1930s and early 1940s in the Ijebu region of Yorubaland, the current Ogun state.',
-    hard: ['african-folk'],
-    soft: [],
-  },
+  
   {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Batuque',
     id: 'batuque',
     desc: "Tradition from Cape Verde, unusual among the islands' music due to its lack of polyphonic singing and its usage of polyrhythms.",
-    hard: ['african-folk'],
+    hard: ['african-folk', 'cape-verdean'],
     soft: [],
   },
   {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Dagomba Music',
-    id: 'dagomba-music',
+    id: 'dagomba',
     desc: 'Music of the Dagomba people of northern Ghana.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'west-african'],
     soft: [],
   },
   {
@@ -61,16 +53,16 @@ const AfricanFolk = [
     label: 'Gnawa',
     id: 'gnawa',
     desc: 'Mixture of Sub-Saharan African, Arabic, and Amazigh Music, created by the Gnawa, an ethnic minority group in North Africa, mainly Morocco.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'maghrebi'],
     soft: ['arabic-music', 'amazigh-music'],
   },
   {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Kabye Folk Music',
-    id: 'kabye-folk-music',
+    id: 'kabye-folk',
     desc: 'Traditional Folk Music of the Kabye people of northern Togo, including some of the most singular styles that can be found in West Africa.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'west-african'],
     soft: [],
   },
   {
@@ -79,7 +71,7 @@ const AfricanFolk = [
     label: 'Kilapanga',
     id: 'kilapanga',
     desc: 'Tradition of the Bakongo people from Angola and Congo that has influenced contemporary styles such as Kuduro.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'central-african'],
     soft: ['kuduro'],
   },
   {
@@ -88,45 +80,20 @@ const AfricanFolk = [
     label: 'Malagasy Folk Music',
     id: 'malagasy-folk-music',
     desc: 'Melodic, chordophone-dominated sound; based on the Austronesian Music of the first settlers that arrived on the island from Borneo.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'malagasy'],
     soft: ['austronesian-music'],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Mbenga-Mbuti Music',
-    id: 'mbenga-mbuti-music',
-    desc: 'Music of the Mbenga and Mbuti people, Pygmy ethnic groups in Central Africa.',
-    hard: ['african-folk'],
-    soft: [],
-  },
+ 
   {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Moutya',
     id: 'moutya',
     desc: 'Tradition that originated in Seychelles among Creole slaves, similar to Séga, although rawer and played only on large flat drums made from goatskin.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'seychelles-and-mascarene-islands'],
     soft: ['sega'],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Ngoma',
-    id: 'ngoma',
-    desc: 'Played in Swahili-speaking African countries; primarily focused on rhythm.',
-    hard: ['african-folk'],
-    soft: [],
-  },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Unyago',
-    id: 'unyago',
-    desc: 'Traditional music from Zanzibar, traditionally played at womens initiation rituals and weddings.',
-    hard: ['ngoma'],
-    soft: [],
-  },
+
   {
     type: Type.Sub,
     parent: Type.Sub,
@@ -178,7 +145,7 @@ const AfricanFolk = [
     label: 'Tchinkoume',
     id: 'tchinkoume',
     desc: 'Tradition from the central region of Benin around Savalou, played with water percussion.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'fon'],
     soft: [],
   },
   {
@@ -187,25 +154,17 @@ const AfricanFolk = [
     label: 'Traditional Maloya',
     id: 'traditional-maloya',
     desc: 'Derived from Traditional Séga, this is the original dance music of La Réunion.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'maloya'],
     soft: ['traditional-sega'],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Traditional Séga',
-    id: 'traditional-sega',
-    desc: 'Séga dance music born in the 18th century, before its later adoption of Western pop elements.',
-    hard: ['african-folk'],
-    soft: [],
-  },
+ 
   {
     type: Type.Sub,
     parent: Type.Sub,
     label: 'Zinli',
     id: 'zinli',
     desc: 'Traditional rhythmic chanting and percussion adapted to multiple West African contexts in the 20th century.',
-    hard: ['african-folk'],
+    hard: ['african-folk', 'fon'],
     soft: [],
   },
 ]
@@ -227,7 +186,7 @@ const ArabicFolk = [
     label: 'Aita',
     id: 'aita',
     desc: 'Arabic Folk Music from rural Morocco with piercing singing, scratchy viola, and rollicking hand drums.',
-    hard: ['arabic-folk'],
+    hard: ['arabic-folk', 'maghrebi'],
     soft: [],
   },
   {
@@ -245,7 +204,7 @@ const ArabicFolk = [
     label: 'Raqs baladi',
     id: 'raqs-baladi',
     desc: 'Egyptian folk dance and its associated musical accompaniment, appearing in the 20th century.',
-    hard: ['arabic-bellydance'],
+    hard: ['arabic-bellydance', 'egyptian'],
     soft: [],
   },
   {
@@ -254,7 +213,7 @@ const ArabicFolk = [
     label: 'Ayyalah',
     id: 'ayyalah',
     desc: 'Traditional Khaliji-Bedouin weapon performance, commonly found across the United Arab Emirates and Northwestern Oman.',
-    hard: ['arabic-folk'],
+    hard: ['arabic-folk','west-asian-folk'],
     soft: [],
   },
   {
@@ -263,7 +222,7 @@ const ArabicFolk = [
     label: 'Fijiri',
     id: 'fijiri',
     desc: 'Deeply rooted in the Persian Gulf pearl diving culture, and sung during weekly gatherings combining solo and choral sections with minimal percussion.',
-    hard: ['arabic-folk'],
+    hard: ['arabic-folk','west-asian-folk'],
     soft: [],
   },
   {
@@ -290,7 +249,7 @@ const ArabicFolk = [
     label: 'Sa\'idi',
     id: 'saidi',
     desc: 'Traditional folkloric performance and form of Arabic Folk Music originating from Upper Egypt.',
-    hard: ['arabic-folk'],
+    hard: ['arabic-folk', 'egyptian'],
     soft: [],
   }
 ]
@@ -311,7 +270,7 @@ const BrasilianFolk = [
     label: 'Aboio',
     id: 'aboio',
     desc: 'Cattle-herding songs originating in rural Northeastern Brazil.',
-    hard: ['brazilian-folk'],
+    hard: ['brazilian-folk', 'work-song'],
     soft: [],
   },
   {
@@ -607,7 +566,15 @@ const CaucasianFolk = [
     desc: 'Folk music of Ossetians, an ethnic group that mainly inhabits a region located on both sides of the Greater Caucasus Mountains.',
     hard: ['caucasian-folk'],
     soft: [],
-  },
+  }, {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Chukchi Folk Music',
+    id: 'chukchi-folk',
+    desc: 'Folk music of Ossetians, an ethnic group that mainly inhabits a region located on both sides of the Greater Caucasus Mountains.',
+    hard: ['caucasian-folk'],
+    soft: [],
+  }  
 ]
 
 const EastAsianFolk = [
@@ -662,7 +629,7 @@ const EastAsianFolk = [
     label: 'Haozi',
     id: 'haozi',
     desc: 'Chinese Work Song that originated from collective manual labor and usually follows a call-and-response structure, aiming to coordinate work.',
-    hard: ['chinese-folk'],
+    hard: ['chinese-folk', 'work-song'],
     soft: [],
   },
   {
@@ -680,7 +647,7 @@ const EastAsianFolk = [
     label: 'Shan\'ge',
     id: 'shange',
     desc: 'Folk songs found in upland regions of China, typically sung while working.',
-    hard: ['chinese-folk'],
+    hard: ['chinese-folk', 'work-song'],
     soft: [],
   },
   {
@@ -701,15 +668,7 @@ const EastAsianFolk = [
     hard: ['east-asian-folk'],
     soft: [],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Heikyoku',
-    id: 'heikyoku',
-    desc: 'Semi-classical bardic tradition in Japan analogous to the troubadour music of medieval Europe.',
-    hard: ['japanese-folk'],
-    soft: [],
-  },
+  
   {
     type: Type.Sub,
     parent: Type.Sub,
@@ -911,15 +870,7 @@ const EuropeanFolk = [
     hard: ['alpine-folk'],
     soft: [],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Naturjodel',
-    id: 'naturjodel',
-    desc: 'Originated in Toggenburg and Appenzell in Switzerland; deep vocal range, relaxed voice, free tempo, polyphony, elongated notes, improvisation, glissando, and use of syllabic sounds.',
-    hard: ['alpine-folk'],
-    soft: [],
-  },
+ 
   {
     type: Type.Sub,
     parent: Type.Sub,
@@ -947,15 +898,7 @@ const EuropeanFolk = [
     hard: ['albanian-folk'],
     soft: [],
   },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Musika popullore',
-    id: 'musika-popullore',
-    desc: 'Tradition in Albania consisting of light, commercial, amplified Albanian Folk Music usually professionally arranged and manufactured in recording studios alongside video clips.',
-    hard: ['albanian-folk'],
-    soft: [],
-  },
+ 
   {
     type: Type.Sub,
     parent: Type.Sub,
@@ -1421,7 +1364,7 @@ const EuropeanFolk = [
     label: 'Òrain luaidh',
     id: 'orain-luaidh',
     desc: 'Rhythmic call-and-response style song form that traditionally accompanied the production of tweed cloth through beating the material by hand to soften it after it came off the loom.',
-    hard: ['orain-ghaidhlig'],
+    hard: ['orain-ghaidhlig', 'work-song'],
     soft: [],
   },
   {
@@ -2411,7 +2354,7 @@ const EuropeanFolk = [
     label: 'Bashkir Folk Music',
     id: 'bashkir-folk',
     desc: 'Traditional folk of the Bashkir people, a Turkic ethnic group inhabiting the Republic of Bashkortostan (Bashkiria), a federal subject of the Russian Federation, and its neighboring areas on both sides of the Ural mountains.',
-    hard: ['volga-ural-folk'],
+    hard: ['volga-ural-folk', 'turkic-mongolic'],
     soft: [],
   },
   {
@@ -2499,8 +2442,8 @@ const EuropeanFolk = [
 
 const AmericanFolk = [
   {
-    type: Type.Sub,
-    parent: Type.Sub,
+    type: Type.Genre,
+    parent: Type.Genre,
     label: 'American Folk Music',
     id: 'american-folk',
     desc: 'Traces back through the history of European and West African settlement and migration to North America, including parts of northern Mexico and Canada in addition to the United States.',
@@ -2509,7 +2452,313 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Hispanic American Folk Music',
+    id: 'hispanic-american-folk',
+    desc: 'Encompasses many varieties of folk traditions from Hispanic America.',
+    hard: ['american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
     parent: Type.Sub,
+    label: 'Bambuco',
+    id: 'bambuco',
+    desc: 'Follows a 6/8 or 3/4 time signature with non-percussive instrumentation, often melancholic in sound with bright guitars and a rich melodic base.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Bomba',
+    id: 'bomba',
+    desc: 'Percussive style from Puerto Rico, generally considered to be derived from West Africa.',
+    hard: ['hispanic-american-folk', 'caribbean-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Candombe',
+    id: 'candombe',
+    desc: 'Uruguayan popular music originating among Montevideo\'s Afro-Uruguayan population, based on three differently-sized drums.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Canto a lo poeta',
+    id: 'canto-a-lo-poeta',
+    desc: 'Sung poetry traditional to Chile and transmitted orally from one generation to another.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Carranga',
+    id: 'carranga',
+    desc: 'Colombian folk music that originated in Boyacá province, best known for its wordplay and humorous lyrics.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Chacarera',
+    id: 'chacarera',
+    desc: 'Originated in northwest Argentina and southern Bolivia around 1850, typically in 6/8 and traditionally performed with instruments like the guitar, bombo legüero (traditional drum), and violin.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Chamamé',
+    id: 'chamame',
+    desc: 'Mixes native Guaraní music with Polka paraguaya and European Schottische music.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Chamamé tropical',
+    id: 'chamame-tropical',
+    desc: 'Takes heavy influence from the energy and instrumentation of Cumbia, popular in the late 1970s and 1980s.',
+    hard: ['chamame'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Chamarrita rioplatense',
+    id: 'chamarrita-rioplatense',
+    desc: 'Traditional genre and dance featuring similar rhythms to Milonga and typically performed with the guitar and accordion.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Cueca',
+    id: 'cueca',
+    desc: 'Popular in Chile, Argentina, and Bolivia, accompanied by a 6/8 or 3/4 time signature and usually structured into 14 verses.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Cueca brava',
+    id: 'cueca-brava',
+    desc: 'Raw, urban style of Chilean Cueca with simple instrumentation and danceable rhythms, with lyrics reflecting bohemian and marginal life.',
+    hard: ['cueca'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Jibaro',
+    id: 'jibaro',
+    desc: 'Traditions of the mountain-dwelling jibaro people that live primarily in Puerto Rico.',
+    hard: ['hispanic-american-folk', 'caribbean-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Joropo',
+    id: 'joropo',
+    desc: 'Incorporates elements of Creole music and the Venezuelan waltz.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Malagueña venezolana',
+    id: 'malaguena-venezolana',
+    desc: 'Traditional musical accompaniment to the Venezuelan \'velorios de cruz de mayo\' celebrations, played with the mandolin (as lead instrument), cuatro and guitar.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Mexican Folk Music',
+    id: 'mexican-folk',
+    desc: 'Traditional Folk Music of the Mexican people.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Canto cardenche',
+    id: 'canto-cardenche',
+    desc: 'Overtly dramatic, and melancholic A cappella performed in the Comarca Lagunera region in northeast Mexico.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Pirekua',
+    id: 'pirekua',
+    desc: 'Traditional style of the P’urhépecha people, typically slow and in 3/8 or 6/8 time.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Son calentano',
+    id: 'son-calentano',
+    desc: 'Usually dominated by violin with accompaniment mainly provided by guitars and tamboras, occasionally dancers will stomp over a platform.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Son huasteco',
+    id: 'son-huasteco',
+    desc: 'Bold rhythmic structure, lively violin playing, and extensive use of falsetto.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Son istmeño',
+    id: 'son-istmeno',
+    desc: 'Developed in the Isthmus of Tehuantepec, traditionally played by guitar, requinto, marimba, and bajoquinto, usually played in 3/4 time.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Son jarocho',
+    id: 'son-jarocho',
+    desc: 'Mexican Folk Music from the Gulf Coast Mexican state of Veracruz, with both Spanish and indigenous influences.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Trova yucateca',
+    id: 'trova-yucateca',
+    desc: 'Heavily influenced by Cuban Music, freely embracing Bolero, clave and Bambuco.',
+    hard: ['mexican-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Milonga',
+    id: 'milonga',
+    desc: 'Characterized by a slow rhythm usually performed on a guitar; generally considered a precursor to Tango.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Muliza',
+    id: 'muliza',
+    desc: 'Mestizo folk genre popular in the central Peruvian Andes, characterized by a pronounced, though sedate, rhythm; traces of Andean melody; and octosyllabic verses.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Música llanera',
+    id: 'musica-llanera',
+    desc: 'Traditional music originating from the Llanos region of Colombia and Venezuela.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Plena',
+    id: 'plena',
+    desc: 'Folk genre from Puerto Rico played with hand drums called panderetas.',
+    hard: ['hispanic-american-folk', 'caribbean-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Saya',
+    id: 'saya',
+    desc: 'Fast-paced, percussive traditional genre created by the Afro-Bolivian people.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Tamborito',
+    id: 'tamborito',
+    desc: 'Folk music and dance from Panama dating back to the 17th century.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Taquirari',
+    id: 'taquirari',
+    desc: 'Developed by the indigenous peoples of eastern Bolivia, bringing in some elements of Hispanic Music, and featuring a syncopated rhythm.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Tonada chilena',
+    id: 'tonada-chilena',
+    desc: 'Traditional folk from the Chilean countryside distinguished by its prominent melody.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Yaraví',
+    id: 'yaravi',
+    desc: 'Peruvian criollo-mestizo songs with recurring themes of sadness and unrequited love, usually in 6/8 meter.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Zamacueca',
+    id: 'zamacueca',
+    desc: 'Traditional genre and dance of 19th century Peru, sung in the minor mode and accompanied by a varying combination of guitar, vihuela, harp and cajón.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Zamba',
+    id: 'zamba',
+    desc: 'Folk dance that evolved out of Peruvian Zamacueca during the 19th century.',
+    hard: ['hispanic-american-folk'],
+    soft: [],
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Genre,
     label: 'Appalachian Folk Music',
     id: 'appalachian-folk',
     desc: 'Folk of the Appalachian Mountains in the Eastern United States.',
@@ -2528,16 +2777,16 @@ const AmericanFolk = [
 
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Field Hollers',
     id: 'field-hollers',
     desc: 'Created by African-American slaves working on cotton plantations, featuring expressive vocals to no strict rhythm.',
-    hard: ['american-folk'],
+    hard: ['american-folk', 'work-song'],
     soft: [],
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Fife and Drum Blues',
     id: 'fife-and-drum-blues',
     desc: 'Rooted in martial Fife and Drum Corps music, originated among Afro-American communities in Mississippi.',
@@ -2547,7 +2796,7 @@ const AmericanFolk = [
 
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Ring Shout',
     id: 'ring-shout',
     desc: 'Ritual practiced by African-Americans in the US South, characterized by shouting, chanting and people dancing in a circle while praying and clapping.',
@@ -2556,7 +2805,7 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Sacred Harp Singing',
     id: 'sacred-harp-singing',
     desc: 'Predominantly 19th-century English hymns with tunes derived from old folk melodies.',
@@ -2565,7 +2814,7 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Spirituals',
     id: 'spirituals',
     desc: 'Predecessor to Gospel that began as unaccompanied singing by American slaves; shares some of the characteristics of Work Song.',
@@ -2574,7 +2823,7 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Talking Blues',
     id: 'talking-blues',
     desc: 'American Folk Music with spoken or nearly spoken vocals; often features dry humor and social commentary.',
@@ -2583,7 +2832,7 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Traditional Black Gospel',
     id: 'traditional-black-gospel',
     desc: 'Born out of Spirituals in the early 20th century with influence from Southern Gospel and Blues, often featuring passionate or energetic vocal performances, motifs of salvation, and testaments of hardship.',
@@ -2592,7 +2841,7 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Traditional Cajun Music',
     id: 'traditional-cajun',
     desc: 'Earliest and most "pure" form of Cajun Music, employing basic rhythms and frequent fiddle double stops.',
@@ -2601,7 +2850,7 @@ const AmericanFolk = [
   },
   {
     type: Type.Sub,
-    parent: Type.Sub,
+    parent: Type.Genre,
     label: 'Traditional Country',
     id: 'traditional-country',
     desc: 'Closely aligned with American Folk Music and Blues roots, from country\'s inception in Appalachia and the American South until the popularity of Honky Tonk and Country Pop in the 1950s.',
@@ -2638,287 +2887,1170 @@ const AmericanFolk = [
   {
     type: Type.Sub,
     parent: Type.Sub,
-    label: 'Country Yodeling',
-    id: 'country-yodeling',
-    desc: 'Vocal technique of Yodeling, brought to the United States by German settlers, sung over the instrumentation of Traditional Country.',
-    hard: ['traditional-country'],
-    soft: [],
-  },
-  {
-    type: Type.Sub,
-    parent: Type.Sub,
     label: 'Traditional Bluegrass',
     id: 'traditional-bluegrass',
     desc: 'Driving tempos, acoustic stringed instrumentation, and high vocal harmonies, adhering to the stylistic roots of the Bluegrass genre.',
     hard: ['traditional-country'],
     soft: [],
+  }
+]
+
+
+export const Indigenous = [
+	{
+		parent: Type.Genre,
+		type: Type.Sub,
+		label: 'Indigenous American Traditional',
+		id: 'indigenous-american-traditional',
+		desc: 'Meta-genre encompassing traditions attributed to the indigenous peoples of the Americas.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Athabaskan Fiddling',
+		id: 'athabaskan-fiddling',
+		desc: 'Fiddle playing of the Northern Athabaskan Dene people of modern-day Alaska, the Yukon, and the Northwest Territories.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Ghost Dance Song',
+		id: 'ghost-dance-song',
+		desc: 'Songs accompanying the Ghost Dance, a 19th century religious movement.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Inuit Vocal Games',
+		id: 'inuit-vocal-games',
+		desc: 'Practiced by the Inuit of Canada, two vocalists face each other decimeters away and try to outlast each other with intense and unusual vocal techniques.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'James Bay Fiddling',
+		id: 'james-bay-fiddling',
+		desc: 'Fiddle playing of the James Bay Cree people, characterised by a fusion of Scottish style with Cree rhythms.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Mapuche Folk Music',
+		id: 'mapuche-folk-music',
+		desc: 'Traditional Folk Music of the Mapuche people of Chile and Argentina.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Powwow Music',
+		id: 'powwow-music',
+		desc: 'Drum-based traditional music of Plains region Native American tribes, traditionally played at Pow-wows.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Rabbit Song',
+		id: 'rabbit-song',
+		desc: 'Indigenous North American ceremonial song cycles most associated with Southern Paiute, Ute, Mojave, and Chemehuevi traditions which feature short, repetitive, vocable-heavy melodies performed in long sequences that accompany trickster (rabbit) narratives and encode social knowledge.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Tonada potosina',
+		id: 'tonada-potosina',
+		desc: 'Traditional folk sung in Quechua, played on charangos and guitarillas, with a catchy, lively rhythm.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Unakesa',
+		id: 'unakesa',
+		desc: 'Lay song and dance of the Fulni-ô people.',
+		hard: ['indigenous-american-traditional'],
+		soft: []
+	},
+
+	{
+		parent: Type.Genre,
+		type: Type.Sub,
+		label: 'Indigenous Australian Traditional',
+		id: 'indigenous-australian-traditional',
+		desc: 'Indigenous Australian Traditional Music',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Djanba',
+		id: 'djanba',
+		desc: 'Sung and composed in the Murrinh-Patha language and consisting of a mixed group of men and women accompanied by bilma and handclaps, typically without didgeridoo.',
+		hard: ['indigenous-australian-traditional'],
+		soft: []
+	},
+	{
+		parent: Type.Sub,
+		type: Type.Sub,
+		label: 'Wangga',
+		id: 'wangga',
+		desc: 'Originated from the Daly region, consists of performances featuring wood sticks, didgeridoo and voice.',
+		hard: ['indigenous-australian-traditional'],
+		soft: []
+	},
+
+];
+
+
+
+export const Asian = [
+  	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'South Asian Folk Music',
+		id: 'south-asian-folk',
+		desc: 'Meta-genre which covers all the Traditional Folk Music forms from South Asia.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Assamese Folk Music',
+		id: 'assamese-folk',
+		desc: 'Traditional Folk Music of the Assamese people, a people group mostly from the Northeastern Indian state of Assam.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Bengali Folk Music',
+		id: 'bengali-folk',
+		desc: 'Traditions of the Bengali people found mainly in the Indian state of West Bengal and the country of Bangladesh.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Baul gaan',
+		id: 'baul-gaan',
+		desc: 'Songs performed by the Bauls, a movement of mystic entertainers influenced by diverse spiritual traditions.',
+		hard: ['bengali-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Bhojpuri Folk Music',
+		id: 'bhojpuri-folk',
+		desc: 'Traditions of the Bhojpuri people of India, originally from the states of Bihar and Uttar Pradesh.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Biraha',
+		id: 'biraha',
+		desc: 'Call-and-response style of folk music developed from the Ahir and neighboring castes of the Bhojpuri people.',
+		hard: ['bhojpuri-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Boduberu',
+		id: 'boduberu',
+		desc: 'Traditional, percussion-based form of music popular in the Maldives, usually following a crescendo structure.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Burushaski Folk Music',
+		id: 'burushaski-folk',
+		desc: 'Traditional Folk Music of the Burusho people of northern Pakistan.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Gujarati Folk Music',
+		id: 'gujarati-folk',
+		desc: 'Traditional Folk Music of the Gujarati people, who primarily live in the western Indian state of Gujarat.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Kannada Folk Music',
+		id: 'kannada-folk',
+		desc: 'Traditional Folk Music of the Kannada people, a large ethnolinguistic group who mainly inhabit the state of Karnataka in southwestern India.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Kirtan',
+		id: 'kirtan',
+		desc: 'Call-and-response chanting that involves the singing of devotional mantras and hymns in a bhakti devotional style, occasionally accompanied with traditional folk instrumentation.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Malayali Folk Music',
+		id: 'malayali-folk',
+		desc: 'Traditional Folk Music of Kerala, India primarily sung in the Malayalam language and known for its drumming and percussion.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Mappila',
+		id: 'mappila',
+		desc: 'Traditional folk music from Kerala’s Malabar region, sung in Arabic-inflected Malayalam and blending Islamic devotional themes with local poetic forms.',
+		hard: ['malayali-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Marathi Folk Music',
+		id: 'marathi-folk',
+		desc: 'Traditional Folk Music of the Marathi people, a large ethnic group who mainly inhabit the state of Maharashtra in western India.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Lavani',
+		id: 'lavani',
+		desc: 'Combines sensual but intricate dancing, poetry and energetic rhythms, usually provided by the dholki.',
+		hard: ['marathi-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Odia Folk Music',
+		id: 'odia-folk',
+		desc: 'Traditional Folk Music of the Odia, a large ethnic group who mainly inhabit the state of Odisha in eastern India.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Pashto Folk Music',
+		id: 'pashto-folk',
+		desc: 'Traditional Folk Music of the Pashtun people of southern Afghanistan and north-western Pakistan.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Punjabi Folk Music',
+		id: 'punjabi-folk',
+		desc: 'Traditional Folk Music of the Punjabi people, mostly from the Punjab regions of India and Pakistan, covering diverse styles often played with traditional instruments.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Rajasthani Folk Music',
+		id: 'rajasthani-folk',
+		desc: 'Traditions of the Rajasthani people of Western India, originated across the various castes that inhabit the region.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Sinhalese Folk Music',
+		id: 'sinhalese-folk',
+		desc: 'Folk of the Sinhalese people, the majority ethnic group of Sri Lanka.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Sarala gee',
+		id: 'sarala-gee',
+		desc: 'Blend of Hindustani Classical Music with Sinhalese Folk Music.',
+		hard: ['sinhalese-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Tamil Folk Music',
+		id: 'tamil-folk',
+		desc: 'Traditional Folk Music of the Tamil people.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Urumi melam',
+		id: 'urumi-melam',
+		desc: 'Percussive ensemble native to the Tamil Nadu region, taking its name from the urumi drum.',
+		hard: ['tamil-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Telugu Folk Music',
+		id: 'telugu-folk',
+		desc: 'Traditional Folk Music of the Telugu people, one of the largest ethnolinguistic groups of India, mainly living in the states of Andhra Pradesh and Telangana.',
+		hard: ['south-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Burrakatha',
+		id: 'burrakatha',
+		desc: 'Traditional form of narrative music, featuring a tambura player paired with two drummers who interrupt the main storyteller to provide additional remarks.',
+		hard: ['telugu-folk'],
+		soft: []
+	},
+
+    	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Southeast Asian Folk Music',
+		id: 'southeast-asian-folk',
+		desc: 'Meta-genre covering all folk forms from Southeast Asia, like Gondang, Hmong, Iban, Karen, Keroncong, Khmer, Lao, Lun Bawang, Molam, and Orang Ulu.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Balitaw',
+		id: 'balitaw',
+		desc: 'Folk originating in the Visayas islands of the Philippines; dialogue or debate in which a man and a woman compete at improvising romantic verses.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Bamar Folk Music',
+		id: 'bamar-folk-music',
+		desc: 'Traditional Folk Music of the majority ethnic group of Myanmar.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Gondang',
+		id: 'gondang',
+		desc: 'Traditional ensemble in Bataknese traditional music of North Sumatra, taking its name from its leading instrument - a unique set of toned drums.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Harana',
+		id: 'harana',
+		desc: 'Hispanic-influenced lyrical courtship music traditionally sung by men, accompanied by guitar based on the danza rhythm.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Hmong Folk Music',
+		id: 'hmong-folk-music',
+		desc: 'Folk traditions of the Hmong people, an ethnic group localized in Laos, Vietnam, China, and Thailand.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Khmer Folk Music',
+		id: 'khmer-folk-music',
+		desc: 'Folk of the Khmer people, who mainly reside in Cambodia.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Kuda kepang',
+		id: 'kuda-kepang',
+		desc: 'Accompanies a traditional Javanese dance of the same name, featuring a stripped-back version of a Gamelan ensemble that removes softer instruments.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Lao Folk Music',
+		id: 'lao-folk-music',
+		desc: 'Traditional Folk Music of the Lao people.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Malay Folk Music',
+		id: 'malay-folk-music',
+		desc: 'Traditional Folk Music of the Malay people, who are native to Malaysia, Singapore, Brunei, northern Indonesia, and southern Thailand.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Philippine Rondalla',
+		id: 'philippine-rondalla',
+		desc: 'Ensemble of plucked string instruments typically performed for traditional Filipino folk dances; known for its distinct sparkling and tinkling tremolo sound.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Tarawangsa',
+		id: 'tarawangsa',
+		desc: 'Sacred ceremonial music originating in the Rancakalong district, played with the jentreng harp and the tarawangsa bowed lute.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Thai Folk Music',
+		id: 'thai-folk',
+		desc: 'Traditional Folk Music of the Thai people.',
+		hard: ['southeast-asian-folk'],
+		soft: []
+	},
+
+	
+  	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'West Asian Folk Music',
+		id: 'west-asian-folk',
+		desc: 'Traditional Folk Music of West Asia, a region that covers much of what is commonly known in English as the Middle East (alternatively Southwestern Asia), includes the distinct but interconnected traditions of numerous ethnic groups.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Alevi Folk Music',
+		id: 'alevi-folk-music',
+		desc: 'Anatolian folk pioneered by Turkish poets and bards, connected to the Alevist heterodox Islamic tradition.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Armenian Folk Music',
+		id: 'armenian-folk',
+		desc: 'Traditional Folk Music of the Armenians, which is attested in historic Armenia since antiquity, with unique regional dialects unified by general melodic structure.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Kef Music',
+		id: 'kef-music',
+		desc: 'Dance-oriented Armenian American music with prominent presence of Anatolian instruments and folkloric melodies (often in the 10/8 meter) paired with novel lyrics relating to a variety of topics.',
+		hard: ['armenian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Assyrian Folk Music',
+		id: 'assyrian-folk-music',
+		desc: 'Folk of the Assyrian or Syriac people, who are indigenous to the Upper Mesopotamian region roughly corresponding to ancient Assyria (which includes modern-day northern Iraq, northwestern Iran, northeastern Syria, and southeastern Turkey).',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Israeli Folk Music',
+		id: 'israeli-folk-music',
+		desc: 'Folk of the Jewish settlers of Eretz Yisra\'el.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Luri Folk Music',
+		id: 'luri-folk-music',
+		desc: 'Traditional Folk Music of the Luri people of southwestern Iran.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Meyxana',
+		id: 'meyxana',
+		desc: 'Azerbaijani folk recitative genre.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Persian Folk Music',
+		id: 'persian-folk-music',
+		desc: 'Traditional Folk Music of the Persian people.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Turkish Folk Music',
+		id: 'turkish-folk',
+		desc: 'Traditional Folk Music of Turkish people combines the distinct cultural heritages and traditions of Anatolian civilisations and former Ottoman territories.',
+		hard: ['west-asian-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Turkish Black Sea Region Folk Music',
+		id: 'turkish-black-sea-region-folk-music',
+		desc: 'Folk of the Turkish people who inhabit the northern region by the Black Sea.',
+		hard: ['turkish-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Uzun Hava',
+		id: 'uzun-hava',
+		desc: 'Semi-improvisational melodic structure in Turkish Folk Music.',
+		hard: ['turkish-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Zeybek',
+		id: 'zeybek',
+		desc: 'Turkish Folk Music and dance that originated with the Zeybek people during the Ottoman Empire period, with slow and asymmetrical rhythms.',
+		hard: ['turkish-folk'],
+		soft: []
+	},
+
+]
+
+export const workSongs = [
+  {
+		type: Type.Genre,
+		parent: Type.Genre,
+		label: 'Work Song',
+		id: 'work-song',
+		desc: 'Songs performed during labor or work activities.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	
+	
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Military Cadence',
+		id: 'military-cadence',
+		desc: 'Call-and-response work song performed by military personnel.',
+		hard: ['work-song'],
+		soft: []
+	},
+	
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Sea Shanty',
+		id: 'sea-shanty',
+		desc: 'Songs originally sung by sailors to coordinate work on ships.',
+		hard: ['work-song'],
+		soft: []
+	}
+]
+
+export const Yodeling = [
+{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Yodeling',
+		id: 'yodeling',
+		desc: 'A vocal technique characterized by rapid alternation between the chest and head voice registers.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+  {
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Country Yodeling',
+		id: 'country-yodeling',
+		desc: 'Vocal technique of Yodeling, brought to the United States by German settlers, sung over the instrumentation of Traditional Country.',
+		hard: ['yodeling', 'traditional-country'],
+		soft: []
+	},
+   {
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Naturjodel',
+		id: 'naturjodel',
+		desc: 'Originated in Toggenburg and Appenzell in Switzerland; deep vocal range, relaxed voice, free tempo, polyphony, elongated notes, improvisation, glissando, and use of syllabic sounds.',
+		hard: ['yodeling', 'alpine-folk'],
+		soft: []
+	},
+]
+
+
+export const TurkicMongolic = [
+  {
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Turkic-Mongolic Music',
+    id: 'turkic-mongolic',
+    desc: 'Group of related traditions which originated among nomadic people of the Central Asian steppes (speakers of Altaic, i.e. Turkic, Mongolic, and Tungusic languages).',
+    hard: ['traditional-folk'],
+    soft: []
   },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Altai Music',
+    id: 'altai',
+    desc: 'Music of the Altai people, an ethnic group who live in central Russia near the border of Mongolia and Kazakhstan.',
+    hard: ['turkic-mongolic'],
+    soft: []
+  },
+
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Central Asian Throat Singing',
+    id: 'central-asian-throat-singing',
+    desc: 'Shared polyphonic vocal tradition of Mongolia and southern Siberia characterised by complex manipulation of harmonics.',
+    hard: ['turkic-mongolic'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Kai',
+    id: 'kai',
+    desc: 'Prevalent in the Altai-Sayan region and rooted in Shamanic traditions, it is renowned for its emphasis on the low vocal register and is revered as a sacred medium for communicating with all nature and the spirits.',
+    hard: ['central-asian-throat-singing'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Mongolian Throat Singing',
+    id: 'mongolian-throat-singing',
+    desc: 'Traditional music from Mongolia characterized by many throat singing techniques.',
+    hard: ['central-asian-throat-singing', 'mongolian'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Tuvan Throat Singing',
+    id: 'tuvan-throat-singing',
+    desc: 'Traditional style of singing found in Tuva, an autonomous region of the Russian Federation situated in southern Siberia.',
+    hard: ['central-asian-throat-singing'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Karakalpak Traditional Music',
+    id: 'karakalpak-traditional',
+    desc: 'Traditions of the Karakalpak people, located in northwestern Uzbekistan.',
+    hard: ['turkic-mongolic'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Khakas Traditional Music',
+    id: 'khakas-traditional',
+    desc: 'Traditions of the Khakas Republic (part of the Russian Federation), a form of Turkic music related to the musics of neighboring Tuva, Altai and Mongolia.',
+    hard: ['turkic-mongolic'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Kyrgyz Traditional Music',
+    id: 'kyrgyz-traditional',
+    desc: 'Traditions of Kyrgyzstan, a mountainous nation in Central Asia.',
+    hard: ['turkic-mongolic'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Mongolian Music',
+    id: 'mongolian',
+    desc: 'Music of the Mongols.',
+    hard: ['turkic-mongolic'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Bogino duu',
+    id: 'bogino-duu',
+    desc: 'Mongolian Music with tuneful composition and simple structure.',
+    hard: ['mongolian'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Buryat Music',
+    id: 'buryat',
+    desc: 'Music of the Buryat people, an ethnic group native to the Republic of Buryatia in Russian Far East.',
+    hard: ['mongolian'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Kalmyk Music',
+    id: 'kalmyk',
+    desc: 'Music of the Kalmyks, a Mongol Buddhist ethnic group inhabiting the Republic of Kalmykia, a federal subject of the Russian Federation.',
+    hard: ['mongolian'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Urtiin duu',
+    id: 'urtiin-duu',
+    desc: 'Mongolian tradition in which sung syllables are extended into long, meditational, vibrato notes called shuranhai; accompanied by traditional Mongolian instruments such as the morin khuur and limbe.',
+    hard: ['mongolian'],
+    soft: []
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Zohioliin duu',
+    id: 'zohioliin-duu',
+    desc: 'Mixes modern Pop with Mongolian Music, using local and western instruments.',
+    hard: ['mongolian'],
+    soft: ['pop']
+  },
+  {
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Sakha Traditional Music',
+    id: 'sakha-traditional',
+    desc: 'Traditional music of Sakha (a.k.a. Yakut) people, mostly living in their homeland - Republic of Sakha (Yakutia) (part of Russian Federation).',
+    hard: ['turkic-mongolic'],
+    soft: []
+  }
 ]
 
+export const Folk = [
+	{
+		type: Type.Super,
+		label: 'Folk',
+		id: 'folk',
+		desc: 'Roots music from world culture, encompasing international tranditional folk',
+		hard: [],
+		soft: []
+	},
 
-export const Folk = [{
-  type: Type.Super,
-  label: 'Folk',
-  id: 'folk',
-  desc: 'Roots music from world culture, encompasing international tranditional folk',
-  hard: [],
-  soft: []
-},
+	{
+		type: Type.Genre,
+		parent: Type.Super,
+		label: 'Folk Rock',
+		id: 'folk-rock',
+		desc: 'A fusion genre combining elements of folk music and rock music, typically featuring acoustic instruments and lyrical storytelling.',
+		hard: ['folk', 'rock'],
+		soft: []
+	},
 
-{
-  type: Type.Genre,
-  parent: Type.Super,
-  label: 'Folk Rock',
-  id: 'folk-rock',
-  desc: 'A fusion genre combining elements of folk music and rock music, typically featuring acoustic instruments and lyrical storytelling.',
-  hard: ['folk', 'rock'],
-  soft: []
-},
+	{
+		type: Type.Genre,
 
-{
-  type: Type.Genre,
+		parent: Type.Super,
+		label: 'Contemporary Folk',
+		id: 'contemporary-folk',
+		desc: 'Generally acoustic and modernized traditional folk music',
+		hard: ['folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'American Primitivism',
+		id: 'american-primitivism',
+		desc: 'Blends avant-garde and neo-classical compositions with traditional Country Blues fingerpicking techniques.',
+		hard: ['contemporary-folk'],
+		soft: ['avant-garde', 'neo-classical']
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Anti-Folk',
+		id: 'anti-folk',
+		desc: 'Rawer approach to folk, with an often self-mocking and sarcastic tone.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Super,
+		label: 'Avant-Folk',
+		id: 'avant-folk',
+		desc: 'Experimental-influenced and playing with instrumentation, rhythm, and other factors not commonly found in folk.',
+		hard: ['folk', 'avant-garde'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Free Folk',
+		id: 'free-folk',
+		desc: 'Incorporates improvisation, repetition and extended song lengths.',
+		hard: ['avant-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Campus Folk',
+		id: 'campus-folk',
+		desc: 'Born in Taiwan in the mid-1970s, this movement originated with university students creating their own modern-style songs in the wake of international tensions like Taiwan’s isolation from the United Nations and the United States’ embrace of the PRC as a diplomatic partner.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Chamber Folk',
+		id: 'chamber-folk',
+		desc: 'Gentle fingerpicked acoustic guitar or harp-led music that commonly includes a backing ensemble of harpsichords, strings, horns, or other orchestral instruments.',
+		hard: ['contemporary-folk', 'chamber-music'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Country Folk',
+		id: 'country-folk',
+		desc: 'Emphasises Traditional Country instrumentation as well as influences from contemporary Singer-Songwriter traditions, such as a gentler disposition and prominent lyrical storytelling focus.',
+		hard: ['contemporary-folk', 'country'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Folk Baroque',
+		id: 'folk-baroque',
+		desc: 'Originated in England in the early 1960s, featuring a distinctive guitar fingerpicking style of the same name and the DADGAD guitar tuning.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Folk Pop',
+		id: 'folk-pop',
+		desc: 'Blends Contemporary Folk with a Pop sensibility, most popular in the late 1960s and early 1970s and featuring influence from the contemporary Folk Rock style.',
+		hard: ['contemporary-folk', 'pop'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Stomp and Holler',
+		id: 'stomp-and-holler',
+		desc: 'Highlights driving "stomping" rhythms and shouted group vocal harmonies, often drawing influences from Pop Rock, Indie Folk, and other genres, while maintaining a characteristically mellow and commercial sound.',
+		hard: ['folk-pop'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Indie Folk',
+		id: 'indie-folk',
+		desc: 'Combines the melodic sensibilities and production style of Indie Rock and Indie Pop with acoustic instrumentation and influences from Folk, Singer-Songwriter, and sometimes Country.',
+		hard: ['contemporary-folk', 'indie-rock', 'indie-pop'],
+		soft: ['country', 'singer-songwriter']
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Loner Folk',
+		id: 'loner-folk',
+		desc: 'Lo-fi, downbeat, and frequently depressive atmosphere with psychedelic undertones that emerged among independent creators following the collapse of the counterculture in the 1970s.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Neofolk',
+		id: 'neofolk',
+		desc: 'Emerged in the mid-1980s from the Post-Industrial scene, with a dark, often martial atmosphere.',
+		hard: ['contemporary-folk', 'post-industrial'],
+		soft: ['martial-industrial'],
+		artists: 'swans, sol invictus'
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Dark Folk',
+		id: 'dark-folk',
+		desc: 'Minimalistic and melancholic sound with influence from Nordic Folk Music and even Ambient.',
+		hard: ['neofolk', 'nordic-folk-music'],
+		soft: ['ambient']
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Neofolklore',
+		id: 'neofolklore',
+		desc: 'Short-lived movement that reincorporated traditional Chilean folklore into modern production and styling inspired by foreign musicians.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Progressive Folk',
+		id: 'progressive-folk',
+		desc: 'Draws from a variety of sources to subvert traditional acoustic song forms, with diversity ranging from Jazz to Medieval music to various Regional Music traditions.',
+		hard: ['contemporary-folk'],
+		soft: ['folk', 'medieval', 'regional-music']
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Psychedelic Folk',
+		id: 'psychedelic-folk',
+		desc: 'Acoustic forms that capture an atmosphere that is at turns dream-like, "spaced-out", whimsical, haunting, mystical, and melancholic.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Freak Folk',
+		id: 'freak-folk',
+		desc: 'Offshoot of the New Weird America movement characterised by acoustic and eclectic instruments, peculiar vocal styles, romantic lyrics, and a childlike atmosphere.',
+		hard: ['psychedelic-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Udigrudi',
+		id: 'udigrudi',
+		desc: 'Movement that emerged in the Brazilian city of Recife during the 1970s that combines psychedelic elements with music of Northeastern Brazil.',
+		hard: ['psychedelic-folk', 'brazilian-music'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Sub,
+		label: 'Wyrd Folk',
+		id: 'wyrd-folk',
+		desc: 'Closely tied to mysticism, old folk beliefs, and Folk Horror; often described as "witchy" or "pagan."',
+		hard: ['psychedelic-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Skiffle',
+		id: 'skiffle',
+		desc: 'Grew out of British Dixieland trad jazz, drawing influence from 1920s Jug Bands and the strong rhythms of 1950s Honky Tonk and Rock & Roll.',
+		hard: ['contemporary-folk', 'jug-band'],
+		soft: ['folk']
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Xinyao',
+		id: 'xinyao',
+		desc: 'Singaporean Mandarin-language style, generally featuring harmonised group vocals and backed mainly by acoustic guitar.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	{
+		type: Type.Genre,
+		parent: Type.Genre,
+		label: 'Traditional Folk Music',
+		id: 'traditional-folk',
+		desc: 'Singaporean Mandarin-language style, generally featuring harmonised group vocals and backed mainly by acoustic guitar.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	...AfricanFolk,
+	...ArabicFolk,
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Football Chant',
+		id: 'football-chant',
+		desc: 'Scene that recollects all ritual, cultist and pagan folklore music',
+		hard: ['traditional-folk'],
+		soft: []
+	},	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Hazara folk',
+		id: 'hazara-folk',
+		desc: 'Scene that recollects all ritual, cultist and pagan folklore music',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Industrial Folk Song',
+		id: 'industrial-folk-song',
+		desc: 'Details the experiences and aspirations of industrial laborers and their working conditions; frequently rooted in labor causes and often used for protest and organizational purposes.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Ladino Folksong',
+		id: 'ladino-folksong',
+		desc: 'Ladino-language Traditional Folk Music tunes that were written and preserved by Sephardic Jews.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Ob-Ugric Folk Music',
+		id: 'ob-ugric-folk-music',
+		desc: 'Traditional Folk Music of the Ob-Ugric people of West Siberia Plain.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Payada',
+		id: 'payada',
+		desc: 'Improvised poetry accompanied by a guitar that is tied to gaucho culture, usually performed in duo as a verse duel.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Samoyedic Folk Music',
+		id: 'samoyedic-folk-music',
+		desc: 'Traditional Folk Music of the Samoyedic peoples.',
+		hard: ['traditional-folk'],
+		soft: []
+	},
 
-  parent: Type.Super,
-  label: 'Contemporary Folk',
-  id: 'contemporary-folk',
-  desc: 'Generally acoustic and modernized traditional folk music',
-  hard: ['folk'],
-  soft: []
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'American Primitivism',
-  id: 'american-primitivism',
-  desc: 'Blends avant-garde and neo-classical compositions with traditional Country Blues fingerpicking techniques.',
-  hard: ['contemporary-folk'],
-  soft: ['avant-garde', 'neo-classical'],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Anti-Folk',
-  id: 'anti-folk',
-  desc: 'Rawer approach to folk, with an often self-mocking and sarcastic tone.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Super,
-  label: 'Avant-Folk',
-  id: 'avant-folk',
-  desc: 'Experimental-influenced and playing with instrumentation, rhythm, and other factors not commonly found in folk.',
-  hard: ['folk', 'avant-garde'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Sub,
-  label: 'Free Folk',
-  id: 'free-folk',
-  desc: 'Incorporates improvisation, repetition and extended song lengths.',
-  hard: ['avant-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Campus Folk',
-  id: 'campus-folk',
-  desc: 'Born in Taiwan in the mid-1970s, this movement originated with university students creating their own modern-style songs in the wake of international tensions like Taiwan’s isolation from the United Nations and the United States’ embrace of the PRC as a diplomatic partner.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Chamber Folk',
-  id: 'chamber-folk',
-  desc: 'Gentle fingerpicked acoustic guitar or harp-led music that commonly includes a backing ensemble of harpsichords, strings, horns, or other orchestral instruments.',
-  hard: ['contemporary-folk', 'chamber-music'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Country Folk',
-  id: 'country-folk',
-  desc: 'Emphasises Traditional Country instrumentation as well as influences from contemporary Singer-Songwriter traditions, such as a gentler disposition and prominent lyrical storytelling focus.',
-  hard: ['contemporary-folk', 'country'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Folk Baroque',
-  id: 'folk-baroque',
-  desc: 'Originated in England in the early 1960s, featuring a distinctive guitar fingerpicking style of the same name and the DADGAD guitar tuning.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Folk Pop',
-  id: 'folk-pop',
-  desc: 'Blends Contemporary Folk with a Pop sensibility, most popular in the late 1960s and early 1970s and featuring influence from the contemporary Folk Rock style.',
-  hard: ['contemporary-folk', 'pop'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Sub,
-  label: 'Stomp and Holler',
-  id: 'stomp-and-holler',
-  desc: 'Highlights driving "stomping" rhythms and shouted group vocal harmonies, often drawing influences from Pop Rock, Indie Folk, and other genres, while maintaining a characteristically mellow and commercial sound.',
-  hard: ['folk-pop'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Indie Folk',
-  id: 'indie-folk',
-  desc: 'Combines the melodic sensibilities and production style of Indie Rock and Indie Pop with acoustic instrumentation and influences from Folk, Singer-Songwriter, and sometimes Country.',
-  hard: ['contemporary-folk', 'indie-rock', 'indie-pop'],
-  soft: ['country', 'singer-songwriter'],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Neofolk',
-  id: 'neofolk',
-  desc: 'Emerged in the mid-1980s from the Post-Industrial scene, with a dark, often martial atmosphere.',
-  hard: ['contemporary-folk', 'post-industrial'],
-  soft: ['martial-industrial'],
-  artists: 'swans, sol invictus'
-},
-{
-  type: Type.Sub,
-  parent: Type.Sub,
-  label: 'Dark Folk',
-  id: 'dark-folk',
-  desc: 'Minimalistic and melancholic sound with influence from Nordic Folk Music and even Ambient.',
-  hard: ['neofolk', 'nordic-folk-music'],
-  soft: ['ambient'],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Neofolklore',
-  id: 'neofolklore',
-  desc: 'Short-lived movement that reincorporated traditional Chilean folklore into modern production and styling inspired by foreign musicians.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Progressive Folk',
-  id: 'progressive-folk',
-  desc: 'Draws from a variety of sources to subvert traditional acoustic song forms, with diversity ranging from Jazz to Medieval music to various Regional Music traditions.',
-  hard: ['contemporary-folk'],
-  soft: ['folk', 'medieval', 'regional-music'],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Psychedelic Folk',
-  id: 'psychedelic-folk',
-  desc: 'Acoustic forms that capture an atmosphere that is at turns dream-like, "spaced-out", whimsical, haunting, mystical, and melancholic.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Sub,
-  label: 'Freak Folk',
-  id: 'freak-folk',
-  desc: 'Offshoot of the New Weird America movement characterised by acoustic and eclectic instruments, peculiar vocal styles, romantic lyrics, and a childlike atmosphere.',
-  hard: ['psychedelic-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Sub,
-  label: 'Udigrudi',
-  id: 'udigrudi',
-  desc: 'Movement that emerged in the Brazilian city of Recife during the 1970s that combines psychedelic elements with music of Northeastern Brazil.',
-  hard: ['psychedelic-folk', 'brazilian-music'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Sub,
-  label: 'Wyrd Folk',
-  id: 'wyrd-folk',
-  desc: 'Closely tied to mysticism, old folk beliefs, and Folk Horror; often described as "witchy" or "pagan."',
-  hard: ['psychedelic-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Skiffle',
-  id: 'skiffle',
-  desc: 'Grew out of British Dixieland trad jazz, drawing influence from 1920s Jug Bands and the strong rhythms of 1950s Honky Tonk and Rock & Roll.',
-  hard: ['contemporary-folk', 'jug-band'],
-  soft: ['folk'],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Xinyao',
-  id: 'xinyao',
-  desc: 'Singaporean Mandarin-language style, generally featuring harmonised group vocals and backed mainly by acoustic guitar.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Traditional Folk Music',
-  id: 'traditional-folk',
-  desc: 'Singaporean Mandarin-language style, generally featuring harmonised group vocals and backed mainly by acoustic guitar.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-...AfricanFolk,
-...ArabicFolk,
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Australian Folk Music',
-  id: 'australian-folk',
-  desc: 'Folk traditions of the European colonists and convicts in Australia.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
-...BrasilianFolk,
-...CanadianFolk,
-...CaucasianFolk,
-...EastAsianFolk,
-...EuropeanFolk,
-{
-  type: Type.Sub,
-  parent: Type.Genre,
-  label: 'Drinking Songs',
-  id: 'drinking-songs',
-  desc: 'Songs performed at social gatherings, often with themes of celebration and camaraderie.',
-  hard: ['contemporary-folk'],
-  soft: [],
-},
+...Indigenous,
 
-...AmericanFolk,
-...Blues,
-{
-  type: Type.Scene,
-  parent: Type.Super,
-  label: 'Protest Music',
-  desc: 'Scene that recollects all music connected to protest about social issues and political topics.',
-  id: 'Protest-music',
-  hard: ['folk', 'roots-regae', 'conscious-hiphop', 'punk', 'work-music', 'crust-punk', 'anarcho-punk'],
-  soft: []
-},
-]
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Australian Folk Music',
+		id: 'australian-folk',
+		desc: 'Folk traditions of the European colonists and convicts in Australia.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+	...BrasilianFolk,
+	...CanadianFolk,
+	...CaucasianFolk,
+	...EastAsianFolk,
+	...EuropeanFolk,
+	{
+		type: Type.Sub,
+		parent: Type.Genre,
+		label: 'Drinking Songs',
+		id: 'drinking-songs',
+		desc: 'Songs performed at social gatherings, often with themes of celebration and camaraderie.',
+		hard: ['contemporary-folk'],
+		soft: []
+	},
+
+	...AmericanFolk,
+	...Blues,
+  ...Asian,
+  ...workSongs,
+  ...Yodeling,
+  ...TurkicMongolic,
+
+	{
+		type: Type.Scene,
+		parent: Type.Super,
+		label: 'Protest Music',
+		desc: 'Scene that recollects all music connected to protest about social issues and political topics.',
+		id: 'Protest-music',
+		hard: [
+			'folk',
+			'roots-regae',
+			'conscious-hiphop',
+			'punk',
+			'work-music',
+			'crust-punk',
+			'anarcho-punk'
+		],
+		soft: []
+	}
+];

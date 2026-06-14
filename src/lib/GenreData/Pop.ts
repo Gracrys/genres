@@ -39,7 +39,7 @@ export const Pop = [
         parent: Type.Genre,
         label: 'Afropiano',
         id: 'afropiano',
-        hard: ['afrobeats', 'afropiano'],
+        hard: ['afrobeats', 'afropiano', 'amapiano'],
         soft: [],
         desc: 'Blends the easy-going, poppy, and melodic Afrobeats sound and rhythms with major Amapiano elements, like lush, jazzy, and laid-back atmospheres often featuring light piano chords.'
     },
@@ -75,7 +75,7 @@ export const Pop = [
         parent: Type.Sub,
         label: 'Al jeel',
         id: 'al-jeel',
-        hard: ['arabic-pop'],
+        hard: ['arabic-pop', 'egyptian'],
         soft: [],
         desc: 'Emerged in the 1970s as an alternative to Shaabi, taking influence from foreign Pop and incorporating rhythms of Reggae while retaining a distinctly Egyptian sound.'
     },
@@ -128,7 +128,7 @@ export const Pop = [
         parent: Type.Genre,
         label: 'Musika popullore',
         id: 'musika-popullore',
-        hard: ['balkan-pop-folk'],
+        hard: ['balkan-pop-folk', 'albanian-folk'],
         soft: [],
         desc: 'Tradition in Albania consisting of light, commercial, amplified Albanian Folk Music usually professionally arranged and manufactured in recording studios alongside video clips.'
     },
@@ -355,7 +355,7 @@ export const Pop = [
         parent: Type.Genre,
         label: 'Bubblegum Dance',
         id: 'bubblegum-dance',
-        hard: ['dance-pop', 'bubblegum'],
+        hard: ['dance-pop', 'bubblegum', 'eurodance'],
         soft: [],
         desc: 'Playful, childlike style with a Bubblegum-like atmosphere that often incorporates high-pitched, light-hearted, and usually female-fronted vocals.'
     },
@@ -401,25 +401,17 @@ export const Pop = [
         parent: Type.Genre,
         label: 'Romanian Popcorn',
         id: 'romanian-popcorn',
-        hard: ['dance-pop'],
+        hard: ['dance-pop', 'house'],
         soft: [],
         desc: 'Emerged in the second half of the 2000s in Romania, often featuring brass melodies and "staccato" pluck grooves.'
     },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'Tecnorumba',
-        id: 'tecnorumba',
-        hard: ['dance-pop'],
-        soft: [],
-        desc: 'Blend of the themes and singing style of Rumba flamenca with the most commercial forms of House, Techno, and Makina.'
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Genre,
         label: 'Township Bubblegum',
         id: 'township-bubblegum',
-        hard: ['dance-pop', 'bubblegum'],
+        hard: ['dance-pop', 'bubblegum', 'southern-african'],
         soft: [],
         desc: 'Synth-heavy Dance-Pop style popular in the South African townships in the 1980s and early 1990s.'
     },
@@ -473,7 +465,7 @@ export const Pop = [
         parent: Type.Super,
         label: 'Electropop',
         id: 'electropop',
-        hard: ['pop'],
+        hard: ['pop', 'electronics'],
         soft: [],
         desc: 'Dense, layered, and compressed production, usually coupled with a distinct fuzzy and "warm" low-frequency synthesizer style.'
     },
@@ -684,7 +676,7 @@ export const Pop = [
         parent: Type.Genre,
         label: 'Wa Euro',
         id: 'wa-euro',
-        hard: ['j-pop'],
+        hard: ['j-pop', 'eurobeat'],
         soft: [],
         desc: 'Traditional form of J-Pop that emerged in the second half of the 1980s from late Hi-NRG, \'80s British Dance-Pop and Italo-Disco/Eurobeat.'
     },
@@ -918,7 +910,7 @@ export const Pop = [
         parent: Type.Super,
         label: 'Pop Raï',
         id: 'pop-rai',
-        hard: ['pop'],
+        hard: ['pop', 'rai'],
         soft: [],
         desc: 'Fuses melodic sensibilities into the traditional Raï structure, with increased utilization of synthesizers, guitars, and drum machines.'
     },
@@ -941,15 +933,7 @@ export const Pop = [
         soft: [],
         desc: 'Emerged in the early 1960s in the United Kingdom, drawing on Rock & Roll and the late 1950s Skiffle revival in a simple guitar-band format with strong melodies.'
     },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Freakbeat',
-        id: 'freakbeat',
-        hard: ['beat'],
-        soft: [],
-        desc: 'Outgrowth of the Mod movement which combines elements of British Rhythm & Blues and Beat with studio effects common in Psychedelia such as fuzztones, flanging and chorus; often seen as a British relative of the American Garage Psych scene.'
-    },
+  
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -1384,15 +1368,7 @@ export const Pop = [
         soft: [],
         desc: 'Predominant form of Western commercial popular music in the pre-Rock & Roll era, particularly in the USA and starting with Tin Pan Alley; typically vocal-oriented with an orchestral arrangement.'
     },
-    {
-        type: Type.Sub,
-        parent: Type.Genre,
-        label: 'British Dance Band',
-        id: 'british-dance-band',
-        hard: ['traditional-pop'],
-        soft: [],
-        desc: 'Came from the dancehalls of the 1920s and 1930s, combining a British take on Jazz with the Music Hall tradition.'
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -1452,7 +1428,7 @@ export const Pop = [
         parent: Type.Genre,
         label: 'Vocaloid',
         id: 'vocaloid',
-        hard: ['electropop', 'j-pop', 'shimokita-kei', 'yakousei'],
+        hard: [ 'j-pop', 'electropop','shimokita-kei', 'yakousei'],
         soft: [],
         artists: 'Siinamota, DECO*27, Mitchie M, PinocchioP, Utsu-P, Project diva',
         desc: 'Scene revolving around the use of Vocaloid singing synthesizer software, characterized by high pitched vocals, which has produced a wide variety of styles but is often associated with a particular style of J-Pop and Otaku culture.'

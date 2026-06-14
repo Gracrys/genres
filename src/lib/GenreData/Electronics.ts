@@ -565,7 +565,7 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
     parent: Type.Genre,
     label: 'Coupé-décalé',
     id: 'coupe-decale',
-    hard: ['edm'],
+    hard: ['edm', 'zouglou', 'congolese-rhythms'],
     soft: [''],
     desc: 'Bass-heavy and minimal style of Ivorian popular dance music, drawing heavily from Zouglou and Congolese rhythms..',    
 },
@@ -750,7 +750,7 @@ export const EDM = [
         parent: Type.Genre,
         label: 'Balani Show',
         id: 'balani-show',
-        hard: ['edm'],
+        hard: ['edm', 'west-african'],
         soft: []
     },
     {
@@ -822,7 +822,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Kuduro',
     id: 'kuduro',
-    hard: ['edm', 'techno', ' house'],
+    hard: ['edm', 'techno', ' house', 'central-african-music'],
     soft: ['kilapanga', 'semba'],
     desc: 'Angolan music combining traditional Kilapanga and Semba with Techno and House.'
 },
@@ -934,7 +934,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Shangaan Electro',
     id: 'shangaan-electro',
-    hard: ['edm'],
+    hard: ['edm', 'southern-african'],
     soft: [],
     desc: 'South African genre with very fast BPM (around 180) featuring MIDI keyboard sounds and marimba.'
 },
@@ -943,7 +943,7 @@ export const EDM = [
     parent: Type.Genre,
     label: 'Singeli',
     id: 'singeli',
-    hard: ['edm'],
+    hard: ['edm', 'east-african'],
     soft: ['dubstep'],
     desc: 'Developed in Tanzania in the mid-2000s; fuses incredibly rapid beats, usually between 180-300BPM, with MCing and musical influences from older Tanzanian genres.'
 },
@@ -1062,15 +1062,7 @@ export const EDM = [
     dates: 'mid 1980s',
     artists: 'Dave Rodgers'
 },
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'J-Euro',
-    id: 'j-euro',
-    hard: ['eurobeat'],
-    desc: 'Italian-oriented Japanese scene of Eurobeat, which emerged with Japanese-language covers of Italian songs in the early-to-mid-1990s.',
-    soft: []
-},
+
 {
     type: Type.Sub,
     parent: Type.Genre,
@@ -1092,15 +1084,7 @@ export const EDM = [
     desc: 'Draws from 1980s styles such as Electro, New Wave, and Electro-Disco combined with Techno, resulting in minimal, throbbing beats and basslines, buzzing synthesizer parts, vocoders and often monotone, half-spoken, half-sung vocals.',
     soft: ['electro', 'new-wave', 'electro-disco']
 },
-{
-    type: Type.Sub,
-    parent: Type.Sub,
-    label: 'Bubblegum-dance',
-    id: 'bubblegum-dance',
-    hard: ['eurodance'],
-    desc: 'Playful, childlike style with a Bubblegum-like atmosphere that often incorporates high-pitched, light-hearted, and usually female-fronted vocals.',
-    soft: []
-},
+
 {
     type: Type.Sub,
     parent: Type.Sub,
@@ -1448,7 +1432,7 @@ desc: 'Emerged by fusing Deep House with Southern African Music, characterized b
     parent: Type.Genre,
     label: 'Amapiano',
     id: 'amapiano',
-    hard: ['house'],
+    hard: ['house', 'southern-african'],
     soft: ['deep-house'],
 desc: 'House from South Africa deriving from previous popular genres including Gqom, Kwaito, and Deep House..'
 },
@@ -1897,7 +1881,7 @@ export const Techno = [{
     parent: Type.Genre,
     label: 'Tecnorumba',
     id: 'tecnorumba',
-    hard: ['techno'],
+    hard: ['techno', 'rumba-flamenca', 'dance-pop'],
     soft: ['makina', 'house'],
     desc: 'Blend of the themes and singing style of Rumba flamenca with the most commercial forms of House, Techno, and Makina.'
 },
@@ -3005,7 +2989,7 @@ export const Electronics = [
     label: 'Kwaito',
     id: 'kwaito',
     dates: 'late 1980s',
-    hard: ['house'],
+    hard: ['house', 'southern-african'],
     desc: 'Emerged from South Africa in the early 1990s, taking influence from Disco and Hip Hop.',
     soft: ['disco', 'hip-hop']
 }, 
@@ -3024,7 +3008,7 @@ export const Electronics = [
     label: 'Gqom',
     id: 'gqom',
     dates: '2013',
-    hard: ['house', 'kwaito'],
+    hard: ['house', 'kwaito', 'south-african'],
     desc: 'Evolved from South African House, specifically Kwaito; often described as a more minimal and raw version.',
     soft: []
 }, 
@@ -3126,15 +3110,7 @@ export const Electronics = [
     desc: 'Trance-influenced strain of House that grew to prominence in the early 1990s, using polished production and gradual progressions..',
     soft: []
 }, 
-{
-    type: Type.Sub,
-    parent: Type.Genre,
-    label: 'Romanian Popcorn',
-    id: 'romanian-popcorn',
-    hard: ['house'],
-    desc: 'Emerged in the second half of the 2000s in Romania, often featuring brass melodies and \"staccato\" pluck grooves.',
-    soft: []
-}, 
+
 
 {
     type: Type.Sub,
@@ -3248,15 +3224,7 @@ export const Electronics = [
     desc: 'Created by sound chips, cards, and sequencers found in video game consoles, personal computers, and arcade machines, as well as synthesizers emulating these sounds..',
     soft: []
 }, 
-{
-    type: Type.Genre,
-    parent: Type.Super,
-    label: 'Electropop',
-    id: 'electropop',
-    hard: ['electronics'],
-    desc: 'Dense, layered, and compressed production, usually coupled with a distinct fuzzy and &#34;warm&#34; low-frequency synthesizer style.',
-    soft: []
-}, 
+
 {
     type: Type.Sub,
     parent: Type.Super,
@@ -3433,7 +3401,7 @@ export const Electronics = [
         parent: Type.Super,
         label: 'Maloya électronique',
         id: 'maloya-electronique',
-        hard: ['electronics'],
+        hard: ['electronics', 'maloya'],
         soft: [],
         desc: 'Combines the 6/8 ternary rhythm with Electronic production, using computer music, synthesizers and drum machines.'
     },

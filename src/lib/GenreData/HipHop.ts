@@ -58,15 +58,7 @@ export const HipHop = [
         hard: ['hiphop'],
         soft: ['trap']
     },
-    {
-        type: Type.Sub,
-        parent: Type.Super,
-        label: 'Bongo Flava',
-        desc: 'Tanzanian genre originating in the mid-1990s in the Dar es Salaam area, combining the influence of Rhythm & Blues, Afrobeat, and Dancehall with native Tanzanian styles like Taarab and Muziki wa dansi.',
-        id: 'bongo-flava',
-        hard: ['hiphop'],
-        soft: []
-    },
+
     {
         type: Type.Sub,
         parent: Type.Super,
@@ -214,24 +206,7 @@ export const HipHop = [
         hard: ['hiphop', 'industrial' ],
         soft: [],
     },
-    {
-        type: Type.Sub,
-        parent: Type.Super,
-        label: 'Genge',
-        id: 'genge',
-        desc: 'Combines elements of Dancehall with various traditions of Kenya',
-        hard: ['hiphop', 'dancehall' ],
-        soft: [],
-    },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Gengetone',
-        id: 'gengetone',
-        desc: 'Takes strong influence from Reggaetón and modern Dancehall, featuring more explicit lyrics and harder beats.',
-        hard: ['genge', 'reggaeton' ],
-        soft: [],
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Super,

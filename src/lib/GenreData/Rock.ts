@@ -861,7 +861,7 @@ export const Rock = [
     parent: Type.Super,
     label: 'Afro Rock',
     id: 'afro-rock',
-    hard: ['rock'],
+    hard: ['rock', 'western-african'],
     soft: [],
     desc: 'Incorporates West African influences; initially emerged in the early 1970s.'
   },
@@ -1121,7 +1121,7 @@ export const AlternativeRock = [
     parent: Type.Genre,
     label: 'Freakbeat',
     id: 'freakbeat',
-    hard: ['garage-rock'],
+    hard: ['garage-rock', 'beat'],
     soft: [],
     desc: 'Outgrowth of the Mod movement which combines elements of British Rhythm & Blues and Beat with studio effects common in Psychedelia such as fuzztones, flanging and chorus; often seen as a British relative of the American garage-psych scene.'
   },

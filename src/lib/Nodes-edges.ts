@@ -86,8 +86,6 @@ const calculatePosition = (data: IGenre): XYPosition => {
   let lookedGenre
   let currentStruct = {} as any
   try {
-    if (data.type == 1 )
-      console.log('data', data)
     currentStruct = data.type == 1 ? {
       id: data.id,
       positionX: genresParameters[data.id]?.X || genreAccum[data.type].length * 700,
@@ -138,7 +136,7 @@ const exceptions: { [key: string]: Type } = {
 export const GenreMapper = (arr: IGenre[]): [Node[], Edge[]] => {
   const sortedArr = sortNodes(arr)
 
-  console.log(findRepeatingElements(arr))
+  console.log('repeating elements:', findRepeatingElements(arr))
   const newNodes = sortedArr.map(x => ({
     id: x.id,
     type: TypeDictNode[exceptions[x.id] || x.type],

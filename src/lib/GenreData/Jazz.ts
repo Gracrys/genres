@@ -46,15 +46,6 @@ export const Jazz = [
   {
     type: Type.Sub,
     parent: Type.Genre,
-    label: 'Experimental Big Band',
-    id: 'experimental-big-band',
-    desc: 'Dispensing with traditional Jazz structures and sounds, instead performing avant-garde music and pushing the boundaries of the medium.',
-    hard: ['avant-garde-jazz'],
-    soft: []
-  },
-  {
-    type: Type.Sub,
-    parent: Type.Genre,
     label: 'Free Jazz',
     id: 'free-jazz',
     desc: 'Attempts to break free from the conventions and patterns of earlier Jazz subgenres through the use of elements such as dissonance, atonality, and free-flowing rhythmic structures.',
@@ -95,7 +86,7 @@ export const Jazz = [
     label: 'Experimental Big Band',
     id: 'experimental-big-band',
     desc: 'Dispensing with traditional Jazz structures and Swing sounds, instead performing Avant-Garde Jazz and pushing the boundaries of the medium.',
-    hard: ['big-band'],
+    hard: ['big-band', 'avant-garde-jazz'],
     soft: []
   },
   {
@@ -113,7 +104,7 @@ export const Jazz = [
     label: 'British Dance Band',
     id: 'british-dance-band',
     desc: 'Came from the dancehalls of the 1920s and 1930s, combining a British take on Jazz with the Music Hall tradition.',
-    hard: ['jazz', 'music-hall'],
+    hard: ['jazz', 'music-hall', 'traditional-pop'],
     soft: []
   },
   {
@@ -122,7 +113,7 @@ export const Jazz = [
     label: 'Bulawayo Jazz',
     id: 'bulawayo-jazz',
     desc: 'Emerged from the city of Bulawayo, Zimbabwe in the early 1950s, led by the alto sax and accompanied by ensembles.',
-    hard: ['jazz', 'traditional-folk'],
+    hard: ['jazz', 'traditional-folk', 'southern-african'],
     soft: []
   },
   {
@@ -131,7 +122,7 @@ export const Jazz = [
     label: 'Cape Jazz',
     id: 'cape-jazz',
     desc: 'Developed parallel to American Jazz in the early 20th century, named for its origin in Cape Town, South Africa.',
-    hard: ['jazz'],
+    hard: ['jazz', 'southern-african'],
     soft: []
   },
   {
@@ -203,7 +194,7 @@ export const Jazz = [
     label: 'Ethio-Jazz',
     id: 'ethio-jazz',
     desc: 'Unique blend of traditional Ethiopic Music and Jazz.',
-    hard: ['jazz', 'ethiopic-music'],
+    hard: ['jazz', 'ethiopic'],
     soft: []
   },
   {
@@ -314,7 +305,7 @@ export const Jazz = [
     label: 'Marabi',
     id: 'marabi',
     desc: 'South African Jazz with origins in the 1920s and rooted in traditional South African music.',
-    hard: ['jazz'],
+    hard: ['jazz', 'southern-african'],
     soft: [ 'afro-jazz']
   },
    {
