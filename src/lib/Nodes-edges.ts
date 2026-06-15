@@ -1,5 +1,5 @@
 import type { Edge, Node, XYPosition } from "@xyflow/svelte"
-import { Genres, Type, type IGenre } from "./GenreData/GenreData"
+import { Type, type IGenre } from "./GenreData/GenreData"
 import { findRepeatingElements } from "./Utils/CheckDuplicates"
 
 
@@ -106,16 +106,15 @@ const calculatePosition = (data: IGenre): XYPosition => {
       parent: indexGenre
     }
     genreAccum[data.type].push(currentStruct)
-
+   
   } catch (error) {
     console.warn('on data:' + JSON.stringify(data))
     console.warn('error', error)
-  } finally {
-    return ({
+  } 
+  return ({
       x: currentStruct.positionX,
       y: currentStruct.positionY,
     })
-  }
 }
 const edgeMapper = (id: string, connections: string[], type: 'hardEdge' | 'softEdge') => connections.map((x) => ({
   id: x + '+' + id,
@@ -126,8 +125,7 @@ const edgeMapper = (id: string, connections: string[], type: 'hardEdge' | 'softE
 }))
 
 const sortNodes = (genres: IGenre[]) =>
-  genres.sort((a, b) => a.type - b.type
-  );
+  genres.sort((a, b) => a.type - b.type)
 
 const exceptions: { [key: string]: Type } = {
   //'industrial': 2
