@@ -73,10 +73,9 @@ const genresParameters: {
     Y: 800,
     //  Bleeding: 180
   },
-/*   'dance': {
-    Y: 400,
-    X: 400
-  } */
+  'pop': {
+    X: 12000
+  },
 }
 
 

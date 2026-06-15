@@ -7,6 +7,9 @@
 
     let {data, closeAside} = $props()
 
+    const stringify = (data:any) => {
+        return JSON.stringify($nodes.find(x => x.id == data.id))}
+
    let childrens = $derived($nodes.filter((n: Node) =>
 					(n.data as unknown as INodeData).hard.includes(data.id)
 			)) 
