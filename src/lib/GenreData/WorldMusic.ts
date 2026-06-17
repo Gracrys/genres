@@ -1087,8 +1087,9 @@ export const Caribbean = [
         label: 'Salsa',
         id: 'salsa',
         desc: 'Often incorporating congas, timbales and bongos as well as smaller instruments, such as maracas, clave and güiro.',
-        hard: ['caribbean'],
-        soft: []
+        hard: ['caribbean', 'latin-jazz'],
+        soft: [],
+artists: 'Ruben blades, Willy colon, oscar de leon'
     },
     {
         type: Type.Sub,
