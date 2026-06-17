@@ -128,6 +128,15 @@ export const Step = [
         hard: ['darkstep'],
         soft: []
     },
+     {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Deep drum and bass',
+        id: 'deep-dnb',
+    desc: 'Sub-bass-rich, repetitive, minimalist, and rhythm-focused production.',
+        hard: ['dnb'],
+        soft: []
+    },
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -388,11 +397,38 @@ desc: 'Drum and Bass which strips down the sound as far as it can go without who
 },
 {
     type: Type.Sub,
+    parent: Type.Sub,
+    label: 'Autonomic',
+    id: 'autonomic',
+desc: 'Mechanical, machine-like, &#34;autonomic&#34; rhythms that take primary influence from the cold, minimal sounds of mid-2000s UK Dubstep.',
+    hard: ['minimal-dnb'],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Sub,
+    label: 'MicroFunk',
+    id: 'microfunk',
+desc: 'Minimal, glitchy, and bleepy sound inspired by idm',
+    hard: ['minimal-dnb', 'idm'],
+    soft: []
+},
+{
+    type: Type.Sub,
     parent: Type.Genre,
     label: 'Neurofunk',
     id: 'neurofunk',
 desc: 'Focuses on technical songwriting with warped, complex bass sounds, distorted and modulated synths (often with repeated stabs over the basslines), and dark but clean production.',
     hard: ['dnb'],
+    soft: []
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Technoid',
+    id: 'technoid',
+desc: 'Influenced by the repetitive and mechanical sound of Techno.',
+    hard: ['dnb', 'techno'],
     soft: []
 },
 ...Step
@@ -497,12 +533,31 @@ desc: 'Drew on the booty basss syncopation of Miami Bass, combined with Breakbea
 {
     type: Type.Sub,
     parent: Type.Genre,
+    label: 'Nu Skool Breaks',
+    id: 'nu-skool-breaks',
+    dates: '1990s',
+    hard: ['breakbeat'],
+    soft: ['dnb', 'uktechno'],
+    desc: 'Developed in the late 1990s and early 2000s; takes elements from Drum and Bass, UK Garage, and Techno.',    
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
     label: 'Progressive Breaks',
     id: 'prog-breaks',
     dates: '1992',
     hard: ['breakbeat'],
     soft: [],
     desc: 'Derivative of Progressive House that incorporates its lush, melodic synth leads and atmospheres into Breakbeat\'s syncopated and broken rhythms.',    
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Dek Bass',
+    id: 'dek-bass',
+    hard: ['breakbeat'],
+    soft: ['south-asian'],
+    desc: 'Prominent heavy, sustained bass tones, percussion derived from South Asian Music, and often high-pitched sound effects or samples; commonly played at extreme volumes in DJ/sound system competitions.',    
 },
 {
     type: Type.Sub,
@@ -2475,9 +2530,50 @@ export const Disco = [{
     parent: Type.Super,
     label: 'Disco',
     id: 'disco',
+        desc: 'Combines the lush orchestration of Philly Soul and bass grooves of Funk with a four-on-the-floor rhythm.',   
+
     hard: ['electronics', 'dance', 'synth'],
-    soft: []
-}]
+    soft: [],
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Boogie',
+    desc: 'Continuation of the Disco sound with increased influence from Funk, Synth Funk, and R&B and a slower tempo, often featuring drum machines and filter modulated synthesizers.',
+    id: 'Boogie',
+    hard: ['disco'],
+    soft: ['funk', 'rnb'],
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Euro-Disco',
+    id: 'euro-disco',
+    hard: ['disco'],
+    soft: [],
+    desc: 'European style that moved away from the genre\'s Rhythm & Blues and Soul roots, speeding up the tempo and adding Electronic instruments like synthesizers and drum machines as a backing for more melodic Europop-influenced vocals.',
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Latin Disco',
+    id: 'latin-disco',
+    hard: ['disco'],
+    soft: [],
+    desc: 'Disco that incorporates elements from Hispanic American Music styles.',
+},
+{
+    type: Type.Sub,
+    parent: Type.Genre,
+    label: 'Mutant Disco',
+    id: 'mutant-disco',
+    hard: ['disco'],
+    soft: [],
+    desc: 'Danceable basslines, syncopated grooves, and angular guitar riffs, characterized by a spirit of experimentation and integration of disparate sounds.',
+},
+
+
+]
 
 
 
@@ -3225,6 +3321,15 @@ export const Electronics = [
     soft: []
 }, 
 
+         {
+    type: Type.Sub,
+    parent: Type.Super,
+    label: 'Dark Disco',
+    id: 'dark-disco',
+    hard: ['electronics', 'disco'],
+    desc: 'Emerging in the early 2010s, ranging from 80 to 130 bpm, combining the atmosphere of New Beat and EBM with the grooves of Italo-Disco, with influences from 1980s Rock.',
+    soft: []
+},    
 {
     type: Type.Sub,
     parent: Type.Super,

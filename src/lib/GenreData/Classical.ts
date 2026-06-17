@@ -1,3 +1,4 @@
+import { Poetry, SpokenWord } from "./SpokenWord";
 
 export enum Type {
     'Super' = 1,
@@ -1796,23 +1797,8 @@ export const Classical = [    {
     soft: [],
     dates: '800 - 888 AC'
 },
-{
-    type: Type.Genre,
-    parent: Type.Super,
-    label: 'Poetry',
-    id: 'poetry',
-    desc: 'Not directly attached to classical music but a classic form of expressing emotions in a rhytmical way',
-    hard: ['classical'],
-    soft: []
-},
-{
-    type: Type.Genre,
-    parent: Type.Genre,
-    label: 'Spoken word',
-    id: 'spoken-word',
-    hard: ['poetry'],
-    soft: []
-},
+
+...Poetry,
 ...Asian,
 {
   parent: Type.Super,

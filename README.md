@@ -32,7 +32,7 @@ I got questioned something in a programmers chat-group that i didnt expect, "wha
 - **metal**: 90%
 - **Jazz**: 90%
 - **ambient**: 60%
-- **Blues**:  60%
+- **Blues**:  95%
 - **country**: 70%
 - **classical**: 80% 
 - **spoken word and ballads**: 60%

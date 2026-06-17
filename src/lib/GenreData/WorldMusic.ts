@@ -197,14 +197,7 @@ export const Jamaican = [
         hard: ['reggae'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Dub poetry',
-        id: 'dub-poetry',
-        hard: ['roots-reggae', 'dub'],
-        soft: []
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Genre,
@@ -660,15 +653,7 @@ export const Caribbean = [
         hard: ['cuban-music'],
         soft: []
     },
-    {
-        type: Type.Sub,
-        parent: Type.Sub,
-        label: 'Timba',
-        id: 'timba',
-        desc: 'Combines Salsa with other genres such as Hip Hop, Disco, Funk, Jazz and Rock.',
-        hard: ['cuban-music'],
-        soft: []
-    },
+   
     {
         type: Type.Sub,
         parent: Type.Sub,
@@ -1095,6 +1080,51 @@ export const Caribbean = [
         desc: 'Ensembles made out of steel drums that often perform Standards, Calypso, and Western Classical Music with densely rhythmic and colorful arrangements.',
         hard: ['caribbean'],
         soft: []
+    },
+     {
+        type: Type.Genre,
+        parent: Type.Genre,
+        label: 'Salsa',
+        id: 'salsa',
+        desc: 'Often incorporating congas, timbales and bongos as well as smaller instruments, such as maracas, clave and güiro.',
+        hard: ['caribbean'],
+        soft: []
+    },
+    {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Salsa Choke',
+        id: 'salsa-choke',
+        desc: 'Colombian style that takes heavy influence from Reggaetón, House, Hip Hop, and various Afro-Colombian and Colombian Pacific styles.',
+        hard: ['salsa'],
+        soft: []
+    },
+        {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Salsa Dura',
+        id: 'salsa-dura',
+        desc: 'Earlier form of Salsa, usually less rigid in structure allowing for extended jam sessions; lyrical themes revolve around the "barrio" way of life and Latin American traditions.',
+        hard: ['salsa'],
+        soft: []
+    },
+            {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Salsa Romantica',
+        id: 'salsa-romantica',
+        desc: 'Salsa following a stronger influence from Pop, typically sharing shorter, conventional structures and romantic lyricism.',
+        hard: ['salsa'],
+        soft: []
+    },
+          {
+        type: Type.Sub,
+        parent: Type.Genre,
+        label: 'Timba',
+        id: 'timba',
+        desc: 'Salsa following a stronger influence from Pop, typically sharing shorter, conventional structures and romantic lyricism.Combines Salsa with other genres such as Hip Hop, Disco, Funk, Jazz and Rock.',
+        hard: ['salsa', 'cuban-music'],
+        soft: ['hiphop', 'jazz', 'pop']
     },
      {
         type: Type.Sub,
