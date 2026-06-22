@@ -15,7 +15,8 @@ export const RNB:IGenre[] = [
         hard: [],
         soft: [],
         desc: 'Umbrella of popular styles closely tied to mass production and mass marketing, focusing on catchiness and accessibility through melody, rhythm, lyrics, and hooks.',
-        dates: '1980'
+        dates: '1980',
+        artists: 'Amy Winehouse, Nina Simone'
     },
     {
         type: Type.Sub,
@@ -87,7 +88,8 @@ export const RNB:IGenre[] = [
         id: 'funk',
         hard: ['rnb', 'jazz', 'soul'],
         soft: [],
-        desc: 'Danceable, syncopated grooves carried by bass and drums alongside percussive guitar, keyboard, and/or horn parts, with rhythmic emphasis on the downbeat.'
+        desc: 'Danceable, syncopated grooves carried by bass and drums alongside percussive guitar, keyboard, and/or horn parts, with rhythmic emphasis on the downbeat.',
+        artists: 'Herbie Hancock, Talking heads, Miles Davis'
     },
     {
         type: Type.Sub,
@@ -232,7 +234,8 @@ export const RNB:IGenre[] = [
         id: 'soul',
         hard: ['rnb'],
         soft: [],
-        desc: 'Originated in the African American culture of the 20th century, resulting from the combination of the ecstatic vocals of Gospel with the upbeat instrumentation of Rhythm & Blues, consisting of guitar, bass and percussion.'
+        desc: 'Originated in the African American culture of the 20th century, resulting from the combination of the ecstatic vocals of Gospel with the upbeat instrumentation of Rhythm & Blues, consisting of guitar, bass and percussion.',
+        artists: 'Stevie Wonder, Sade, D\'angelo'
     },
     {
         type: Type.Sub,

@@ -41,7 +41,8 @@ export const Jazz = [
     id: 'Acid-jazz',
     desc: 'Eclectic scene consisting of influences from Jazz, Funk, Hip Hop, Soul, and various styles of Dance that gained popularity during the 1990s.',
     hard: ['jazz', 'psychodelia'],
-    soft: ['soul', 'hiphop', 'funk']
+    soft: ['soul', 'hiphop', 'funk'],
+    artists: 'Jamiroquai, moloko'
   },
   {
     type: Type.Genre,

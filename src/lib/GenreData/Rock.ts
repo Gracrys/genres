@@ -397,7 +397,8 @@ export const Hardcore = [
     label: 'Post-Hardcore',
     id: 'post-hardcore',
     hard: ['hardcore'],
-    soft: []
+    soft: [],
+    artists: 'At the drive-in, fugazi, unwound, midori'
   },
 
   {
@@ -408,7 +409,7 @@ export const Hardcore = [
     hard: ['post-hardcore'],
     soft: [],
     desc: 'Focuses on emotional lyrics, expressive vocals, melodic songwriting, and dynamic song structures.',
-    artists: 'My chemical Romance'
+    artists: 'My chemical Romance, American Football, The brave little abacus'
 
   },
   {
@@ -418,6 +419,7 @@ export const Hardcore = [
     id: 'emocore',
     hard: ['emo', 'hardcore'],
     soft: [],
+    artists: 'unwound',
     desc: 'Emerged primarily in Washington D.C. in 1985 as a reaction to the stagnant Hardcore Punk scene, with a less aggressive style that was more melodic and often featured emotional, introspective lyrics.'
   },
   {
@@ -436,6 +438,7 @@ export const Hardcore = [
     id: 'mall-screamo',
     hard: ['emo'],
     soft: [],
+    artists: 'Silverstein, Alexisonfire, Pierce the veil',
     desc: 'Heavy instrumentation, melodic verse-chorus songwriting, and expressive singing contrasted with screaming vocals.'
 
   },
@@ -504,6 +507,7 @@ export const Hardcore = [
     parent: Type.Genre,
     label: 'Deathcore',
     id: 'deathcore',
+    artists: 'Shadow of intent, whitechapel, darko',
     hard: ['metalcore', 'death-metal'],
     soft: []
   },
@@ -522,7 +526,7 @@ export const Hardcore = [
     id: 'mathcore',
     hard: ['metalcore', 'math-rock'],
     soft: [],
-    artists: 'Poison the well',
+    artists: 'Poison the well, dillinger escapoe plan',
     desc: 'Rhythmically complex, features unconventional time signatures, syncopated and dissonant riffs and erratic metric shifts.'
   },
   {
@@ -532,6 +536,7 @@ export const Hardcore = [
     id: 'melodic-metalcore',
     hard: ['metalcore'],
     soft: [],
+    artists: 'Trivium, Protest the hero, august burns red',
     desc: 'Originated in the late 1990s when some metalcore bands infused elements of Melodic Death Metal into their sound to create a more metallic and melodic style.'
   },
   {
@@ -576,7 +581,8 @@ export const Hardcore = [
     label: 'Powerviolence',
     id: 'powerviolence',
     hard: ['thrashcore', 'noise-rock'],
-    soft: []
+    soft: [],
+    artists: 'iron lung, '
   },
   {
     type: Type.Sub,
@@ -592,7 +598,8 @@ export const Hardcore = [
     label: 'Grindcore',
     id: 'grindcore',
     hard: ['hardcore'],
-    soft: []
+    soft: [],
+    artists: 'pig destroyer, nails, carcass, napalm death'
   },
 
   {
@@ -636,7 +643,8 @@ export const Hardcore = [
     id: 'queercore',
     desc: 'Movement mainly distinguished by its lyrical content expressing the viewpoints of the LGBTQ+ community, as well as promoting queer pride and unity.',
     hard: ['hardcore', 'post-harcore', 'punk'],
-    soft: []
+    soft: [],
+    artists: 'Team Dresch, grlwood'
   },
   {
     type: Type.Scene,
@@ -1096,6 +1104,7 @@ export const AlternativeRock = [
     id: 'slacker-rock',
     hard: ['indie-rock'],
     soft: [],
+    artists: 'Sonic youth, dinosaur, julie',
     desc: 'Raw, noisy, and melodic, with a loose, blasé approach to performances and typically low-fidelity production'
   },
   {

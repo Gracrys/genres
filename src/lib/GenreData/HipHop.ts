@@ -205,6 +205,7 @@ export const HipHop = [
         desc: 'Incorporates harsh elements inspired by Industrial music such as blaring, noisy synths, distorted and metallic percussion, as well as more aggressive and off-kilter rapping styles.',
         hard: ['hiphop', 'industrial' ],
         soft: [],
+        artists: 'Clipping, Death Grips, Backxwash'
     },
    
     {
