@@ -681,7 +681,7 @@ export const RocknRoll = [{
   parent: Type.Genre,
   label: 'Twist',
   id: 'twist',
-  hard: ['rocknroll'],
+  hard: ['rocknroll', 'soul'],
   soft: []
 },
 {

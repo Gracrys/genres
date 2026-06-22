@@ -30,7 +30,7 @@ export const Pop = [
         parent: Type.Super,
         label: 'Afrobeats',
         id: 'afrobeats',
-        hard: ['pop', 'dancehall', 'pop-rap', 'contemporary-rnb'],
+        hard: ['pop', 'dancehall', 'pop-rap', 'rnb'],
         soft: [],
         desc: 'Originated in West Africa during the early 2010s and includes elements from Pop Rap, Contemporary R&B, and Dancehall.'
     },
@@ -182,7 +182,7 @@ export const Pop = [
         parent: Type.Super,
         label: 'Blue-Eyed Soul',
         id: 'blue-eyed-soul',
-        hard: ['pop'],
+        hard: ['pop','soul'],
         soft: ['western-classical'],
         desc: 'Usually refers to a Pop or Pop Rock song that contains strong Gospel-like elements, primarily popularized by white American and British singers in the 1960s through the 1980s.'
     },

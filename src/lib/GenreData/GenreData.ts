@@ -9,6 +9,7 @@ import { Metal } from "./Metal"
 import { Pop } from "./Pop"
 import { AlternativeRock, Hardcore, Rock } from "./Rock"
 import { WorldMusic } from "./WorldMusic"
+import { RNB } from "./RNB"
 
 export enum Type {
     'Super' = 1,
@@ -33,7 +34,6 @@ export interface IGenre {
 
 
 
-
 export const Genres: IGenre[] = [
     ...AvantGarde,
     ...Metal,
@@ -46,7 +46,8 @@ export const Genres: IGenre[] = [
    ...Classical,
    ...Jazz,
    ...Dance,
-   ...Pop
+   ...Pop,
+   ...RNB
 ]
 
 

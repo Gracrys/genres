@@ -76,6 +76,11 @@ const genresParameters: {
   'pop': {
     X: 12000
   },
+  rnb: {
+        X: 11000,
+        Y: 800
+
+  }
 }
 
 

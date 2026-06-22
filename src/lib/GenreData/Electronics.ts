@@ -2540,7 +2540,7 @@ export const Disco = [{
     parent: Type.Genre,
     label: 'Boogie',
     desc: 'Continuation of the Disco sound with increased influence from Funk, Synth Funk, and R&B and a slower tempo, often featuring drum machines and filter modulated synthesizers.',
-    id: 'Boogie',
+    id: 'boogie',
     hard: ['disco'],
     soft: ['funk', 'rnb'],
 },

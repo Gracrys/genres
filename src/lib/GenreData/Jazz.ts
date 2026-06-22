@@ -34,6 +34,15 @@ export const Jazz = [
     hard: ['jazz', 'arabic-music'],
     soft: []
   },
+    {
+    type: Type.Genre,
+    parent: Type.Super,
+    label: 'Acid Jazz',
+    id: 'Acid-jazz',
+    desc: 'Eclectic scene consisting of influences from Jazz, Funk, Hip Hop, Soul, and various styles of Dance that gained popularity during the 1990s.',
+    hard: ['jazz', 'psychodelia'],
+    soft: ['soul', 'hiphop', 'funk']
+  },
   {
     type: Type.Genre,
     parent: Type.Super,
@@ -52,6 +61,7 @@ export const Jazz = [
     hard: ['avant-garde-jazz'],
     soft: []
   },
+
   {
     type: Type.Sub,
     parent: Type.Genre,
@@ -225,7 +235,7 @@ export const Jazz = [
     soft: []
   },
   {
-    type: Type.Genre,
+    type: Type.Sub,
     parent: Type.Super,
     label: 'Jazz-Funk',
     id: 'jazz-funk',
@@ -233,6 +243,15 @@ export const Jazz = [
     hard: ['jazz', 'funk'],
     soft: []
   },
+     {
+        type: Type.Sub,
+        parent: Type.Sub,
+        label: 'Free Funk',
+        id: 'free-funk',
+        hard: ['jazz-funk'],
+        soft: [],
+        desc: 'Eccentric and loose take on Funk rhythms combined with the free-flowing and noisy improvisation of Free Jazz; associated with the experimental concept of “harmolodics” where harmony, melody and rhythm are all given equal prominence in performances.'
+    },
   {
     type: Type.Fusion,
     parent: Type.Super,

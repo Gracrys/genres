@@ -3045,7 +3045,7 @@ export const African = [
         label: 'Afro-Funk',
         id: 'afro-funk',
         desc: 'Strongly mixed with traditional and more modern genres in sub-Saharan West Africa.',
-        hard: ['west-african'],
+        hard: ['west-african', 'funk'],
         soft: []
     },
  
